@@ -13,9 +13,12 @@ export default function Home() {
         <meta property="og:title" content={title}></meta>
         <meta property="og:site_name" content={title}></meta>
         <meta property="og:description" content={description}></meta>
-        <meta property="og:image" content="/social.jpg"></meta>
+        <meta
+          property="og:image"
+          content="https://notocd.com/social.jpg"
+        ></meta>
         <meta property="og:url" content="https://notocd.com"></meta>
-        <meta name="twitter:card" content="summary"></meta>
+        <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="twitter:site" content="@alvarlagerlof"></meta>
         <meta name="twitter:creator" content="@alvarlagerlof"></meta>
 
