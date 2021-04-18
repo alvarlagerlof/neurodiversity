@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const title = "What is OCD?";
-  const description = "OCD is not a joke. Find out here what it actually is";
+  const description = "Find out here";
 
   return (
     <div className={styles.container}>
