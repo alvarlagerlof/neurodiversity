@@ -7,7 +7,6 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      t
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
