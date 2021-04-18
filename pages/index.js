@@ -15,7 +15,7 @@ export default function Home() {
         <meta property="og:description" content={description}></meta>
         <meta property="og:image" content="/social.jpg"></meta>
         <meta property="og:url" content="https://notocd.com"></meta>
-        <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta name="twitter:card" content="summary"></meta>
         <meta name="twitter:site" content="@alvarlagerlof"></meta>
         <meta name="twitter:creator" content="@alvarlagerlof"></meta>
 
@@ -25,6 +25,7 @@ export default function Home() {
         ></meta>
         <meta name="theme-color" content="#D49DFF"></meta>
 
+        <link rel="icon" href="/favicon.ico"></link>
         <link
           rel="icon"
           type="image/png"
