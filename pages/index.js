@@ -2,8 +2,8 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  const title = "Not OCD";
-  const description = "OCD is not a joke! Find out here what it actually is";
+  const title = "What is OCD?";
+  const description = "OCD is not a joke. Find out here what it actually is";
 
   return (
     <div className={styles.container}>
@@ -11,10 +11,12 @@ export default function Home() {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta property="og:title" content={title}></meta>
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Not OCD"></meta>
         <meta property="og:description" content={description}></meta>
         <meta
           property="og:image"
-          content="https://notocd.com/social.jpg"
+          content="https://notocd.com/social.jpeg"
         ></meta>
         <meta property="og:url" content="https://notocd.com"></meta>
         <meta name="twitter:card" content="summary_large_image"></meta>
