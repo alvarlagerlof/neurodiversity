@@ -13,6 +13,7 @@ export default function Home() {
         <meta property="og:title" content={title}></meta>
         <meta property="og:site_name" content="Not OCD"></meta>
         <meta property="og:description" content={description}></meta>
+        <meta property="og:type" content="photo"></meta>
         <meta
           property="og:image"
           content="https://notocd.com/social.jpeg"
