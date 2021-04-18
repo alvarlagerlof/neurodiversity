@@ -56,13 +56,6 @@ export default function Home() {
           data-domain="alvar.dev"
           src="https://stats.notocd.com/js/index.outbound-links.js"
         ></script>
-
-        <script
-          async
-          defer
-          data-domain="notocd.com"
-          src="https://plausible.io/js/plausible.js"
-        ></script>
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to notocd.com</h1>
