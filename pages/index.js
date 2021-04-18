@@ -11,7 +11,6 @@ export default function Home() {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta property="og:title" content={title}></meta>
-        <meta property="og:site_name" content={title}></meta>
         <meta property="og:description" content={description}></meta>
         <meta
           property="og:image"
