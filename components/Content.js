@@ -5,34 +5,42 @@ import ExternalLink from "../components/ExternalLink";
 export default function Content() {
   const isNot = [
     {
-      summary: "A joke/meme",
-      details: "Nulla excepteur aute exercitation officia qui quis.",
+      summary: "Something to joke about",
+      details:
+        "OCD is a mental illnes. It is not respectful to joke or spread memes about.",
     },
     {
-      summary: "Being annoyed",
-      details: "Ea ex nostrud in mollit labore sint irure eiusmod dolor in.",
+      summary: "Being annoyed at unsymmetrical things",
+      details:
+        "Feeling annoyed when something perhaps is not ligned up just right is called being human, not having OCD.",
+    },
+    {
+      summary: "A personality type",
+      details:
+        'Some people are not "OCD". It is a mental illness that you either have or do not have.',
     },
     {
       summary: "A choice",
       details:
-        "Aliquip aliquip exercitation do aliqua ut magna et Lorem velit.",
+        'We all have things we choose to obsess over. We might rewrite a message to make it just right or replay a moment in our heads multiple times. But someone with OCD has no ability to "snap out of it". They feel like there is nothing they can do but continue thinking about it. The brain is stuck and driven by anxiety.',
     },
   ];
 
   const is = [
     {
-      summary: "Hard",
+      summary: "Taxing",
       details:
-        "Ut quis cillum voluptate anim enim sunt labore ullamco sunt ea et non do est.",
+        "Having OCD means that you feel like you have no option but to do something that you do not find logical or have any pleasure doing.",
     },
     {
-      summary: "Time-consuming",
+      summary: "Time consuming",
       details:
-        "Dolor voluptate ullamco sit adipisicing duis laborum eu laborum.",
+        "Having OCD means that time you'd rather spend of other things is taken by dealing with your symptoms. The criteria for being diagnosed with OCD includes a requirement that it takes up at least 1 hour of your day.",
     },
     {
       summary: "Unwanted",
-      details: "Irure esse non ut enim labore.",
+      details:
+        "OCD is not something to be jealous of. Anyone with ocd wishes that they rather did not have it.",
     },
   ];
 
@@ -94,15 +102,13 @@ export default function Content() {
         <main className="max-w-3xl">
           <article className="space-y-12">
             <header>
-              <h2 className="font-display font-semibold leading-snug text-3xl sm:text-4xl md:text-5xl max-w-[18ch] mb-4">
-                Hey there! That's probably not OCD
+              <h2 className="font-display font-semibold leading-snug text-3xl sm:text-4xl md:text-5xl max-w-[14ch] mb-4">
+                Hey, that's probably not OCD
               </h2>
               <p className="mb-2">
-                Most likely, you’ve heard the term OCD being used. Howerver,{" "}
-                <strong>
-                  most people don't know actually know what it is.
-                </strong>
-                . No worries! We’ll clear it up here.
+                You've most likely heard of OCD. Howerver,{" "}
+                <strong>most people don't actually know what it is</strong>. No
+                worries! We’ll clear it up here.
               </p>
 
               <p className="mb-4">
@@ -121,7 +127,7 @@ export default function Content() {
 
             <section className="rounded-xl bg-secondary-light p-4 lg:-m-4 border-4 border-secondary-dark">
               <div className="flex flex-row space-x-2">
-                <img src="/cross.svg" />
+                <img src="/cross.svg" alt="Cross icon" />
                 <h3 className="font-display text-xl md:text-2xl">
                   OCD is NOT:
                 </h3>
@@ -129,7 +135,7 @@ export default function Content() {
               <CollapsibleList content={isNot} />
 
               <div className="flex flex-row space-x-2 mt-8">
-                <img src="/check.svg" />
+                <img src="/check.svg" alt="Check icon" />
                 <h3 className="font-display text-xl md:text-2xl">OCD is:</h3>
               </div>
               <CollapsibleList content={is} />
@@ -175,7 +181,7 @@ export default function Content() {
                       <Quote>I'm so OCD</Quote>
                     </li>
                     <li>
-                      <Quote>That is triggering my OCD</Quote>
+                      <Quote>___ is triggering my OCD</Quote>
                     </li>
                     <li>
                       <Quote>My OCD can't handle ___</Quote>
@@ -209,18 +215,31 @@ export default function Content() {
 
               <strong className="block mb-16">Thank you for reading!</strong>
             </section>
+
+            <footer className="flex flex-col md:flex-row items-center md:justify-between  bg-gray-200 p-4 lg:-m-4 rounded-lg">
+              <p className="text-center md:text-left mb-4 md:mb-0">
+                Made with <span>❤</span> by{" "}
+                <ExternalLink href="https://alvar.dev">
+                  Alvar Lagerlöf
+                </ExternalLink>{" "}
+                in hopes of clearing up OCD.
+              </p>
+              <ul className="flex flew-row space-x-4">
+                <li>
+                  <a href="https://github.com/alvarlagerlof/not-ocd">
+                    <img src="/github.svg" alt="Github logo" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/alvarlagerlof">
+                    <img src="/twitter.svg" alt="Twitter logo" />
+                  </a>
+                </li>
+              </ul>
+            </footer>
           </article>
         </main>
       </div>
-
-      <footer className="flex flex-col items-center py-8 px-4 bg-gray-200">
-        <div className="w-full max-w-3xl flex flex-row space-x-2">
-          <p>Made by</p>
-          <ExternalLink href="https://twitter.com/alvarlagerlof">
-            @alvarlagerlof
-          </ExternalLink>
-        </div>
-      </footer>
     </div>
   );
 }
