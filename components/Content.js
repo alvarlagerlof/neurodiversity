@@ -10,7 +10,7 @@ export default function Content() {
         "OCD is a mental illness. It's not respectful to joke or spread memes about it.",
     },
     {
-      summary: "Being annoyed at unsymmetrical things",
+      summary: "Being annoyed at asymmetrical things",
       details:
         "Feeling annoyed when something is not aligned correctly is is human, not having OCD.",
     },
