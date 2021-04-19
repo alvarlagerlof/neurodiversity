@@ -4,7 +4,7 @@ export default function CollapsibleList({ content }) {
   return (
     <dl className="divide-y-2 divide-opacity-10 divide-black">
       {content.map(({ summary, details }) => {
-        return <Item summary={summary} details={details} />;
+        return <Item summary={summary} details={details} key={details} />;
       })}
     </dl>
   );

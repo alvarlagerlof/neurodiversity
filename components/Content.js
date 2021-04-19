@@ -10,9 +10,9 @@ export default function Content() {
         "OCD is a mental illness. It's not respectful to joke or spread memes about it.",
     },
     {
-      summary: "Being annoyed at asymmetrical things",
+      summary: "Being upset at asymmetrical things",
       details:
-        "Feeling annoyed when something is not aligned correctly is is human, not having OCD.",
+        "Feeling upset when something is not aligned correctly is is human, not having OCD.",
     },
     {
       summary: "A personality type",
@@ -35,7 +35,7 @@ export default function Content() {
     {
       summary: "Time consuming",
       details:
-        "Having OCD means that time you'd rather spend on  other things is taken by dealing with your symptoms. The criteria for being diagnosed with OCD includes a requirement that it takes up at least 1 hour of your day.",
+        "Dealing with OCD means that time you would rather spend on other things must instead be spend managing you symptoms. The criteria for being diagnosed with OCD includes a requirement that it takes up at least 1 hour of your day.",
     },
     {
       summary: "Unwanted",
@@ -50,15 +50,15 @@ export default function Content() {
       details: (
         <ol className="list-decimal	ml-4 space-y-2 mb-4">
           <li>
-            Recurrent and persistent thoughts, urges or images that are
+            “Recurrent and persistent thoughts, urges or images that are
             experienced, at some time during the disturbance, as intrusive,
             unwanted, and that in most individuals cause marked anxiety or
-            distress.
+            distress.”
           </li>
           <li>
-            The individual attempts to ignore or suppress such thoughts, urges,
+            “The individual attempts to ignore or suppress such thoughts, urges,
             or images, or to neutralize them with some thought or action (i.e.,
-            by performing a compulsion).
+            by performing a compulsion).”
           </li>
         </ol>
       ),
@@ -68,17 +68,17 @@ export default function Content() {
       details: (
         <ol className="list-decimal	ml-4 space-y-2">
           <li>
-            Repetitive behaviors (e.g., hand washing, ordering checking) or
+            “Repetitive behaviors (e.g., hand washing, ordering checking) or
             mental acts (e.g., praying, counting, repeating words silently) that
             the person feels driven to perform in response to an obsession, or
-            according to the rules that must be applied rigidly.
+            according to the rules that must be applied rigidly.”
           </li>
           <li>
-            The behaviors or mental acts are aimed at preventing or reducing
+            “The behaviors or mental acts are aimed at preventing or reducing
             distress or preventing some dreaded event or situation. However,
             these behaviors or mental acts either are not connected in a
             realistic way with what they are designed to neutralize or prevent
-            or are clearly excessive.
+            or are clearly excessive.”
           </li>
         </ol>
       ),
@@ -172,8 +172,8 @@ export default function Content() {
               <ol className="list-decimal	ml-4 space-y-2 mb-8">
                 <li>
                   <p className="mb-2">
-                    Avoid using the word OCD for things that aren't. Phrases
-                    that should be avoided look like this:
+                    Avoid using the word OCD for things that aren't. Here are
+                    some examples of phrases that should be avoided:
                   </p>
 
                   <ul className="mb-4 flex flex-row flex-wrap gap-2">
