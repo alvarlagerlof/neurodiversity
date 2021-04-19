@@ -105,7 +105,7 @@ export default function Content() {
               <h2 className="font-display font-semibold leading-snug text-3xl sm:text-4xl md:text-5xl max-w-[14ch] mb-4">
                 Hey, that's probably not OCD
               </h2>
-              <p className="mb-2">
+              <p className="mb-4">
                 You've most likely heard of OCD. However,{" "}
                 <strong>most people don't actually know what it is</strong>. No
                 worries! We’ll clear that up here.
@@ -123,6 +123,7 @@ export default function Content() {
                 </ExternalLink>{" "}
                 as a presence of:
               </p>
+
               <CollapsibleList content={definition} />
             </header>
 
