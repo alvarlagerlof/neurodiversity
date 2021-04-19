@@ -40,7 +40,7 @@ export default function Content() {
     {
       summary: "Unwanted",
       details:
-        "OCD is not something to be jealous of. Everyone with ocd wishes that they didn't have it",
+        "OCD is not something to be jealous of. Everyone with OCD wishes that they didn't have it",
     },
   ];
 
