@@ -36,6 +36,47 @@ export default function Content() {
     },
   ];
 
+  const defenition = [
+    {
+      summary: "Obesessions",
+      details: (
+        <ol className="list-decimal	ml-4 space-y-2 mb-4">
+          <li>
+            Recurrent and persistent thoughts, urges or images that are
+            experienced, at some time during the disturbance, as intrusive,
+            unwanted, and that in most individuals cause marked anxiety or
+            distress.
+          </li>
+          <li>
+            The individual attempts to ignore or suppress such thoughts, urges,
+            or images, or to neutralize them with some thought or action (i.e.,
+            by performing a compulsion).
+          </li>
+        </ol>
+      ),
+    },
+    {
+      summary: "Compulsions",
+      details: (
+        <ol className="list-decimal	ml-4 space-y-2">
+          <li>
+            Repetitive behaviors (e.g., hand washing, ordering checking) or
+            mental acts (e.g., praying, counting, repeating words silently) that
+            the person feels driven to perform in response to an obsession, or
+            according to the rules that must be applied rigidly.
+          </li>
+          <li>
+            The behaviors or mental acts are aimed at preventing or reducing
+            distress or preventing some dreaded event or situation. However,
+            these behaviors or mental acts either are not connected in a
+            realistic way with what they are designed to neutralize or prevent
+            or are clearly excessive.
+          </li>
+        </ol>
+      ),
+    },
+  ];
+
   return (
     <div className="flex flex-col h-screen">
       <div className="flex-1 flex flex-col items-center py-8 px-4">
@@ -58,8 +99,10 @@ export default function Content() {
               </h2>
               <p className="mb-2">
                 Most likely, you’ve heard the term OCD being used. Howerver,{" "}
-                <strong>most people don't know what it actually is</strong>. No
-                worries! We’ll clear it up here.
+                <strong>
+                  most people don't know actually know what it is.
+                </strong>
+                . No worries! We’ll clear it up here.
               </p>
 
               <p className="mb-4">
@@ -68,36 +111,12 @@ export default function Content() {
                 <ExternalLink href="https://en.wikipedia.org/wiki/DSM-5">
                   DSM-5
                 </ExternalLink>{" "}
-                defines it as a presence of:
+                <ExternalLink href="https://www.ncbi.nlm.nih.gov/books/NBK519704/table/ch3.t13">
+                  defines
+                </ExternalLink>{" "}
+                it as a presence of:
               </p>
-              <h3 className="font-display text-lg">Obessions</h3>
-              <ol className="list-decimal	ml-4 space-y-2 mb-4">
-                <li>
-                  Recurrent and persistent thoughts, urges or images that are
-                  experienced, at some time during the disturbance, as
-                  intrusive, unwanted, and that in most individuals cause marked
-                  anxiety or distress.
-                </li>
-                <li>
-                  The individual attempts to ignore or suppress such thoughts,
-                  urges, or images, or to neutralize them with some thought or
-                  action (i.e., by performing a compulsion).
-                </li>
-              </ol>
-              <h3 className="font-display text-lg">Compulsions</h3>
-              <ol className="list-decimal	ml-4 space-y-2">
-                <li>
-                  Recurrent and persistent thoughts, urges or images that are
-                  experienced, at some time during the disturbance, as
-                  intrusive, unwanted, and that in most individuals cause marked
-                  anxiety or distress.
-                </li>
-                <li>
-                  The individual attempts to ignore or suppress such thoughts,
-                  urges, or images, or to neutralize them with some thought or
-                  action (i.e., by performing a compulsion).
-                </li>
-              </ol>
+              <CollapsibleList content={defenition} />
             </header>
 
             <section>
@@ -178,8 +197,15 @@ export default function Content() {
 
                 <li>
                   Spread awareness! The next time you hear a joke or incorrect
-                  use, speak up and like them this website or other excellent
-                  vidoes and websites.
+                  use, speak up and link them this website or other excellent{" "}
+                  <ExternalLink href="https://www.youtube.com/watch?v=EXx20g2Poe8">
+                    videos
+                  </ExternalLink>{" "}
+                  and{" "}
+                  <ExternalLink href="https://iocdf.org/blog/2013/03/01/5-things-ocd-is-not/">
+                    articles
+                  </ExternalLink>
+                  .
                 </li>
               </ol>
 
