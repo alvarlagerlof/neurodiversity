@@ -21,7 +21,7 @@ function Item({ summary, details }) {
           aria-expanded={open}
           onClick={() => setOpen((prev) => !prev)}
         >
-          <span>{summary}</span>
+          <span className="text-left">{summary}</span>
           <img aria-hidden src={open ? "/close.svg" : "/open.svg"} />
         </button>
       </dt>
