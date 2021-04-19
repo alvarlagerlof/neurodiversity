@@ -133,16 +133,13 @@ export default function Content() {
                   OCD is NOT:
                 </h3>
               </div>
-              <CollapsibleList
-                content={isNot}
-                ringOffsetColor="secondary-light"
-              />
+              <CollapsibleList content={isNot} />
 
               <div className="flex flex-row space-x-2 mt-8">
                 <img src="/check.svg" alt="Check icon" />
                 <h3 className="font-display text-xl md:text-2xl">OCD is:</h3>
               </div>
-              <CollapsibleList content={is} ringOffsetColor="red-600" />
+              <CollapsibleList content={is} />
             </section>
 
             <section>

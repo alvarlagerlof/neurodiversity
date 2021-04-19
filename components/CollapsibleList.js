@@ -1,23 +1,16 @@
 import { useState } from "react";
 
-export default function CollapsibleList({ content, ringOffsetColor }) {
+export default function CollapsibleList({ content }) {
   return (
     <dl className="divide-y-2 divide-opacity-10 divide-black">
       {content.map(({ summary, details }) => {
-        return (
-          <Item
-            summary={summary}
-            details={details}
-            ringOffsetColor={ringOffsetColor}
-            key={details}
-          />
-        );
+        return <Item summary={summary} details={details} key={details} />;
       })}
     </dl>
   );
 }
 
-function Item({ summary, details, ringOffsetColor }) {
+function Item({ summary, details }) {
   const [open, setOpen] = useState(false);
 
   return (
