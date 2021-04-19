@@ -1,12 +1,12 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Content from "../components/Content";
 
 export default function Home() {
   const title = "What is OCD?";
   const description = "Find out here";
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -53,6 +53,12 @@ export default function Home() {
           sizes="192x192"
         ></link>
 
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Inter:wght@400;600&display=swap"
+          rel="stylesheet"
+        ></link>
+
         <script
           async
           defer
@@ -60,20 +66,7 @@ export default function Home() {
           src="https://stats.notocd.com/js/index.outbound-links.js"
         ></script>
       </Head>
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to notocd.com</h1>
-        <p className={styles.description}>This site is under construction</p>
-      </main>
-      <footer className={styles.footer}>
-        <p>Made by</p>
-        <a
-          href="https://twitter.com/alvarlagerlof"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @alvarlagerlof
-        </a>
-      </footer>
+      <Content />
     </div>
   );
 }
