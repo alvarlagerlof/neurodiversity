@@ -7,17 +7,17 @@ export default function Content() {
     {
       summary: "Something to joke about",
       details:
-        "OCD is a mental illnes. It is not respectful to joke or spread memes about.",
+        "OCD is a mental illness. It's not respectful to joke or spread memes about it.",
     },
     {
       summary: "Being annoyed at unsymmetrical things",
       details:
-        "Feeling annoyed when something perhaps is not ligned up just right is called being human, not having OCD.",
+        "Feeling annoyed when something is not aligned correctly is is human, not having OCD.",
     },
     {
       summary: "A personality type",
       details:
-        'Some people are not "OCD". It is a mental illness that you either have or do not have.',
+        "People can't be \"OCD\". It's a mental illness, you either have it or you don't",
     },
     {
       summary: "A choice",
@@ -35,12 +35,12 @@ export default function Content() {
     {
       summary: "Time consuming",
       details:
-        "Having OCD means that time you'd rather spend of other things is taken by dealing with your symptoms. The criteria for being diagnosed with OCD includes a requirement that it takes up at least 1 hour of your day.",
+        "Having OCD means that time you'd rather spend on  other things is taken by dealing with your symptoms. The criteria for being diagnosed with OCD includes a requirement that it takes up at least 1 hour of your day.",
     },
     {
       summary: "Unwanted",
       details:
-        "OCD is not something to be jealous of. Anyone with ocd wishes that they rather did not have it.",
+        "OCD is not something to be jealous of. Everyone with ocd wishes that they didn't have it",
     },
   ];
 
@@ -108,7 +108,7 @@ export default function Content() {
               <p className="mb-2">
                 You've most likely heard of OCD. Howerver,{" "}
                 <strong>most people don't actually know what it is</strong>. No
-                worries! We’ll clear it up here.
+                worries! We’ll clear that up here.
               </p>
 
               <p className="mb-4">
@@ -120,7 +120,7 @@ export default function Content() {
                 <ExternalLink href="https://www.ncbi.nlm.nih.gov/books/NBK519704/table/ch3.t13">
                   defines
                 </ExternalLink>{" "}
-                it as a presence of:
+                OCD as a presence of:
               </p>
               <CollapsibleList content={defenition} />
             </header>
@@ -161,7 +161,7 @@ export default function Content() {
                   It makes it harder for people suffering to{" "}
                   <strong>get diagnosed</strong>.
                 </li>
-                <li>It is disrespectful for people with OCD.</li>
+                <li>It's disrespectful for people with OCD.</li>
               </ul>
             </section>
 
