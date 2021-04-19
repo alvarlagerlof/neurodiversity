@@ -119,7 +119,7 @@ export default function Content() {
               <CollapsibleList content={defenition} />
             </header>
 
-            <section className="rounded-xl bg-secondary-light p-4 -m-4 border-4 border-secondary-dark">
+            <section className="rounded-xl bg-secondary-light p-4 lg:-m-4 border-4 border-secondary-dark">
               <div className="flex flex-row space-x-2">
                 <img src="/cross.svg" />
                 <h3 className="font-display text-xl md:text-2xl">
