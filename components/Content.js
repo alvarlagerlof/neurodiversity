@@ -80,7 +80,7 @@ export default function Content() {
   return (
     <div className="flex flex-col h-screen">
       <div className="flex-1 flex flex-col items-center py-8 px-4">
-        <nav className="flex flex-row space-x-4 items-center max-w-3xl mb-24 w-full">
+        <nav className="flex flex-row space-x-4 items-center max-w-3xl mb-16 md:mb-24 w-full">
           <img
             className="w-8 md:w-10"
             src="/logo.svg"
@@ -94,7 +94,7 @@ export default function Content() {
         <main className="max-w-3xl">
           <article className="space-y-12">
             <header>
-              <h2 className="font-display font-semibold text-3xl sm:text-4xl md:text-5xl leading-loose max-w-[18ch] mb-4">
+              <h2 className="font-display font-semibold leading-snug text-3xl sm:text-4xl md:text-5xl max-w-[18ch] mb-4">
                 Hey there! That's probably not OCD
               </h2>
               <p className="mb-2">
