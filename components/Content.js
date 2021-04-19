@@ -113,14 +113,15 @@ export default function Content() {
 
               <p className="mb-4">
                 OCD stands for <strong>obsessive-compulsive disorder</strong>.
-                But what does that mean? The{" "}
+                But what does that mean? OCD is{" "}
+                <ExternalLink href="https://www.ncbi.nlm.nih.gov/books/NBK519704/table/ch3.t13">
+                  defined
+                </ExternalLink>{" "}
+                by the{" "}
                 <ExternalLink href="https://en.wikipedia.org/wiki/DSM-5">
                   DSM-5
                 </ExternalLink>{" "}
-                <ExternalLink href="https://www.ncbi.nlm.nih.gov/books/NBK519704/table/ch3.t13">
-                  defines
-                </ExternalLink>{" "}
-                OCD as a presence of:
+                as a presence of:
               </p>
               <CollapsibleList content={definition} />
             </header>
@@ -132,13 +133,16 @@ export default function Content() {
                   OCD is NOT:
                 </h3>
               </div>
-              <CollapsibleList content={isNot} />
+              <CollapsibleList
+                content={isNot}
+                ringOffsetColor="secondary-light"
+              />
 
               <div className="flex flex-row space-x-2 mt-8">
                 <img src="/check.svg" alt="Check icon" />
                 <h3 className="font-display text-xl md:text-2xl">OCD is:</h3>
               </div>
-              <CollapsibleList content={is} />
+              <CollapsibleList content={is} ringOffsetColor="red-600" />
             </section>
 
             <section>
