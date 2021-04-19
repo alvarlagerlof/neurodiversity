@@ -12,7 +12,7 @@ export default function Content() {
     {
       summary: "Being upset at asymmetrical things",
       details:
-        "Feeling upset when something is not aligned correctly is is human, not having OCD.",
+        "Feeling upset when something is not aligned correctly is human, not having OCD.",
     },
     {
       summary: "A personality type",
