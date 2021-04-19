@@ -61,14 +61,43 @@ export default function Content() {
                 <strong>most people don't know what it actually is</strong>. No
                 worries! We’ll clear it up here.
               </p>
-              <p>
-                OCD stands for obsessive-compulsive disorder. What does that
-                mean? The{" "}
+
+              <p className="mb-4">
+                OCD stands for <strong>obsessive-compulsive disorder</strong>.
+                But what does that mean? The{" "}
                 <ExternalLink href="https://en.wikipedia.org/wiki/DSM-5">
                   DSM-5
                 </ExternalLink>{" "}
-                defines it as (todo)
+                defines it as a presence of:
               </p>
+              <h3 className="font-display text-lg">Obessions</h3>
+              <ol className="list-decimal	ml-4 space-y-2 mb-4">
+                <li>
+                  Recurrent and persistent thoughts, urges or images that are
+                  experienced, at some time during the disturbance, as
+                  intrusive, unwanted, and that in most individuals cause marked
+                  anxiety or distress.
+                </li>
+                <li>
+                  The individual attempts to ignore or suppress such thoughts,
+                  urges, or images, or to neutralize them with some thought or
+                  action (i.e., by performing a compulsion).
+                </li>
+              </ol>
+              <h3 className="font-display text-lg">Compulsions</h3>
+              <ol className="list-decimal	ml-4 space-y-2">
+                <li>
+                  Recurrent and persistent thoughts, urges or images that are
+                  experienced, at some time during the disturbance, as
+                  intrusive, unwanted, and that in most individuals cause marked
+                  anxiety or distress.
+                </li>
+                <li>
+                  The individual attempts to ignore or suppress such thoughts,
+                  urges, or images, or to neutralize them with some thought or
+                  action (i.e., by performing a compulsion).
+                </li>
+              </ol>
             </header>
 
             <section>
@@ -90,7 +119,7 @@ export default function Content() {
             </section>
 
             <section>
-              <h3 className="font-display text-xl md:text-2xlmb-2">
+              <h3 className="font-display text-xl md:text-2xl mb-2">
                 Why should I care?
               </h3>
               <p className="mb-4">
