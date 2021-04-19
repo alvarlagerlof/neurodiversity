@@ -20,6 +20,11 @@ export default function Content() {
         "People can't be \"OCD\". It's a mental illness, you either have it or you don't",
     },
     {
+      summary: "Quirky",
+      details:
+        "OCD is not quirky. It is a mentall illness that you don't want to have.",
+    },
+    {
       summary: "A choice",
       details:
         'We all have things we choose to obsess over. We might rewrite a message to make it just right or replay a moment in our heads multiple times. But someone with OCD has no ability to "snap out of it". They feel like there is nothing they can do but continue thinking about it. The brain is stuck and driven by anxiety.',
