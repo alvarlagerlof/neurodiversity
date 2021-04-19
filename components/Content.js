@@ -119,7 +119,7 @@ export default function Content() {
               <CollapsibleList content={defenition} />
             </header>
 
-            <section>
+            <section className="rounded-xl bg-secondary-light p-4 -m-4 border-4 border-secondary-dark">
               <div className="flex flex-row space-x-2">
                 <img src="/cross.svg" />
                 <h3 className="font-display text-xl md:text-2xl">
@@ -127,10 +127,8 @@ export default function Content() {
                 </h3>
               </div>
               <CollapsibleList content={isNot} />
-            </section>
 
-            <section>
-              <div className="flex flex-row space-x-2">
+              <div className="flex flex-row space-x-2 mt-8">
                 <img src="/check.svg" />
                 <h3 className="font-display text-xl md:text-2xl">OCD is:</h3>
               </div>

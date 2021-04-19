@@ -7,11 +7,18 @@ module.exports = {
       display: ["Cabin", "sans-serif"],
       content: ["Inter", "sans-serif"],
     },
-  },
-  colors: {},
-
-  variants: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          light: "#D49DFF",
+          dark: "#831DD3",
+        },
+        secondary: {
+          light: "#FFF6E0",
+          dark: "#FFDE89",
+        },
+      },
+    },
   },
   plugins: [],
 };
