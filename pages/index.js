@@ -3,7 +3,7 @@ import Content from "../components/Content";
 
 export default function Home() {
   const title = "What is OCD?";
-  const description = "OCD is misunderstood. Find out what it is here";
+  const description = "OCD is misunderstood. Find out more here.";
 
   return (
     <div>

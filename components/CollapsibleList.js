@@ -17,7 +17,7 @@ function Item({ summary, details }) {
     <div className="py-2">
       <dt>
         <button
-          className="w-full flex flex-row justify-between items-center text-lg font-display"
+          className="w-full flex flex-row justify-between items-center text-lg font-display rounded-md focus:outline-none focus:ring focus:ring-primary-light"
           aria-expanded={open}
           onClick={() => setOpen((prev) => !prev)}
         >

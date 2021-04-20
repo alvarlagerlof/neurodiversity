@@ -20,6 +20,11 @@ export default function Content() {
         "People can't be \"OCD\". It's a mental illness, you either have it or you don't",
     },
     {
+      summary: "Quirky",
+      details:
+        "OCD is not quirky. It is a mentall illness that you don't want to have.",
+    },
+    {
       summary: "A choice",
       details:
         'We all have things we choose to obsess over. We might rewrite a message to make it just right or replay a moment in our heads multiple times. But someone with OCD has no ability to "snap out of it". They feel like there is nothing they can do but continue thinking about it. The brain is stuck and driven by anxiety.',
@@ -33,7 +38,7 @@ export default function Content() {
         "Having OCD means that you feel like you have no option but to do something that you do not find logical or have any pleasure doing.",
     },
     {
-      summary: "Time consuming",
+      summary: "Time-consuming",
       details:
         "Dealing with OCD means that time you would rather spend on other things must instead be spend managing you symptoms. The criteria for being diagnosed with OCD includes a requirement that it takes up at least 1 hour of your day.",
     },
@@ -44,9 +49,9 @@ export default function Content() {
     },
   ];
 
-  const defenition = [
+  const definition = [
     {
-      summary: "Obesessions",
+      summary: "Obsessions",
       details: (
         <ol className="list-decimal	ml-4 space-y-2 mb-4">
           <li>
@@ -105,24 +110,26 @@ export default function Content() {
               <h2 className="font-display font-semibold leading-snug text-3xl sm:text-4xl md:text-5xl max-w-[14ch] mb-4">
                 Hey, that's probably not OCD
               </h2>
-              <p className="mb-2">
-                You've most likely heard of OCD. Howerver,{" "}
+              <p className="mb-4">
+                You've most likely heard of OCD. However,{" "}
                 <strong>most people don't actually know what it is</strong>. No
                 worries! We’ll clear that up here.
               </p>
 
               <p className="mb-4">
                 OCD stands for <strong>obsessive-compulsive disorder</strong>.
-                But what does that mean? The{" "}
+                But what does that mean? OCD is{" "}
+                <ExternalLink href="https://www.ncbi.nlm.nih.gov/books/NBK519704/table/ch3.t13">
+                  defined
+                </ExternalLink>{" "}
+                by the{" "}
                 <ExternalLink href="https://en.wikipedia.org/wiki/DSM-5">
                   DSM-5
                 </ExternalLink>{" "}
-                <ExternalLink href="https://www.ncbi.nlm.nih.gov/books/NBK519704/table/ch3.t13">
-                  defines
-                </ExternalLink>{" "}
-                OCD as a presence of:
+                as a presence of:
               </p>
-              <CollapsibleList content={defenition} />
+
+              <CollapsibleList content={definition} />
             </header>
 
             <section className="rounded-xl bg-secondary-light p-4 lg:-m-4 border-4 border-secondary-dark">
@@ -148,7 +155,7 @@ export default function Content() {
               <p className="mb-4">
                 Talking about or mentioning OCD as the reason for you being
                 annoyed about something{" "}
-                <strong>spreads an incorrect defenition</strong>. This is bad
+                <strong>spreads an incorrect definition</strong>. This is bad
                 for multiple reasons:
               </p>
               <ul className="list-disc ml-4 space-y-1">
@@ -196,12 +203,12 @@ export default function Content() {
                 </li>
                 <li>
                   Stop spreading and endorsing jokes/memes about OCD. The vast
-                  mayority of them are disrespectful to people suffering.
+                  majority of them are disrespectful to people suffering.
                 </li>
 
                 <li>
                   Spread awareness! The next time you hear a joke or incorrect
-                  use, speak up and link them this website or other excellent{" "}
+                  use, speak up and link them to this website or other excellent{" "}
                   <ExternalLink href="https://www.youtube.com/watch?v=EXx20g2Poe8">
                     videos
                   </ExternalLink>{" "}
