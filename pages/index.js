@@ -62,7 +62,7 @@ export default function Home() {
         <script
           async
           defer
-          data-domain="alvar.dev"
+          data-domain="notocd.com"
           src="https://stats.notocd.com/js/index.outbound-links.js"
         ></script>
       </Head>
