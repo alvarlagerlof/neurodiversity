@@ -7,7 +7,7 @@ export default function Content() {
     {
       summary: "Something to joke about",
       details:
-        "OCD is a mental illness. It's not respectful to joke or spread memes about it.",
+        "OCD is a mental illness. It's disrespectful to joke or spread memes about it.",
     },
     {
       summary: "Being upset at asymmetrical things",
