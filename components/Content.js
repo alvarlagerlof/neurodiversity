@@ -22,7 +22,7 @@ export default function Content() {
     {
       summary: "Quirky",
       details:
-        "OCD is not quirky. It is a mentall illness that you don't want to have.",
+        "OCD is not quirky. It is a mental illness that you don't want to have.",
     },
     {
       summary: "A choice",
