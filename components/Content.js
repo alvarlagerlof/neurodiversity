@@ -17,7 +17,7 @@ export default function Content() {
     {
       summary: "A personality type",
       details:
-        "People can't be \"OCD\". It's a mental illness, you either have it or you don't",
+        "People can't be \"OCD\". It's a mental illness, you either have it or you don't.",
     },
     {
       summary: "Quirky",
@@ -45,7 +45,7 @@ export default function Content() {
     {
       summary: "Unwanted",
       details:
-        "OCD is not something to be jealous of. Everyone with OCD wishes that they didn't have it",
+        "OCD is not something to be jealous of. Everyone with OCD wishes that they didn't have it.",
     },
   ];
 
