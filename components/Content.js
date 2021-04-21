@@ -226,7 +226,7 @@ export default function Content() {
             <footer className="flex flex-col md:flex-row items-center md:justify-between  bg-gray-200 p-4 lg:-m-4 rounded-lg">
               <p className="text-center md:text-left mb-4 md:mb-0">
                 Made with <span>❤</span> by{" "}
-                <ExternalLink href="https://alvar.dev">
+                <ExternalLink href="https://alvar.dev?utm_source=alvar.dev">
                   Alvar Lagerlöf
                 </ExternalLink>{" "}
                 in hopes of clearing up OCD.
