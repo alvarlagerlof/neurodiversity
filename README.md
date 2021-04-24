@@ -25,7 +25,6 @@ Feedback is appreciated! Reach out on [Twitter](https://twitter.com/alvarlagerlo
 ## Roadmap
 
 - More diagnoses (Reach out on [Twitter](https://twitter.com/alvarlagerlof) if you want to help with this! I need more voices represented)
-
 - Localization
 
 ## Tech Stack
