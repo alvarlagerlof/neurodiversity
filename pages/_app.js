@@ -12,7 +12,7 @@ import Box from "../components/blocks/Box";
 import Definition from "../components/blocks/Definition";
 import DefinitionItem from "../components/blocks/DefinitionItem";
 import IconHeading from "../components/blocks/IconHeading";
-import Grid from "../components/blocks/Grid";
+import PageGrid from "../components/blocks/PageGrid";
 import PageLink from "../components/blocks/PageLink";
 
 import Navbar from "../components/Navbar";
@@ -36,7 +36,7 @@ const components = {
   Box,
   Definition,
   DefinitionItem,
-  Grid,
+  PageGrid,
   PageLink,
 };
 
