@@ -1,3 +1,3 @@
 export default function Text({ children }) {
-  return <p>{children}</p>;
+  return <p className="mb-4">{children}</p>;
 }

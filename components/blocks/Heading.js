@@ -5,7 +5,7 @@ const Heading = {
     </h2>
   ),
   H2: ({ children }) => (
-    <h3 className="font-display text-xl md:text-2xl">{children}</h3>
+    <h3 className="font-display text-xl md:text-2xl mb-2">{children}</h3>
   ),
 };
 

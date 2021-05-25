@@ -1,16 +1,6 @@
 import { useState } from "react";
 
-export default function CollapsibleList({ content }) {
-  return (
-    <dl className="divide-y-2 divide-opacity-10 divide-black">
-      {content.map(({ summary, details }) => {
-        return <Item summary={summary} details={details} key={details} />;
-      })}
-    </dl>
-  );
-}
-
-function Item({ summary, details }) {
+export default function DefinitionItem({ summary, children }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -31,7 +21,7 @@ function Item({ summary, details }) {
           display: open ? "block" : "none",
         }}
       >
-        {details}
+        {children}
       </dd>
     </div>
   );
