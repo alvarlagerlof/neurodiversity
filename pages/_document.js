@@ -48,7 +48,7 @@ class MyDocument extends Document {
             async
             defer
             data-domain="neurodiversity.wiki"
-            src="https://stats.notocd.com/js/index.outbound-links.js"
+            src="https://stats.neurodiversity.wiki/js/index.outbound-links.js"
           ></script>
         </Head>
         <body>
