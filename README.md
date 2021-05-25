@@ -2,7 +2,7 @@
 
 # Not OCD
 
-This is the source code of the Next.js website [notocd.com](notocd.com). The website is amied to educate the general public about the mental illness OCD. It is meant to be a quick link to send to anyone who has an incorrect mental model of OCD.
+This is the source code of the website [notocd.com](notocd.com). The website is amied to educate the general public about the mental illness OCD. It is meant to be a quick link to send to anyone who has an incorrect mental model of OCD.
 
 ## Features
 
@@ -20,11 +20,11 @@ See [CONTRIBUTING.md](/CONTRIBUTING.md) for ways to get started.
 
 ## Feedback
 
-Feedback is appreciated! Reach out on [Twitter](https://twitter.com/alvarlagerlof) or submit a new issue!
+Feedback is appreciated! Reach out on [Twitter](https://twitter.com/alvarlagerlof), the [Discord](https://discord.gg/EcEyW9Xz3M) server or submit a [new issue](https://github.com/alvarlagerlof/neurodiversity/issues/new).
 
 ## Roadmap
 
-- More diagnoses (Reach out on [Twitter](https://twitter.com/alvarlagerlof) if you want to help with this! I need more voices represented)
+- More diagnoses
 - Localization
 
 ## Tech Stack
@@ -40,7 +40,7 @@ yarn install
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the site.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the site.
 
 ## License
 
