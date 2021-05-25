@@ -45,10 +45,9 @@ class MyDocument extends Document {
           ></link>
 
           <script
-            async
             defer
             data-domain="neurodiversity.wiki"
-            src="https://stats.neurodiversity.wiki/js/index.outbound-links.js"
+            src="https://plausible.io/js/plausible.js"
           ></script>
         </Head>
         <body>
