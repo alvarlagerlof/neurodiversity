@@ -12,7 +12,7 @@ export default function Footer() {
       </p>
       <ul className="flex flew-row space-x-4">
         <li>
-          <a href="https://github.com/alvarlagerlof/not-ocd">
+          <a href="https://github.com/alvarlagerlof/neurodiversity">
             <img src="/github.svg" alt="Github logo" />
           </a>
         </li>
