@@ -29,9 +29,9 @@ Feedback is appreciated! Reach out on [Twitter](https://twitter.com/alvarlagerlo
 
 ## Tech Stack
 
-Next.js
-TailwindCSS
-(soon mdx)
+- Next.js
+- TailwindCSS
+- MDX
 
 ## Runinng locally
 
