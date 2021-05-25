@@ -8,7 +8,7 @@ export default function Footer() {
         <ExternalLink href="https://alvar.dev?utm_source=notocd.com">
           Alvar Lagerlöf
         </ExternalLink>{" "}
-        in hopes of clearing up OCD.
+        in hopes of better understanding of diganoses.
       </p>
       <ul className="flex flew-row space-x-4">
         <li>
