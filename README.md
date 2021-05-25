@@ -1,8 +1,8 @@
 ![Logo](public/favicon-192x192.png)
 
-# Not OCD
+# Neurodiversity
 
-This is the source code of the Next.js website [notocd.com](notocd.com). The website is amied to educate the general public about the mental illness OCD. It is meant to be a quick link to send to anyone who has an incorrect mental model of OCD.
+This is the source code of the Next.js website [neurodiversity.wiki](neurodiversity.wiki). The website is amied to educate the general public about mental illnesses. It is meant to be a quick link to send to anyone who has an incorrect mental model.
 
 ## Features
 
