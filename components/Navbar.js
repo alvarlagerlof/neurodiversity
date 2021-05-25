@@ -10,7 +10,7 @@ export default function Navbar() {
       />
       <Link href="/">
         <h1 className="font-display font-semibold text-xl md:text-2xl cursor-pointer">
-          mentalhealth.info
+          neurodiversity.wiki
         </h1>
       </Link>
     </nav>
