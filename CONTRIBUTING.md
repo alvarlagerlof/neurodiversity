@@ -2,7 +2,7 @@
 
 ### Introduction
 
-- This site is built with Next.js and TailwindCSS
+- This site is built with Next.js, TailwindCSS and MDX
 - Check out the existing issues for ways to contribute
 - Please make sure you format your code with the styles specified in `.prettierrc`. If you run prettier it should do this for you.
 
