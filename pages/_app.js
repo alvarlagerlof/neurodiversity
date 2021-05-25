@@ -19,6 +19,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import "../globals.css";
+import Head from "next/head";
 
 const components = {
   h1: Heading.H1,
@@ -41,21 +42,31 @@ const components = {
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="flex flex-col h-screen">
-      <div className="flex-1 flex flex-col items-center py-8 px-4">
-        <Navbar />
+    <>
+      <Head>
+        {/* Next.js complains if this isn't here */}
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
+      </Head>
 
-        <main className="max-w-3xl w-full">
-          <article className="space-y-12">
-            <MDXProvider components={components}>
-              <Component {...pageProps} />
-            </MDXProvider>
+      <div className="flex flex-col h-screen">
+        <div className="flex-1 flex flex-col items-center py-8 px-4">
+          <Navbar />
 
-            <Footer />
-          </article>
-        </main>
+          <main className="max-w-3xl w-full">
+            <article className="space-y-12">
+              <MDXProvider components={components}>
+                <Component {...pageProps} />
+              </MDXProvider>
+
+              <Footer />
+            </article>
+          </main>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
