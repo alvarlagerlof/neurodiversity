@@ -7,6 +7,11 @@ module.exports = withMDX({
   async redirects() {
     return [
       {
+        source: "notautism.com",
+        destination: "/autism",
+        permanent: false,
+      },
+      {
         source: "/asd",
         destination: "/autism",
         permanent: false,
