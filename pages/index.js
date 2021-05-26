@@ -1,5 +1,8 @@
+import { Head } from "next/head";
+
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
+import Meta from "../components/blocks/Meta";
 import PageGrid from "../components/blocks/PageGrid";
 import PageLink from "../components/blocks/PageLink";
 import Section from "../components/blocks/Section";
@@ -11,11 +14,18 @@ import ExternalLink from "../components/ExternalLink";
 export default function Index() {
   return (
     <>
+      <Meta
+        title="Neurodiversity Wiki"
+        description="Collection of pages about mental ilnesses"
+        social="index.jpg"
+      />
+
       <Header>
         <Heading.H1>Welcome!</Heading.H1>
         <Text>
-          Welcome to neurodiversity.wiki! If you've come here because you've
-          been sent a link, this is a page about different mental illnesses.
+          There is litle understanding about mental illnessees. This is
+          unfortunate and fixable. This page helps you educate yourself about
+          them.
         </Text>
         <Text>Please click on one of the below listed.</Text>
       </Header>
@@ -27,27 +37,41 @@ export default function Index() {
             title="OCD"
             description="Obsessive-compulsive disorder"
           />
-          <PageLink href="/dyslexia" title="Dyslexia" description="Dyslexia" />
-          <PageLink href="/bipolar" title="BP" description="Bipolar disorder" />
+          <PageLink
+            href="/dyslexia"
+            title="Dyslexia"
+            description="Dyslexia"
+            disabled
+          />
+          <PageLink
+            href="/bipolar"
+            title="BP"
+            description="Bipolar disorder"
+            disabled
+          />
           <PageLink
             href="/autism"
             title="ASD"
             description="Autism spectrum disorder"
+            disabled
           />
           <PageLink
             href="/adhd"
             title="ADHD"
             description="Attention deficit hyperactivity disorder"
+            disabled
           />
           <PageLink
             href="/did"
             title="DID"
             description="Dissociative identity disorder"
+            disabled
           />
           <PageLink
             href="/gad"
             title="GAD"
             description="Generalized anxiety disorder"
+            disabled
           />
         </PageGrid>
       </Section>
@@ -81,15 +105,15 @@ export default function Index() {
           making this site even better, please do reach out.
         </Text>
         <Text>
-          You do not need to be a coder to be able to contribute.. We have a
+          You do not need to be a coder to be able to contribute. There is a{" "}
           <ExternalLink href="https://discord.gg/EcEyW9Xz3M">
             Discord server
-          </ExternalLink>
+          </ExternalLink>{" "}
           that you can join to participate in discussion. You can also{" "}
           <ExternalLink href="https://twitter.com/alvarlagerlof">
             DM me
-          </ExternalLink>
-          on Twitter or open an issue on
+          </ExternalLink>{" "}
+          on Twitter or open an issue on{" "}
           <ExternalLink href="https://github.com/alvarlagerlof/not-ocd">
             GitHub
           </ExternalLink>
@@ -100,17 +124,14 @@ export default function Index() {
 }
 
 export async function getServerSideProps({ res, req }) {
-  console.log(req.headers.host);
-  console.log("test");
-
   switch (req.headers.host) {
     case "notautism.com":
-      res.setHeader("Location", `https://neurodiversity.wiki/autism`); // Replace <link> with your url link
+      res.setHeader("Location", `https://neurodiversity.wiki/autism`);
       res.statusCode = 301;
       return { props: {} };
 
     case "notocd.com":
-      res.setHeader("Location", `https://neurodiversity.wiki/ocd`); // Replace <link> with your url link
+      res.setHeader("Location", `https://neurodiversity.wiki/ocd`);
       res.statusCode = 301;
       return { props: {} };
   }
