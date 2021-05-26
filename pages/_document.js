@@ -12,29 +12,29 @@ class MyDocument extends Document {
         <Head>
           <meta name="theme-color" content="#D49DFF"></meta>
 
-          <link rel="icon" href="/favicon.ico"></link>
+          <link rel="icon" href="/favicons/favicon.ico"></link>
           <link
             rel="icon"
             type="image/png"
-            href="/favicon-16x16.png"
+            href="/favicons/favicon-16x16.png"
             sizes="16x16"
           ></link>
           <link
             rel="icon"
             type="image/png"
-            href="/favicon-32x32.png"
+            href="/favicons/favicon-32x32.png"
             sizes="32x32"
           ></link>
           <link
             rel="icon"
             type="image/png"
-            href="/favicon-96x96.png"
+            href="/favicons/favicon-96x96.png"
             sizes="96x96"
           ></link>
           <link
             rel="icon"
             type="image/png"
-            href="/favicon-192x192.png"
+            href="/favicons/favicon-192x192.png"
             sizes="192x192"
           ></link>
 
