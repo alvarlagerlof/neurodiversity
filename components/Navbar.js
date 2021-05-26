@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="flex flex-row space-x-4 items-center max-w-3xl mb-16 md:mb-24 w-full">
       <img
         className="w-8 md:w-10"
-        src="/logo.svg"
+        src="/logos/neurodiversity.svg"
         alt="Logo showing head on purple background"
       />
       <Link href="/">

@@ -12,7 +12,10 @@ export default function DefinitionItem({ summary, children }) {
           onClick={() => setOpen((prev) => !prev)}
         >
           <span className="text-left">{summary}</span>
-          <img aria-hidden src={open ? "/close.svg" : "/open.svg"} />
+          <img
+            aria-hidden
+            src={open ? "/icons/close.svg" : "/icons/open.svg"}
+          />
         </button>
       </dt>
       <dd

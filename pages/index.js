@@ -17,7 +17,7 @@ export default function Index() {
       <Meta
         title="Neurodiversity Wiki"
         description="Collection of pages about mental ilnesses"
-        social="index.jpg"
+        social="/social/index.jpg"
       />
 
       <Header>
