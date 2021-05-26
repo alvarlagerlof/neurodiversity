@@ -1,4 +1,5 @@
 import { MDXProvider } from "@mdx-js/react";
+import Head from "next/head";
 
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
@@ -19,7 +20,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import "../globals.css";
-import Head from "next/head";
 
 const components = {
   h1: Heading.H1,
