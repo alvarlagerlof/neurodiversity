@@ -4,7 +4,6 @@ import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
 import Text from "../components/blocks/Text";
 import Section from "../components/blocks/Section";
-import Link from "../components/blocks/Link";
 import List from "../components/blocks/List";
 import Meta from "../components/blocks/Meta";
 import QuoteList from "../components/blocks/QuoteList";
@@ -15,6 +14,7 @@ import IconHeading from "../components/blocks/IconHeading";
 import PageGrid from "../components/blocks/PageGrid";
 import PageLink from "../components/blocks/PageLink";
 
+import ExternalLink from "../components/ExternalLink";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -26,7 +26,7 @@ const components = {
   h2: Heading.H2,
   ul: List.Unordered,
   ol: List.Ordered,
-  a: Link,
+  a: ExternalLink,
   p: Text,
   Section,
   Header,
