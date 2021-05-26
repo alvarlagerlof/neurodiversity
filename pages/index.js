@@ -101,6 +101,7 @@ export default function Index({ context }) {
 
 export async function getServerSideProps({ res, req }) {
   console.log(req.headers.host);
+  console.log("test");
 
   switch (req.headers.host) {
     case "notautism.com":
