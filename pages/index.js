@@ -23,7 +23,7 @@ export default function Index() {
       <Header>
         <Heading.H1>Welcome!</Heading.H1>
         <Text>
-          There is litle understanding about mental illnessees. This is
+          There is litle understanding about mental illnessees, which is
           unfortunate and fixable. This page helps you educate yourself about
           them.
         </Text>
