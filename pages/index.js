@@ -8,7 +8,7 @@ import ExternalLink from "../components/ExternalLink";
 
 // This page cannot be .mdx because then there is no way to run getServerSideProps which are needed for redirecting from notocd.com and notautism.com
 
-export default function Index({ context }) {
+export default function Index() {
   return (
     <>
       <Header>
