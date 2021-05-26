@@ -107,9 +107,12 @@ export async function getServerSideProps({ res, req }) {
     case "notautism.com":
       res.setHeader("Location", `/autism`); // Replace <link> with your url link
       res.statusCode = 301;
+      return { props: {} };
+
     case "notocd.com":
       res.setHeader("Location", `/ocd`); // Replace <link> with your url link
       res.statusCode = 301;
+      return { props: {} };
   }
 
   return { props: {} };
