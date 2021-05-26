@@ -1,10 +1,10 @@
 import { MDXProvider } from "@mdx-js/react";
+import Head from "next/head";
 
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
 import Text from "../components/blocks/Text";
 import Section from "../components/blocks/Section";
-import Link from "../components/blocks/Link";
 import List from "../components/blocks/List";
 import Meta from "../components/blocks/Meta";
 import QuoteList from "../components/blocks/QuoteList";
@@ -12,21 +12,21 @@ import Box from "../components/blocks/Box";
 import Definition from "../components/blocks/Definition";
 import DefinitionItem from "../components/blocks/DefinitionItem";
 import IconHeading from "../components/blocks/IconHeading";
-import Grid from "../components/blocks/Grid";
+import PageGrid from "../components/blocks/PageGrid";
 import PageLink from "../components/blocks/PageLink";
 
+import ExternalLink from "../components/ExternalLink";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import "../globals.css";
-import Head from "next/head";
 
 const components = {
   h1: Heading.H1,
   h2: Heading.H2,
   ul: List.Unordered,
   ol: List.Ordered,
-  a: Link,
+  a: ExternalLink,
   p: Text,
   Section,
   Header,
@@ -36,7 +36,7 @@ const components = {
   Box,
   Definition,
   DefinitionItem,
-  Grid,
+  PageGrid,
   PageLink,
 };
 
