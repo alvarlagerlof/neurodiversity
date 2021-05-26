@@ -105,12 +105,12 @@ export async function getServerSideProps({ res, req }) {
 
   switch (req.headers.host) {
     case "notautism.com":
-      res.setHeader("Location", `/autism`); // Replace <link> with your url link
+      res.setHeader("Location", `https://neurodiversity.wiki/autism`); // Replace <link> with your url link
       res.statusCode = 301;
       return { props: {} };
 
     case "notocd.com":
-      res.setHeader("Location", `/ocd`); // Replace <link> with your url link
+      res.setHeader("Location", `https://neurodiversity.wiki/ocd`); // Replace <link> with your url link
       res.statusCode = 301;
       return { props: {} };
   }
