@@ -1,3 +1,6 @@
+import { usePlausible } from "next-plausible";
+import { useEffect } from "react";
+
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
 import Meta from "../components/blocks/Meta";
@@ -9,7 +12,17 @@ import ExternalLink from "../components/ExternalLink";
 
 // This page cannot be .mdx because then there is no way to run getServerSideProps which are needed for redirecting from notocd.com and notautism.com
 
-export default function Index() {
+export default function Index({ redirectOrigin }) {
+  const plausible = usePlausible();
+
+  useEffect(() => {
+    if (redirectOrigin) {
+      plausible("Redirected from", {
+        origin: redirectOrigin,
+      });
+    }
+  }, []);
+
   return (
     <>
       <Meta
@@ -127,12 +140,12 @@ export async function getServerSideProps({ res, req }) {
     case "notautism.com":
       res.setHeader("Location", `https://neurodiversity.wiki/autism`);
       res.statusCode = 301;
-      return { props: {} };
+      return { props: { redirectOrigin: "notautism.com" } };
 
     case "notocd.com":
       res.setHeader("Location", `https://neurodiversity.wiki/ocd`);
       res.statusCode = 301;
-      return { props: {} };
+      return { props: { redirectOrigin: "notocd.com" } };
   }
 
   return { props: {} };
