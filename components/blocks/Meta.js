@@ -1,7 +1,9 @@
 import Head from "next/head";
 
 export default function Meta({ title, description, social }) {
-  const basePath = process.env.NEXT_PUBLIC_VERCEL_URL ?? "";
+  const basePath = process.env.NEXT_PUBLIC_VERCEL_URL
+    ? "https://" + process.env.NEXT_PUBLIC_VERCEL_URL
+    : "";
 
   return (
     <Head>
