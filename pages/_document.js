@@ -1,3 +1,4 @@
+import PlausibleProvider from "next-plausible";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
@@ -43,16 +44,15 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Inter:wght@400;600&display=swap"
             rel="stylesheet"
           ></link>
-
-          <script
-            defer
-            data-domain="neurodiversity.wiki"
-            src="https://plausible.io/js/plausible.js"
-          ></script>
         </Head>
         <body>
-          <Main />
-          <NextScript />
+          <PlausibleProvider
+            domain="neurodiversity.wiki"
+            trackOutboundLinks={true}
+          >
+            <Main />
+            <NextScript />
+          </PlausibleProvider>
         </body>
       </Html>
     );
