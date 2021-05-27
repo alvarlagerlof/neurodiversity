@@ -14,14 +14,14 @@ export default function Index() {
     <>
       <Meta
         title="Neurodiversity Wiki"
-        description="Collection of pages about mental illnesses"
+        description="Collection of pages about mental disabilities"
         social="/social/index.jpg"
       />
 
       <Header>
         <Heading.H1>Welcome!</Heading.H1>
         <Text>
-          There is litle understanding about mental illnessees, which is
+          There is litle understanding about mental disabilities, which is
           unfortunate and fixable. This page helps you educate yourself about
           them.
         </Text>
@@ -77,14 +77,15 @@ export default function Index() {
       <Section>
         <Heading.H2>Why?</Heading.H2>
         <Text>
-          People often mention mental illnesses or make a joke without realizing
-          how. By doing that they are hurting those who have the mental illness.
-          By joking about it, you slowly change what people think when they hear
-          the word, and that hurts the people who actually have the illness.
+          People often mention mental disabilities or make a joke without
+          realizing how. By doing that they are hurting those who have the
+          mental disabilities. By joking about it, you slowly change what people
+          think when they hear the word, and that hurts the people who actually
+          have the disability.
         </Text>
         <Text>
           Misinformation or little information is the cause. This site aims to
-          combat this using easy-to-understand pages about various illnesses.
+          combat this using easy-to-understand pages about various disabilities.
           With understanding, the hope is that that language can become more
           inclusive.
         </Text>
