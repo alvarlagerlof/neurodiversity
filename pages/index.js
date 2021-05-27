@@ -1,5 +1,3 @@
-import { Head } from "next/head";
-
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
 import Meta from "../components/blocks/Meta";
