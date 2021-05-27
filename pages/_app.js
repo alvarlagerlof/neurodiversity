@@ -14,6 +14,7 @@ import DefinitionItem from "../components/blocks/DefinitionItem";
 import IconHeading from "../components/blocks/IconHeading";
 import PageGrid from "../components/blocks/PageGrid";
 import PageLink from "../components/blocks/PageLink";
+import Image from "../components/blocks/Image";
 
 import ExternalLink from "../components/ExternalLink";
 import Navbar from "../components/Navbar";
@@ -28,6 +29,7 @@ const components = {
   ol: List.Ordered,
   a: ExternalLink,
   p: Text,
+  img: Image,
   Section,
   Header,
   IconHeading,
