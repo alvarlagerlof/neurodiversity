@@ -1,4 +1,4 @@
-![Logo](public/favicon-192x192.png)
+![Logo](public/favicons/favicon-192x192.png)
 
 # Neurodiversity
 
