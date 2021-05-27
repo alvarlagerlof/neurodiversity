@@ -1,4 +1,3 @@
-import PlausibleProvider from "next-plausible";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
@@ -46,13 +45,8 @@ class MyDocument extends Document {
           ></link>
         </Head>
         <body>
-          <PlausibleProvider
-            domain="neurodiversity.wiki"
-            trackOutboundLinks={true}
-          >
-            <Main />
-            <NextScript />
-          </PlausibleProvider>
+          <Main />
+          <NextScript />
         </body>
       </Html>
     );

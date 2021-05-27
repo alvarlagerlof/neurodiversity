@@ -1,5 +1,6 @@
 import { MDXProvider } from "@mdx-js/react";
 import Head from "next/head";
+import PlausibleProvider from "next-plausible";
 
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
@@ -42,7 +43,7 @@ const components = {
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <PlausibleProvider domain="neurodiversity.wiki" trackOutboundLinks={true}>
       <Head>
         {/* Next.js complains if this isn't here */}
         <meta
@@ -66,7 +67,7 @@ function MyApp({ Component, pageProps }) {
           </main>
         </div>
       </div>
-    </>
+    </PlausibleProvider>
   );
 }
 
