@@ -10,7 +10,7 @@ export default function Meta({ title, description, socialUrl }) {
       <meta property="og:description" content={description}></meta>
       <meta
         property="og:image"
-        content={"https://neurodiversity.wiki/" + socialUrl}
+        content={"https://neurodiversity.wiki" + socialUrl}
       ></meta>
       <meta name="twitter:card" content="summary_large_image"></meta>
       <meta name="twitter:site" content="@alvarlagerlof"></meta>
