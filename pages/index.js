@@ -19,7 +19,7 @@ export default function Index() {
       />
 
       <Header>
-        <Heading.H1>Welcome!!</Heading.H1>
+        <Heading.H1>Welcome!</Heading.H1>
         <Text>
           There is litle understanding about mental disabilities, which is
           unfortunate and fixable. This page helps you educate yourself about
