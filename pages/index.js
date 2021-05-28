@@ -34,7 +34,7 @@ export default function Index({ redirectOrigin }) {
       <Header>
         <Heading.H1>Welcome!</Heading.H1>
         <Text>
-          There is only a little understanding about mental disabilities, which is
+          Most people have very little knowledge about mental disabilities, which is
           unfortunate and fixable. This page helps you educate yourself about
           them.
         </Text>
