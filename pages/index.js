@@ -34,7 +34,7 @@ export default function Index({ redirectOrigin }) {
       <Header>
         <Heading.H1>Welcome!</Heading.H1>
         <Text>
-          There is litle understanding about mental disabilities, which is
+          There is little understanding about mental disabilities, which is
           unfortunate and fixable. This page helps you educate yourself about
           them.
         </Text>
@@ -91,10 +91,10 @@ export default function Index({ redirectOrigin }) {
         <Heading.H2>Why?</Heading.H2>
         <Text>
           People often mention mental disabilities or make a joke without
-          realizing how. By doing that they are hurting those who have the
-          mental disabilities. By joking about it, you slowly change what people
-          think when they hear the word, and that hurts the people who actually
-          have the disability.
+          realizing how. By doing that they are hurting those who have mental
+          disabilities. By joking about it, you slowly change what people think
+          when they hear the word, and that hurts the people who actually have
+          the disability.
         </Text>
         <Text>
           Misinformation or little information is the cause. This site aims to
@@ -103,9 +103,9 @@ export default function Index({ redirectOrigin }) {
           inclusive.
         </Text>
         <Text>
-          The goal isn't medical accuracy. That would work inverserly to lose
-          people reading beause of the complexity. The goal is to get people to
-          rethink their definitions and consider how their languange is hurtful.
+          The goal isn't medical accuracy. That would work inversely to lose
+          people reading because of the complexity. The goal is to get people to
+          rethink their definitions and consider how their language is hurtful.
         </Text>
       </Section>
 
@@ -113,7 +113,7 @@ export default function Index({ redirectOrigin }) {
         <Heading.H2>How can I help?</Heading.H2>
         <Text>
           The list above is not complete, nor is it perfect. If you're familiar
-          with any of the above (personally of via relatives) and want to help
+          with any of the above (personally or via relatives) and want to help
           making this site even better, please do reach out.
         </Text>
         <Text>
