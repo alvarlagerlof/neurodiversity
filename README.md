@@ -2,19 +2,19 @@
 
 # Neurodiversity
 
-This is the source code of the Next.js website [neurodiversity.wiki](neurodiversity.wiki). The website is amied to educate the general public about mental disabilities. It is meant to be a quick link to send to anyone who has an incorrect mental model.
+This is the source code of the Next.js website [neurodiversity.wiki](neurodiversity.wiki). The website is aimed to educate the general public about mental disabilities. It is meant to be a quick link to send to anyone who has an incorrect mental model.
 
 ## Features
 
 - Summarized as to not loose impatient readers
-- Includes medical defenition, but does not rely on it (due to complex langauge)
-- Links to other material for those who want to learn more
+- Includes medical definition, but does not rely on it (due to complex langauge)
+- Links to other materials for those who want to learn more
 - Extremely sharable (short link)
 - Aims to be "better than nothing" (which is the baseline for most people)
 
 ## Contributing
 
-Contributions are always welcome! I'm not an amazing writer, therefore spelling RPs but also general feedback is hugely appreciated.
+Contributions are always welcome! I'm not an amazing writer, therefore spelling PRs but also general feedback is hugely appreciated.
 
 See [CONTRIBUTING.md](/CONTRIBUTING.md) for ways to get started.
 

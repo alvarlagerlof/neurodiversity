@@ -34,11 +34,11 @@ export default function Index({ redirectOrigin }) {
       <Header>
         <Heading.H1>Welcome!</Heading.H1>
         <Text>
-          There is litle understanding about mental disabilities, which is
+          Most people have very little knowledge about mental disabilities, which is
           unfortunate and fixable. This page helps you educate yourself about
           them.
         </Text>
-        <Text>Please click on one of the below listed.</Text>
+        <Text>Please click on one of the options listed below.</Text>
       </Header>
 
       <Section>
@@ -91,21 +91,21 @@ export default function Index({ redirectOrigin }) {
         <Heading.H2>Why?</Heading.H2>
         <Text>
           People often mention mental disabilities or make a joke without
-          realizing how. By doing that they are hurting those who have the
+          realizing how it will be interpreted. By doing that they are hurting those who have
           mental disabilities. By joking about it, you slowly change what people
           think when they hear the word, and that hurts the people who actually
           have the disability.
         </Text>
         <Text>
-          Misinformation or little information is the cause. This site aims to
+          Misinformation or the lack of information is the cause. This site aims to
           combat this using easy-to-understand pages about various disabilities.
-          With understanding, the hope is that that language can become more
+          With understanding, the hope is that language can become more
           inclusive.
         </Text>
         <Text>
           The goal isn't medical accuracy. That would work inverserly to lose
-          people reading beause of the complexity. The goal is to get people to
-          rethink their definitions and consider how their languange is hurtful.
+          people reading because of the complexity. The goal is to get people to
+          rethink their definitions and consider how their language is hurtful.
         </Text>
       </Section>
 
