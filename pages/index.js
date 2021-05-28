@@ -1,5 +1,3 @@
-import { useEffect, useRef } from "react";
-
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
 import Meta from "../components/blocks/Meta";
@@ -8,33 +6,10 @@ import PageLink from "../components/blocks/PageLink";
 import Section from "../components/blocks/Section";
 import Text from "../components/blocks/Text";
 import ExternalLink from "../components/ExternalLink";
-import { usePlausible } from "../components/Plausible";
 
 // This page cannot be .mdx because then there is no way to run getServerSideProps which are needed for redirecting from notocd.com and notautism.com
 
-export default function Index({ redirectOrigin }) {
-  const plausible = usePlausible();
-  const isCalledRef = useRef(false);
-
-  useEffect(() => {
-    console.log("effect ran");
-    console.log("redirectOrigin", redirectOrigin);
-
-    if (redirectOrigin) {
-      if (isCalledRef.current === false) {
-        isCalledRef.current = true;
-
-        plausible("Redirected from", {
-          props: {
-            origin: redirectOrigin,
-          },
-          callback: () =>
-            console.log("Sent redirect event from", redirectOrigin),
-        });
-      }
-    }
-  }, []);
-
+export default function Index() {
   return (
     <>
       <Meta
@@ -150,14 +125,20 @@ export default function Index({ redirectOrigin }) {
 export async function getServerSideProps({ res, req }) {
   switch (req.headers.host) {
     case "notautism.com":
-      res.setHeader("Location", `https://neurodiversity.wiki/autism`);
+      res.setHeader(
+        "Location",
+        `https://neurodiversity.wiki/autism?utm_source=notautism.com`
+      );
       res.statusCode = 301;
-      return { props: { redirectOrigin: "notautism.com" } };
+      return { props: {} };
 
     case "notocd.com":
-      res.setHeader("Location", `https://neurodiversity.wiki/ocd`);
+      res.setHeader(
+        "Location",
+        `https://neurodiversity.wiki/ocd?utm_source=notocd.com`
+      );
       res.statusCode = 301;
-      return { props: { redirectOrigin: "notocd.com" } };
+      return { props: {} };
   }
 
   return { props: {} };
