@@ -1,6 +1,5 @@
 import { MDXProvider } from "@mdx-js/react";
 import Head from "next/head";
-import PlausibleProvider from "next-plausible";
 
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
@@ -20,6 +19,7 @@ import Image from "../components/blocks/Image";
 import ExternalLink from "../components/ExternalLink";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { PlausibleProvider } from "../components/Plausible";
 
 import "../globals.css";
 
@@ -45,7 +45,7 @@ const components = {
 
 function MyApp({ Component, pageProps }) {
   return (
-    <PlausibleProvider domain="neurodiversity.wiki" trackOutboundLinks={true}>
+    <PlausibleProvider>
       <Head>
         {/* Next.js complains if this isn't here */}
         <meta
