@@ -1,3 +1,6 @@
+import { usePlausible } from "next-plausible";
+import { useEffect } from "react";
+
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
 import Meta from "../components/blocks/Meta";
@@ -9,7 +12,17 @@ import ExternalLink from "../components/ExternalLink";
 
 // This page cannot be .mdx because then there is no way to run getServerSideProps which are needed for redirecting from notocd.com and notautism.com
 
-export default function Index() {
+export default function Index({ redirectOrigin }) {
+  const plausible = usePlausible();
+
+  useEffect(() => {
+    if (redirectOrigin) {
+      plausible("Redirected from", {
+        origin: redirectOrigin,
+      });
+    }
+  }, []);
+
   return (
     <>
       <Meta
@@ -21,11 +34,11 @@ export default function Index() {
       <Header>
         <Heading.H1>Welcome!</Heading.H1>
         <Text>
-          There is litle understanding about mental disabilities, which is
+          Most people have very little knowledge about mental disabilities, which is
           unfortunate and fixable. This page helps you educate yourself about
           them.
         </Text>
-        <Text>Please click on one of the below listed.</Text>
+        <Text>Please click on one of the options listed below.</Text>
       </Header>
 
       <Section>
@@ -78,21 +91,21 @@ export default function Index() {
         <Heading.H2>Why?</Heading.H2>
         <Text>
           People often mention mental disabilities or make a joke without
-          realizing how. By doing that they are hurting those who have the
+          realizing how it will be interpreted. By doing that they are hurting those who have
           mental disabilities. By joking about it, you slowly change what people
           think when they hear the word, and that hurts the people who actually
           have the disability.
         </Text>
         <Text>
-          Misinformation or little information is the cause. This site aims to
+          Misinformation or the lack of information is the cause. This site aims to
           combat this using easy-to-understand pages about various disabilities.
-          With understanding, the hope is that that language can become more
+          With understanding, the hope is that language can become more
           inclusive.
         </Text>
         <Text>
-          The goal isn't medical accuracy. That would work inverserly to lose
-          people reading beause of the complexity. The goal is to get people to
-          rethink their definitions and consider how their languange is hurtful.
+          The goal isn't medical accuracy. That would work inversely to lose
+          people reading because of the complexity. The goal is to get people to
+          rethink their definitions and consider how their language is hurtful.
         </Text>
       </Section>
 
@@ -100,7 +113,7 @@ export default function Index() {
         <Heading.H2>How can I help?</Heading.H2>
         <Text>
           The list above is not complete, nor is it perfect. If you're familiar
-          with any of the above (personally of via relatives) and want to help
+          with any of the above (personally or via relatives) and want to help
           making this site even better, please do reach out.
         </Text>
         <Text>
@@ -127,12 +140,12 @@ export async function getServerSideProps({ res, req }) {
     case "notautism.com":
       res.setHeader("Location", `https://neurodiversity.wiki/autism`);
       res.statusCode = 301;
-      return { props: {} };
+      return { props: { redirectOrigin: "notautism.com" } };
 
     case "notocd.com":
       res.setHeader("Location", `https://neurodiversity.wiki/ocd`);
       res.statusCode = 301;
-      return { props: {} };
+      return { props: { redirectOrigin: "notocd.com" } };
   }
 
   return { props: {} };

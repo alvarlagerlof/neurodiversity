@@ -1,5 +1,6 @@
 import { MDXProvider } from "@mdx-js/react";
 import Head from "next/head";
+import PlausibleProvider from "next-plausible";
 
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
@@ -14,6 +15,7 @@ import DefinitionItem from "../components/blocks/DefinitionItem";
 import IconHeading from "../components/blocks/IconHeading";
 import PageGrid from "../components/blocks/PageGrid";
 import PageLink from "../components/blocks/PageLink";
+import Image from "../components/blocks/Image";
 
 import ExternalLink from "../components/ExternalLink";
 import Navbar from "../components/Navbar";
@@ -28,6 +30,7 @@ const components = {
   ol: List.Ordered,
   a: ExternalLink,
   p: Text,
+  img: Image,
   Section,
   Header,
   IconHeading,
@@ -42,7 +45,7 @@ const components = {
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <PlausibleProvider domain="neurodiversity.wiki" trackOutboundLinks={true}>
       <Head>
         {/* Next.js complains if this isn't here */}
         <meta
@@ -66,7 +69,7 @@ function MyApp({ Component, pageProps }) {
           </main>
         </div>
       </div>
-    </>
+    </PlausibleProvider>
   );
 }
 
