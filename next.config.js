@@ -23,7 +23,7 @@ module.exports = withMDX({
       },
       {
         source: "/js/script.js",
-        destination: "https://plausible.io/js/plausible.js",
+        destination: "https://plausible.io/js/plausible.outbound-links.js",
         permanent: true,
       },
       {
