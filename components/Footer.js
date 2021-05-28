@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="flex flex-col md:flex-row items-center md:justify-between bg-gray-200 p-4 lg:-mx-4 rounded-xl">
       <p className="text-center md:text-left mb-4 md:mb-0">
         Made with <span>❤</span> by{" "}
-        <ExternalLink href="https://alvar.dev?utm_source=notocd.com">
+        <ExternalLink href="https://alvar.dev?utm_source=neurodiversity.wiki">
           Alvar Lagerlöf
         </ExternalLink>{" "}
         in hopes of better understanding of mental disabilities.
