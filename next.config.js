@@ -21,6 +21,10 @@ module.exports = withMDX({
         destination: "/bipolar",
         permanent: false,
       },
+    ];
+  },
+  async rewrites() {
+    return [
       {
         source: "/js/script.js",
         destination: "https://plausible.io/js/plausible.outbound-links.js",
