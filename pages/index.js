@@ -17,13 +17,6 @@ export default function Index({ redirectOrigin }) {
   const isCalledRef = useRef(false);
 
   useEffect(() => {
-    plausible("Redirected from", {
-      props: {
-        origin: "notocd.com",
-      },
-      callback: () => console.log("sent event"),
-    });
-
     if (redirectOrigin) {
       if (isCalledRef.current === false) {
         isCalledRef.current = true;
@@ -32,6 +25,8 @@ export default function Index({ redirectOrigin }) {
           props: {
             origin: redirectOrigin,
           },
+          callback: () =>
+            console.log(`Sent redirect event from: ${redirectOrigin}`),
         });
       }
     }
