@@ -21,6 +21,7 @@ export default function Index({ redirectOrigin }) {
       props: {
         origin: "notocd.com",
       },
+      callback: () => console.log("sent event"),
     });
 
     if (redirectOrigin) {
