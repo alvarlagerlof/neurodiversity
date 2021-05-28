@@ -1,4 +1,5 @@
-import { useEffect, useRef } from "react";
+import { usePlausible } from "next-plausible";
+
 
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
@@ -24,7 +25,6 @@ export default function Index({ redirectOrigin }) {
           origin: redirectOrigin,
         });
       }
-    }
   }, []);
 
   return (
@@ -144,7 +144,6 @@ export async function getServerSideProps({ res, req }) {
     case "notautism.com":
       res.setHeader("Location", `https://neurodiversity.wiki/autism`);
       res.statusCode = 301;
-
       return { props: { redirectOrigin: "notautism.com" } };
 
     case "notocd.com":
