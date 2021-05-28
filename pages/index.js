@@ -17,6 +17,9 @@ export default function Index({ redirectOrigin }) {
   const isCalledRef = useRef(false);
 
   useEffect(() => {
+    console.log("effect ran");
+    console.log("redirectOrigin", redirectOrigin);
+
     if (redirectOrigin) {
       if (isCalledRef.current === false) {
         isCalledRef.current = true;
@@ -26,7 +29,7 @@ export default function Index({ redirectOrigin }) {
             origin: redirectOrigin,
           },
           callback: () =>
-            console.log(`Sent redirect event from: ${redirectOrigin}`),
+            console.log("Sent redirect event from", redirectOrigin),
         });
       }
     }
