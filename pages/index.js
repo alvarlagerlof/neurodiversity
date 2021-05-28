@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
 import Meta from "../components/blocks/Meta";
@@ -6,10 +8,25 @@ import PageLink from "../components/blocks/PageLink";
 import Section from "../components/blocks/Section";
 import Text from "../components/blocks/Text";
 import ExternalLink from "../components/ExternalLink";
+import { usePlausible } from "../components/Plausible";
 
 // This page cannot be .mdx because then there is no way to run getServerSideProps which are needed for redirecting from notocd.com and notautism.com
 
-export default function Index() {
+export default function Index({ redirectOrigin }) {
+  const plausible = usePlausible();
+  const isCalledRef = useRef(false);
+
+  useEffect(() => {
+    if (redirectOrigin) {
+      if (isCalledRef.current === false) {
+        isCalledRef.current = true;
+        plausible("Redirected from", {
+          origin: redirectOrigin,
+        });
+      }
+    }
+  }, []);
+
   return (
     <>
       <Meta
@@ -127,12 +144,13 @@ export async function getServerSideProps({ res, req }) {
     case "notautism.com":
       res.setHeader("Location", `https://neurodiversity.wiki/autism`);
       res.statusCode = 301;
-      return { props: {} };
+
+      return { props: { redirectOrigin: "notautism.com" } };
 
     case "notocd.com":
       res.setHeader("Location", `https://neurodiversity.wiki/ocd`);
       res.statusCode = 301;
-      return { props: {} };
+      return { props: { redirectOrigin: "notocd.com" } };
   }
 
   return { props: {} };
