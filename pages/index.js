@@ -103,7 +103,7 @@ export default function Index({ redirectOrigin }) {
           inclusive.
         </Text>
         <Text>
-          The goal isn't medical accuracy. That would work inverserly to lose
+          The goal isn't medical accuracy. That would work inversely to lose
           people reading because of the complexity. The goal is to get people to
           rethink their definitions and consider how their language is hurtful.
         </Text>
@@ -113,7 +113,7 @@ export default function Index({ redirectOrigin }) {
         <Heading.H2>How can I help?</Heading.H2>
         <Text>
           The list above is not complete, nor is it perfect. If you're familiar
-          with any of the above (personally of via relatives) and want to help
+          with any of the above (personally or via relatives) and want to help
           making this site even better, please do reach out.
         </Text>
         <Text>

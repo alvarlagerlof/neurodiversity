@@ -12,7 +12,7 @@ export default function PageLink({ title, description, href, disabled }) {
         <h2 className="text-center font-display font-semibold text-xl">
           {title}
         </h2>
-        <p className="text-center">{disabled ? "Cooming soon" : description}</p>
+        <p className="text-center">{disabled ? "Coming soon" : description}</p>
       </a>
     </li>
   );
