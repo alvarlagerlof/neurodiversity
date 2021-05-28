@@ -28,12 +28,10 @@ module.exports = withMDX({
       {
         source: "/js/script.js",
         destination: "https://plausible.io/js/plausible.outbound-links.js",
-        permanent: true,
       },
       {
         source: "/api/event",
         destination: "https://plausible.io/api/event",
-        permanent: true,
       },
     ];
   },
