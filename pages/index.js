@@ -1,5 +1,4 @@
-import { usePlausible } from "next-plausible";
-
+import { useEffect, useRef } from "react";
 
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
@@ -25,6 +24,7 @@ export default function Index({ redirectOrigin }) {
           origin: redirectOrigin,
         });
       }
+    }
   }, []);
 
   return (

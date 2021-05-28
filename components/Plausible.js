@@ -1,8 +1,7 @@
 import Head from "next/head";
 
 export function PlausibleProvider({ children }) {
-  //const enabled = process.env.NODE_ENV === "production";
-  const enabled = true;
+  const enabled = process.env.NODE_ENV === "production";
 
   return (
     <>

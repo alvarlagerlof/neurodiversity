@@ -1,6 +1,5 @@
 import { MDXProvider } from "@mdx-js/react";
 import Head from "next/head";
-import PlausibleProvider from "next-plausible";
 
 import Header from "../components/blocks/Header";
 import Heading from "../components/blocks/Heading";
