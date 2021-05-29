@@ -13,12 +13,22 @@ export default function Footer() {
       <ul className="flex flew-row space-x-4">
         <li>
           <a href="https://github.com/alvarlagerlof/neurodiversity">
-            <img src="/logos/github.svg" alt="Github logo" />
+            <img
+              src="/logos/github.svg"
+              alt="Github logo"
+              width="24px"
+              height="24px"
+            />
           </a>
         </li>
         <li>
           <a href="https://twitter.com/alvarlagerlof">
-            <img src="/logos/twitter.svg" alt="Twitter logo" />
+            <img
+              src="/logos/twitter.svg"
+              alt="Twitter logo"
+              width="24px"
+              height="24px"
+            />
           </a>
         </li>
       </ul>

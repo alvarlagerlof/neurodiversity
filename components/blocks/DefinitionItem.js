@@ -15,6 +15,8 @@ export default function DefinitionItem({ summary, children }) {
           <img
             aria-hidden
             src={open ? "/icons/close.svg" : "/icons/open.svg"}
+            width="24px"
+            height="24px"
           />
         </button>
       </dt>
