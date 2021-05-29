@@ -13,8 +13,8 @@ export default function Index() {
   return (
     <>
       <Meta
-        title="Neurodiversity Wiki"
-        description="Collection of pages about mental disabilities"
+        title="Neurodiversity Wiki: Learn about mental disabilities"
+        description="Learn about like OCD, Autism, Bipolar, Anxiety, Depression and more. Written by neurodiverse people, for everyone!"
         social="/social/index.jpg"
       />
 
