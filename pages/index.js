@@ -13,17 +13,17 @@ export default function Index() {
   return (
     <>
       <Meta
-        title="Neurodiversity Wiki: Learn about mental disabilities"
-        description="Learn about like OCD, Autism, Bipolar, Anxiety, Depression and more. Euducate yourself to understand and help others. Written by neurodiverse people, for everyone!"
+        title="Neurodiversity Wiki: Learn about neurological divergencies"
+        description="Learn about like OCD, Autism, Bipolar, Anxiety, Depression and more. Euducate yourself to understand and help others around you."
         social="/social/index.jpg"
       />
 
       <Header>
         <Heading.H1>Welcome!</Heading.H1>
         <Text>
-          Most people have very little knowledge about mental disabilities,
-          which is unfortunate and fixable. This page helps you educate yourself
-          about them.
+          Most people have very little knowledge about neurological
+          divergencies, which is unfortunate and fixable. This page helps you
+          educate yourself about them.
         </Text>
         <Text>Please click on one of the options listed below.</Text>
       </Header>
@@ -77,16 +77,16 @@ export default function Index() {
       <Section>
         <Heading.H2>Why?</Heading.H2>
         <Text>
-          People often mention mental disabilities or make a joke without
+          People often mention or joke about neurological divergencies without
           realizing how it will be interpreted. By doing that they are hurting
-          those who have mental disabilities. By joking about it, you slowly
-          change what people think when they hear the word, and that hurts the
-          people who actually have the disability.
+          those who have neurological divergencies. By joking about it, you
+          slowly change what people think when they hear the word, and that
+          hurts the people who actually have the divergency.
         </Text>
         <Text>
           Misinformation or the lack of information is the cause. This site aims
           to combat this using easy-to-understand pages about various
-          disabilities. With understanding, the hope is that language can become
+          divergencies. With understanding, the hope is that language can become
           more inclusive.
         </Text>
         <Text>
