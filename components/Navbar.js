@@ -4,9 +4,9 @@ export default function Navbar() {
   return (
     <nav className="max-w-3xl mb-16 md:mb-24 w-full">
       <Link href="/">
-        <div className="flex flex-row space-x-4 items-center">
+        <div className="flex flex-row space-x-4 items-center cursor-pointer">
           <img
-            className="w-8 md:w-10 cursor-pointer"
+            className="w-8 md:w-10 "
             src="/logos/neurodiversity.svg"
             alt="Logo showing head on purple background"
             width="32px"
