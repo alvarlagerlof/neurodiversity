@@ -14,7 +14,7 @@ export default function Index() {
     <>
       <Meta
         title="Neurodiversity Wiki: Learn about neurological divergencies"
-        description="Learn about like OCD, Autism, Bipolar, Anxiety, Depression and more. Euducate yourself to understand and help others around you."
+        description="Learn about things like OCD, Autism, Bipolar, Anxiety, Depression and more. Euducate yourself to understand and help others around you."
         social="/social/index.jpg"
       />
 
