@@ -10,7 +10,11 @@ This is the source code of the Next.js website [neurodiversity.wiki](neurodivers
 - Includes medical definition, but does not rely on it (due to complex langauge)
 - Links to other materials for those who want to learn more
 - Extremely sharable (short link)
-- Aims to be "better than nothing" (which is the baseline for most people)
+- Aims to be "better than nothing" (which is the baseline for most people's knowledge)
+
+## Sponsors
+
+- [Kiran B](https://github.com/lynkos)
 
 ## Contributing
 
