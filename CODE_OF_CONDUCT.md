@@ -33,8 +33,17 @@ Examples of unacceptable behavior include:
 * Public or private harassment
 * Publishing others' private information, such as a physical or email
   address, without their explicit permission
+* Dismissing or attacking inclusion-oriented requests
 * Other conduct which could reasonably be considered inappropriate in a
   professional setting
+
+We prioritize marginalized people's safety over privileged people's comfort. We will not act on complaints regarding:
+- ‘Reverse’ -isms, including ‘reverse racism,’ ‘reverse sexism,’ and ‘cisphobia’
+- Reasonable communication of boundaries, such as 'leave me alone,' 'go away,' or 'I’m not discussing this with you.'
+- Someone’s refusal to explain or debate social justice concepts
+- Criticisms of ableist, racist, sexist, homophobic, transphobic, or otherwise oppressive behavior or assumptions
+
+In community communication, we do not appreciate any form of aggression (passive aggression included) — please don't post stuff if you can't be kind and empathetic. Be proactive about owning your mistakes and apologizing if you have a feeling or know that you impacted someone in a negative way.
 
 ## Enforcement Responsibilities
 
