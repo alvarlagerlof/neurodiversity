@@ -19,6 +19,7 @@ community include:
 
 * Demonstrating empathy and kindness toward other people
 * Being respectful of differing opinions, viewpoints, and experiences
+* Referring to people by their preferred names and pronouns and using gender-neutral pronouns when uncertain
 * Giving and gracefully accepting constructive feedback
 * Accepting responsibility and apologizing to those affected by our mistakes,
   and learning from the experience
