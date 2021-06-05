@@ -8,7 +8,7 @@ import Section from "../components/blocks/Section";
 import List from "../components/blocks/List";
 import Meta from "../components/blocks/Meta";
 import Quote from "../components/blocks/Quote";
-import QuoteList from "../components/blocks/QuoteList";
+import QuoteGroup from "../components/blocks/QuoteGroup";
 import Box from "../components/blocks/Box";
 import Definition from "../components/blocks/Definition";
 import DefinitionItem from "../components/blocks/DefinitionItem";
@@ -31,18 +31,18 @@ const components = {
   ol: List.Ordered,
   a: ExternalLink,
   p: Text,
+  blockquote: Quote,
   img: Image,
   Section,
   Header,
   IconHeading,
   Meta,
-  QuoteList,
+  QuoteGroup,
   Box,
   Definition,
   DefinitionItem,
   PageGrid,
   PageLink,
-  Quote,
 };
 
 function MyApp({ Component, pageProps }) {
