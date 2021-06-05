@@ -35,6 +35,13 @@ export default function Index() {
             title="OCD"
             description="Obsessive-compulsive disorder"
           />
+
+          <PageLink
+            href="/adhd"
+            title="ADHD"
+            description="Attention deficit hyperactivity disorder"
+          />
+
           <PageLink
             href="/dyslexia"
             title="Dyslexia"
@@ -53,12 +60,7 @@ export default function Index() {
             description="Autism spectrum disorder"
             disabled
           />
-          <PageLink
-            href="/adhd"
-            title="ADHD"
-            description="Attention deficit hyperactivity disorder"
-            disabled
-          />
+
           <PageLink
             href="/did"
             title="DID"
