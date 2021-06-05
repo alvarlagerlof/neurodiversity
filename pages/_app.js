@@ -7,6 +7,7 @@ import Text from "../components/blocks/Text";
 import Section from "../components/blocks/Section";
 import List from "../components/blocks/List";
 import Meta from "../components/blocks/Meta";
+import Quote from "../components/blocks/Quote";
 import QuoteList from "../components/blocks/QuoteList";
 import Box from "../components/blocks/Box";
 import Definition from "../components/blocks/Definition";
@@ -41,6 +42,7 @@ const components = {
   DefinitionItem,
   PageGrid,
   PageLink,
+  Quote,
 };
 
 function MyApp({ Component, pageProps }) {
