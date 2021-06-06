@@ -36,15 +36,15 @@ export default function Index() {
             description="Obsessive-compulsive disorder"
           />
           <PageLink
-            href="/dyslexia"
-            title="Dyslexia"
-            description="Dyslexia"
+            href="/adhd"
+            title="ADHD"
+            description="Attention deficit hyperactivity disorder"
             disabled
           />
           <PageLink
-            href="/bipolar"
-            title="BP"
-            description="Bipolar disorder"
+            href="/anxiety"
+            title="Anxiety"
+            description="Generalized anxiety disorder"
             disabled
           />
           <PageLink
@@ -54,9 +54,21 @@ export default function Index() {
             disabled
           />
           <PageLink
-            href="/adhd"
-            title="ADHD"
-            description="Attention deficit hyperactivity disorder"
+            href="/bipolar"
+            title="Bipolar"
+            description="Bipolar disorder"
+            disabled
+          />
+          <PageLink
+            href="/bpd"
+            title="BPD"
+            description="Borderline personality disorder"
+            disabled
+          />
+          <PageLink
+            href="/depression"
+            title="Depression"
+            description="Depression"
             disabled
           />
           <PageLink
@@ -66,9 +78,33 @@ export default function Index() {
             disabled
           />
           <PageLink
-            href="/gad"
-            title="GAD"
-            description="Generalized anxiety disorder"
+            href="/dyscalculia"
+            title="Dyscalculia"
+            description="Dyscalculia"
+            disabled
+          />
+          <PageLink
+            href="/dyslexia"
+            title="Dyslexia"
+            description="Dyslexia"
+            disabled
+          />
+          <PageLink
+            href="/insomnia"
+            title="Insomnia"
+            description="Insomnia"
+            disabled
+          />
+          <PageLink
+            href="/ptsd"
+            title="PTSD"
+            description="Post-traumatic stress disorder"
+            disabled
+          />
+          <PageLink
+            href="/schizophrenia"
+            title="Schizophrenia"
+            description="Schizophrenia"
             disabled
           />
         </PageGrid>
