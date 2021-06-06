@@ -35,6 +35,7 @@ export default function Index() {
             title="OCD"
             description="Obsessive-compulsive disorder"
           />
+          <PageLink href="/anxiety" title="Anxiety" description="Anxiety" />
           <PageLink
             href="/dyslexia"
             title="Dyslexia"
