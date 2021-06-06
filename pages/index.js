@@ -36,15 +36,14 @@ export default function Index() {
             description="Obsessive-compulsive disorder"
           />
           <PageLink
+            href="/bipolar"
+            title="Bipolar disorder"
+            description="Bipolar disorder"
+          />
+          <PageLink
             href="/dyslexia"
             title="Dyslexia"
             description="Dyslexia"
-            disabled
-          />
-          <PageLink
-            href="/bipolar"
-            title="BP"
-            description="Bipolar disorder"
             disabled
           />
           <PageLink
