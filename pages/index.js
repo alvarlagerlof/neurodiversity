@@ -36,6 +36,11 @@ export default function Index() {
             description="Obsessive-compulsive disorder"
           />
           <PageLink
+            href="/dyscalculia"
+            title="Dyscalculia"
+            description="Dyscalculia"
+          />
+          <PageLink
             href="/dyslexia"
             title="Dyslexia"
             description="Dyslexia"
