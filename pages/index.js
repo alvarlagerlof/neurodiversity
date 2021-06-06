@@ -39,7 +39,6 @@ export default function Index() {
             href="/bpd"
             title="bpd"
             description="Borderline personality disorder"
-            disabled
           />
           <PageLink
             href="/dyslexia"
