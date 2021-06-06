@@ -36,6 +36,12 @@ export default function Index() {
             description="Obsessive-compulsive disorder"
           />
           <PageLink
+            href="/ptsd"
+            title="PTSD"
+            description="Post-traumatic stress disorder"
+            disabled
+          />
+          <PageLink
             href="/dyslexia"
             title="Dyslexia"
             description="Dyslexia"
