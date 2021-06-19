@@ -2010,10 +2010,10 @@ native-url@0.3.4:
   dependencies:
     querystring "^0.2.0"
 
-next-plausible@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-1.6.1.tgz#0346a254c73fdac5bf3ac3f06f0028fede782c5a"
-  integrity sha512-eMVqZbzU6bJsBIHlC63lNKl0KLvx8NA+/YlUUqj2gvCviQ7C2X4PY59gEB+mO46JvKSy/IhAD8l85/YGFhCkDg==
+next-plausible@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-1.6.2.tgz#19997016096a2b9fe3ce93ccdcf1b130afb8fb54"
+  integrity sha512-+le+eJBGgGZL7uLNldWtDKlSP5hJ+Wuy/UBhDQmm0FlSgs33khVtRKVe5T76lRi64kPQP5zT1MzV+b0Vw7L5dg==
 
 next-sitemap@^1.6.116:
   version "1.6.116"
