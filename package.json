@@ -12,7 +12,7 @@
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^11.0.0",
     "next": "10.2.3",
-    "next-plausible": "^1.6.2",
+    "next-plausible": "^1.7.0",
     "next-sitemap": "^1.6.124",
     "react": "17.0.2",
     "react-dom": "17.0.2"

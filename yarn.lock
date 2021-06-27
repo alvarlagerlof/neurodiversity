@@ -2025,10 +2025,10 @@ native-url@0.3.4:
   dependencies:
     querystring "^0.2.0"
 
-next-plausible@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-1.6.2.tgz#19997016096a2b9fe3ce93ccdcf1b130afb8fb54"
-  integrity sha512-+le+eJBGgGZL7uLNldWtDKlSP5hJ+Wuy/UBhDQmm0FlSgs33khVtRKVe5T76lRi64kPQP5zT1MzV+b0Vw7L5dg==
+next-plausible@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-1.7.0.tgz#04601d36d46ce0feca7a0792ef807b110db1057a"
+  integrity sha512-ndbuyJOgW4DPhbysBIsqut57mBORU0fEhu7oDOK6L6kvmS4HdR2b6CPD8lmeNkb3vrRrfdGVI2bQZPP+jizldg==
 
 next-sitemap@^1.6.124:
   version "1.6.124"
