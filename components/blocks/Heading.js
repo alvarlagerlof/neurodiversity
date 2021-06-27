@@ -11,8 +11,8 @@ function H2({ children }) {
 }
 
 const Heading = {
-  Ordered,
-  Unordered,
+  H1,
+  H2,
 };
 
 export default Heading;
