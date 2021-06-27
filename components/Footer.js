@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ExternalLink from "../components/ExternalLink";
 
 export default function Footer() {
@@ -13,7 +14,7 @@ export default function Footer() {
       <ul className="flex flew-row space-x-4">
         <li>
           <a href="https://github.com/alvarlagerlof/neurodiversity">
-            <img
+            <Image
               src="/logos/github.svg"
               alt="Github logo"
               width="24px"
@@ -23,7 +24,7 @@ export default function Footer() {
         </li>
         <li>
           <a href="https://twitter.com/alvarlagerlof">
-            <img
+            <Image
               src="/logos/twitter.svg"
               alt="Twitter logo"
               width="24px"

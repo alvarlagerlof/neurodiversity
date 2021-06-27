@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 export default function DefinitionItem({ summary, children }) {
   const [open, setOpen] = useState(false);
@@ -12,8 +13,9 @@ export default function DefinitionItem({ summary, children }) {
           onClick={() => setOpen((prev) => !prev)}
         >
           <span className="text-left">{summary}</span>
-          <img
+          <Image
             aria-hidden
+            alt=""
             src={open ? "/icons/close.svg" : "/icons/open.svg"}
             width="24px"
             height="24px"

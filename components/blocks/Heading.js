@@ -1,12 +1,18 @@
-const Heading = {
-  H1: ({ children }) => (
+function H1({ children }) {
+  return (
     <h2 className="font-display font-semibold text-3xl sm:text-4xl md:text-5xl mb-4">
       {children}
     </h2>
-  ),
-  H2: ({ children }) => (
-    <h3 className="font-display text-xl md:text-2xl mb-2">{children}</h3>
-  ),
+  );
+}
+
+function H2({ children }) {
+  return <h3 className="font-display text-xl md:text-2xl mb-2">{children}</h3>;
+}
+
+const Heading = {
+  Ordered,
+  Unordered,
 };
 
 export default Heading;
