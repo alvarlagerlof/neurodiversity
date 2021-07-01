@@ -20,6 +20,7 @@ import Image from "../components/blocks/Image";
 import ExternalLink from "../components/ExternalLink";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PreviewBanner from "../components/PreviewBanner";
 import { PlausibleProvider } from "../components/Plausible";
 
 import "../globals.css";
