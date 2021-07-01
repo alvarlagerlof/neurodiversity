@@ -48,13 +48,12 @@ export default function Index() {
             title="BPD"
             description="Borderline personality disorder"
           />
-
           <PageLink
             href="/adhd"
             title="ADHD"
             description="Attention deficit hyperactivity disorder"
-            disabled
           />
+
           <PageLink
             href="/anxiety"
             title="Anxiety"
