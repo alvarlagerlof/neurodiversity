@@ -47,7 +47,6 @@ export default function Index() {
             href="/bpd"
             title="BPD"
             description="Borderline personality disorder"
-            disabled
           />
 
           <PageLink
