@@ -13,6 +13,7 @@ export default function Navbar() {
             width="32px"
             height="32px"
           />
+          <p>test: {NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF}</p>
           <h1 className="font-display font-semibold text-xl md:text-2xl cursor-pointer">
             neurodiversity.wiki
           </h1>
