@@ -1,7 +1,7 @@
 import ExternalLink from "./ExternalLink";
 
 export default function PreviewBanner({ googleDocUrl }) {
-  if (process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF !== "main") {
+  if (process.env.VERCEL_GIT_COMMIT_REF !== "main") {
     return (
       <div className="bg-gray-200 p-4 rounded-xl max-w-3xl mb-8 w-full">
         <strong>This is a preview page</strong>
