@@ -43,6 +43,12 @@ export default function Index() {
             title="Dyscalculia"
             description="Dyscalculia"
           />
+          <PageLink
+            href="/bpd"
+            title="BPD"
+            description="Borderline personality disorder"
+            disabled
+          />
 
           <PageLink
             href="/adhd"
@@ -66,12 +72,6 @@ export default function Index() {
             href="/bipolar"
             title="Bipolar"
             description="Bipolar disorder"
-            disabled
-          />
-          <PageLink
-            href="/bpd"
-            title="BPD"
-            description="Borderline personality disorder"
             disabled
           />
           <PageLink
