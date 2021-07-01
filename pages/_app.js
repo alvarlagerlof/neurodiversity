@@ -44,6 +44,7 @@ const components = {
   DefinitionItem,
   PageGrid,
   PageLink,
+  PreviewBanner,
 };
 
 function MyApp({ Component, pageProps }) {

@@ -6,6 +6,7 @@ import PageLink from "../components/blocks/PageLink";
 import Section from "../components/blocks/Section";
 import Text from "../components/blocks/Text";
 import ExternalLink from "../components/ExternalLink";
+import PreviewBanner from "../components/PreviewBanner";
 
 // This page cannot be .mdx because then there is no way to run getServerSideProps which are needed for redirecting from notocd.com and notautism.com
 
@@ -17,6 +18,8 @@ export default function Index() {
         description="Learn about things like OCD, Autism, Bipolar, Anxiety, Depression and more. Euducate yourself to understand and help others around you."
         social="/social/index.jpg"
       />
+
+      <PreviewBanner googleDocUrl="https://docs.google.com/document/d/16nOmXROsCu_IMmtXyzLHy5sMqDLuFdkbkCxQ08WzFxQ/edit?usp=sharing" />
 
       <Header>
         <Heading.H1>Welcome!</Heading.H1>

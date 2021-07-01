@@ -1,7 +1,9 @@
 import Head from "next/head";
 
 export function PlausibleProvider({ children }) {
-  const enabled = process.env.NODE_ENV === "production";
+  const enabled =
+    process.env.NODE_ENV === "production" &&
+    NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF === "main";
 
   return (
     <>
