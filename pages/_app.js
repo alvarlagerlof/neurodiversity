@@ -60,14 +60,9 @@ function MyApp({ Component, pageProps }) {
         <div className="flex-1 flex flex-col items-center py-8 px-4">
           <Navbar />
 
-          <main className="max-w-3xl w-full">
-            <article className="space-y-12">
-              <MDXProvider components={components}>
-                <Component {...pageProps} />
-              </MDXProvider>
-
-              <Footer />
-            </article>
+          <main className="max-w-3xl w-full space-y-12">
+            <Component {...pageProps} />
+            <Footer />
           </main>
         </div>
       </div>

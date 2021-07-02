@@ -9,3 +9,16 @@
 .clear-margin > * {
   margin: 0;
 }
+
+:target {
+  animation: target-fade 3s;
+}
+
+@keyframes target-fade {
+  from {
+    background-color: #ffde89;
+  } /* [1] */
+  to {
+    background-color: transparent;
+  }
+}
