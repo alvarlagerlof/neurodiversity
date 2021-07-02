@@ -71,6 +71,11 @@ export default function Index() {
             description="Autism spectrum disorder"
             disabled
           />
+          <PageLink
+            href="/did"
+            title="DID"
+            description="Dissociative identity disorder"
+          />
 
           <PageLink
             href="/depression"
@@ -78,12 +83,7 @@ export default function Index() {
             description="Depression"
             disabled
           />
-          <PageLink
-            href="/did"
-            title="DID"
-            description="Dissociative identity disorder"
-            disabled
-          />
+
           <PageLink
             href="/dyslexia"
             title="Dyslexia"
