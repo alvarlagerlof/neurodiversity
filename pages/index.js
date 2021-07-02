@@ -68,7 +68,6 @@ export default function Index() {
             title="ASD"
             description="Autism spectrum disorder"
           />
-
           <PageLink
             href="/anxiety"
             title="Anxiety"
@@ -76,7 +75,7 @@ export default function Index() {
             disabled
           />
           <PageLink href="/dyslexia" title="Dyslexia" description="Dyslexia" />
-
+          <PageLink href="/insomnia" title="Insomnia" description="Insomnia" />
           <PageLink
             href="/did"
             title="DID"
@@ -88,13 +87,6 @@ export default function Index() {
             description="Depression"
             disabled
           />
-          <PageLink
-            href="/insomnia"
-            title="Insomnia"
-            description="Insomnia"
-            disabled
-          />
-
           <PageLink
             href="/schizophrenia"
             title="Schizophrenia"
