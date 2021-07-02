@@ -17,6 +17,7 @@ import PageGrid from "components/blocks/PageGrid";
 import PageLink from "components/blocks/PageLink";
 import Image from "components/blocks/Image";
 import ExternalLink from "components/ExternalLink";
+import PreviewBanner from "components/PreviewBanner";
 
 import { getPageBySlug, getAllPages, getPublishedPages } from "lib/content";
 import { isPreview } from "lib/env";
@@ -40,6 +41,7 @@ const components = {
   DefinitionItem,
   PageGrid,
   PageLink,
+  PreviewBanner,
 };
 
 export default function Doc({ frontMatter: { meta }, source }) {
