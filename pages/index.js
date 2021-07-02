@@ -94,7 +94,7 @@ export default function Index({ publishedPages, previewPages, preview }) {
         </Text>
         <Text>
           You do not need to be a coder to be able to contribute. There is a{" "}
-          <ExternalLink href="https://preview.neruodiversity.wiki">
+          <ExternalLink href="https://preview.neurodiversity.wiki">
             preview site
           </ExternalLink>{" "}
           containing links to Google Docs that you can leave suggestions on, a{" "}
