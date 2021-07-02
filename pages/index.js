@@ -89,7 +89,6 @@ export default function Index() {
             href="/schizophrenia"
             title="Schizophrenia"
             description="Schizophrenia"
-            disabled
           />
         </PageGrid>
       </Section>
