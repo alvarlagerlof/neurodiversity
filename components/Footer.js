@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ExternalLink from "../components/ExternalLink";
+import ExternalLink from "components/ExternalLink";
 
 export default function Footer() {
   return (
