@@ -72,7 +72,6 @@ export default function Index() {
             href="/anxiety"
             title="Anxiety"
             description="Generalized anxiety disorder"
-            disabled
           />
           <PageLink href="/dyslexia" title="Dyslexia" description="Dyslexia" />
           <PageLink href="/insomnia" title="Insomnia" description="Insomnia" />
