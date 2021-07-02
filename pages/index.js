@@ -53,6 +53,11 @@ export default function Index() {
             title="ADHD"
             description="Attention deficit hyperactivity disorder"
           />
+          <PageLink
+            href="/bipolar"
+            title="Bipolar"
+            description="Bipolar disorder"
+          />
 
           <PageLink
             href="/anxiety"
@@ -66,12 +71,7 @@ export default function Index() {
             description="Autism spectrum disorder"
             disabled
           />
-          <PageLink
-            href="/bipolar"
-            title="Bipolar"
-            description="Bipolar disorder"
-            disabled
-          />
+
           <PageLink
             href="/depression"
             title="Depression"
