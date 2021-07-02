@@ -15,7 +15,7 @@ export default function Index() {
       <Meta
         title="Neurodiversity Wiki: Learn about neurological divergencies"
         description="Learn about things like OCD, Autism, Bipolar, Anxiety, Depression and more. Euducate yourself to understand and help others around you."
-        social="/social/index.jpg"
+        opengraphImage="/social/index.jpg"
       />
 
       <Header>
@@ -160,14 +160,6 @@ export default function Index() {
 
 export async function getServerSideProps({ res, req }) {
   switch (req.headers.host) {
-    case "notautism.com":
-      res.setHeader(
-        "Location",
-        `https://neurodiversity.wiki/autism?utm_source=notautism.com`
-      );
-      res.statusCode = 301;
-      return { props: {} };
-
     case "notocd.com":
       res.setHeader(
         "Location",
