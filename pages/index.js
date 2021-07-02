@@ -58,6 +58,11 @@ export default function Index() {
             title="Bipolar"
             description="Bipolar disorder"
           />
+          <PageLink
+            href="/ptsd"
+            title="PTSD"
+            description="Post-traumatic stress disorder"
+          />
 
           <PageLink
             href="/anxiety"
@@ -76,14 +81,12 @@ export default function Index() {
             title="DID"
             description="Dissociative identity disorder"
           />
-
           <PageLink
             href="/depression"
             title="Depression"
             description="Depression"
             disabled
           />
-
           <PageLink
             href="/dyslexia"
             title="Dyslexia"
@@ -96,12 +99,7 @@ export default function Index() {
             description="Insomnia"
             disabled
           />
-          <PageLink
-            href="/ptsd"
-            title="PTSD"
-            description="Post-traumatic stress disorder"
-            disabled
-          />
+
           <PageLink
             href="/schizophrenia"
             title="Schizophrenia"
