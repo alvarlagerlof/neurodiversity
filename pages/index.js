@@ -84,7 +84,6 @@ export default function Index() {
             href="/depression"
             title="Depression"
             description="Depression"
-            disabled
           />
           <PageLink
             href="/schizophrenia"
