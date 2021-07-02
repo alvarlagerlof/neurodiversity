@@ -8,15 +8,18 @@ import Text from "../components/blocks/Text";
 import ExternalLink from "../components/ExternalLink";
 import PreviewBanner from "../components/PreviewBanner";
 
+import { getPreviewPages, getPublishedPages } from "lib/content";
+import { isPreview } from "lib/env";
+
 // This page cannot be .mdx because then there is no way to run getServerSideProps which are needed for redirecting from notocd.com and notautism.com
 
-export default function Index() {
+export default function Index({ publishedPages, previewPages, preview }) {
   return (
     <>
       <Meta
         title="Neurodiversity Wiki: Learn about neurological divergencies"
         description="Learn about things like OCD, Autism, Bipolar, Anxiety, Depression and more. Euducate yourself to understand and help others around you."
-        social="/social/index.jpg"
+        image="/social/index.jpg"
       />
 
       <PreviewBanner googleDocUrl="https://docs.google.com/document/d/16nOmXROsCu_IMmtXyzLHy5sMqDLuFdkbkCxQ08WzFxQ/edit?usp=sharing" />
@@ -28,68 +31,38 @@ export default function Index() {
           divergencies, which is unfortunate and fixable. This page helps you
           educate yourself about them.
         </Text>
-        <Text>Please click on one of the options listed below.</Text>
+        <Text>Pages are listed below</Text>
+
+        <PageGrid>
+          {publishedPages.map(({ slug, frontMatter: { start } }) => {
+            return (
+              <PageLink key={slug} href={"/" + slug} {...start} clickable />
+            );
+          })}
+        </PageGrid>
       </Header>
 
       <Section>
+        <Heading.H2>Coming soon</Heading.H2>
+        <Text>
+          The pages below are currently being made. Click{" "}
+          <a className="text-primary-dark" href="#howcanihelp">
+            here{" "}
+          </a>
+          if you want to help out.
+        </Text>
+
         <PageGrid>
-          <PageLink
-            href="/ocd"
-            title="OCD"
-            description="Obsessive-compulsive disorder"
-          />
-          <PageLink
-            href="/dyscalculia"
-            title="Dyscalculia"
-            description="Dyscalculia"
-          />
-          <PageLink
-            href="/bpd"
-            title="BPD"
-            description="Borderline personality disorder"
-          />
-          <PageLink
-            href="/adhd"
-            title="ADHD"
-            description="Attention deficit hyperactivity disorder"
-          />
-          <PageLink
-            href="/bipolar"
-            title="Bipolar"
-            description="Bipolar disorder"
-          />
-          <PageLink
-            href="/ptsd"
-            title="PTSD"
-            description="Post-traumatic stress disorder"
-          />
-          <PageLink
-            href="/autism"
-            title="ASD"
-            description="Autism spectrum disorder"
-          />
-          <PageLink
-            href="/anxiety"
-            title="Anxiety"
-            description="Generalized anxiety disorder"
-          />
-          <PageLink href="/dyslexia" title="Dyslexia" description="Dyslexia" />
-          <PageLink href="/insomnia" title="Insomnia" description="Insomnia" />
-          <PageLink
-            href="/did"
-            title="DID"
-            description="Dissociative identity disorder"
-          />
-          <PageLink
-            href="/depression"
-            title="Depression"
-            description="Depression"
-          />
-          <PageLink
-            href="/schizophrenia"
-            title="Schizophrenia"
-            description="Schizophrenia"
-          />
+          {previewPages.map(({ slug, frontMatter: { start } }) => {
+            return (
+              <PageLink
+                key={slug}
+                href={"/" + slug}
+                {...start}
+                clickable={preview}
+              />
+            );
+          })}
         </PageGrid>
       </Section>
 
@@ -116,14 +89,18 @@ export default function Index() {
       </Section>
 
       <Section>
-        <Heading.H2>How can I help?</Heading.H2>
+        <Heading.H2 id="howcanihelp">How can I help?</Heading.H2>
         <Text>
-          The list above is not complete, nor is it perfect. If you're familiar
-          with any of the above (personally or via relatives) and want to help
-          making this site even better, please do reach out.
+          The list above is not complete, nor is the content perfect. If you're
+          familiar with any of the above (personally or via relatives) and want
+          to help making this site even better, please do reach out.
         </Text>
         <Text>
           You do not need to be a coder to be able to contribute. There is a{" "}
+          <ExternalLink href="https://preview.neurodiversity.wiki">
+            preview site
+          </ExternalLink>{" "}
+          containing links to Google Docs that you can leave suggestions on, a{" "}
           <ExternalLink href="https://discord.gg/EcEyW9Xz3M">
             Discord server
           </ExternalLink>{" "}
@@ -135,6 +112,7 @@ export default function Index() {
           <ExternalLink href="https://github.com/alvarlagerlof/not-ocd">
             GitHub
           </ExternalLink>
+          .
         </Text>
       </Section>
     </>
@@ -142,23 +120,18 @@ export default function Index() {
 }
 
 export async function getServerSideProps({ res, req }) {
-  switch (req.headers.host) {
-    case "notautism.com":
-      res.setHeader(
-        "Location",
-        `https://neurodiversity.wiki/autism?utm_source=notautism.com`
-      );
-      res.statusCode = 301;
-      return { props: {} };
+  const publishedPages = await getPublishedPages();
+  const previewPages = await getPreviewPages();
+  const preview = await isPreview();
 
+  switch (req.headers.host) {
     case "notocd.com":
       res.setHeader(
         "Location",
         `https://neurodiversity.wiki/ocd?utm_source=notocd.com`
       );
       res.statusCode = 301;
-      return { props: {} };
   }
 
-  return { props: {} };
+  return { props: { publishedPages, previewPages, preview } };
 }

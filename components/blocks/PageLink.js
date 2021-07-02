@@ -1,16 +1,7 @@
-export default function PageLink({ title, description, href, disabled }) {
+export default function PageLink({ title, description, href, clickable }) {
   return (
     <li className="h-full">
-      {disabled ? (
-        <div className="text-gray-600 flex flex-col items-center h-full justify-center bg-gray-200 rounded-xl p-4 space-y-1">
-          <h2 className="text-center font-display font-semibold text-xl">
-            {title}
-          </h2>
-          <p className="text-center">
-            {disabled ? "Coming soon" : description}
-          </p>
-        </div>
-      ) : (
+      {clickable ? (
         <a
           href={href}
           className="flex flex-col items-center h-full justify-center bg-gray-200 rounded-xl p-4 space-y-1 hover:ring hover:ring-primary-light focus:outline-none focus:ring focus:ring-primary-light"
@@ -18,10 +9,15 @@ export default function PageLink({ title, description, href, disabled }) {
           <h2 className="text-center font-display font-semibold text-xl">
             {title}
           </h2>
-          <p className="text-center">
-            {disabled ? "Coming soon" : description}
-          </p>
+          <p className="text-center">{description}</p>
         </a>
+      ) : (
+        <div className="text-gray-600 flex flex-col items-center h-full justify-center bg-gray-200 rounded-xl p-4 space-y-1">
+          <h2 className="text-center font-display font-semibold text-xl">
+            {title}
+          </h2>
+          <p className="text-center">{description}</p>
+        </div>
       )}
     </li>
   );
