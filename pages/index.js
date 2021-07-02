@@ -63,6 +63,11 @@ export default function Index() {
             title="PTSD"
             description="Post-traumatic stress disorder"
           />
+          <PageLink
+            href="/autism"
+            title="ASD"
+            description="Autism spectrum disorder"
+          />
 
           <PageLink
             href="/anxiety"
@@ -70,12 +75,7 @@ export default function Index() {
             description="Generalized anxiety disorder"
             disabled
           />
-          <PageLink
-            href="/autism"
-            title="ASD"
-            description="Autism spectrum disorder"
-            disabled
-          />
+
           <PageLink
             href="/did"
             title="DID"
