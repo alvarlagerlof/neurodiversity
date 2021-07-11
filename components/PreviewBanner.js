@@ -5,7 +5,7 @@ export default function PreviewBanner({ googleDocUrl }) {
     return (
       <div className="bg-gray-200 p-4 lg:-mx-4 rounded-xl max-w-3xl mb-8 w-full">
         <strong>This is a preview page</strong>
-        <p>Test: {process.env.VERCEL_GIT_COMMIT_REF}</p>
+        <p>Test: {process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF}</p>
         <p className="mb-2">
           The contents of this page is not complete. Do not share the url
           widely.
