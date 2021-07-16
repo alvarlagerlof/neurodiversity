@@ -2,7 +2,7 @@
 
 # Neurodiversity
 
-This is the source code of the Next.js website [neurodiversity.wiki](neurodiversity.wiki). The website is aimed to educate the general public about mental disabilities. It is meant to be a quick link to send to anyone who has an incorrect mental model.
+This is the source code of the Next.js website [neurodiversity.wiki](https://neurodiversity.wiki). The website is aimed to educate the general public about mental disabilities. It is meant to be a quick link to send to anyone who has an incorrect mental model.
 
 ## Features
 
