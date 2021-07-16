@@ -15,6 +15,7 @@ This is the source code of the Next.js website [neurodiversity.wiki](https://neu
 ## Sponsors
 
 - [Kiran B](https://github.com/lynkos)
+- [Joe Torreggiani](https://github.com/jtorreggiani)
 
 ## Contributing
 
