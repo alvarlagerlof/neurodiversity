@@ -32,23 +32,8 @@ Feedback is appreciated! Reach out on [Twitter](https://twitter.com/alvarlagerlo
 - More diagnoses
 - Localization
 
-## Tech Stack
-
-- Next.js
-- TailwindCSS
-- MDX
-
-## Runinng locally
-
-```bash
-yarn install
-yarn dev
-```
-
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the site.
 
 ## License
 
 [MIT](/LICENSE)
-
-This readme was created with [readme.so](https://readme.so) :)
