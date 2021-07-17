@@ -17,6 +17,8 @@ yarn install
 yarn dev
 ```
 
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the site.
+
 ### Branch naming guidelines
 
 - content/draft-{page}: For new pages

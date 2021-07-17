@@ -27,13 +27,6 @@ See [CONTRIBUTING.md](/CONTRIBUTING.md) for ways to get started.
 
 Feedback is appreciated! Reach out on [Twitter](https://twitter.com/alvarlagerlof), the [Discord](https://discord.gg/EcEyW9Xz3M) server or submit a [new issue](https://github.com/alvarlagerlof/neurodiversity/issues/new).
 
-## Roadmap
-
-- More diagnoses
-- Localization
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the site.
-
 ## License
 
 [MIT](/LICENSE)
