@@ -12,11 +12,6 @@ This is the source code of the Next.js website [neurodiversity.wiki](https://neu
 - Extremely sharable (short link)
 - Aims to be "better than nothing" (which is the baseline for most people's knowledge)
 
-## Sponsors
-
-- [Kiran B](https://github.com/lynkos)
-- [Joe Torreggiani](https://github.com/jtorreggiani)
-
 ## Contributing
 
 Contributions are always welcome! I'm not an amazing writer, therefore spelling PRs but also general feedback is hugely appreciated.
