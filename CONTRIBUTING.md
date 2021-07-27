@@ -21,8 +21,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the s
 
 ### Branch naming guidelines
 
-- content/draft-{page}: For new pages
-- content/{page}-{change}: For content changes (spelling, fact checking, more content/sections)
+- continous/{page}: For new pages
 - feature/{change}: For new features/improvements
 - fix/{change}: For fixes
 
