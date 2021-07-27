@@ -10,6 +10,15 @@
 
 Create a new issue! On the issue we can discuss the problem and assign the work.
 
+## Runinng locally
+
+```bash
+yarn install
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the site.
+
 ### Branch naming guidelines
 
 - content/draft-{page}: For new pages

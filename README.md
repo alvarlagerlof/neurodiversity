@@ -2,7 +2,7 @@
 
 # Neurodiversity
 
-This is the source code of the Next.js website [neurodiversity.wiki](neurodiversity.wiki). The website is aimed to educate the general public about mental disabilities. It is meant to be a quick link to send to anyone who has an incorrect mental model.
+This is the source code of the Next.js website [neurodiversity.wiki](https://neurodiversity.wiki). The website is aimed to educate the general public about mental disabilities. It is meant to be a quick link to send to anyone who has an incorrect mental model.
 
 ## Features
 
@@ -15,6 +15,7 @@ This is the source code of the Next.js website [neurodiversity.wiki](neurodivers
 ## Sponsors
 
 - [Kiran B](https://github.com/lynkos)
+- [Joe Torreggiani](https://github.com/jtorreggiani)
 
 ## Contributing
 
@@ -26,28 +27,6 @@ See [CONTRIBUTING.md](/CONTRIBUTING.md) for ways to get started.
 
 Feedback is appreciated! Reach out on [Twitter](https://twitter.com/alvarlagerlof), the [Discord](https://discord.gg/EcEyW9Xz3M) server or submit a [new issue](https://github.com/alvarlagerlof/neurodiversity/issues/new).
 
-## Roadmap
-
-- More diagnoses
-- Localization
-
-## Tech Stack
-
-- Next.js
-- TailwindCSS
-- MDX
-
-## Runinng locally
-
-```bash
-yarn install
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the site.
-
 ## License
 
 [MIT](/LICENSE)
-
-This readme was created with [readme.so](https://readme.so) :)
