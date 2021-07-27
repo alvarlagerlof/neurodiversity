@@ -17,6 +17,11 @@ module.exports = {
         destination: "/bipolar",
         permanent: false,
       },
+      {
+        source: "/mpd",
+        destination: "/did",
+        permanent: false,
+      },
     ];
   },
   async rewrites() {
