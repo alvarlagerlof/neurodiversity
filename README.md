@@ -2,7 +2,7 @@
 
 # Neurodiversity
 
-Neurodiversity wiki is a [website](https://neurodiversity.wiki) made to educate the public about varios neurological conditons such as ADHD, Autism, Anxiety, Bipolar and more.
+Neurodiversity wiki is a [website](https://neurodiversity.wiki) made to educate the public about various neurological conditions such as ADHD, Autism, Anxiety, Bipolar and more.
 
 ## Features
 
