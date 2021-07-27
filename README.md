@@ -2,12 +2,13 @@
 
 # Neurodiversity
 
-This is the source code of the Next.js website [neurodiversity.wiki](https://neurodiversity.wiki). The website is aimed to educate the general public about various neurological conditons. It is meant to be easly sent to anyone.
+Neurodiversity wiki is a [website](https://neurodiversity.wiki) made to educate the public about varios neurological conditons such as ADHD, Autism, Anxiety, Bipolar and more.
 
 ## Features
 
-- Summarized as to not loose readers
-- Sharable (short link)
+- Simple language
+- Sharable with a short link
+- Written by neurodiverse people
 
 ## Contributing
 
