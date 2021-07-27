@@ -9,7 +9,7 @@ export default function Footer() {
         <ExternalLink href="https://alvar.dev?utm_source=neurodiversity.wiki">
           Alvar Lagerlöf
         </ExternalLink>{" "}
-        in hopes of better understanding of mental disabilities.
+        in hopes of better understanding of neurological conditions.
       </p>
       <ul className="flex flew-row space-x-4">
         <li>
