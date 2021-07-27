@@ -17,7 +17,7 @@ export default function Index({ publishedPages, previewPages, preview }) {
   return (
     <>
       <Meta
-        title="Neurodiversity Wiki: Learn about neurological divergencies"
+        title="Neurodiversity Wiki: Learn about neurological conditions"
         description="Learn about things like OCD, Autism, Bipolar, Anxiety, Depression and more. Educate yourself to understand and help others around you."
         image="/social/index.jpg"
       />
@@ -27,8 +27,8 @@ export default function Index({ publishedPages, previewPages, preview }) {
       <Header>
         <Heading.H1>Welcome!</Heading.H1>
         <Text>
-          Most people have very little knowledge about neurological
-          divergencies, which is unfortunate and fixable. This page helps you
+          Most people have very little knowledge about different neurological
+          conditions, which is unfortunate and fixable. This page helps you
           educate yourself about them.
         </Text>
         <Text>Pages are listed below</Text>
@@ -69,16 +69,16 @@ export default function Index({ publishedPages, previewPages, preview }) {
       <Section>
         <Heading.H2>Why?</Heading.H2>
         <Text>
-          People often mention or joke about neurological divergencies without
+          People often mention or joke about neurological conditions without
           realizing how it will be interpreted. By doing that they are hurting
-          those who have neurological divergencies. By joking about it, you
-          slowly change what people think when they hear the word, and that
-          hurts the people who actually have the divergency.
+          those who have conditions. By joking about it, you slowly change what
+          people think when they hear the word, and that hurts the people who
+          actually have the condition.
         </Text>
         <Text>
           Misinformation or the lack of information is the cause. This site aims
           to combat this using easy-to-understand pages about various
-          divergencies. With understanding, the hope is that language can become
+          conditions. With understanding, the hope is that language can become
           more inclusive.
         </Text>
         <Text>
