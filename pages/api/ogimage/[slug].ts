@@ -23,7 +23,7 @@ export default async function ticketImages(
 ) {
   const base = process.env.NEXT_PUBLIC_VERCEL_URL;
 
-  let url = `${base}/ogimage/${req.query.slug}`;
+  let url = `https://${base}/ogimage/${req.query.slug}`;
 
   console.log(url);
 
