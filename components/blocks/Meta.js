@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function Meta({ title, description }) {
   const ogImageUrl = `https://${
     process.env.NEXT_PUBLIC_VERCEL_URL
-  }/ogimage/?${new URLSearchParams({ title, description }).toString()}`;
+  }/api/ogimage/?${new URLSearchParams({ title, description }).toString()}`;
 
   return (
     <Head>
