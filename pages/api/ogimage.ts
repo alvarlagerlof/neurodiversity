@@ -21,9 +21,9 @@ export default async function ticketImages(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const base = process.env.NEXT_PUBLIC_VERCEL_URL;
-
-  let url = `https://${base}/ogimage/${req.query.slug}`;
+  const url = `https://${
+    process.env.NEXT_PUBLIC_VERCEL_URL
+  }/ogimage/?title=${req.query.title.toString()}&description=${req.query.description.toString()}`;
 
   console.log(url);
 
