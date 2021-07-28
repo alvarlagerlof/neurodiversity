@@ -25,8 +25,6 @@ export default async function ticketImages(
     process.env.NEXT_PUBLIC_VERCEL_URL
   }/ogimage/?title=${req.query.title.toString()}&description=${req.query.description.toString()}`;
 
-  console.log(url);
-
   const file = await screenshot(url);
   res.setHeader("Content-Type", `image/png`);
   res.setHeader(

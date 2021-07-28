@@ -7,6 +7,7 @@ import Section from "../components/blocks/Section";
 import Text from "../components/blocks/Text";
 import ExternalLink from "../components/ExternalLink";
 import PreviewBanner from "../components/PreviewBanner";
+import Wrapper from "../components/Wrapper";
 
 import { getPreviewPages, getPublishedPages } from "lib/content";
 import { isPreview } from "lib/env";
@@ -15,7 +16,7 @@ import { isPreview } from "lib/env";
 
 export default function Index({ publishedPages, previewPages, preview }) {
   return (
-    <>
+    <Wrapper>
       <Meta
         title="Neurodiversity Wiki: Learn about neurological conditions"
         description="Learn about things like OCD, Autism, Bipolar, Anxiety, Depression and more. Educate yourself to understand and help others around you."
@@ -115,7 +116,7 @@ export default function Index({ publishedPages, previewPages, preview }) {
           .
         </Text>
       </Section>
-    </>
+    </Wrapper>
   );
 }
 

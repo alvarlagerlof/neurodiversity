@@ -18,6 +18,7 @@ import PageLink from "components/blocks/PageLink";
 import Image from "components/blocks/Image";
 import ExternalLink from "components/ExternalLink";
 import PreviewBanner from "components/PreviewBanner";
+import Wrapper from "components/Wrapper";
 
 import { getPageBySlug, getAllPages, getPublishedPages } from "lib/content";
 import { isPreview } from "lib/env";
@@ -46,10 +47,10 @@ const components = {
 
 export default function Doc({ frontMatter: { meta }, source }) {
   return (
-    <>
+    <Wrapper>
       <Meta {...meta} />
       <MDXRemote components={components} {...source} />
-    </>
+    </Wrapper>
   );
 }
 

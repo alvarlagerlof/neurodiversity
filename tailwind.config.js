@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       display: ["Cabin", "sans-serif"],
       content: ["Inter", "sans-serif"],
+      displaynew: ["Space Grotesk", "sans-serif"],
     },
     extend: {
       colors: {
@@ -16,6 +17,10 @@ module.exports = {
         secondary: {
           light: "#FFF6E0",
           dark: "#FFDE89",
+        },
+        new: {
+          primary: "#860091",
+          secondary: "#FFEEE5",
         },
       },
     },
