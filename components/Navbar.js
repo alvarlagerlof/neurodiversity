@@ -7,15 +7,12 @@ export default function Navbar() {
       <Link href="/">
         <a className="flex flex-row space-x-4 items-center cursor-pointer">
           <Image
-            className="w-8 md:w-10 "
-            src="/logos/neurodiversity.svg"
+            className="h-8 md:h-10 "
+            src="/logos/logomark.svg"
             alt="Logo showing head on purple background"
-            width="32px"
+            width="300px"
             height="32px"
           />
-          <h1 className="font-display font-semibold text-xl md:text-2xl cursor-pointer">
-            neurodiversity.wiki
-          </h1>
         </a>
       </Link>
     </nav>

@@ -5,7 +5,13 @@ import { PlausibleProvider } from "../components/Plausible";
 export default function Wrapper({ children }) {
   return (
     <PlausibleProvider>
-      <div className="flex flex-col min-h-screen bg-secondary">
+      <div
+        className="flex flex-col min-h-screen"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(255,238,229,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%)",
+        }}
+      >
         <div className="flex-1 flex flex-col items-center py-8 px-4">
           <Navbar />
 
