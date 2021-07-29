@@ -6,12 +6,10 @@ export default function Navbar() {
     <nav className="mb-16 md:mb-24 w-full max-w-3xl">
       <Link href="/">
         <a className="flex flex-row space-x-4 items-center cursor-pointer">
-          <Image
-            className="h-8 md:h-10 "
-            src="/logos/logomark.svg"
+          <img
+            className="h-4 md:h-6"
+            src="/logos/neurodiversity/logomark.svg"
             alt="Logo showing head on purple background"
-            width="300px"
-            height="32px"
           />
         </a>
       </Link>
