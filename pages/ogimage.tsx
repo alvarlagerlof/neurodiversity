@@ -1,10 +1,10 @@
 export default function OgImage({ title, description }) {
   return (
-    <div className="w-[2000px] h-[1200px] bg-new-secondary py-40 px-32 flex flex-col justify-between">
+    <div className="w-[2000px] h-[1200px] bg-secondary py-52 px-32 flex flex-col justify-between">
       <img src="/logos/logomark.svg" className="w-[900px]" />
       <div className="space-y-8">
-        <h1 className="text-[11em] font-displaynew leading-none">{title}</h1>
-        <h2 className="text-[5.2em] font-content leading-tight font-medium">
+        <h1 className="text-[11em] font-display leading-none">{title}</h1>
+        <h2 className="text-[5.2em] leading-tight font-medium">
           {description}
         </h2>
       </div>
