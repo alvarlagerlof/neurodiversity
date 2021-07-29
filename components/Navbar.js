@@ -7,7 +7,7 @@ export default function Navbar() {
       <Link href="/">
         <a className="flex flex-row space-x-4 items-center cursor-pointer">
           <img
-            className="h-4 md:h-6"
+            className="h-6"
             src="/logos/neurodiversity/logomark.svg"
             alt="Logo showing head on purple background"
           />
