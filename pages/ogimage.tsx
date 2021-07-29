@@ -4,7 +4,7 @@ export default function OgImage({ title, description }) {
       <img src="/logos/neurodiversity/logomark.svg" className="w-[900px]" />
       <div className="space-y-8">
         <h1 className="text-[11em] font-display leading-none">{title}</h1>
-        <h2 className="text-[5.2em] leading-tight text-semibold">
+        <h2 className="text-[5.2em] leading-snug text-semibold">
           {description}
         </h2>
       </div>
