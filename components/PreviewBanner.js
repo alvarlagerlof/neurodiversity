@@ -15,6 +15,4 @@ export default function PreviewBanner({ googleDocUrl }) {
       </div>
     );
   }
-
-  return false;
 }
