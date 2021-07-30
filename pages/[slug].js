@@ -1,24 +1,24 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 
-import Header from "components/blocks/Header";
-import Heading from "components/blocks/Heading";
-import Text from "components/blocks/Text";
-import Section from "components/blocks/Section";
-import List from "components/blocks/List";
-import Meta from "components/blocks/Meta";
-import Quote from "components/blocks/Quote";
-import QuoteGroup from "components/blocks/QuoteGroup";
-import Box from "components/blocks/Box";
-import Definition from "components/blocks/Definition";
-import DefinitionItem from "components/blocks/DefinitionItem";
-import IconHeading from "components/blocks/IconHeading";
-import PageGrid from "components/blocks/PageGrid";
-import PageLink from "components/blocks/PageLink";
-import Image from "components/blocks/Image";
+import Header from "components/Header";
+import Heading from "components/Heading";
+import Text from "components/Text";
+import Section from "components/Section";
+import List from "components/List";
+import Meta from "components/Meta";
+import Quote from "components/Quote";
+import QuoteGroup from "components/QuoteGroup";
+import WrongRight from "components/WrongRight";
+import Definition from "components/Definition";
+import DefinitionItem from "components/DefinitionItem";
+import Image from "components/Image";
 import ExternalLink from "components/ExternalLink";
 import PreviewBanner from "components/PreviewBanner";
 import Wrapper from "components/Wrapper";
+import ContentInset from "../components/ContentInset";
+import Spacer from "../components/Spacer";
+import Main from "../components/Main";
 
 import { getPageBySlug, getAllPages, getPublishedPages } from "lib/content";
 import { isPreview } from "lib/env";
@@ -34,14 +34,12 @@ const components = {
   img: Image,
   Section,
   Header,
-  IconHeading,
+  Main,
   Meta,
   QuoteGroup,
-  Box,
+  WrongRight,
   Definition,
   DefinitionItem,
-  PageGrid,
-  PageLink,
   PreviewBanner,
 };
 
@@ -49,7 +47,11 @@ export default function Doc({ frontMatter: { meta }, source }) {
   return (
     <Wrapper>
       <Meta {...meta} />
-      <MDXRemote components={components} {...source} />
+      <ContentInset size="normal">
+        <Spacer>
+          <MDXRemote components={components} {...source} />
+        </Spacer>
+      </ContentInset>
     </Wrapper>
   );
 }
