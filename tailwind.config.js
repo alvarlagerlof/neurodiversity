@@ -10,8 +10,9 @@ module.exports = {
       sans: ["Inter var", ...defaultTheme.fontFamily.sans],
     },
     backgroundImage: {
-      join: "url('/help-background.svg')",
-      "top-bar": "url('/top-border-background.svg')",
+      join: "url('/backgrounds/join.svg')",
+      "join-mobile": "url('/backgrounds/join-mobile.svg')",
+      "top-bar": "url('/backgrounds/top-border.svg')",
     },
     extend: {
       colors: {
