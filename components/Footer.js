@@ -60,8 +60,10 @@ function Bottom() {
             For better understanding
           </Typography.Heading>
         </section>
-        <hr className="border-secondary mt-16 mb-2" />
-        <section className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row justify-between">
+
+        <hr className="border-gray mt-16 mb-2 border-dashed" />
+
+        <section className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row justify-between text-gray">
           <p>
             Made by{" "}
             <a
