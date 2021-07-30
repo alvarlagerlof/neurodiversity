@@ -43,7 +43,7 @@ function Content({ open, children }) {
 
   return (
     <AnimateHeight
-      duration={300}
+      duration={400}
       height={open ? "auto" : 0} // see props documentation below
     >
       <div className={style}>{(open, children)}</div>
