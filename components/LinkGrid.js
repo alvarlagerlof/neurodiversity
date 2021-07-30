@@ -11,7 +11,7 @@ function Item({ href, title, description }) {
         href={href}
         className="h-full flex flex-row items-start space-x-2 bg-white shadow transition hover:shadow-md rounded-xl p-4 focus:outline-none focus:ring focus:ring-primary"
       >
-        <img src="/icons/arrow.svg" width="30px" height="30px" alt="" aria-hidden />
+        <img src="/icons/arrow.svg" className="w-6 md:w-7" alt="" aria-hidden />
         <div>
           <Typography.Heading margin="1">{title}</Typography.Heading>
           <Typography.Body margin="0">{description}</Typography.Body>
