@@ -16,9 +16,9 @@ import Image from "components/Image";
 import ExternalLink from "components/ExternalLink";
 import PreviewBanner from "components/PreviewBanner";
 import Wrapper from "components/Wrapper";
-import ContentInset from "../components/ContentInset";
-import Spacer from "../components/Spacer";
-import Main from "../components/Main";
+import ContentInset from "components/ContentInset";
+import VerticalSpacer from "components/VerticalSpacer";
+import Main from "components/Main";
 
 import { getPageBySlug, getAllPages, getPublishedPages } from "lib/content";
 import { isPreview } from "lib/env";
@@ -48,9 +48,9 @@ export default function Doc({ frontMatter: { meta }, source }) {
     <Wrapper>
       <Meta {...meta} />
       <ContentInset size="normal">
-        <Spacer>
+        <VerticalSpacer>
           <MDXRemote components={components} {...source} />
-        </Spacer>
+        </VerticalSpacer>
       </ContentInset>
     </Wrapper>
   );
