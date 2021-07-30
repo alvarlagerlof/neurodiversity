@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 
 import ContentInset from "components/ContentInset";
 import Typography from "components/Typography";
+import Button from "./Button";
 
 export default function Footer() {
   const { pathname } = useRouter();
@@ -32,9 +33,9 @@ function JoinBanner() {
             and neurodiverse people all welcome.
           </Typography.Body>
           <Link href="/join" passHref>
-            <a className="bg-secondary text-black py-2 px-5 rounded-full font-medium">
+            <Button as="a" variant="secondary">
               Find out how
-            </a>
+            </Button>
           </Link>
         </div>
       </ContentInset>

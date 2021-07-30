@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import ContentInset from "components/ContentInset";
+import Button from "components/Button";
 
 export default function Navbar() {
   return (
@@ -25,14 +26,15 @@ export default function Navbar() {
             </div>
           </a>
         </Link>
-        <a
+        <Button
+          variant="primary"
+          as="a"
           href="https://github.com/sponsors/alvarlagerlof"
           target="_blank"
           rel="noreferrer"
-          className="bg-primary text-white py-2 px-5 rounded-full font-medium"
         >
           Donate
-        </a>
+        </Button>
       </nav>
     </ContentInset>
   );
