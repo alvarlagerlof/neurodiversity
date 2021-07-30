@@ -1,9 +1,9 @@
-import Spacer from "components/Spacer";
+import VerticalSpacer from "components/VerticalSpacer";
 
 export default function Main({ children }) {
   return (
     <main>
-      <Spacer>{children}</Spacer>
+      <VerticalSpacer>{children}</VerticalSpacer>
     </main>
   );
 }
