@@ -5,7 +5,7 @@ export default function ContentInset({ size, children }) {
   };
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center px-4 md:px-8">
       <div className={classes[size]}>{children}</div>
     </div>
   );
