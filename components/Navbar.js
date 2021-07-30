@@ -8,11 +8,21 @@ export default function Navbar() {
       <nav className="mt-8 w-full flex flex-row justify-between items-center">
         <Link href="/" passHref>
           <a className="cursor-pointer">
-            <img
-              className="h-6"
-              src="/logos/neurodiversity/logomark-dark.svg"
-              alt="Neurodiversity"
-            />
+            <div className="sm:hidden">
+              <img
+                src="/logos/logo-primary.svg"
+                alt="Neurodiversity Wiki logo"
+                width="40px"
+                height="40px"
+              />
+            </div>
+            <div className="hidden sm:block">
+              <img
+                className="h-6"
+                src="/logos/logomark-primary.svg"
+                alt="Neurodiversity Wiki logo"
+              />
+            </div>
           </a>
         </Link>
         <a
