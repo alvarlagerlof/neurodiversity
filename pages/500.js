@@ -3,7 +3,7 @@ import Text from "components/Text";
 import ContentInset from "components/ContentInset";
 import Wrapper from "components/Wrapper";
 
-export default function Page500() {
+export default function Error500() {
   return (
     <Wrapper>
       <ContentInset size="normal">
