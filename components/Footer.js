@@ -17,7 +17,7 @@ export default function Footer() {
 
 function JoinBanner() {
   return (
-    <section className="w-full bg-primary bg-join-mobile sm:bg-join bg-cover bg-center  py-16 sm:py-28 ">
+    <section className="w-full bg-primary bg-join-mobile sm:bg-join bg-cover bg-center py-16 sm:py-28 ">
       <ContentInset size="wide">
         <div className="flex flex-col items-center">
           <Typography.Title as="h2" className="text-center text-white">
