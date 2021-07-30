@@ -1,9 +1,7 @@
+import Typography from "components/Typography";
+
 function LinkGrid({ children }) {
-  return (
-    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:-mx-4">
-      {children}
-    </ul>
-  );
+  return <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:-mx-4">{children}</ul>;
 }
 
 function Item({ href, title, description }) {
@@ -13,16 +11,10 @@ function Item({ href, title, description }) {
         href={href}
         className="h-full flex flex-row items-start space-x-2 bg-white shadow transition hover:shadow-md rounded-xl p-4 focus:outline-none focus:ring focus:ring-primary"
       >
-        <img
-          src="/icons/arrow.svg"
-          width="30px"
-          height="30px"
-          alt=""
-          aria-hidden
-        />
+        <img src="/icons/arrow.svg" width="30px" height="30px" alt="" aria-hidden />
         <div>
-          <h2 className="font-display font-semibold text-2xl">{title}</h2>
-          <p>{description}</p>
+          <Typography.Heading margin="1">{title}</Typography.Heading>
+          <Typography.Body margin="0">{description}</Typography.Body>
         </div>
       </a>
     </li>

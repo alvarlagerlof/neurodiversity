@@ -2,7 +2,6 @@ import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 
 import Header from "components/Header";
-import Heading from "components/Heading";
 import Text from "components/Text";
 import Section from "components/Section";
 import List from "components/List";
@@ -19,13 +18,14 @@ import Wrapper from "components/Wrapper";
 import ContentInset from "components/ContentInset";
 import VerticalSpacer from "components/VerticalSpacer";
 import Main from "components/Main";
+import Typography from "components/Typography";
 
 import { getPageBySlug, getAllPages, getPublishedPages } from "lib/content";
 import { isPreview } from "lib/env";
 
 const components = {
-  h1: Heading.H1,
-  h2: Heading.H2,
+  h1: Typography.Title,
+  h2: Typography.Heading,
   ul: List.Unordered,
   ol: List.Ordered,
   a: ExternalLink,
@@ -69,9 +69,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const pages = (await isPreview())
-    ? await getAllPages()
-    : await getPublishedPages();
+  const pages = (await isPreview()) ? await getAllPages() : await getPublishedPages();
 
   return {
     paths: pages.map((page) => {

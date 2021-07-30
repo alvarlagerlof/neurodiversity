@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import Typography from "components/Typography";
+
 export default function WrongRight({ title, wrong, right }) {
   return (
     <section className="space-y-8 rounded-xl bg-white shadow p-4 lg:-mx-4">
@@ -24,7 +26,7 @@ function IconHeading({ url, alt, children }) {
   return (
     <div className="flex flex-row space-x-2 mb-0">
       <Image src={url} alt={alt} width="24px" height="24px" />
-      <h3 className="font-display font-semibold text-2xl">{children}</h3>
+      <Typography.Heading margin="0">{children}</Typography.Heading>
     </div>
   );
 }
