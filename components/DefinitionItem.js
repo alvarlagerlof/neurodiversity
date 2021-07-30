@@ -1,5 +1,8 @@
 import { useState } from "react";
 import Image from "next/image";
+import AnimateHeight from "react-animate-height";
+
+import usePrefersReducedMotion from "components/usePrefersReducedMotion";
 
 export default function DefinitionItem({ summary, children }) {
   const [open, setOpen] = useState(false);
@@ -22,14 +25,28 @@ export default function DefinitionItem({ summary, children }) {
           />
         </button>
       </dt>
-      <dd
-        className="mt-2"
-        style={{
-          display: open ? "block" : "none",
-        }}
-      >
-        {children}
+      <dd>
+        <Content open={open}>{children}</Content>
       </dd>
     </div>
+  );
+}
+
+function Content({ open, children }) {
+  const prefersReducedMotion = usePrefersReducedMotion();
+
+  const style = "mt-2";
+
+  if (prefersReducedMotion) {
+    return <div className={style}>{(open, children)}</div>;
+  }
+
+  return (
+    <AnimateHeight
+      duration={300}
+      height={open ? "auto" : 0} // see props documentation below
+    >
+      <div className={style}>{(open, children)}</div>
+    </AnimateHeight>
   );
 }
