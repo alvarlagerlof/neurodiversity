@@ -1,7 +1,7 @@
-import Heading from "../components/blocks/Heading";
-import Text from "../components/blocks/Text";
-import ContentInset from "../components/ContentInset";
-import Wrapper from "../components/Wrapper";
+import Heading from "components/Heading";
+import Text from "components/Text";
+import ContentInset from "components/ContentInset";
+import Wrapper from "components/Wrapper";
 
 export default function Page404() {
   return (
