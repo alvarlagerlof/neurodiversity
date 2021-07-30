@@ -22,6 +22,7 @@ module.exports = {
         body: "#3B3B3B",
         gray: "#AEAEAE",
         white: "#FFFFFF",
+        separator: "#EBEBEB",
       },
     },
   },
