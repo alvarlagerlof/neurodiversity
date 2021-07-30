@@ -8,7 +8,7 @@ export default function DefinitionItem({ summary, children }) {
     <div className="py-2">
       <dt>
         <button
-          className="w-full flex flex-row justify-between items-center text-lg font-display font-medium rounded-md focus:outline-none focus:ring focus:ring-primary"
+          className="w-full flex flex-row justify-between items-center text-lg font-display font-medium rounded-md outline-none focus-visible:ring focus-visible:ring-primary"
           aria-expanded={open}
           onClick={() => setOpen((prev) => !prev)}
         >
