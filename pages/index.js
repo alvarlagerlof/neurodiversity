@@ -6,8 +6,8 @@ import Text from "components/Text";
 import PreviewBanner from "components/PreviewBanner";
 import Wrapper from "components/Wrapper";
 import ContentInset from "components/ContentInset";
-import Spacer from "components/Spacer";
-import PageGrid from "components/PageGrid";
+import VerticalSpacer from "components/VerticalSpacer";
+import LinkGrid from "components/LinkGrid";
 import Main from "components/Main";
 
 import { getPreviewPages, getPublishedPages } from "lib/content";
@@ -21,11 +21,10 @@ export default function Index({ publishedPages, previewPages, preview }) {
       <Meta
         title="Neurodiversity Wiki"
         description="Learn about OCD, Autism, Bipolar, Anxiety, Depression and more."
-        image="/social/index.jpg"
       />
 
       <ContentInset size="normal">
-        <Spacer>
+        <VerticalSpacer>
           <PreviewBanner googleDocUrl="https://docs.google.com/document/d/16nOmXROsCu_IMmtXyzLHy5sMqDLuFdkbkCxQ08WzFxQ/edit?usp=sharing" />
 
           <Header>
@@ -39,15 +38,20 @@ export default function Index({ publishedPages, previewPages, preview }) {
 
           <Main>
             <Section>
-              <PageGrid
-                pages={publishedPages.map(
-                  ({ slug, frontMatter: { name, explaination } }) => ({
-                    href: "/" + slug,
-                    name,
-                    explaination,
-                  })
+              <LinkGrid>
+                {publishedPages.map(
+                  ({ slug, frontMatter: { name, explaination } }) => {
+                    return (
+                      <LinkGrid.Item
+                        key={slug}
+                        href={`/${slug}`}
+                        title={name}
+                        description={explaination}
+                      />
+                    );
+                  }
                 )}
-              />
+              </LinkGrid>
             </Section>
 
             {preview && (
@@ -58,15 +62,20 @@ export default function Index({ publishedPages, previewPages, preview }) {
                   how to contribute to it.
                 </Text>
 
-                <PageGrid
-                  pages={previewPages.map(
-                    ({ slug, frontMatter: { name, explaination } }) => ({
-                      href: "/" + slug,
-                      name,
-                      explaination,
-                    })
+                <LinkGrid>
+                  {previewPages.map(
+                    ({ slug, frontMatter: { name, explaination } }) => {
+                      return (
+                        <LinkGrid.Item
+                          key={slug}
+                          href={`/${slug}`}
+                          title={name}
+                          description={explaination}
+                        />
+                      );
+                    }
                   )}
-                />
+                </LinkGrid>
               </Section>
             )}
 
@@ -85,7 +94,7 @@ export default function Index({ publishedPages, previewPages, preview }) {
               </Text>
             </Section>
           </Main>
-        </Spacer>
+        </VerticalSpacer>
       </ContentInset>
     </Wrapper>
   );
