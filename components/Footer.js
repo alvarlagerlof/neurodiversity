@@ -1,40 +1,59 @@
-import Image from "next/image";
-import ExternalLink from "components/ExternalLink";
+import Link from "next/link";
+
+import ContentInset from "components/ContentInset";
+import JoinBanner from "components/JoinBanner";
 
 export default function Footer() {
   return (
-    <div className="w-full max-w-3xl mt-12 ">
-      <footer className="flex flex-col md:flex-row items-center md:justify-between bg-gray-200 p-4 lg:-mx-4 rounded-xl">
-        <p className="text-center md:text-left mb-4 md:mb-0">
-          Made with <span>❤</span> by{" "}
-          <ExternalLink href="https://alvar.dev?utm_source=neurodiversity.wiki">
-            Alvar Lagerlöf
-          </ExternalLink>{" "}
-          in hopes of better understanding of neurological conditions.
-        </p>
-        <ul className="flex flew-row space-x-4">
-          <li>
-            <a href="https://github.com/alvarlagerlof/neurodiversity">
-              <Image
-                src="/logos/github.svg"
-                alt="Github logo"
-                width="24px"
-                height="24px"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/alvarlagerlof">
-              <Image
-                src="/logos/twitter.svg"
-                alt="Twitter logo"
-                width="24px"
-                height="24px"
-              />
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+    <footer className="w-full">
+      <JoinBanner />
+
+      <div className="w-full bg-black text-white flex flex-col items-center py-16">
+        <ContentInset size="wide">
+          <div className="space-y-4">
+            <Link href="/" passHref>
+              <a>
+                <img
+                  className="h-6"
+                  src="/logos/neurodiversity/logomark-light.svg"
+                  alt="Neurodiversity"
+                />
+              </a>
+            </Link>
+            <p>For better understanding</p>
+          </div>
+          <hr className="border-secondary mt-16 mb-2" />
+          <div className="flex flex-row justify-between">
+            <p>
+              Made by{" "}
+              <a
+                href="https://alvar.dev?utm_source=neurodiversity.wiki"
+                target="_blank"
+                rel="noreferrer"
+                className="text-secondary hover:underline"
+              >
+                Alvar Lagerlöf
+              </a>{" "}
+              and contributors
+            </p>
+            <ul className="flex flex-row">
+              <li>
+                <Link href="#" passHref>
+                  <a className="hover:underline">Terms & Conditions</a>
+                </Link>
+              </li>
+              <span className="px-1" aria-hidden>
+                •
+              </span>
+              <li>
+                <Link href="#" passHref>
+                  <a className="hover:underline">Privacy Policy</a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </ContentInset>
+      </div>
+    </footer>
   );
 }

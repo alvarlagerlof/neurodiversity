@@ -1,24 +1,20 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "components/Navbar";
+import Footer from "components/Footer";
+import TopBar from "components/TopBar";
+
 import { PlausibleProvider } from "../components/Plausible";
 
 export default function Wrapper({ children }) {
   return (
     <PlausibleProvider>
-      <div
-        className="flex flex-col min-h-screen"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(255,238,229,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%)",
-        }}
-      >
-        <div className="flex-1 flex flex-col items-center py-8 px-4">
+      <TopBar />
+      <div className="flex flex-col min-h-screen bg-secondary space-y-24">
+        <div className="flex-1 flex flex-col space-y-24">
           <Navbar />
 
-          <main className="max-w-3xl w-full space-y-12">{children}</main>
-
-          <Footer />
+          <div className="space-y-12 w-full">{children}</div>
         </div>
+        <Footer />
       </div>
     </PlausibleProvider>
   );
