@@ -15,7 +15,6 @@ function Item({ href, title, description }) {
             h-full flex flex-row items-start space-x-2 rounded-xl p-4 bg-white ring-primary transition 
             shadow
             hover:shadow-md 
-            active:shadow active:ring
             outline-none focus-visible:ring`}
         >
           <img src="/icons/arrow.svg" className="w-6 md:w-7" alt="" aria-hidden />
