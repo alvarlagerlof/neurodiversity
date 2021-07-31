@@ -1,9 +1,9 @@
 import Head from "next/head";
 
+import { useOgImage } from "next-ogimage";
+
 export default function Meta({ title, description }) {
-  const ogImageUrl = `https://${
-    process.env.NEXT_PUBLIC_VERCEL_URL
-  }/api/ogimage/?${new URLSearchParams({ title, description }).toString()}`;
+  const ogImage = useOgImage();
 
   return (
     <Head>
@@ -12,7 +12,7 @@ export default function Meta({ title, description }) {
       <meta property="og:title" content={title}></meta>
       <meta property="og:site_name" content="neurodiversity.wiki"></meta>
       <meta property="og:description" content={description}></meta>
-      <meta property="og:image" content={ogImageUrl}></meta>
+      <meta property="og:image" content={ogImage}></meta>
       <meta name="twitter:card" content="summary_large_image"></meta>
       <meta name="twitter:site" content="@alvarlagerlof"></meta>
       <meta name="twitter:creator" content="@alvarlagerlof"></meta>

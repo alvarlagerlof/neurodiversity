@@ -14,8 +14,8 @@ export default function Join() {
   return (
     <Wrapper>
       <Meta
-        title="Neurodiversity Wiki"
-        description="Learn about OCD, Autism, Bipolar, Anxiety, Depression and more."
+        title="Join us"
+        description="We're a small but awesome team of writers and developers."
       />
 
       <ContentInset size="normal">
