@@ -63,7 +63,7 @@ export default function Join() {
                 <LinkGrid.Item
                   href="https://twitter.com/n12ywiki"
                   title="Twitter"
-                  description="Send a DM"
+                  description="Send a direct message"
                 />
               </LinkGrid>
             </Section>

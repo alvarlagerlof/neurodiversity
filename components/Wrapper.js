@@ -1,10 +1,22 @@
+import { useEffect } from "react";
+import { Globals } from "react-spring";
+
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
 import TopBar from "components/TopBar";
+import { PlausibleProvider } from "components/Plausible";
 
-import { PlausibleProvider } from "../components/Plausible";
+import usePrefersReducedMotion from "lib/useReducedMotion";
 
 export default function Wrapper({ children }) {
+  const prefersReducedMotion = usePrefersReducedMotion();
+
+  useEffect(() => {
+    Globals.assign({
+      skipAnimation: prefersReducedMotion,
+    });
+  }, [prefersReducedMotion]);
+
   return (
     <PlausibleProvider>
       <TopBar />

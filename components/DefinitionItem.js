@@ -1,52 +1,68 @@
-import { useState } from "react";
-import Image from "next/image";
-import AnimateHeight from "react-animate-height";
+import { useState, useRef } from "react";
+import { useSpring, animated } from "react-spring";
 
-import usePrefersReducedMotion from "components/usePrefersReducedMotion";
+import useHeight from "lib/useHeight";
 
 export default function DefinitionItem({ summary, children }) {
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="py-2">
       <dt>
         <button
-          className="w-full flex flex-row justify-between items-center text-lg font-display font-medium rounded-md outline-none focus-visible:ring focus-visible:ring-primary"
-          aria-expanded={open}
-          onClick={() => setOpen((prev) => !prev)}
+          className="w-full flex flex-row justify-between items-center space-x-4 text-lg font-display font-medium rounded-md outline-none focus-visible:ring focus-visible:ring-primary"
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen((prev) => !prev)}
         >
           <span className="text-left">{summary}</span>
-          <Image
-            aria-hidden
-            alt=""
-            src={open ? "/icons/close.svg" : "/icons/open.svg"}
-            width="24px"
-            height="24px"
-          />
+          <Icon open={isOpen} />
         </button>
       </dt>
       <dd>
-        <Content open={open}>{children}</Content>
+        <Content open={isOpen}>{children}</Content>
       </dd>
     </div>
   );
 }
 
-function Content({ open, children }) {
-  const prefersReducedMotion = usePrefersReducedMotion();
-
-  const style = "mt-2";
-
-  if (prefersReducedMotion) {
-    return <div className={style}>{(open, children)}</div>;
-  }
+function Icon({ open: isOpen }) {
+  const styles = useSpring({
+    config: { mass: 1, tension: 180, friction: 12 },
+    transform: isOpen ? "rotate(45deg)" : "rotate(0deg)",
+  });
 
   return (
-    <AnimateHeight
-      duration={400}
-      height={open ? "auto" : 0} // see props documentation below
+    <animated.img
+      aria-hidden
+      alt=""
+      src="/icons/plus.svg"
+      width="24px"
+      height="24px"
+      style={styles}
+    />
+  );
+}
+
+function Content({ open: isOpen, children }) {
+  const ref = useRef(null);
+  const height = useHeight(ref);
+
+  const styles = useSpring({
+    config: { mass: 1, tension: 200, friction: 26 },
+    height: isOpen ? height : 0,
+    opacity: isOpen ? 1 : 0,
+  });
+
+  return (
+    <animated.div
+      style={{
+        overflow: "clip",
+        ...styles,
+      }}
     >
-      <div className={style}>{(open, children)}</div>
-    </AnimateHeight>
+      <div className="pt-2" ref={ref}>
+        {children}
+      </div>
+    </animated.div>
   );
 }
