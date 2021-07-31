@@ -1,5 +1,5 @@
 module.exports = {
-  outputFolder: "public/ogimages",
+  publicOutputFolder: "ogimages",
   devServerPort: "3099",
   layoutPath: "/ogimagelayout",
   ignorePaths: ["/ogimagelayout"],
