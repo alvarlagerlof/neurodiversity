@@ -1,6 +1,6 @@
 export default function ContentInset({ size, children }) {
   const classes = {
-    wide: "max-w-4xl w-full sm:w-3/4",
+    wide: "max-w-4xl w-full sm:w-11/12",
     normal: "max-w-3xl w-full sm:w-10/12",
   };
 
