@@ -11,7 +11,7 @@
 # next.js
 /.next/
 /out/
-/public/ogimages
+/public/next-opengraph-image
 
 # production
 /build

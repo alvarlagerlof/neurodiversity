@@ -1,13 +1,4 @@
 module.exports = {
-  webpack: (config, options) => {
-    config.module.rules.push({
-      test: /server.*\.ts$/,
-      exclude: [path.resolve(__dirname, "./")],
-    });
-
-    return config;
-  },
-
   pageExtensions: ["js", "jsx", "mdx", "tsx", "ts"],
   async redirects() {
     return [
