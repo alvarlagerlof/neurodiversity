@@ -3074,9 +3074,9 @@ next-mdx-remote@^3.0.4:
     pkg-dir "^5.0.0"
 
 next-opengraph-image@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/next-opengraph-image/-/next-opengraph-image-1.0.2.tgz#1633e0358e94afa30eaaa2c88a6f005423c912d8"
-  integrity sha512-tcOl64pHWKzBTXGyDZYj7C8LC5Kpk2nmouBH2cNb+WIJfQ7+RjFuOtZmUfsyW9xD7c+1aKLJ+jGmjOjZDGkZWg==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/next-opengraph-image/-/next-opengraph-image-1.0.3.tgz#4961be749588b78566e1daf31ef7c8a3dff83316"
+  integrity sha512-Qvy7qySgNvOsP8Q8I5fGHcjPrvvSSQszWLk24fyDwq6UjMQyxUts41YnAOnvhIRbf8OGPUyRXgltcowschop2Q==
   dependencies:
     "@corex/deepmerge" "^2.6.20"
     get-port "^5.1.1"
