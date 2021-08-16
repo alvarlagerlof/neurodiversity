@@ -2721,10 +2721,10 @@ next-mdx-remote@^3.0.4:
     esbuild "^0.12.9"
     pkg-dir "^5.0.0"
 
-next-plausible@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-2.0.0.tgz#2f5536ef3945c9a516471c2d5eda68887d447d74"
-  integrity sha512-NaLrAK+LsnEyXz31qy9OjhXZlppp0aWUdKmBPgthrWeGPwLo7ojSWgWU2BzbbUOqi0XVoWjaMa3oNVDfVkyC5w==
+next-plausible@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-2.1.1.tgz#d64a1660840c93be50c3cdb96abc13758004fb1d"
+  integrity sha512-uua8WXHHnkQVTknSTBpCPN6fKCcOiSPgSWtFCUsgZS6nLP5Gj5W77I8n7hiNRpH6yw9tUbW8eF+fR/ch22pk8g==
 
 next-sitemap@^1.6.140:
   version "1.6.140"
