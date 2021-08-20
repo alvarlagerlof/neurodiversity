@@ -68,7 +68,7 @@ function Bottom() {
           <p>
             Made by{" "}
             <a
-              href="https://alvar.dev?utm_source=neurodiversity.wiki"
+              href="https://twitter.com/alvarlagerlof"
               target="_blank"
               rel="noreferrer"
               className="text-secondary hover:underline"
