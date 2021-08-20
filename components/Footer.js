@@ -77,7 +77,7 @@ function Bottom() {
             </a>{" "}
             and contributors
           </p>
-          <ul className="flex flex-row">
+          {/* <ul className="flex flex-row">
             <li>
               <Link href="#" passHref>
                 <a className="hover:underline">Terms & Conditions</a>
@@ -91,7 +91,7 @@ function Bottom() {
                 <a className="hover:underline">Privacy Policy</a>
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </section>
       </ContentInset>
     </section>
