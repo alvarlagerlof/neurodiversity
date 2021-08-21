@@ -21,33 +21,34 @@ export default function Join() {
       <ContentInset size="normal">
         <VerticalSpacer>
           <PreviewBanner googleDocUrl="https://docs.google.com/document/d/16nOmXROsCu_IMmtXyzLHy5sMqDLuFdkbkCxQ08WzFxQ/edit?usp=sharing" />
-
           <Header>
             <Typography.Title>Join us</Typography.Title>
             <Typography.Subtitle>
-              First of all, thank you! We're a small but awesome team of writers and
-              developers.
+              First of all, thank you for considering! We're a small community looking for
+              more awesome people to join us.
             </Typography.Subtitle>
           </Header>
 
           <Main>
             <Section>
               <Typography.Body>
-                The goal of this website is to be as clear as possible. We believe that
-                readability and ease of use are crucial to not "lose" people before
-                they've read a page. We're sacrificing some accuracy, but since the
-                current level of knowledge is so low, it is worth it.
+                This website is created by people wanting to spread awareness about
+                neurodiversity. We're everything from developers, parents, designers to
+                journalists. To cover as many conditions as possible in a representative
+                way, we need the perspective of many. Together, can make a wiki that
+                explains these conditions in a simple way for the general public.
               </Typography.Body>
               <Typography.Body>
-                With that said, any help is appreciated! You do not need to be a computer
-                expert or coder. Everything from writers, designers, and people
-                knowledgeable about this stuff would be helpful.
+                So with that said, any help is appreciated. While people who can write,
+                code, design and organize are in need, that is not a requirement. Feedback
+                and personal perspective is also very appreciated! If this is something
+                that interests you consider joining us.
               </Typography.Body>
             </Section>
             <Section>
               <Typography.Heading>Channels</Typography.Heading>
               <Typography.Body>
-                Reach out on any of these channels and we can find out where you fit in!
+                Reach out on any of these channels, and we can find out where you fit in.
               </Typography.Body>
               <LinkGrid>
                 <LinkGrid.Item

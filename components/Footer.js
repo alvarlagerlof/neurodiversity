@@ -29,8 +29,8 @@ function JoinBanner() {
             className="text-center max-w-xl !text-white"
             margin="8"
           >
-            We’re looking for awesome people to join us. Writers, developers, designers
-            and neurodiverse people all welcome.
+            We’re a community looking for awesome people to join us. Neurodiverse people,
+            writers, developers, designers and more are all welcome.
           </Typography.Body>
           <Link href="/join" passHref>
             <Button as="a" variant="secondary">

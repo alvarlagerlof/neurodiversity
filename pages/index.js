@@ -77,14 +77,31 @@ export default function Index({ publishedPages, previewPages, preview }) {
             <Section>
               <Typography.Heading>Why?</Typography.Heading>
               <Typography.Body>
-                In some environments, these conditions are joked about. Imagine then being
-                a neurodiverse person in there. They will likely feel uncomfortable
-                sharing their condition. Even if it isn't jokes, being misunderstood also
-                makes life harder.
+                Neurodiveristy Wiki is a crowd-sourced website that aims to spread
+                awareness about neurological conditions. There are millions of people
+                around the world living with the conditions such as the ones above. Still,
+                the knowledge level about this is often almost zero. This is
+                understandable as talking about mental health is stigmatized.
               </Typography.Body>
               <Typography.Body>
-                Lack of knowledge and misinformation lead to unfortunate situations. With
-                knowledge comes understanding and compassion. Then language improves.
+                The effect of this lack of knowledge can be devastating. Without
+                knowledge, misconceptions and insensitive jokes tend to be common. These
+                make it harder for people to tell others about their conditions. They fear
+                how they'll be perceived or treated.
+              </Typography.Body>
+              <Typography.Body>
+                As the knowledge level of the general population increases, so does
+                compassion and understanding. More people would feel comfortable telling
+                others who they are and how others can help them.
+              </Typography.Body>
+              <Typography.Body>
+                This website tackles the information problem by providing short and
+                easy-to-read information. We know that content cannot be buried in
+                articles on a blog, or written in complex medical language. Neither can it
+                be local to one country, or on a website with too much focus on marketing
+                its achievements. All these things would work against our goal of
+                educating as many people as possible. We couldn't find a website that
+                fulfilled all of these things, so we made one.
               </Typography.Body>
             </Section>
           </Main>
