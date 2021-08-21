@@ -35,7 +35,7 @@ function Icon({ open: isOpen }) {
     <animated.img
       aria-hidden
       alt=""
-      src="/icons/plus.svg"
+      src="/icons/plus-outline.svg"
       width="24px"
       height="24px"
       style={styles}

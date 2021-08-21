@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import ContentInset from "components/ContentInset";
 import Button from "components/Button";
+import DonateDropdown from "components/DonateDropdown";
 
 export default function Navbar() {
   return (
@@ -26,7 +27,7 @@ export default function Navbar() {
             </div>
           </a>
         </Link>
-        <Button
+        {/* <Button
           variant="primary"
           as="a"
           href="https://github.com/sponsors/alvarlagerlof"
@@ -34,7 +35,9 @@ export default function Navbar() {
           rel="noreferrer"
         >
           Donate
-        </Button>
+        </Button> */}
+
+        <DonateDropdown />
       </nav>
     </ContentInset>
   );
