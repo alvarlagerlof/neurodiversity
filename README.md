@@ -2,7 +2,7 @@
 
 # Neurodiversity
 
-Neurodiveristy Wiki is a crowd-sourced [website](https://neurodiversity.wiki) that aims to spread awareness about neurological conditions. There are millions of people around the world living with the conditions such as ADHD, Autism, Bipolar and OCD. Still, the knowledge level about this is often almost zero. This is understandable as talking about mental health is stigmatized.
+Neurodiveristy Wiki is a crowd-sourced [website](https://neurodiversity.wiki) that aims to spread awareness about neurological conditions. We define neurodiversity as all the ways that our brains work differently from each other. There are millions of people around the world living with the conditions such as ADHD, Autism, Bipolar and OCD. Still, the knowledge level about this is often almost zero. This is understandable as talking about mental health is stigmatized.
 
 The effect of this lack of knowledge can be devastating. Without knowledge, misconceptions and insensitive jokes tend to be common. These make it harder for people to tell others about their conditions. They fear how they'll be perceived or treated.
 
@@ -12,8 +12,8 @@ This website tackles the information problem by providing short and
 easy-to-read information. We believe that this content should not be
 buried in articles on a blog, or written in complex medical language. Nor
 should it be local to one country, or on a website with too much focus on
-marketing its achievements. All these things would work against our goal
-of educating as many people as possible. We couldn't find a website that
+marketing its achievements. It's also common to only focus on one
+conditon, even though knowledge about even though knowledge about most of them is lacking. All these things would work against our goal of educating as many people as possible. We couldn't find a website that
 fulfilled all of these things, so we made one.
 
 ## Want to join us?
