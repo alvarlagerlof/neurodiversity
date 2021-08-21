@@ -13,7 +13,7 @@
     "next": "11.1.0",
     "next-mdx-remote": "^3.0.4",
     "next-opengraph-image": "^1.0.0",
-    "next-sitemap": "^1.6.140",
+    "next-sitemap": "^1.6.162",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-spring": "^9.2.4"
