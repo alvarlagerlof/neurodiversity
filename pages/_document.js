@@ -12,10 +12,7 @@ class MyDocument extends Document {
         <Head>
           <meta name="theme-color" content="#FFEEE5"></meta>
 
-          <link
-            rel="apple-touch-icon"
-            href="/favicons/favicon-180x180.png"
-          ></link>
+          <link rel="apple-touch-icon" href="/favicons/favicon-180x180.png"></link>
           <link
             rel="icon"
             type="image/png"
@@ -40,11 +37,7 @@ class MyDocument extends Document {
             sizes="192x192"
             href="/favicons/favicon-192x192.png"
           ></link>
-          <link
-            rel="icon"
-            type="image/x-icon"
-            href="/favicons/favicon.ico"
-          ></link>
+          <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico"></link>
 
           <link
             href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap"
