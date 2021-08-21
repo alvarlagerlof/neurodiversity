@@ -20,7 +20,7 @@ fulfilled all of these things, so we made one.
 
 We're everything from developers, parents, designers to journalists. To cover as many conditions as possible in a representative way, we need the perspective of many. Together, can make a wiki that explains these conditions in a simple way for the general public.
 
-So with that said, any help is appreciated. While people who can write, code, design and organize are in need, that is not a requirement. Feedback and personal perspective is also very appreciated! If this is something that interests you consider joining us.
+So with that said, any help is appreciated. While people who can write, code, design and organize are in need, that is not a requirement. Feedback and personal perspective is also very appreciated! If this is something that interests you, consider joining us.
 
 Reach out on [Twitter DMs](https://twitter.com/alvarlagerlof) or [join the Discord server](https://discord.gg/EcEyW9Xz3M).
 

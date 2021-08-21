@@ -42,7 +42,7 @@ export default function Join() {
                 So with that said, any help is appreciated. While people who can write,
                 code, design and organize are in need, that is not a requirement. Feedback
                 and personal perspective is also very appreciated! If this is something
-                that interests you consider joining us.
+                that interests you, consider joining us.
               </Typography.Body>
             </Section>
             <Section>
