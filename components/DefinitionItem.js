@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { useSpring, animated } from "react-spring";
 
 import useHeight from "lib/useHeight";
-import usePlausible from "lib/usePlausible";
+import { usePlausible } from "components/Plausible";
 
 export default function DefinitionItem({ summary, children }) {
   const [isOpen, setIsOpen] = useState(false);
