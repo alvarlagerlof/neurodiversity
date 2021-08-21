@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "11.0.1",
+    "next": "11.1.0",
     "next-mdx-remote": "^3.0.4",
     "next-opengraph-image": "^1.0.0",
     "next-sitemap": "^1.6.140",
