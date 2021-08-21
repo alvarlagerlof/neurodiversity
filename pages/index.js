@@ -96,11 +96,11 @@ export default function Index({ publishedPages, previewPages, preview }) {
               </Typography.Body>
               <Typography.Body>
                 This website tackles the information problem by providing short and
-                easy-to-read information. We know that content cannot be buried in
-                articles on a blog, or written in complex medical language. Neither can it
-                be local to one country, or on a website with too much focus on marketing
-                its achievements. All these things would work against our goal of
-                educating as many people as possible. We couldn't find a website that
+                easy-to-read information. We believe that this content should not be
+                buried in articles on a blog, or written in complex medical language. Nor
+                should it be local to one country, or on a website with too much focus on
+                marketing its achievements. All these things would work against our goal
+                of educating as many people as possible. We couldn't find a website that
                 fulfilled all of these things, so we made one.
               </Typography.Body>
             </Section>
