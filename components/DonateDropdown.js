@@ -3,8 +3,10 @@ import { useSpring, animated } from "react-spring";
 
 import Button from "components/Button";
 import useOnClickOutside from "lib/useOnClickOutside";
+import { usePlausible } from "./Plausible";
 
 export default function DonateDropdown() {
+  const plausible = usePlausible();
   const ref = useRef();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,11 +18,16 @@ export default function DonateDropdown() {
 
   useOnClickOutside(ref, () => setIsOpen(false));
 
+  const toggle = () => {
+    plausible("Donate button: Click");
+    setIsOpen((prev) => !prev);
+  };
+
   return (
     <div className="relative inline-block text-left" ref={ref}>
       <Button
         variant="primary"
-        onClick={() => setIsOpen((prev) => !prev)}
+        onClick={() => toggle()}
         id="menu-button"
         aria-expanded={isOpen}
         aria-haspopup="true"

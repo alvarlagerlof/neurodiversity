@@ -5,6 +5,17 @@ import useHeight from "lib/useHeight";
 
 export default function DefinitionItem({ summary, children }) {
   const [isOpen, setIsOpen] = useState(false);
+  const plausible = usePlausible();
+
+  const toggle = () => {
+    plausible("Definition item: Click", {
+      props: {
+        summary,
+      },
+    });
+
+    setIsOpen((prev) => !prev);
+  };
 
   return (
     <div className="py-2">
@@ -12,7 +23,7 @@ export default function DefinitionItem({ summary, children }) {
         <button
           className="w-full flex flex-row justify-between items-center space-x-4 text-lg font-display font-medium rounded-md outline-none focus-visible:ring focus-visible:ring-primary"
           aria-expanded={isOpen}
-          onClick={() => setIsOpen((prev) => !prev)}
+          onClick={() => toggle()}
         >
           <span className="text-left">{summary}</span>
           <Icon open={isOpen} />
