@@ -1,11 +1,15 @@
-import Heading from "../components/blocks/Heading";
-import Text from "../components/blocks/Text";
+import Text from "components/Text";
+import ContentInset from "components/ContentInset";
+import Wrapper from "components/Wrapper";
+import Typography from "components/Typography";
 
-export default function Page404() {
+export default function Error404() {
   return (
-    <>
-      <Heading.H1>404</Heading.H1>
-      <Text>Page not found</Text>
-    </>
+    <Wrapper>
+      <ContentInset size="normal">
+        <Typography.Title>404</Typography.Title>
+        <Text>Page not found</Text>
+      </ContentInset>
+    </Wrapper>
   );
 }

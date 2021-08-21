@@ -1,22 +1,27 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      display: ["Cabin", "sans-serif"],
-      content: ["Inter", "sans-serif"],
+      display: ["Inter var", ...defaultTheme.fontFamily.sans],
+      sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+    },
+    backgroundImage: {
+      join: "url('/backgrounds/join.svg')",
+      "join-mobile": "url('/backgrounds/join-mobile.svg')",
+      "top-bar": "url('/backgrounds/top-border.svg')",
     },
     extend: {
       colors: {
-        primary: {
-          light: "#D49DFF",
-          dark: "#831DD3",
-        },
-        secondary: {
-          light: "#FFF6E0",
-          dark: "#FFDE89",
-        },
+        primary: "#860091",
+        secondary: "#FFEEE5",
+        highlight: "rgba(194, 65, 25, 0.2)",
+        body: "#3B3B3B",
+        gray: "#AEAEAE",
+        white: "#FFFFFF",
       },
     },
   },

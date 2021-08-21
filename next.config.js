@@ -1,5 +1,5 @@
 module.exports = {
-  pageExtensions: ["js", "jsx", "mdx"],
+  pageExtensions: ["js", "jsx", "mdx", "tsx", "ts"],
   async redirects() {
     return [
       {

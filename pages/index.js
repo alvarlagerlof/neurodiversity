@@ -1,12 +1,13 @@
-import Header from "../components/blocks/Header";
-import Heading from "../components/blocks/Heading";
-import Meta from "../components/blocks/Meta";
-import PageGrid from "../components/blocks/PageGrid";
-import PageLink from "../components/blocks/PageLink";
-import Section from "../components/blocks/Section";
-import Text from "../components/blocks/Text";
-import ExternalLink from "../components/ExternalLink";
-import PreviewBanner from "../components/PreviewBanner";
+import Header from "components/Header";
+import Typography from "components/Typography";
+import Meta from "components/Meta";
+import Section from "components/Section";
+import PreviewBanner from "components/PreviewBanner";
+import Wrapper from "components/Wrapper";
+import ContentInset from "components/ContentInset";
+import VerticalSpacer from "components/VerticalSpacer";
+import LinkGrid from "components/LinkGrid";
+import Main from "components/Main";
 
 import { getPreviewPages, getPublishedPages } from "lib/content";
 import { isPreview } from "lib/env";
@@ -15,107 +16,98 @@ import { isPreview } from "lib/env";
 
 export default function Index({ publishedPages, previewPages, preview }) {
   return (
-    <>
+    <Wrapper>
       <Meta
-        title="Neurodiversity Wiki: Learn about neurological conditions"
-        description="Learn about things like OCD, Autism, Bipolar, Anxiety, Depression and more. Educate yourself to understand and help others around you."
-        image="/social/index.jpg"
+        title="Neurodiversity Wiki"
+        description="Learn about OCD, Autism, Bipolar, Anxiety, Depression and more."
       />
 
-      <PreviewBanner googleDocUrl="https://docs.google.com/document/d/16nOmXROsCu_IMmtXyzLHy5sMqDLuFdkbkCxQ08WzFxQ/edit?usp=sharing" />
+      <ContentInset size="normal">
+        <VerticalSpacer>
+          <PreviewBanner googleDocUrl="https://docs.google.com/document/d/16nOmXROsCu_IMmtXyzLHy5sMqDLuFdkbkCxQ08WzFxQ/edit?usp=sharing" />
 
-      <Header>
-        <Heading.H1>Welcome!</Heading.H1>
-        <Text>
-          Most people have very little knowledge about different neurological
-          conditions, which is unfortunate and fixable. This page helps you
-          educate yourself about them.
-        </Text>
-        <Text>Pages are listed below</Text>
+          <Header>
+            <Typography.Title>Hello there!</Typography.Title>
+            <Typography.Subtitle>
+              Neurodiversity is a word that refers to the ways brains differ. These
+              differences are grouped into conditions. This website helps you understand
+              some common ones.
+            </Typography.Subtitle>
+          </Header>
 
-        <PageGrid>
-          {publishedPages.map(({ slug, frontMatter: { start } }) => {
-            return (
-              <PageLink key={slug} href={"/" + slug} {...start} clickable />
-            );
-          })}
-        </PageGrid>
-      </Header>
+          <Main>
+            <Section>
+              <LinkGrid>
+                {publishedPages.map(({ slug, frontMatter: { name, explaination } }) => {
+                  return (
+                    <LinkGrid.Item
+                      key={slug}
+                      href={`/${slug}`}
+                      title={name}
+                      description={explaination}
+                    />
+                  );
+                })}
+              </LinkGrid>
+            </Section>
 
-      <Section>
-        <Heading.H2>Coming soon</Heading.H2>
-        <Text>
-          The pages below are currently being made. Click{" "}
-          <a className="text-primary-dark" href="#howcanihelp">
-            here{" "}
-          </a>
-          if you want to help out.
-        </Text>
+            {preview && (
+              <Section>
+                <Typography.Heading>Pages in preview</Typography.Heading>
+                <Typography.Body>
+                  The pages below are currently being made. Open one to find out how to
+                  contribute to it.
+                </Typography.Body>
 
-        <PageGrid>
-          {previewPages.map(({ slug, frontMatter: { start } }) => {
-            return (
-              <PageLink
-                key={slug}
-                href={"/" + slug}
-                {...start}
-                clickable={preview}
-              />
-            );
-          })}
-        </PageGrid>
-      </Section>
+                <LinkGrid>
+                  {previewPages.map(({ slug, frontMatter: { name, explaination } }) => {
+                    return (
+                      <LinkGrid.Item
+                        key={slug}
+                        href={`/${slug}`}
+                        title={name}
+                        description={explaination}
+                      />
+                    );
+                  })}
+                </LinkGrid>
+              </Section>
+            )}
 
-      <Section>
-        <Heading.H2>Why?</Heading.H2>
-        <Text>
-          People often mention or joke about neurological conditions without
-          realizing how it will be interpreted. By doing that they are hurting
-          those who have conditions. By joking about it, you slowly change what
-          people think when they hear the word, and that hurts the people who
-          actually have the condition.
-        </Text>
-        <Text>
-          Misinformation or the lack of information is the cause. This site aims
-          to combat this using easy-to-understand pages about various
-          conditions. With understanding, the hope is that language can become
-          more inclusive.
-        </Text>
-        <Text>
-          The goal isn't medical accuracy. That would work inversely to lose
-          people reading because of the complexity. The goal is to get people to
-          rethink their definitions and consider how their language is hurtful.
-        </Text>
-      </Section>
-
-      <Section>
-        <Heading.H2 id="howcanihelp">How can I help?</Heading.H2>
-        <Text>
-          The list above is not complete, nor is the content perfect. If you're
-          familiar with any of the above (personally or via relatives) and want
-          to help making this site even better, please do reach out.
-        </Text>
-        <Text>
-          You do not need to be a coder to be able to contribute. There is a{" "}
-          <ExternalLink href="https://preview.neurodiversity.wiki">
-            preview site
-          </ExternalLink>{" "}
-          containing links to Google Docs that you can leave suggestions on, a{" "}
-          <ExternalLink href="https://discord.gg/EcEyW9Xz3M">
-            Discord server
-          </ExternalLink>{" "}
-          that you can join to participate in discussion. You can also{" "}
-          <ExternalLink href="https://twitter.com/alvarlagerlof">
-            DM me
-          </ExternalLink>{" "}
-          on Twitter or open an issue on{" "}
-          <ExternalLink href="https://github.com/alvarlagerlof/not-ocd">
-            GitHub
-          </ExternalLink>
-          .
-        </Text>
-      </Section>
-    </>
+            <Section>
+              <Typography.Heading>Why?</Typography.Heading>
+              <Typography.Body>
+                Neurodiveristy Wiki is a crowd-sourced website that aims to spread
+                awareness about neurological conditions. There are millions of people
+                around the world living with the conditions such as the ones above. Still,
+                the knowledge level about this is often almost zero. This is
+                understandable as talking about mental health is stigmatized.
+              </Typography.Body>
+              <Typography.Body>
+                The effect of this lack of knowledge can be devastating. Without
+                knowledge, misconceptions and insensitive jokes tend to be common. These
+                make it harder for people to tell others about their conditions. They fear
+                how they'll be perceived or treated.
+              </Typography.Body>
+              <Typography.Body>
+                As the knowledge level of the general population increases, so does
+                compassion and understanding. More people would feel comfortable telling
+                others who they are and how others can help them.
+              </Typography.Body>
+              <Typography.Body>
+                This website tackles the information problem by providing short and
+                easy-to-read information. We know that content cannot be buried in
+                articles on a blog, or written in complex medical language. Neither can it
+                be local to one country, or on a website with too much focus on marketing
+                its achievements. All these things would work against our goal of
+                educating as many people as possible. We couldn't find a website that
+                fulfilled all of these things, so we made one.
+              </Typography.Body>
+            </Section>
+          </Main>
+        </VerticalSpacer>
+      </ContentInset>
+    </Wrapper>
   );
 }
 
@@ -126,10 +118,7 @@ export async function getServerSideProps({ res, req }) {
 
   switch (req.headers.host) {
     case "notocd.com":
-      res.setHeader(
-        "Location",
-        `https://neurodiversity.wiki/ocd?utm_source=notocd.com`
-      );
+      res.setHeader("Location", `https://neurodiversity.wiki/ocd?utm_source=notocd.com`);
       res.statusCode = 301;
   }
 

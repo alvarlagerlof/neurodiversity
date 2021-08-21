@@ -1,23 +1,41 @@
 import Link from "next/link";
-import Image from "next/image";
+
+import ContentInset from "components/ContentInset";
+import Button from "components/Button";
 
 export default function Navbar() {
   return (
-    <nav className="max-w-3xl mb-16 md:mb-24 w-full">
-      <Link href="/">
-        <a className="flex flex-row space-x-4 items-center cursor-pointer">
-          <Image
-            className="w-8 md:w-10 "
-            src="/logos/neurodiversity.svg"
-            alt="Logo showing head on purple background"
-            width="32px"
-            height="32px"
-          />
-          <h1 className="font-display font-semibold text-xl md:text-2xl cursor-pointer">
-            neurodiversity.wiki
-          </h1>
-        </a>
-      </Link>
-    </nav>
+    <ContentInset size="wide">
+      <nav className="mt-8 w-full flex flex-row justify-between items-center">
+        <Link href="/" passHref>
+          <a className="cursor-pointer">
+            <div className="sm:hidden">
+              <img
+                src="/logos/logo-primary.svg"
+                alt="Neurodiversity Wiki logo"
+                width="40px"
+                height="40px"
+              />
+            </div>
+            <div className="hidden sm:block">
+              <img
+                className="h-6"
+                src="/logos/logomark-primary.svg"
+                alt="Neurodiversity Wiki logo"
+              />
+            </div>
+          </a>
+        </Link>
+        <Button
+          variant="primary"
+          as="a"
+          href="https://github.com/sponsors/alvarlagerlof"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Donate
+        </Button>
+      </nav>
+    </ContentInset>
   );
 }
