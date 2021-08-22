@@ -48,8 +48,8 @@ export default function DonateDropdown() {
           <Item href="https://github.com/sponsors/alvarlagerlof" isOpen={isOpen}>
             GitHub
           </Item>
-          <Item href="https://ko-fi.com/alvar" isOpen={isOpen}>
-            Ko-fi
+          <Item href="https://www.buymeacoffee.com/alvar" isOpen={isOpen}>
+            Buy Me a Coffee
           </Item>
         </ul>
       </animated.div>
