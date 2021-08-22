@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="theme-color" content="#FFEEE5"></meta>
+          <meta name="theme-color" content="#860091"></meta>
 
           <link rel="apple-touch-icon" href="/favicons/favicon-180x180.png"></link>
           <link
