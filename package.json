@@ -19,7 +19,7 @@
     "react-spring": "^9.2.4"
   },
   "devDependencies": {
-    "@types/marked": "^2.0.4",
+    "@types/marked": "^3.0.0",
     "@types/react": "^17.0.19",
     "autoprefixer": "^10.3.1",
     "chrome-aws-lambda": "^10.1.0",
