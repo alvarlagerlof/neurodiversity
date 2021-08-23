@@ -3080,10 +3080,10 @@ next-mdx-remote@^3.0.4:
     esbuild "^0.12.9"
     pkg-dir "^5.0.0"
 
-next-opengraph-image@^1.0.0:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/next-opengraph-image/-/next-opengraph-image-1.0.3.tgz#4961be749588b78566e1daf31ef7c8a3dff83316"
-  integrity sha512-Qvy7qySgNvOsP8Q8I5fGHcjPrvvSSQszWLk24fyDwq6UjMQyxUts41YnAOnvhIRbf8OGPUyRXgltcowschop2Q==
+next-opengraph-image@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/next-opengraph-image/-/next-opengraph-image-1.0.9.tgz#3980e32aa87a49b42f9e83287f33198f23ec0dfe"
+  integrity sha512-YrQ5EcLhZrcgydLPlo7668cvEzuVFkqHCr8hTkpvisOuP1i48yifwWavtuKs2gCTE7Vaa0H4tv2I4nwcc3d/JQ==
   dependencies:
     "@corex/deepmerge" "^2.6.20"
     get-port "^5.1.1"
