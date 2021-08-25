@@ -32,6 +32,7 @@ const components = {
   p: Text,
   blockquote: Quote,
   img: Image,
+  Quote,
   Section,
   Header,
   Main,
