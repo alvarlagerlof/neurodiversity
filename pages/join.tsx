@@ -6,7 +6,6 @@ import VerticalSpacer from "components/VerticalSpacer";
 import Header from "components/Header";
 import Meta from "components/Meta";
 import Section from "components/Section";
-import Text from "components/Text";
 import LinkGrid from "components/LinkGrid";
 import Typography from "components/Typography";
 
@@ -20,7 +19,7 @@ export default function Join() {
 
       <ContentInset size="normal">
         <VerticalSpacer>
-          <PreviewBanner googleDocUrl="https://docs.google.com/document/d/16nOmXROsCu_IMmtXyzLHy5sMqDLuFdkbkCxQ08WzFxQ/edit?usp=sharing" />
+          <PreviewBanner googleDocUrl="https://docs.google.com/document/d/1dWmoI7X5U6vZdHJHNMUBSG1D3W72KuA5FaOepXmiEOQ/edit?usp=sharing" />
           <Header>
             <Typography.Title>Join us</Typography.Title>
             <Typography.Subtitle>
