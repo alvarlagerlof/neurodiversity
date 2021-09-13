@@ -2901,10 +2901,10 @@ markdown-table@^2.0.0:
   dependencies:
     repeat-string "^1.0.0"
 
-marked@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-3.0.1.tgz#fba5af166129771c60f4a7398ddcf35557dfe890"
-  integrity sha512-GQtec2MkSCp+ZecV2jBe7+J2fiDXeBFKUBr4981srZDjCaXg0WrtTo9eY2CVc2ZC5YQXkkc0Q8sTZ6c1DB1o2Q==
+marked@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-3.0.3.tgz#d81ff0f9e29cef0a177327fe009b460f31aa5862"
+  integrity sha512-4oIDhVSQ2s+xNCfek9OnZgCQR/WykGCom02JzIIvi4Pme+MIwPYqvGVW8CQWOXeoZu0TtVB6pTxIuoLm+dKqDA==
 
 matcher@^4.0.0:
   version "4.0.0"
