@@ -4,7 +4,8 @@ export default function OgImageLayout() {
   const { title, description } = useData({
     placeholder: {
       title: "Neurodiversity Wiki",
-      description: "Learn about OCD, Autism, Bipolar, Anxiety, Depression and more.",
+      description:
+        "Learn about conditions like OCD, Autism, Bipolar, Anxiety, Depression and more.",
     },
   });
 

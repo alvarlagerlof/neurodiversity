@@ -18,8 +18,16 @@ export default function Index({ publishedPages, previewPages, preview }) {
   return (
     <Wrapper>
       <Meta
-        title="Neurodiversity Wiki"
-        description="Learn about OCD, Autism, Bipolar, Anxiety, Depression and more."
+        appendTitle={false}
+        image={{
+          title: "Neurodiversity Wiki",
+          description: "Learn about Autism, OCD, Bipolar, ADHD and more.",
+        }}
+        tags={{
+          title: "Neurodiversity Wiki: Learn about neurological conditions",
+          description:
+            "Neurodiversity Wiki is a crowd-sourced guide where you can learn about conditions like Autism, OCD, Bipolar, ADHD and more.",
+        }}
       />
 
       <ContentInset size="normal">
