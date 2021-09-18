@@ -34,3 +34,5 @@ yarn-error.log*
 .vercel
 /public/sitemap.xml
 /public/robots.txt
+
+/public/next-opengraph-image
