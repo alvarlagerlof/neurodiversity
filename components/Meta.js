@@ -15,6 +15,7 @@ export default function Meta({ image, tags }) {
       <meta property="og:title" content={`${tags.title} - Neurodiveristy Wiki`}></meta>
       <meta property="og:site_name" content="neurodiversity.wiki"></meta>
       <meta property="og:description" content={tags.sdescription}></meta>
+      <meta property="og:type" content="website" />
       <meta {...ogImage}></meta>
       <meta name="twitter:card" content="summary_large_image"></meta>
       <meta name="twitter:site" content="@alvarlagerlof"></meta>
