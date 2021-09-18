@@ -47,7 +47,16 @@ const components = {
 export default function Doc({ frontMatter: { meta }, source }) {
   return (
     <Wrapper>
-      <Meta {...meta} />
+      <Meta
+        image={{
+          title: meta.title,
+          description: meta.description,
+        }}
+        tags={{
+          title: `${meta.title} - Neurodiversity Wiki`,
+          description: meta.description,
+        }}
+      />
       <ContentInset size="normal">
         <VerticalSpacer>
           <MDXRemote components={components} {...source} />

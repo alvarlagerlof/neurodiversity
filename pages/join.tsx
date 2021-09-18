@@ -13,8 +13,16 @@ export default function Join() {
   return (
     <Wrapper>
       <Meta
-        title="Join us"
-        description="We're a small but awesome team of writers and developers."
+        image={{
+          title: "Join us",
+          description:
+            "We're a small team working to educate the public through our crowd-sourced wiki. Join us to help contribute.",
+        }}
+        tags={{
+          title: "Join us - Neurodiversity Wiki",
+          description:
+            "We're a small team working to educate the public through our crowd-sourced wiki. Join us to help contribute.",
+        }}
       />
 
       <ContentInset size="normal">
