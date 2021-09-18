@@ -3,7 +3,9 @@ import Head from "next/head";
 import { useOgImage } from "next-opengraph-image";
 
 export default function Meta({ title, description }) {
-  const ogImage = useOgImage();
+  const ogImage = useOgImage({
+    baseUrl: `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`,
+  });
 
   return (
     <Head>
