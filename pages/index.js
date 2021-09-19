@@ -21,12 +21,13 @@ export default function Index({ publishedPages, previewPages, preview }) {
         appendTitle={false}
         image={{
           title: "Neurodiversity Wiki",
-          description: "Learn about Autism, OCD, Bipolar, ADHD and more.",
+          description:
+            "Learn about Autism, OCD, Bipolar, ADHD and more on this crowdsourced guide.",
         }}
         tags={{
           title: "Neurodiversity Wiki: Learn about neurological conditions",
           description:
-            "Neurodiversity Wiki is a crowd-sourced guide where you can learn about conditions like Autism, OCD, Bipolar, ADHD and more.",
+            "Learn about conditions like Autism, OCD, Bipolar, ADHD and more on this crowdsourced guide.",
         }}
       />
 
