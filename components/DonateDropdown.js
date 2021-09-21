@@ -3,7 +3,7 @@ import { useSpring, animated } from "react-spring";
 
 import Button from "components/Button";
 import useOnClickOutside from "lib/useOnClickOutside";
-import { usePlausible } from "components/Plausible";
+import { usePlausible } from "next-plausible";
 
 export default function DonateDropdown() {
   const plausible = usePlausible();
