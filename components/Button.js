@@ -2,7 +2,7 @@ import Bounce from "components/Bounce";
 
 export default function Button({
   as = "button",
-  className,
+  className = "",
   variant,
   children,
   ...props
