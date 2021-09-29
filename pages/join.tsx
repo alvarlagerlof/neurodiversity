@@ -22,7 +22,7 @@ export default function Join() {
             "We're a small team working to educate the public through our crowd-sourced wiki. Join us to help contribute.",
         }}
         tags={{
-          title: "Join us - Neurodiversity Wiki",
+          title: "Join us",
           description:
             "We're a small team working to educate the public through our crowd-sourced wiki. Join us to help contribute.",
         }}

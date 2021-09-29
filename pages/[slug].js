@@ -53,7 +53,7 @@ export default function Doc({ frontMatter: { meta }, source }) {
           description: meta.description,
         }}
         tags={{
-          title: `${meta.title} - Neurodiversity Wiki`,
+          title: `${meta.title}`,
           description: meta.description,
         }}
       />
