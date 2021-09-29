@@ -71,7 +71,7 @@ export default function Join() {
                   <Button as="a" variant="secondary">
                     Join Discord server
                   </Button>
-                </Link>{" "}
+                </Link>
               </div>
 
               <Typography.Body>
