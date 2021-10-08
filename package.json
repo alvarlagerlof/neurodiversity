@@ -20,18 +20,15 @@
     "react-spring": "^9.2.4"
   },
   "devDependencies": {
-    "@types/marked": "^3.0.1",
-    "@types/react": "^17.0.25",
+    "@types/react": "^17.0.27",
     "autoprefixer": "^10.3.4",
     "eslint": "^7.31.0",
     "eslint-config-next": "^11.1.2",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-mdx": "^1.15.1",
-    "fs": "^0.0.1-security",
     "fs-extra": "^10.0.0",
     "git-repo-info": "^2.1.1",
     "gray-matter": "^4.0.3",
-    "marked": "^3.0.4",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.15",
     "typescript": "^4.4.3"
