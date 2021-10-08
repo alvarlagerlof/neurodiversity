@@ -3181,10 +3181,10 @@ next-opengraph-image@^1.3.2:
     ora "^5.4.1"
     puppeteer "^10.1.0"
 
-next-plausible@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-2.1.2.tgz#6b98e97a56d1e875acef06a432848a2d89ecca4d"
-  integrity sha512-HRhRJcBhvO/rUOJBnTJiC/gaFNDLJjo9wP0tRlTJ3Za7bE32ByT/6Ex0N5BT6zA9wWQncLkajoClxIQ5uozZ2w==
+next-plausible@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-2.1.3.tgz#7af3355669f4f57428e65942693ada06df1a3903"
+  integrity sha512-EyKvwYs+5zSPbjdsX8sWZs23LfwhsaDUMjdUitj07GADAuKwCM3w29LBmjhf0cp6QqZi79y3o76+fXVYutsyuw==
 
 next-sitemap@^1.6.168:
   version "1.6.168"
