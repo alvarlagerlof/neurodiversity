@@ -9,6 +9,17 @@ function Base({ children, className, margin, as, ...props }) {
   );
 }
 
+function LinkBase({ children, className, href, as, margin, ...props }) {
+  const Tag = as;
+  const classNameWithMargin = `${className} mb-${margin}`;
+
+  return (
+    <Tag className={classNameWithMargin} {...props}>
+      <a href={href}> {children} </a>
+    </Tag>
+  );
+}
+
 function Title({ children, className = "", margin = "4", as = "h1", ...props }) {
   return (
     <Base
@@ -56,11 +67,26 @@ function Body({ children, className = "", margin = "4", as = "p", ...props }) {
   );
 }
 
+function CardHeading({ children, className = "", href = href, as = "h3", margin = "2", ...props }) {
+  return (
+    <LinkBase
+      as={as}
+      className={`font-display font-semibold text-xl md:text-2xl ${className}`}
+      href={href}
+      margin={margin}
+      {...props}
+    >
+      {children}
+    </LinkBase>
+  );
+}
+
 const Typography = {
   Title,
   Subtitle,
   Heading,
   Body,
+  CardHeading
 };
 
 export default Typography;
