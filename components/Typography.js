@@ -56,11 +56,25 @@ function Body({ children, className = "", margin = "4", as = "p", ...props }) {
   );
 }
 
+function LinkHeading({ children, className = "", margin = "2", href = href, as = "h3", ...props }) {
+  return (
+    <Base
+      as={as}
+      className={`font-display font-semibold text-xl md:text-2xl ${className}`}
+      margin={margin}
+      {...props}
+    ><a href={href}>
+      {children} </a>
+    </Base>
+  );
+}
+
 const Typography = {
   Title,
   Subtitle,
   Heading,
   Body,
+  LinkHeading
 };
 
 export default Typography;
