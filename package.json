@@ -20,7 +20,7 @@
     "react-spring": "^9.3.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.30",
+    "@types/react": "^17.0.32",
     "autoprefixer": "^10.3.4",
     "eslint": "^7.31.0",
     "eslint-config-next": "^11.1.2",
