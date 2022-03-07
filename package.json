@@ -31,7 +31,6 @@
     "fs-extra": "^10.0.0",
     "git-repo-info": "^2.1.1",
     "gray-matter": "^4.0.3",
-    "jiti": "^1.11.0",
     "marked": "^4.0.12",
     "postcss": "^8.3.6",
     "tailwindcss": "^3.0.23",
