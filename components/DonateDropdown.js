@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { useSpring, animated } from "react-spring";
+import useKeypress from "react-use-keypress";
 
 import Button from "components/Button";
 import useOnClickOutside from "lib/useOnClickOutside";
@@ -17,6 +18,8 @@ export default function DonateDropdown() {
   });
 
   useOnClickOutside(ref, () => setIsOpen(false));
+
+  useKeypress("Escape", () => setIsOpen(false));
 
   const toggle = () => {
     plausible("Donate button: Click");
