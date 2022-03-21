@@ -1,5 +1,7 @@
 import Typography from "components/Typography";
 import Bounce from "components/Bounce";
+import { useRef } from "react";
+import Link from "next/link";
 
 function LinkGrid({ children }) {
   return (
@@ -10,23 +12,29 @@ function LinkGrid({ children }) {
 }
 
 function Item({ href, title, description }) {
+  const link = useRef(null);
+
   return (
     <Bounce amount="1.04">
-      <li className="h-full">
-        <a
-          href={href}
-          className={`
-            h-full flex flex-row items-start space-x-2 rounded-xl p-4 bg-white ring-primary transition 
-            shadow
-            hover:shadow-md 
-            outline-none focus-visible:ring`}
-        >
-          <img src="/icons/arrow.svg" className="w-6 md:w-7" alt="" aria-hidden />
-          <div>
+      <li
+        onClick={(e) => {
+          if (link.current !== e.target) {
+            link.current.click();
+          }
+        }}
+        className={`
+              h-full flex flex-row items-start space-x-2 rounded-xl p-4 bg-white ring-primary transition 
+              shadow
+              hover:shadow-md 
+              outline-none focus-visible:ring cursor-pointer`}
+      >
+        <img src="/icons/arrow.svg" className="w-6 md:w-7" alt="" aria-hidden />
+        <div>
+          <a href={href} passHref ref={link}>
             <Typography.Heading margin="1">{title}</Typography.Heading>
-            <Typography.Body margin="0">{description}</Typography.Body>
-          </div>
-        </a>
+          </a>
+          <Typography.Body margin="0">{description}</Typography.Body>
+        </div>
       </li>
     </Bounce>
   );
