@@ -98,7 +98,7 @@ function Bottom() {
             <div className="flex flex-row space-x-4">
               <SocialIcon
                 name="Twitter"
-                link="https://twitter.com/neurodiversitywiki"
+                link="https://twitter.com/n12ywiki"
                 icon="/icons/twitter.svg"
               />
 
