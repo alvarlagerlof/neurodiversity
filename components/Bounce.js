@@ -7,6 +7,7 @@ export default function Bounce({ amount, children }) {
   const styles = useSpring({
     config: { mass: 1, tension: 180, friction: 12 },
     transform: isHovering ? `scale(${amount})` : "scale(1)",
+    display: "inline-block",
   });
 
   return (

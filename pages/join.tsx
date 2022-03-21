@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import ContentInset from "components/ContentInset";
 import Wrapper from "components/Wrapper";
 import Main from "components/Main";
@@ -8,6 +10,7 @@ import Meta from "components/Meta";
 import Section from "components/Section";
 import LinkGrid from "components/LinkGrid";
 import Typography from "components/Typography";
+import Button from "components/Button";
 
 export default function Join() {
   return (
@@ -19,7 +22,7 @@ export default function Join() {
             "We're a small team working to educate the public through our crowd-sourced wiki. Join us to help contribute.",
         }}
         tags={{
-          title: "Join us - Neurodiversity Wiki",
+          title: "Join us",
           description:
             "We're a small team working to educate the public through our crowd-sourced wiki. Join us to help contribute.",
         }}
@@ -53,16 +56,29 @@ export default function Join() {
               </Typography.Body>
             </Section>
             <Section>
-              <Typography.Heading>Channels</Typography.Heading>
+              <div className="bg-primary p-8 lg:-mx-4 mb-8 rounded-xl md:bg-discord bg-right bg-no-repeat bg-contain	">
+                <img
+                  className="h-10 mb-2"
+                  src="/icons/discord-logotype.svg"
+                  alt="Discord logo"
+                />
+                <Typography.Body className="!text-white !mb-8 md:max-w-[35ch] lg:max-w-[52ch]">
+                  Our Discord server is the place where we organize and collaborate.
+                  Discord is free to use for anyone, and provides an easy to use app for
+                  computers and phones.
+                </Typography.Body>
+                <Link href="https://discord.gg/EcEyW9Xz3M" passHref>
+                  <Button as="a" variant="secondary">
+                    Join Discord server
+                  </Button>
+                </Link>
+              </div>
+
               <Typography.Body>
-                Reach out on any of these channels, and we can find out where you fit in.
+                If you do not want to do that yet or have questions you want answered
+                before joining, you can reach out these channels.
               </Typography.Body>
               <LinkGrid>
-                <LinkGrid.Item
-                  href="https://discord.gg/EcEyW9Xz3M"
-                  title="Discord"
-                  description="Join the Discord server"
-                />
                 <LinkGrid.Item
                   href="mailto:contact@neurodiversity.wiki"
                   title="Email"

@@ -10,7 +10,7 @@ export default function Meta({ image, tags, appendTitle = true }) {
 
   return (
     <Head>
-      <title>{tags.title}</title>
+      <title>{`${tags.title}${appendTitle ? " - Neurodiveristy Wiki" : ""}`}</title>
       <meta name="description" content={tags.description} />
       <meta
         property="og:title"

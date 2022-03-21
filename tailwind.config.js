@@ -13,6 +13,7 @@ module.exports = {
       join: "url('/backgrounds/join.svg')",
       "join-mobile": "url('/backgrounds/join-mobile.svg')",
       "top-bar": "url('/backgrounds/top-border.svg')",
+      discord: "url('/backgrounds/discord.svg')",
     },
     extend: {
       colors: {

@@ -32,11 +32,18 @@ function JoinBanner() {
             We’re a community looking for awesome people to join us. Neurodiverse people,
             writers, developers, designers and more are all welcome.
           </Typography.Body>
-          <Link href="/join" passHref>
-            <Button as="a" variant="secondary">
-              Find out how
-            </Button>
-          </Link>
+          <div className="flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:space-x-4">
+            <Link href="https://discord.gg/EcEyW9Xz3M" passHref>
+              <Button as="a" variant="secondary">
+                Join Discord server
+              </Button>
+            </Link>
+            <Link href="/join" passHref>
+              <Button as="a" variant="secondary">
+                Find out more
+              </Button>
+            </Link>
+          </div>
         </div>
       </ContentInset>
     </section>
