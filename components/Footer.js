@@ -50,6 +50,15 @@ function JoinBanner() {
   );
 }
 
+function SocialIcon({ name, link, icon }) {
+  return (
+    <a href={link}>
+      <img aria-hidden tabIndex="-1" src={icon} alt="" />
+      <span className="sr-only">{name}</span>
+    </a>
+  );
+}
+
 function Bottom() {
   return (
     <section className="w-full bg-black text-white flex flex-col items-center py-16">
@@ -87,15 +96,29 @@ function Bottom() {
             </p>
 
             <div className="flex flex-row space-x-4">
-              <a href="https://twitter.com/n12ywiki" target="_blank" rel="noreferrer">
-                <img src="/icons/twitter.svg" alt="Twitter logo" />
-              </a>
-              <a href="https://discord.gg/EcEyW9Xz3M" target="_blank" rel="noreferrer">
-                <img src="/icons/discord.svg" alt="Discord logo" />
-              </a>
-              <a href="mailto:contact@neurodiversity.wiki">
-                <img src="/icons/email.svg" alt="Email logo" />
-              </a>
+              <SocialIcon
+                name="Twitter"
+                link="https://twitter.com/neurodiversitywiki"
+                icon="/icons/twitter.svg"
+              />
+
+              <SocialIcon
+                name="GitHub"
+                link="https://github.com/alvarlagerlof/neurodiversity"
+                icon="/icons/github.svg"
+              />
+
+              <SocialIcon
+                name="Discord"
+                link="https://discord.gg/xj7XWQ"
+                icon="/icons/discord.svg"
+              />
+
+              <SocialIcon
+                name="Email"
+                link="mailto:contact@neurodiversity.wiki"
+                icon="/icons/email.svg"
+              />
             </div>
           </div>
 
