@@ -64,19 +64,34 @@ function Bottom() {
 
         <hr className="border-gray mt-16 mb-2 border-dashed" />
 
-        <section className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row justify-between text-gray">
-          <p>
-            Made by{" "}
-            <a
-              href="https://twitter.com/alvarlagerlof"
-              target="_blank"
-              rel="noreferrer"
-              className="text-secondary hover:underline"
-            >
-              Alvar Lagerlöf
-            </a>{" "}
-            and contributors
-          </p>
+        <section className="flex flex-col mb-4 space-y-4 sm:space-y-0 sm:flex-row justify-between text-gray">
+          <div className="space-y-4">
+            <p>
+              Made by{" "}
+              <a
+                href="https://twitter.com/alvarlagerlof"
+                target="_blank"
+                rel="noreferrer"
+                className="text-secondary hover:underline"
+              >
+                Alvar Lagerlöf
+              </a>{" "}
+              and contributors
+            </p>
+
+            <div className="flex flex-row space-x-4">
+              <a href="https://twitter.com/n12ywiki" target="_blank" rel="noreferrer">
+                <img src="/icons/twitter.svg" alt="Twitter logo" />
+              </a>
+              <a href="https://discord.gg/EcEyW9Xz3M" target="_blank" rel="noreferrer">
+                <img src="/icons/discord.svg" alt="Discord logo" />
+              </a>
+              <a href="mailto:contact@neurodiversity.wiki">
+                <img src="/icons/email.svg" alt="Email logo" />
+              </a>
+            </div>
+          </div>
+
           {/* <ul className="flex flex-row">
             <li>
               <Link href="#" passHref>
