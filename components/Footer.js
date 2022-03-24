@@ -33,7 +33,7 @@ function JoinBanner() {
             writers, developers, designers and more are all welcome.
           </Typography.Body>
           <div className="flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:space-x-4">
-            <Link href="https://discord.gg/EcEyW9Xz3M" passHref>
+            <Link href="https://discord.gg/48kqk6KcZ8" passHref>
               <Button as="a" variant="secondary">
                 Join Discord server
               </Button>
@@ -110,7 +110,7 @@ function Bottom() {
 
               <SocialIcon
                 name="Discord"
-                link="https://discord.gg/xj7XWQ"
+                link="https://discord.gg/48kqk6KcZ8"
                 icon="/icons/discord.svg"
               />
 
