@@ -33,6 +33,7 @@ yarn-error.log*
 # vercel
 .vercel
 /public/sitemap.xml
+/public/sitemap-0.xml
 /public/robots.txt
 
 /public/next-opengraph-image
