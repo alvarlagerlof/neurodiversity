@@ -45,7 +45,7 @@ export default function Join() {
                 This website is created by people wanting to spread awareness about
                 neurodiversity. We're everything from developers, parents, designers to
                 journalists. To cover as many conditions as possible in a representative
-                way, we need the perspective of many. Together, can make a wiki that
+                way, we need the perspective of many. Together, we can make a wiki that
                 explains these conditions in a simple way for the general public.
               </Typography.Body>
               <Typography.Body>
