@@ -7,7 +7,9 @@
     "build": "next build",
     "postbuild": "next-sitemap && next-opengraph-image",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "playwright test",
+    "test:hd": "playwright test --headless"
   },
   "dependencies": {
     "next": "12.1.2",
