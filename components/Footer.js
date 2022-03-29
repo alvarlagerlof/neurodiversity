@@ -95,7 +95,7 @@ function Bottom() {
               and contributors
             </p>
 
-            <div className="flex flex-row space-x-4">
+            <ul className="flex flex-row space-x-4">
               <SocialIcon
                 name="Twitter"
                 link="https://twitter.com/n12ywiki"
@@ -119,7 +119,7 @@ function Bottom() {
                 link="mailto:contact@neurodiversity.wiki"
                 icon="/icons/email.svg"
               />
-            </div>
+            </ul>
           </div>
 
           {/* <ul className="flex flex-row">
