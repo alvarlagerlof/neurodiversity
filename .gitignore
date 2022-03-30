@@ -36,4 +36,8 @@ yarn-error.log*
 /public/sitemap-0.xml
 /public/robots.txt
 
+<<<<<<< HEAD
 /public/next-opengraph-image
+=======
+/playwright-report
+>>>>>>> 071b2b6 (Add og:images manually)
