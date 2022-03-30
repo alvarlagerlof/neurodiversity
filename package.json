@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap && next-opengraph-image",
+    "postbuild": "next-sitemap && next-opengraph-image && yarn test",
     "start": "next start",
     "lint": "next lint",
     "test": "playwright test",
-    "test:hd": "playwright test --headless"
+    "test:hd": "playwright test --headed"
   },
   "dependencies": {
     "next": "12.1.2",
