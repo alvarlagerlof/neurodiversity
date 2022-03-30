@@ -2,7 +2,6 @@ name: Playwright Tests
 
 on:
   pull_request:
-    branches: [main]
 
 jobs:
   wait_for_vercel:
@@ -17,6 +16,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           max_timeout: 120
+
   tests:
     runs-on: ubuntu-latest
     steps:
@@ -32,4 +32,3 @@ jobs:
         run: yarn e2e
         env:
           PLAYWRIGHT_TEST_BASE_URL: ${{ needs.wait_for_vercel.outputs.preview_url }}
-
