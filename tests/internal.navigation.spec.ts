@@ -32,4 +32,11 @@ test.describe("internal navigation", () => {
     await expect(page).toHaveURL("http://localhost:3000/join");
     await expect(page.locator("h1")).toContainText("Join us");
   });
+
+  test("it should nagiate back on nav click", async ({ page }) => {
+    await page.locator("texd=ASD").click();
+    await page.locator("nav img >> nth=0");
+
+    expect(page).toHaveURL("http://localhost:3000/");
+  });
 });
