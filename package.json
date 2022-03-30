@@ -8,7 +8,7 @@
     "postbuild": "next-sitemap && next-opengraph-image",
     "start": "next start",
     "lint": "next lint",
-    "test": "playwright test",
+    "test": "playwright test --reporter=list",
     "test:hd": "playwright test --headed"
   },
   "dependencies": {
