@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap && next-opengraph-image && yarn test",
+    "postbuild": "next-sitemap && next-opengraph-image",
     "start": "next start",
     "lint": "next lint",
     "test": "playwright test",
