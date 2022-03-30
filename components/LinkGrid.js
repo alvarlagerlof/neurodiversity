@@ -31,9 +31,11 @@ function Item({ href, title, description }) {
         <img src="/icons/arrow.svg" className="w-6 md:w-7" alt="" aria-hidden />
         <div>
           <Typography.Heading margin="1">
-            <a href={href} ref={link}>
-              {title}
-            </a>
+            <Link href={href} passHref>
+              <a ref={link}>
+                {title}
+              </a>
+            </Link>
           </Typography.Heading>
           <Typography.Body margin="0">{description}</Typography.Body>
         </div>
