@@ -24,6 +24,11 @@ module.exports = withPlausibleProxy()({
         destination: "/did",
         permanent: false,
       },
+      {
+        source: "/anxietydisorder",
+        destination: "/anxiety",
+        permanent: false,
+      },
     ];
   },
 });
