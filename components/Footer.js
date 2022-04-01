@@ -98,7 +98,7 @@ function Bottom() {
             <ul className="flex flex-row space-x-4">
               <SocialIcon
                 name="Twitter"
-                link="https://twitter.com/n12ywiki"
+                link="https://twitter.com/neurodiversityw"
                 icon="/icons/twitter.svg"
               />
 

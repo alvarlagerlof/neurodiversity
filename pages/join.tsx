@@ -85,7 +85,7 @@ export default function Join() {
                   description="Send an email"
                 />
                 <LinkGrid.Item
-                  href="https://twitter.com/n12ywiki"
+                  href="https://twitter.com/neurodiversityw"
                   title="Twitter"
                   description="Send a direct message"
                 />
