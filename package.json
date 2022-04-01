@@ -15,7 +15,7 @@
     "next": "12.1.2",
     "next-mdx-remote": "^4.0.2",
     "next-opengraph-image": "^1.3.2",
-    "next-plausible": "^3.1.6",
+    "next-plausible": "^3.1.8",
     "next-sitemap": "^2.5.17",
     "react": "17.0.2",
     "react-dom": "17.0.2",

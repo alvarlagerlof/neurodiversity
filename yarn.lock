@@ -3500,10 +3500,10 @@ next-opengraph-image@^1.3.2:
     ora "^5.4.1"
     puppeteer "^10.1.0"
 
-next-plausible@^3.1.6:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-3.1.6.tgz#069e0ceb875c88726feb61186dfbd5e8565fac45"
-  integrity sha512-9L1l3f59122IBNjVDqZEE2y5kA/a8rk3xYqWWfHH9LLxtWw6hqiL43RQGT7xYjHofGdn+RX3WTVRGIv0Iq/wKA==
+next-plausible@^3.1.8:
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-3.1.8.tgz#56f01bf5064445fc5d657c19b7c2fc2a195b571f"
+  integrity sha512-7lqtSflFvSVzzxwaTwnHnoxK5J1BJcvORBWpLKb7GsRblf3dDC85BIfLiWLNonkxfS+P8/pjem0bunAg6Wh1IQ==
 
 next-sitemap@^2.5.17:
   version "2.5.17"
