@@ -27,7 +27,7 @@ function JoinBanner() {
           <Typography.Body
             as="h2"
             className="text-center max-w-xl !text-white"
-            margin="8"
+            margin={8}
           >
             We’re a community looking for awesome people to join us. Neurodiverse people,
             writers, developers, designers and more are all welcome.
@@ -53,7 +53,7 @@ function JoinBanner() {
 function SocialIcon({ name, link, icon }) {
   return (
     <a href={link}>
-      <img aria-hidden tabIndex="-1" src={icon} alt="" />
+      <img aria-hidden tabIndex={-1} src={icon} alt="" />
       <span className="sr-only">{name}</span>
     </a>
   );

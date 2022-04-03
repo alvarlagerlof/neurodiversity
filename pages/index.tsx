@@ -10,11 +10,18 @@ import LinkGrid from "components/LinkGrid";
 import Main from "components/Main";
 
 import { getPreviewPages, getPublishedPages } from "lib/content";
-import { isPreview } from "lib/env";
+import isPreview from "lib/env";
+import { Page } from "../types";
 
 // This page cannot be .mdx because then there is no way to run getServerSideProps which are needed for redirecting from notocd.com and notautism.com
 
-export default function Index({ publishedPages, previewPages, preview }) {
+interface IndexProps {
+  previewPages: Partial<Page>[];
+  publishedPages: Partial<Page>[];
+  isPreview: boolean;
+}
+
+export default function Index({ publishedPages, previewPages, isPreview }: IndexProps) {
   return (
     <Wrapper>
       <Meta
@@ -60,7 +67,7 @@ export default function Index({ publishedPages, previewPages, preview }) {
               </LinkGrid>
             </Section>
 
-            {preview && (
+            {isPreview && (
               <Section>
                 <Typography.Heading>Pages in preview</Typography.Heading>
                 <Typography.Body>

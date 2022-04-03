@@ -1,6 +1,6 @@
 import ExternalLink from "./ExternalLink";
 
-export default function PreviewBanner({ googleDocUrl }) {
+export default function PreviewBanner({ googleDocUrl }: { googleDocUrl: string }) {
   if (process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF !== "main") {
     return (
       <div className="bg-white p-4 lg:-mx-4 rounded-xl shadow max-w-3xl mb-8 w-full">

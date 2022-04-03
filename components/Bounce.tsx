@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
-export default function Bounce({ amount, children }) {
+interface BounceProps {
+  amount: number;
+  children: React.ReactNode;
+}
+
+export default function Bounce({ amount, children }: BounceProps) {
   const [isHovering, setIsHovering] = useState(false);
 
   const styles = useSpring({

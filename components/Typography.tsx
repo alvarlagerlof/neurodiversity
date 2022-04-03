@@ -1,5 +1,14 @@
-function Base({ children, className, margin, as, ...props }) {
-  const Tag = as;
+import { ElementType } from "react";
+
+interface BaseProps {
+  children: React.ReactNode;
+  className?: string;
+  margin?: number;
+  as?: ElementType;
+}
+
+function Base({ children, className, margin, as, ...props }: BaseProps) {
+  const Tag = as as keyof JSX.IntrinsicElements;
   const classNameWithMargin = `${className} mb-${margin}`;
 
   return (
@@ -9,7 +18,7 @@ function Base({ children, className, margin, as, ...props }) {
   );
 }
 
-function Title({ children, className = "", margin = "4", as = "h1", ...props }) {
+function Title({ children, className = "", margin = 4, as = "h1", ...props }: BaseProps) {
   return (
     <Base
       as={as}
@@ -22,7 +31,13 @@ function Title({ children, className = "", margin = "4", as = "h1", ...props }) 
   );
 }
 
-function Subtitle({ children, className = "", margin = "0", as = "h2", ...props }) {
+function Subtitle({
+  children,
+  className = "",
+  margin = 0,
+  as = "h2",
+  ...props
+}: BaseProps) {
   return (
     <Base
       as={as}
@@ -35,7 +50,13 @@ function Subtitle({ children, className = "", margin = "0", as = "h2", ...props 
   );
 }
 
-function Heading({ children, className = "", margin = "2", as = "h3", ...props }) {
+function Heading({
+  children,
+  className = "",
+  margin = 2,
+  as = "h3",
+  ...props
+}: BaseProps) {
   return (
     <Base
       as={as}
@@ -48,7 +69,7 @@ function Heading({ children, className = "", margin = "2", as = "h3", ...props }
   );
 }
 
-function Body({ children, className = "", margin = "4", as = "p", ...props }) {
+function Body({ children, className = "", margin = 4, as = "p", ...props }: BaseProps) {
   return (
     <Base as={as} className={`text-body ${className}`} margin={margin} {...props}>
       {children}

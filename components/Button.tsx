@@ -1,13 +1,22 @@
 import Bounce from "components/Bounce";
+import { ComponentType, ElementType } from "react";
+
+interface ButtonProps {
+  as?: ElementType;
+  className?: string;
+  variant?: "primary" | "secondary";
+  children: React.ReactNode;
+  [x: string]: any;
+}
 
 export default function Button({
   as = "button",
   className = "",
-  variant,
+  variant = "primary",
   children,
   ...props
-}) {
-  const Tag = as;
+}: ButtonProps) {
+  const Tag = as as keyof JSX.IntrinsicElements;
 
   const baseStyle = `py-2 px-5 rounded-full font-medium ${className} `;
   const variants = {
@@ -16,7 +25,7 @@ export default function Button({
   };
 
   return (
-    <Bounce amount="1.1">
+    <Bounce amount={1.1}>
       <Tag className={variants[variant]} {...props}>
         {children}
       </Tag>

@@ -1,7 +1,19 @@
 import { setBannerData } from "next-banner";
 import Head from "next/head";
 
-export default function Meta({ image, tags, appendTitle = true }) {
+interface MetaProps {
+  image: {
+    title: string;
+    description: string;
+  };
+  tags: {
+    title: string;
+    description: string;
+  };
+  appendTitle?: boolean;
+}
+
+export default function Meta({ image, tags, appendTitle = true }: MetaProps) {
   setBannerData({
     custom: image,
   });
@@ -15,7 +27,7 @@ export default function Meta({ image, tags, appendTitle = true }) {
         content={`${tags.title}${appendTitle ? " - Neurodiveristy Wiki" : ""}`}
       ></meta>
       <meta property="og:site_name" content="neurodiversity.wiki"></meta>
-      <meta property="og:description" content={tags.sdescription}></meta>
+      <meta property="og:description" content={tags.description}></meta>
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary_large_image"></meta>
       <meta name="twitter:site" content="@alvarlagerlof"></meta>

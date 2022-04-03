@@ -4,7 +4,12 @@ import { useSpring, animated } from "react-spring";
 import useHeight from "lib/useHeight";
 import { usePlausible } from "next-plausible";
 
-export default function DefinitionItem({ summary, children }) {
+interface DefinitionItem {
+  summary: string;
+  children: React.ReactNode;
+}
+
+export default function DefinitionItem({ summary, children }: DefinitionItem) {
   const [isOpen, setIsOpen] = useState(false);
   const plausible = usePlausible();
 
@@ -27,17 +32,17 @@ export default function DefinitionItem({ summary, children }) {
           onClick={() => toggle()}
         >
           <span className="text-left">{summary}</span>
-          <Icon open={isOpen} />
+          <Icon isOpen={isOpen} />
         </button>
       </dt>
       <dd>
-        <Content open={isOpen}>{children}</Content>
+        <Content isOpen={isOpen}>{children}</Content>
       </dd>
     </div>
   );
 }
 
-function Icon({ open: isOpen }) {
+function Icon({ isOpen: isOpen }: { isOpen: boolean }) {
   const styles = useSpring({
     config: { mass: 1, tension: 180, friction: 12 },
     transform: isOpen ? "rotate(45deg)" : "rotate(0deg)",
@@ -55,7 +60,12 @@ function Icon({ open: isOpen }) {
   );
 }
 
-function Content({ open: isOpen, children }) {
+interface ContentProps {
+  isOpen: boolean;
+  children: React.ReactNode;
+}
+
+function Content({ isOpen, children }: ContentProps) {
   const ref = useRef(null);
   const height = useHeight(ref);
 

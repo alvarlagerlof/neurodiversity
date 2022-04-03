@@ -21,7 +21,7 @@ import Main from "components/Main";
 import Typography from "components/Typography";
 
 import { getPageBySlug, getAllPages, getPublishedPages } from "lib/content";
-import { isPreview } from "lib/env";
+import isPreview from "lib/env";
 
 const components = {
   h1: Typography.Title,

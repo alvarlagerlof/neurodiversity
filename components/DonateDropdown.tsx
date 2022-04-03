@@ -44,7 +44,7 @@ export default function DonateDropdown() {
         role="menu"
         aria-orientation="vertical"
         aria-labelledby="menu-button"
-        tabIndex="-1"
+        tabIndex={-1}
         style={styles}
       >
         <ul role="none">
@@ -59,7 +59,14 @@ export default function DonateDropdown() {
     </div>
   );
 }
-function Item({ href, isOpen, children }) {
+
+interface IconProps {
+  href: string;
+  isOpen: boolean;
+  children: React.ReactNode;
+}
+
+function Item({ href, isOpen, children }: IconProps) {
   return (
     <li>
       <a
@@ -67,7 +74,7 @@ function Item({ href, isOpen, children }) {
         target="_blank"
         rel="noreferrer"
         className="block py-2 px-3 transition hover:bg-highlight rounded-md"
-        tabIndex={isOpen ? "0" : "-1"}
+        tabIndex={isOpen ? 0 : -1}
       >
         {children}
       </a>
@@ -75,7 +82,7 @@ function Item({ href, isOpen, children }) {
   );
 }
 
-function Icon({ isOpen }) {
+function Icon({ isOpen }: { isOpen: boolean }) {
   const styles = useSpring({
     config: { mass: 1, tension: 180, friction: 12 },
     transform: isOpen ? "rotate(45deg)" : "rotate(0deg)",
