@@ -1,6 +1,6 @@
 import { ScreenshotCanvas, useBannerData } from "next-banner";
 
-export default function OgImageLayout() {
+export default function BannerLayout() {
   const {
     custom: {
       title = "Neurodiversity Wiki",
