@@ -11,6 +11,7 @@ import Section from "components/Section";
 import LinkGrid from "components/LinkGrid";
 import Typography from "components/Typography";
 import Button from "components/Button";
+import { setBannerData } from "next-banner";
 
 export default function Join() {
   return (
@@ -21,6 +22,7 @@ export default function Join() {
           description:
             "We're a small team working to educate the public through our crowd-sourced wiki. Join us to help contribute.",
         }}
+        imageLayout="join"
         tags={{
           title: "Join us",
           description:

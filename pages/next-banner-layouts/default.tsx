@@ -4,7 +4,7 @@ export default function BannerLayout() {
   const {
     custom: {
       title = "Neurodiversity Wiki",
-      description = "Learn about conditions like OCD, Autism, Bipolar, Anxiety, Depression and more.",
+      description = "Learn about conditions like OCD, Autism, Bipolar, Anxiety, Dyslexia and more.",
     },
   } = useBannerData();
 

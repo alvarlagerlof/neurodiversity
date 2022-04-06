@@ -6,6 +6,7 @@ interface MetaProps {
     title: string;
     description: string;
   };
+  imageLayout?: string;
   tags: {
     title: string;
     description: string;
@@ -13,9 +14,15 @@ interface MetaProps {
   appendTitle?: boolean;
 }
 
-export default function Meta({ image, tags, appendTitle = true }: MetaProps) {
+export default function Meta({
+  image,
+  imageLayout = "default",
+  tags,
+  appendTitle = true,
+}: MetaProps) {
   setBannerData({
     custom: image,
+    layout: imageLayout,
   });
 
   return (
