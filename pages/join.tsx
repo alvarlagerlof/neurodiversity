@@ -11,7 +11,6 @@ import Section from "components/Section";
 import LinkGrid from "components/LinkGrid";
 import Typography from "components/Typography";
 import Button from "components/Button";
-import { setBannerData } from "next-banner";
 
 export default function Join() {
   return (
@@ -70,7 +69,12 @@ export default function Join() {
                   computers and phones.
                 </Typography.Body>
                 <Link href="https://discord.gg/48kqk6KcZ8" passHref>
-                  <Button as="a" variant="secondary">
+                  <Button
+                    as="a"
+                    variant="secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Join Discord server
                   </Button>
                 </Link>

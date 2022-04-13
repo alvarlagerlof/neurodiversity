@@ -34,7 +34,12 @@ function JoinBanner() {
           </Typography.Body>
           <div className="flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:space-x-4">
             <Link href="https://discord.gg/48kqk6KcZ8" passHref>
-              <Button as="a" variant="secondary">
+              <Button
+                as="a"
+                variant="secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Join Discord server
               </Button>
             </Link>
@@ -52,10 +57,12 @@ function JoinBanner() {
 
 function SocialIcon({ name, link, icon }) {
   return (
-    <a href={link}>
-      <img aria-hidden tabIndex={-1} src={icon} alt="" />
-      <span className="sr-only">{name}</span>
-    </a>
+    <Link href={link} passHref>
+      <a target="_blank" rel="noopener noreferrer">
+        <img aria-hidden tabIndex={-1} src={icon} alt="" />
+        <span className="sr-only">{name}</span>
+      </a>
+    </Link>
   );
 }
 
