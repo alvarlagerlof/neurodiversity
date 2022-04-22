@@ -42,6 +42,13 @@ class MyDocument extends Document {
           <meta name="monetization" content="$ilp.uphold.com/yGGixMZQUePn"></meta>
 
           <link href="https://rsms.me/inter/inter.css" rel="stylesheet"></link>
+
+          <link
+            rel="sitemap"
+            type="application/xml"
+            title="Sitemap"
+            href="/sitemap.xml"
+          />
         </Head>
         <body>
           <Main />
