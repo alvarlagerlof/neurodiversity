@@ -3,18 +3,16 @@ on:
   deployment_status:
 jobs:
   test:
-    timeout-minutes: 60
     runs-on: ubuntu-latest
-    if: github.event.deployment_status.state == 'success'
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
       with:
-        node-version: '14.x'
+        node-version: '16.x'
     - name: Install dependencies
       run: yarn install
     - name: Install Playwright
-      run: npx playwright install --with-deps
+      run: npx playwright install --with-deps chromium
     - name: Run Playwright tests
       run: yarn test
       env:
