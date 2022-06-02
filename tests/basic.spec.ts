@@ -5,10 +5,10 @@ test.describe("basic flow", () => {
     await page.goto("http://localhost:3000/");
 
     const menuButton = await page.locator("#menu-button");
-    menuButton.click();
+    await menuButton.click();
     await expect(menuButton).toHaveAttribute("aria-expanded", "true");
 
-    menuButton.click();
+    await menuButton.click();
     await expect(menuButton).toHaveAttribute("aria-expanded", "false");
   });
 
@@ -29,19 +29,22 @@ test.describe("basic flow", () => {
 
     const button = await page.locator("section button >> nth=0");
 
-    dt.click();
+    await dt.click();
     await expect(button).toHaveAttribute("aria-expanded", "true");
 
-    dt.click();
+    await dt.click();
     await expect(button).toHaveAttribute("aria-expanded", "false");
   });
 
   test("it should go to the join page and click the discord link", async ({ page }) => {
     await page.goto("http://localhost:3000/");
 
-    await page.locator("text=Find out more").click;
+    const button = await page.locator("text=Join Discord server");
+    await button.evaluate(async (element) => await element.removeAttribute("target"));
+    await button.click();
 
-    await page.locator("text=Join Discord server").click();
+    await page.waitForLoadState("networkidle");
+
     await expect(page).toHaveURL("https://discord.com/invite/48kqk6KcZ8");
   });
 });
