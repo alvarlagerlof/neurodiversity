@@ -2,13 +2,26 @@ import Link from "next/link";
 
 import ContentInset from "components/ContentInset";
 import DonateDropdown from "components/DonateDropdown";
+import Button from "./Button";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
+  const { asPath } = useRouter();
+
   return (
     <ContentInset size="wide">
       <nav className="mt-8 w-full flex flex-row justify-between items-center">
         <ClickableLogo />
-        <DonateDropdown />
+
+        {/* <DonateDropdown /> */}
+
+        {asPath !== "/join" && (
+          <Link href="/join" passHref>
+            <Button as="a" variant="primary">
+              Contribute
+            </Button>
+          </Link>
+        )}
       </nav>
     </ContentInset>
   );

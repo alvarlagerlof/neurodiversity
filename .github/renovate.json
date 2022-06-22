@@ -1,0 +1,22 @@
+{
+  "timezone": "Europe/Stockholm",
+  "rangeStrategy": "pin",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "automergeType": "pr",
+    "platformAutomerge": true
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "schedule": ["before 2am"],
+      "groupName": "dependencies",
+      "groupSlug": "all-major"
+    }
+  ]
+}
