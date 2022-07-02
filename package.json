@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "next": "12.2.0",
-    "next-banner": "^1.1.5",
+    "next-banner": "^1.1.7",
     "next-mdx-remote": "^4.0.3",
     "next-plausible": "3.2.0",
     "next-sitemap": "3.1.7",
