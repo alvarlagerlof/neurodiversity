@@ -208,12 +208,13 @@
     tiny-glob "^0.2.9"
     tslib "^2.4.0"
 
-"@playwright/test@^1.22.0":
-  version "1.22.0"
-  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.22.0.tgz#c120d673508291ee63095d727b6f998ea0c6a03f"
-  integrity sha512-ExcAjiECo3uTG5Sl5H4a7rKp/5TEHTI87dv9NHYEoUFuOHPhSVxB7QsuM70ktO+wTTZ9KzhwzcegxAGRmUFKEA==
+"@playwright/test@1.23.1":
+  version "1.23.1"
+  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.23.1.tgz#209cceb81c579d1cd2835f15c2bb3a8345103d60"
+  integrity sha512-dKplLPSYPZgnsBk1xxOophhpx3ZVg8DveoNJgLPe096lDCfmaIIreLsYF+4hqzy3PG61IP+aEnG5VAOjC3bhbA==
   dependencies:
-    playwright-core "1.22.0"
+    "@types/node" "*"
+    playwright-core "1.23.1"
 
 "@react-spring/animated@~9.4.5":
   version "9.4.5"
@@ -2843,10 +2844,10 @@ pkg-dir@4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-playwright-core@1.22.0:
-  version "1.22.0"
-  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.22.0.tgz#e738a0c83f4be0984c953ab25d2bc77545187ecc"
-  integrity sha512-XnDPiV4NCzTtXWxQdyJ6Wg8xhST3ciUjt5mITaxoqOoYggmRtofKm0PXLehfbetXh2ppPYj5U8UhtUpdIE4wag==
+playwright-core@1.23.1:
+  version "1.23.1"
+  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.23.1.tgz#af02bd7568af1017e477433b1b003ba84e1eb312"
+  integrity sha512-9CXsE0gawph4KXl6oUaa0ehHRySZjHvly4TybcBXDvzK3N3o6L/eZ8Q6iVWUiMn0LLS5bRFxo1qEtOETlYJxjw==
 
 postcss-js@^4.0.0:
   version "4.0.0"
