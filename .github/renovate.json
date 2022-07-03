@@ -14,7 +14,7 @@
     },
     {
       "matchUpdateTypes": ["major"],
-      "schedule": ["before 2am"],
+      "schedule": ["every weekend"],
       "groupName": "dependencies",
       "groupSlug": "all-major"
     }
