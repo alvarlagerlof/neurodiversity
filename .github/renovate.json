@@ -1,11 +1,12 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "timezone": "Europe/Stockholm",
   "rangeStrategy": "pin",
+  "platformAutomerge": true,
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
-    "automergeType": "pr",
-    "platformAutomerge": true
+    "automergeType": "pr"
   },
   "packageRules": [
     {
@@ -14,9 +15,7 @@
     },
     {
       "matchUpdateTypes": ["major"],
-      "schedule": ["every weekend"],
-      "groupName": "dependencies",
-      "groupSlug": "all-major"
+      "schedule": ["every weekend"]
     }
   ]
 }
