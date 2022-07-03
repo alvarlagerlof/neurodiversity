@@ -1,16 +1,17 @@
 import { test, expect } from "@playwright/test";
 
 test.describe("basic flow", () => {
-  test("it should open the dropdown and close when clicking", async ({ page }) => {
-    await page.goto("http://localhost:3000/");
+  // Donation button is hidden
+  // test("it should open the dropdown and close when clicking", async ({ page }) => {
+  //   await page.goto("http://localhost:3000/");
 
-    const menuButton = await page.locator("#menu-button");
-    await menuButton.click();
-    await expect(menuButton).toHaveAttribute("aria-expanded", "true");
+  //   const menuButton = await page.locator("#menu-button");
+  //   await menuButton.click();
+  //   await expect(menuButton).toHaveAttribute("aria-expanded", "true");
 
-    await menuButton.click();
-    await expect(menuButton).toHaveAttribute("aria-expanded", "false");
-  });
+  //   await menuButton.click();
+  //   await expect(menuButton).toHaveAttribute("aria-expanded", "false");
+  // });
 
   test("should navigate to the Autism page", async ({ page }) => {
     await page.goto("http://localhost:3000/");
