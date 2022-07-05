@@ -38,7 +38,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@corex/deepmerge@^4.0.26":
+"@corex/deepmerge@^4.0.29":
   version "4.0.29"
   resolved "https://registry.yarnpkg.com/@corex/deepmerge/-/deepmerge-4.0.29.tgz#af9debf07d7f6b0d2a9d04a266abf2c1418ed2f6"
   integrity sha512-q/yVUnqckA8Do+EvAfpy7RLdumnBy9ZsducMUtZTvpdbJC7azEf1hGtnYYxm0QfphYxjwggv6XtH64prvS1W+A==
@@ -2580,12 +2580,12 @@ next-plausible@^3.1.9:
   resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-3.2.0.tgz#d801346253e0c1cf64a02b9fc3a42050455cbc47"
   integrity sha512-OlYcLXBG3kKd/fKMpm8SZ5IkUKSFm1/8t7cv6e5bewIqlpdZpdWuSrjbdJpbmutb2KPLXHzilKp09zmDGjy9KQ==
 
-next-sitemap@3.1.8:
-  version "3.1.8"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.8.tgz#64a8cb11b28e19f74ce777215236e5a8b50d0d13"
-  integrity sha512-dd9NBDk2tpRsUXjCyDh2qkROsKCLHE4AOsuefKxAkOquG5Mbck1Zv+APLiu+eBVrQXvroXrZr6zgU9thzlTowg==
+next-sitemap@3.1.10:
+  version "3.1.10"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.10.tgz#876d0373330874e48c86a849eab94dc1bb439e17"
+  integrity sha512-IslH1nxY5p/3+cdjFiXDFSfchUJ0R+Flvm/T/01y7xokA/hd4rnuU+Jh0ZEZ92j7zBgwPUp1KTg0B41zuSpVHw==
   dependencies:
-    "@corex/deepmerge" "^4.0.26"
+    "@corex/deepmerge" "^4.0.29"
     minimist "^1.2.6"
 
 next@12.1.6:
