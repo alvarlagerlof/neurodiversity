@@ -812,7 +812,7 @@ cross-fetch@3.1.5:
   dependencies:
     node-fetch "2.6.7"
 
-cross-spawn@^7.0.2, cross-spawn@^7.0.3:
+cross-spawn@7.0.3, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
   integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
@@ -1484,7 +1484,7 @@ get-intrinsic@^1.0.2, get-intrinsic@^1.1.0, get-intrinsic@^1.1.1:
     has "^1.0.3"
     has-symbols "^1.0.3"
 
-get-port@^6.1.2:
+get-port@6.1.2:
   version "6.1.2"
   resolved "https://registry.yarnpkg.com/get-port/-/get-port-6.1.2.tgz#c1228abb67ba0e17fb346da33b15187833b9c08a"
   integrity sha512-BrGGraKm2uPqurfGVj/z97/zv8dPleC6x9JBNRTrDNtCkkRF4rPwrQXFgL7+I+q8QSdU4ntLQX2D7KIxSy8nGw==
@@ -2193,7 +2193,7 @@ mdurl@^1.0.0:
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
   integrity sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==
 
-merge-anything@^5.0.2:
+merge-anything@5.0.2:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/merge-anything/-/merge-anything-5.0.2.tgz#b023af9b8f48e2fc71eb859d4ad834ba667f4150"
   integrity sha512-POPQBWkBC0vxdgzRJ2Mkj4+2NTKbvkHo93ih+jGDhNMLzIw+rYKjO7949hOQM2X7DxMHH1uoUkwWFLIzImw7gA==
@@ -2554,16 +2554,16 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-next-banner@^1.1.5:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/next-banner/-/next-banner-1.1.8.tgz#6794aacf164cdca8b9c596aede94c9e2f5dce066"
-  integrity sha512-KH6uFJCanJlctDvL4Zw291aJ0xg2S3iQdh4RBWxbiW1ksEXlcTIKo7JYpwnJ0BaNq8IYxmoPlRkwYjc57OZ2QA==
+next-banner@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/next-banner/-/next-banner-1.2.1.tgz#93e6587e8c85fd7917e4fa1e801ec93fb7393add"
+  integrity sha512-CPI2PNX0vwklKbA2PLS+BAFaBx1ezqgmkLeuXnyBy/9koTy2nJCz6ZSdmZsvMfcGQ87tljeYzVbQ6FDysBtxqw==
   dependencies:
-    cross-spawn "^7.0.3"
-    get-port "^6.1.2"
-    merge-anything "^5.0.2"
-    puppeteer "^15.3.0"
-    tasuku "^2.0.0"
+    cross-spawn "7.0.3"
+    get-port "6.1.2"
+    merge-anything "5.0.2"
+    puppeteer "15.3.1"
+    tasuku "2.0.0"
 
 next-mdx-remote@^4.0.3:
   version "4.0.3"
@@ -2981,10 +2981,10 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-puppeteer@^15.3.0:
-  version "15.3.0"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-15.3.0.tgz#2d79200cb72d938dfc7af4fdedaa03c04e7ace14"
-  integrity sha512-PYZwL0DjGeUOauSie6n9Pf+vDUod+vFnC1uHa1Uj3ex1PhRI6DOheau6oJxxj9oyEPWy8SS19KfZDwln4v4LTg==
+puppeteer@15.3.1:
+  version "15.3.1"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-15.3.1.tgz#0ff9b433a8fc3798f5ec82ea4b31ec47857219cf"
+  integrity sha512-Z+SpYBiS1zUzMXV7Wnhe2pyuVCFAFRTq1UrUWHB2CkLos5v7bXvXYuZ3Fn5pSN5IObxijyx4opNYKTCRnGni6Q==
   dependencies:
     cross-fetch "3.1.5"
     debug "4.3.4"
@@ -3403,7 +3403,7 @@ tar-stream@^2.1.4:
     inherits "^2.0.3"
     readable-stream "^3.1.1"
 
-tasuku@^2.0.0:
+tasuku@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/tasuku/-/tasuku-2.0.0.tgz#82c6c886161a3b2baced98f74bbe8e94e997cd3d"
   integrity sha512-8y1ZtIBzMfTy0/XxRW9gfGts/CPrt7zSMQEfjWXbLdEz09EcXaAZEAFg8vNV8WAlLUQfoIfaaikRJ0YrBWkGlA==
