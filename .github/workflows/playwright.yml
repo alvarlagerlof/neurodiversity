@@ -1,6 +1,6 @@
 name: Playwright Tests
 on:
-  deployment_status:
+  push:
 jobs:
   test:
     runs-on: ubuntu-latest
