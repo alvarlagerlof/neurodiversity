@@ -2566,15 +2566,15 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-next-banner@1.2.11:
-  version "1.2.11"
-  resolved "https://registry.yarnpkg.com/next-banner/-/next-banner-1.2.11.tgz#6a79d28492699c800f8349b3991537909f7ceedb"
-  integrity sha512-hsV7fJ0oT+KnF4rnvfvB4YduY23B6moJ4nJeBKSdsGhoT8GWBclgN2dUaUFGvund24LTNTa7aZZD9OUnYcEWGg==
+next-banner@1.2.22:
+  version "1.2.22"
+  resolved "https://registry.yarnpkg.com/next-banner/-/next-banner-1.2.22.tgz#a9b0bdcbdd52158252021bf5d1bffc2bb6db9d96"
+  integrity sha512-IMSe20KjXU8QGAlAasXjqdgQ7y/C9Ejgym4o+BnjMGn4lZryamyu9Zv+qmY+l02lkCey3WufuBMHORndz8boCA==
   dependencies:
     cross-spawn "7.0.3"
     get-port "6.1.2"
     merge-anything "5.0.2"
-    puppeteer "15.3.1"
+    puppeteer "15.3.2"
     tasuku "2.0.0"
 
 next-mdx-remote@^4.0.3:
@@ -2996,10 +2996,10 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-puppeteer@15.3.1:
-  version "15.3.1"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-15.3.1.tgz#0ff9b433a8fc3798f5ec82ea4b31ec47857219cf"
-  integrity sha512-Z+SpYBiS1zUzMXV7Wnhe2pyuVCFAFRTq1UrUWHB2CkLos5v7bXvXYuZ3Fn5pSN5IObxijyx4opNYKTCRnGni6Q==
+puppeteer@15.3.2:
+  version "15.3.2"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-15.3.2.tgz#62162739044d570ab9907f85b1e1bbcf52adc79e"
+  integrity sha512-6z4fTHCHTpG3Yu7zqP0mLfCmkNkgw5KSUfLAwuBabz9Pkqoe0Z08hqUx5GNxhhMgEo4YVOSPBshePA6zliznWQ==
   dependencies:
     cross-fetch "3.1.5"
     debug "4.3.4"
