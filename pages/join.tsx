@@ -35,8 +35,8 @@ export default function Join() {
           <Header>
             <Typography.Title>Join us</Typography.Title>
             <Typography.Subtitle>
-              First of all, thank you for considering! We're a small community looking for
-              more awesome people to join us.
+              First of all, thank you for considering us! We're a small community looking
+              for more awesome people to join us.
             </Typography.Subtitle>
           </Header>
 
@@ -82,7 +82,7 @@ export default function Join() {
 
               <Typography.Body>
                 If you do not want to do that yet or have questions you want answered
-                before joining, you can reach out these channels.
+                before joining, you can reach out on these channels.
               </Typography.Body>
               <LinkGrid>
                 <LinkGrid.Item
