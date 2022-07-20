@@ -101,7 +101,7 @@ export default function Index({ publishedPages, previewPages, isPreview }: Index
               <Typography.Body>
                 There are millions of neurodiverse people in the world. Yet knowledge
                 about most neurological conditions is often none or close to it. The lack
-                of knowledge leads to stigmatization, insensitive jokes, misconceptions,
+                of knowledge leads to stigmatisation, insensitive jokes, misconceptions,
                 and ableism. When understanding increases, there’s a chance that the
                 former decreases. More people would also be comfortable telling others
                 about themselves and asking for help.
@@ -109,7 +109,7 @@ export default function Index({ publishedPages, previewPages, isPreview }: Index
               <Typography.Body>
                 This website tackles the information problem by providing short and
                 easy-to-read information. We believe that content should be short, and to
-                the point. To maximize potential reach, it shouldn’t be a blog post, be
+                the point. To maximise potential reach, it shouldn’t be a blog post, be
                 written in medical language, be too long, be local to one country, or be
                 buried deep behind marketing. We couldn’t find a website that fulfilled
                 these goals, so we made one.
