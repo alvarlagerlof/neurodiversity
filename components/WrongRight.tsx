@@ -10,7 +10,7 @@ interface WrongRightProps {
 
 export default function WrongRight({ title, wrong, right }: WrongRightProps) {
   return (
-    <section className="space-y-8 sm:rounded-xl bg-white shadow px-4 py-8 sm:py-4 -mx-4 ">
+    <section className="space-y-8 sm:rounded-xl bg-white shadow px-4 py-8 sm:py-4 -mx-4">
       <div>
         <IconHeading url="/icons/cross.svg" alt="Cross icon">
           {title} is not:

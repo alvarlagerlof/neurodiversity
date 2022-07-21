@@ -29,9 +29,9 @@ function Item({ href, title, description }: ItemProps) {
           }
         }}
         className={`
-              h-full flex flex-row items-start space-x-2 rounded-xl p-4 bg-white ring-primary transition 
-              shadow 
-              hover:shadow-md 
+              h-full flex flex-row items-start space-x-2 rounded-xl p-4 bg-white ring-primary transition
+              shadow
+              hover:shadow-md
               outline-none focus-visible:ring cursor-pointer`}
       >
         <img src="/icons/arrow.svg" className="w-6 md:w-7" alt="" aria-hidden />
