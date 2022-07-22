@@ -30,14 +30,4 @@ async function getAllPages(): Promise<Partial<Page>[]> {
   );
 }
 
-async function getPublishedPages(): Promise<Partial<Page>[]> {
-  const pages = await getAllPages();
-  return pages.filter((page) => page.frontMatter.published);
-}
-
-async function getPreviewPages(): Promise<Partial<Page>[]> {
-  const pages = await getAllPages();
-  return pages.filter((page) => !page.frontMatter.published);
-}
-
-export { getPageBySlug, getAllPages, getPublishedPages, getPreviewPages };
+export { getPageBySlug, getAllPages };
