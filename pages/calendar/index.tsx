@@ -68,7 +68,7 @@ export default function Calendar({ events }: CalendarProps) {
 
                     return (
                       <li key={month}>
-                        <Typography.Heading className="ml-[150px]">
+                        <Typography.Heading className="ml-[170px]">
                           {monthName}
                         </Typography.Heading>
                         <ul className="space-y-2">
@@ -91,11 +91,9 @@ export default function Calendar({ events }: CalendarProps) {
                               new Date(event.startDate).getDay()
                             );
 
-                            console.log(event.length);
-
                             return (
                               <li key={event.name} className="flex flex-row items-center">
-                                <div className="w-[150px] flex flex-row justify-end pr-4">
+                                <div className="w-[170px] flex flex-row justify-end pr-4">
                                   {event.length == "day" && <Tag>{day}</Tag>}
                                   {event.length == "week" && (
                                     <Tag>Week, starting {day}</Tag>
@@ -103,9 +101,7 @@ export default function Calendar({ events }: CalendarProps) {
                                   {event.length == "month" && <Tag>Whole month</Tag>}
                                 </div>
 
-                                <Typography.Body className="mb-0 mr-4">
-                                  {event.name}
-                                </Typography.Body>
+                                <p className="mr-4">{event.name}</p>
                               </li>
                             );
                           })}

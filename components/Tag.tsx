@@ -8,7 +8,7 @@ export default function Tag({
   return (
     <p
       className={
-        "inline-block bg-primary rounded-full py-1 px-3 text-xs text-white " + className
+        "inline-block bg-primary rounded-full py-1 px-3 text-sm text-white " + className
       }
     >
       {children}
