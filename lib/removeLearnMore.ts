@@ -4,7 +4,7 @@ export default function removeLearnMore(description: string) {
 
   if (firstWord == "Learn") {
     const sentences = description.split(". ");
-    return sentences.slice(0, -1).join() + ".";
+    return sentences.slice(0, -1).join(". ") + ".";
   }
 
   return description;
