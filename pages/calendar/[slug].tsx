@@ -11,7 +11,6 @@ import { Event, EventAndPage, Page } from "types";
 import { getAllEvents, getEventBySlug } from "lib/events";
 import { getPageBySlug } from "lib/pages";
 import Section from "components/Section";
-import removeLearnMore from "lib/removeLearnMore";
 import Button from "components/Button";
 import Link from "next/link";
 
@@ -22,11 +21,11 @@ export default function CalendarEvent({ event, page }: EventAndPage) {
         appendTitle={true}
         image={{
           title: `When is ${event.frontMatter.name}?`,
-          description: `Starting on ${event.frontMatter.startDate}`,
+          description: `Starting on ${event.frontMatter.startDate}. Learn more here.`,
         }}
         tags={{
           title: `When is ${event.frontMatter.name}?`,
-          description: `${event.frontMatter.name} is an event starting on ${event.frontMatter.startDate}`,
+          description: `${event.frontMatter.name} is an event starting on ${event.frontMatter.startDate}. Learn more here.`,
         }}
       />
 
@@ -116,9 +115,7 @@ function About({ event, page }: EventAndPage) {
         <Typography.Heading>About {event.frontMatter.condition.name}</Typography.Heading>
         {page ? (
           <>
-            <Typography.Body>
-              {removeLearnMore(page.frontMatter.meta.description)}
-            </Typography.Body>
+            <Typography.Body>{page.frontMatter.meta.description}</Typography.Body>
             <Link href={`/${event.frontMatter.condition.linkedPage}`} passHref>
               <Button as="a">Learn more</Button>
             </Link>

@@ -49,11 +49,11 @@ export default function Doc({ frontMatter: { meta }, source }) {
       <Meta
         image={{
           title: meta.title,
-          description: meta.description,
+          description: `${meta.description} Learn more here.`,
         }}
         tags={{
-          title: `${meta.title}`,
-          description: meta.description,
+          title: meta.title,
+          description: `${meta.description} Learn more here.`,
         }}
       />
       <ContentInset size="normal">

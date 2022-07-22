@@ -10,7 +10,6 @@ import Main from "components/Main";
 import { Event, EventSectioned, Page } from "types";
 import Tag from "components/Tag";
 import { getSectioned } from "lib/events";
-import removeLearnMore from "lib/removeLearnMore";
 import { useRef } from "react";
 import Bounce from "components/Bounce";
 import Link from "next/link";
@@ -26,12 +25,12 @@ export default function Calendar({ events }: CalendarProps) {
         appendTitle={true}
         image={{
           title: "Neurological Awareness Calendar",
-          description:
-            "Throughout the year, there are months, weeks and days where various neurological conditions are highlighted to spread awareness. This is a calendar of some of them.",
+          description: "By Neurodiversity Wiki",
         }}
         tags={{
           title: "The Neurological Awareness Calendar",
-          description: "By Neurodiversity Wiki",
+          description:
+            "Throughout the year, there are months, weeks and days where various neurological conditions are highlighted to spread awareness. This is a calendar of some of them.",
         }}
       />
 
@@ -119,7 +118,7 @@ function Event({ event, page }: { event: Event; page: Page }) {
   // Remove CTA text since there is a button below
   const description = () => {
     if (page) {
-      return removeLearnMore(page.frontMatter.meta.description);
+      return page.frontMatter.meta.description;
     }
 
     if (event.frontMatter.condition && event.frontMatter.condition.name) {
