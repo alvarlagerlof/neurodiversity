@@ -3,7 +3,7 @@ import Link from "next/link";
 import ContentInset from "components/ContentInset";
 import Wrapper from "components/Wrapper";
 import Main from "components/Main";
-import PreviewBanner from "components/PreviewBanner";
+import DocLinkBanner from "components/DocLinkBanner";
 import VerticalSpacer from "components/VerticalSpacer";
 import Header from "components/Header";
 import Meta from "components/Meta";
@@ -31,7 +31,6 @@ export default function Join() {
 
       <ContentInset size="normal">
         <VerticalSpacer>
-          <PreviewBanner googleDocUrl="https://docs.google.com/document/d/1dWmoI7X5U6vZdHJHNMUBSG1D3W72KuA5FaOepXmiEOQ/edit?usp=sharing" />
           <Header>
             <Typography.Title>Join us</Typography.Title>
             <Typography.Subtitle>
@@ -97,6 +96,8 @@ export default function Join() {
                 />
               </LinkGrid>
             </Section>
+
+            <DocLinkBanner url="https://docs.google.com/document/d/1dWmoI7X5U6vZdHJHNMUBSG1D3W72KuA5FaOepXmiEOQ/edit?usp=sharing" />
           </Main>
         </VerticalSpacer>
       </ContentInset>

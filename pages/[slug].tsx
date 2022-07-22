@@ -13,15 +13,14 @@ import Definition from "components/Definition";
 import DefinitionItem from "components/DefinitionItem";
 import Image from "components/Image";
 import ExternalLink from "components/ExternalLink";
-import PreviewBanner from "components/PreviewBanner";
+import DocLinkBanner from "components/DocLinkBanner";
 import Wrapper from "components/Wrapper";
 import ContentInset from "components/ContentInset";
 import VerticalSpacer from "components/VerticalSpacer";
 import Main from "components/Main";
 import Typography from "components/Typography";
 
-import { getPageBySlug, getAllPages, getPublishedPages } from "lib/pages";
-import isPreview from "lib/env";
+import { getPageBySlug, getAllPages } from "lib/content";
 
 const components = {
   h1: Typography.Title,
@@ -41,7 +40,7 @@ const components = {
   WrongRight,
   Definition,
   DefinitionItem,
-  PreviewBanner,
+  DocLinkBanner,
 };
 
 export default function Doc({ frontMatter: { meta }, source }) {
@@ -79,7 +78,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const pages = (await isPreview()) ? await getAllPages() : await getPublishedPages();
+  const pages = await getAllPages();
 
   return {
     paths: pages.map((page) => {
