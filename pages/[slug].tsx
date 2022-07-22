@@ -20,8 +20,7 @@ import VerticalSpacer from "components/VerticalSpacer";
 import Main from "components/Main";
 import Typography from "components/Typography";
 
-import { getPageBySlug, getAllPages, getPublishedPages } from "lib/content";
-import isPreview from "lib/env";
+import { getPageBySlug, getAllPages } from "lib/content";
 
 const components = {
   h1: Typography.Title,
@@ -79,7 +78,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const pages = (await isPreview()) ? await getAllPages() : await getPublishedPages();
+  const pages = await getAllPages();
 
   return {
     paths: pages.map((page) => {

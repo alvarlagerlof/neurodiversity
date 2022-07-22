@@ -9,19 +9,16 @@ import VerticalSpacer from "components/VerticalSpacer";
 import LinkGrid from "components/LinkGrid";
 import Main from "components/Main";
 
-import { getPreviewPages, getPublishedPages } from "lib/content";
-import isPreview from "lib/env";
+import { getAllPages } from "lib/content";
 import { Page } from "../types";
 
 // This page cannot be .mdx because then there is no way to run getServerSideProps which are needed for redirecting from notocd.com and notautism.com
 
 interface IndexProps {
-  previewPages: Partial<Page>[];
-  publishedPages: Partial<Page>[];
-  isPreview: boolean;
+  pages: Partial<Page>[];
 }
 
-export default function Index({ publishedPages, previewPages, isPreview }: IndexProps) {
+export default function Index({ pages }: IndexProps) {
   return (
     <Wrapper>
       <Meta
@@ -53,7 +50,7 @@ export default function Index({ publishedPages, previewPages, isPreview }: Index
           <Main>
             <Section>
               <LinkGrid>
-                {publishedPages.map(({ slug, frontMatter: { name, explaination } }) => {
+                {pages.map(({ slug, frontMatter: { name, explaination } }) => {
                   return (
                     <LinkGrid.Item
                       key={slug}
@@ -65,29 +62,6 @@ export default function Index({ publishedPages, previewPages, isPreview }: Index
                 })}
               </LinkGrid>
             </Section>
-
-            {isPreview && (
-              <Section>
-                <Typography.Heading>Pages in preview</Typography.Heading>
-                <Typography.Body>
-                  The pages below are currently being made. Open one to find out how to
-                  contribute to it.
-                </Typography.Body>
-
-                <LinkGrid>
-                  {previewPages.map(({ slug, frontMatter: { name, explaination } }) => {
-                    return (
-                      <LinkGrid.Item
-                        key={slug}
-                        href={`/${slug}`}
-                        title={name}
-                        description={explaination}
-                      />
-                    );
-                  })}
-                </LinkGrid>
-              </Section>
-            )}
 
             <Section>
               <Typography.Heading>Why?</Typography.Heading>
@@ -132,9 +106,7 @@ export default function Index({ publishedPages, previewPages, isPreview }: Index
 }
 
 export async function getServerSideProps({ res, req }) {
-  const publishedPages = await getPublishedPages();
-  const previewPages = await getPreviewPages();
-  const preview = await isPreview();
+  const pages = await getAllPages();
 
   switch (req.headers.host) {
     case "notocd.com":
@@ -142,5 +114,5 @@ export async function getServerSideProps({ res, req }) {
       res.statusCode = 301;
   }
 
-  return { props: { publishedPages, previewPages, preview } };
+  return { props: { pages } };
 }
