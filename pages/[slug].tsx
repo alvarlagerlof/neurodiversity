@@ -20,7 +20,7 @@ import VerticalSpacer from "components/VerticalSpacer";
 import Main from "components/Main";
 import Typography from "components/Typography";
 
-import { getPageBySlug, getAllPages } from "lib/content";
+import { getPageBySlug, getAllPages } from "lib/pages";
 
 const components = {
   h1: Typography.Title,

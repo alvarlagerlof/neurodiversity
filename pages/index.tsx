@@ -9,7 +9,7 @@ import VerticalSpacer from "components/VerticalSpacer";
 import LinkGrid from "components/LinkGrid";
 import Main from "components/Main";
 
-import { getAllPages } from "lib/content";
+import { getAllPages } from "lib/pages";
 import { Page } from "../types";
 
 // This page cannot be .mdx because then there is no way to run getServerSideProps which are needed for redirecting from notocd.com and notautism.com

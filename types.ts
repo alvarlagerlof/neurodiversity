@@ -15,14 +15,17 @@ export interface Event {
   slug: string;
   frontMatter: {
     name: string;
-    conditionName?: string;
     length: "day" | "week" | "month";
     startDate: string;
     organization?: {
       name: string;
       website: string;
+      logo: string;
     };
-    linkedPage?: string;
+    condition: {
+      name: string;
+      linkedPage?: string;
+    };
   };
 }
 

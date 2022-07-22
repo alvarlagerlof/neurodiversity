@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         primary: "#860091",
         secondary: "#FFEEE5",
+        "button-secondary": "#e9d0c3",
         highlight: "rgba(194, 65, 25, 0.2)",
         body: "#3B3B3B",
         gray: "#AEAEAE",

@@ -1,5 +1,5 @@
 import Bounce from "components/Bounce";
-import { ComponentType, ElementType, forwardRef } from "react";
+import { ElementType, forwardRef } from "react";
 
 interface ButtonProps {
   as?: ElementType;

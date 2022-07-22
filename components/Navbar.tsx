@@ -5,17 +5,30 @@ import DonateDropdown from "components/DonateDropdown";
 import Button from "./Button";
 import { useRouter } from "next/router";
 import InternalLink from "./InternalLink";
+import IconButton from "./IconButton";
 
 export default function Navbar() {
   const { asPath } = useRouter();
 
   return (
     <ContentInset size="wide">
-      <nav>
-        <div className="mt-8 w-full flex flex-row justify-between items-center">
-          <ClickableLogo />
+      <nav className="mt-8 w-full flex flex-row justify-between items-center">
+        <ClickableLogo />
 
-          {/* <DonateDropdown /> */}
+        {/* <DonateDropdown /> */}
+
+        <div className="flex flex-row space-x-3 items-center">
+          {asPath !== "/calendar" && (
+            <Link href="/calendar" passHref>
+              <IconButton
+                as="a"
+                variant="secondary"
+                src="/icons/calendar.svg"
+                alt="Calendar"
+                badge="true"
+              />
+            </Link>
+          )}
 
           {asPath !== "/join" && (
             <Link href="/join" passHref>
@@ -24,17 +37,6 @@ export default function Navbar() {
               </Button>
             </Link>
           )}
-        </div>
-        <div className="mt-8">
-          <ul className="flex flex-row space-x-4">
-            <li>
-              <InternalLink href="/">Pages</InternalLink>
-            </li>
-
-            <li>
-              <InternalLink href="/calendar">Calendar</InternalLink>
-            </li>
-          </ul>
         </div>
       </nav>
     </ContentInset>

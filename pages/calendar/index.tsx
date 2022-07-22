@@ -1,7 +1,7 @@
 import Header from "components/Header";
 import Typography from "components/Typography";
 import Meta from "components/Meta";
-import PreviewBanner from "components/PreviewBanner";
+import DocLinkBanner from "components/DocLinkBanner";
 import Wrapper from "components/Wrapper";
 import ContentInset from "components/ContentInset";
 import VerticalSpacer from "components/VerticalSpacer";
@@ -37,10 +37,19 @@ export default function Calendar({ events }: CalendarProps) {
 
       <ContentInset size="normal">
         <VerticalSpacer>
-          <PreviewBanner googleDocUrl="https://docs.google.com/document/d/1hKr_t99hzFR3Foj1SLzUSLy6NbOYDJ2Es18DwZdUm0Q/edit?usp=sharing" />
-
           <Header>
-            <Typography.Title>Neurological Awareness Calendar</Typography.Title>
+            <div className="w-full flex flex-row justify-end h-14 sm:h-0 sm:relative">
+              <img
+                src="/icons/new.svg"
+                alt="star shaped banner saying new"
+                className="absolute sm:-top-6 sm:right-0 rotate-[15deg]"
+              />
+            </div>
+            <Typography.Title>
+              <span className="italic font-medium text-xl">The Neurodiversity Wiki</span>
+              <br />
+              Neurological Awareness Calendar
+            </Typography.Title>
             <Typography.Subtitle>
               Throughout the year, there are months, weeks and days where various
               neurological conditions are highlighted to spread awareness. Here’s a
@@ -56,6 +65,8 @@ export default function Calendar({ events }: CalendarProps) {
                   return <Month key={month} month={month} events={events} />;
                 })}
             </ul>
+
+            <DocLinkBanner url="https://docs.google.com/document/d/1hKr_t99hzFR3Foj1SLzUSLy6NbOYDJ2Es18DwZdUm0Q/edit?usp=sharing" />
           </Main>
         </VerticalSpacer>
       </ContentInset>
@@ -70,7 +81,7 @@ function Month({ month, events }) {
   return (
     <li>
       <Typography.Title as="h2">{monthName}</Typography.Title>
-      <ul className="space-y-4">
+      <ul className="space-y-4 md:-mx-4">
         {events.map((data) => {
           return (
             <Event
@@ -131,7 +142,7 @@ function Event({ event, page }: { event: Event; page: Page }) {
       >
         <div className="flex flex-row justify-between">
           {/* <Typography.Heading>{event.frontMatter.name}</Typography.Heading> */}
-          <Typography.Heading margin={1}>
+          <Typography.Heading>
             <Link href={`/calendar/${event.slug}`} passHref>
               <a ref={link}>{event.frontMatter.name}</a>
             </Link>
@@ -144,12 +155,6 @@ function Event({ event, page }: { event: Event; page: Page }) {
         </div>
 
         <p>{description()}</p>
-
-        {/* {event.frontMatter.linkedPage && (
-          <div className="mt-2">
-            <Link href={event.frontMatter.linkedPage}>Learn more</Link>
-          </div>
-        )} */}
       </li>
     </Bounce>
   );

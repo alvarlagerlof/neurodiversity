@@ -6,7 +6,11 @@ export default function Tag({
   className?: string;
 }) {
   return (
-    <p className={"bg-primary rounded-full py-1 px-3 text-white " + className}>
+    <p
+      className={
+        "bg-primary rounded-full py-1 px-3 text-white whitespace-nowrap " + className
+      }
+    >
       {children}
     </p>
   );
