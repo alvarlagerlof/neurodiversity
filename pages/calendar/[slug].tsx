@@ -21,8 +21,8 @@ export default function CalendarEvent({ event, page }: EventAndPage) {
       <Meta
         appendTitle={true}
         image={{
-          title: `${event.frontMatter.name}`,
-          description: `Event starting on ${event.frontMatter.startDate}`,
+          title: `When is ${event.frontMatter.name}?`,
+          description: `Starting on ${event.frontMatter.startDate}`,
         }}
         tags={{
           title: `When is ${event.frontMatter.name}?`,

@@ -26,7 +26,8 @@ export default function Calendar({ events }: CalendarProps) {
         appendTitle={true}
         image={{
           title: "Neurological Awareness Calendar",
-          description: "By Neurodiversity Wiki",
+          description:
+            "Throughout the year, there are months, weeks and days where various neurological conditions are highlighted to spread awareness. This is a calendar of some of them.",
         }}
         tags={{
           title: "The Neurological Awareness Calendar",
