@@ -12,7 +12,7 @@
     "test:hd": "playwright test --headed"
   },
   "dependencies": {
-    "next": "12.2.2",
+    "next": "12.2.3",
     "next-banner": "1.2.51",
     "next-mdx-remote": "4.1.0",
     "next-plausible": "^3.1.9",
