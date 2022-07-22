@@ -7,10 +7,13 @@ import ContentInset from "components/ContentInset";
 import VerticalSpacer from "components/VerticalSpacer";
 import Main from "components/Main";
 
-import Link from "components/InternalLink";
 import { Event, EventSectioned, Page } from "types";
 import Tag from "components/Tag";
 import { getSectioned } from "lib/events";
+import removeLearnMore from "lib/removeLearnMore";
+import { useRef } from "react";
+import Bounce from "components/Bounce";
+import Link from "next/link";
 
 interface CalendarProps {
   events: EventSectioned;
@@ -83,6 +86,8 @@ function Month({ month, events }) {
 }
 
 function Event({ event, page }: { event: Event; page: Page }) {
+  const link = useRef(null);
+
   // Format date day
   const pr = new Intl.PluralRules("en-US", { type: "ordinal" });
 
@@ -103,45 +108,50 @@ function Event({ event, page }: { event: Event; page: Page }) {
   // Remove CTA text since there is a button below
   const description = () => {
     if (page) {
-      let description = page.frontMatter.meta.description;
-      const lastSentence = description.split(". ").at(-1);
-      const firstWord = lastSentence.split(" ").at(0);
-
-      if (firstWord == "Learn") {
-        const sentences = description.split(". ");
-        description = sentences.slice(0, -1).join() + ".";
-      }
-      return description;
+      return removeLearnMore(page.frontMatter.meta.description);
     }
 
     return "There's no description or page about this event yet.";
   };
 
   return (
-    <li
-      className="
-        h-full rounded-xl p-4 bg-white ring-primary transition
-        space-y-2
-        -mx-4
-        shadow"
-    >
-      <div className="flex flex-row justify-between">
-        <Typography.Heading>{event.frontMatter.name}</Typography.Heading>
-        <div>
-          {event.frontMatter.length == "week" && <Tag>Week, starting {day}</Tag>}
-          {event.frontMatter.length == "day" && <Tag>{day}</Tag>}
-          {event.frontMatter.length == "month" && <Tag>Whole month</Tag>}
+    <Bounce amount={1.04} className="w-full">
+      <li
+        onClick={(e) => {
+          if (link.current !== e.target) {
+            link.current.click();
+          }
+        }}
+        className={`
+              rounded-xl p-4 bg-white ring-primary transition
+              shadow
+              space-y-2
+              hover:shadow-md
+              outline-none focus-visible:ring cursor-pointer`}
+      >
+        <div className="flex flex-row justify-between">
+          {/* <Typography.Heading>{event.frontMatter.name}</Typography.Heading> */}
+          <Typography.Heading margin={1}>
+            <Link href={`/calendar/${event.slug}`} passHref>
+              <a ref={link}>{event.frontMatter.name}</a>
+            </Link>
+          </Typography.Heading>
+          <div>
+            {event.frontMatter.length == "week" && <Tag>Week, starting {day}</Tag>}
+            {event.frontMatter.length == "day" && <Tag>{day}</Tag>}
+            {event.frontMatter.length == "month" && <Tag>Whole month</Tag>}
+          </div>
         </div>
-      </div>
 
-      <p>{description()}</p>
+        <p>{description()}</p>
 
-      {event.frontMatter.linkedPage && (
-        <div className="mt-2">
-          <Link href={event.frontMatter.linkedPage}>Learn more</Link>
-        </div>
-      )}
-    </li>
+        {/* {event.frontMatter.linkedPage && (
+          <div className="mt-2">
+            <Link href={event.frontMatter.linkedPage}>Learn more</Link>
+          </div>
+        )} */}
+      </li>
+    </Bounce>
   );
 }
 

@@ -4,24 +4,38 @@ import ContentInset from "components/ContentInset";
 import DonateDropdown from "components/DonateDropdown";
 import Button from "./Button";
 import { useRouter } from "next/router";
+import InternalLink from "./InternalLink";
 
 export default function Navbar() {
   const { asPath } = useRouter();
 
   return (
     <ContentInset size="wide">
-      <nav className="mt-8 w-full flex flex-row justify-between items-center">
-        <ClickableLogo />
+      <nav>
+        <div className="mt-8 w-full flex flex-row justify-between items-center">
+          <ClickableLogo />
 
-        {/* <DonateDropdown /> */}
+          {/* <DonateDropdown /> */}
 
-        {asPath !== "/join" && (
-          <Link href="/join" passHref>
-            <Button as="a" variant="primary">
-              Contribute
-            </Button>
-          </Link>
-        )}
+          {asPath !== "/join" && (
+            <Link href="/join" passHref>
+              <Button as="a" variant="primary">
+                Contribute
+              </Button>
+            </Link>
+          )}
+        </div>
+        <div className="mt-8">
+          <ul className="flex flex-row space-x-4">
+            <li>
+              <InternalLink href="/">Pages</InternalLink>
+            </li>
+
+            <li>
+              <InternalLink href="/calendar">Calendar</InternalLink>
+            </li>
+          </ul>
+        </div>
       </nav>
     </ContentInset>
   );

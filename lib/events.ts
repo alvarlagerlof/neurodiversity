@@ -21,6 +21,15 @@ async function getAllEvents(): Promise<Event[]> {
   );
 }
 
+async function getEventBySlug(slug): Promise<Event> {
+  const fileContent = await fs.readFile(baseDir + slug + ".mdx");
+  const { data } = matter(fileContent);
+
+  return {
+    frontMatter: { ...data },
+  } as Event;
+}
+
 async function getMapppedWithPage(): Promise<EventAndPage[]> {
   const events = await getAllEvents();
 
@@ -54,4 +63,4 @@ async function getSectioned(): Promise<EventSectioned> {
   }, {} as EventSectioned);
 }
 
-export { getSectioned };
+export { getAllEvents, getEventBySlug, getSectioned };
