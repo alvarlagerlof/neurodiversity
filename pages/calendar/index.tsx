@@ -91,24 +91,28 @@ export default function Calendar({ events }: CalendarProps) {
                             <li
                               key={event.name}
                               className="
-                                h-full space-x-2 rounded-xl p-4 bg-white ring-primary transition
+                                h-full rounded-xl p-4 bg-white ring-primary transition
+                                space-y-2
                                 -mx-4
                                 shadow"
                             >
-                              <div className="ml-2 mb-2">
-                                {event.length == "day" && <Tag>{day}</Tag>}
-                                {event.length == "week" && (
-                                  <Tag>Week, starting {day}</Tag>
-                                )}
-                                {event.length == "month" && <Tag>Whole month</Tag>}
+                              <div className="flex flex-row justify-between">
+                                <Typography.Heading>{event.name}</Typography.Heading>
+                                <div>
+                                  {event.length == "day" && <Tag>{day}</Tag>}
+                                  {event.length == "week" && (
+                                    <Tag>Week, starting {day}</Tag>
+                                  )}
+                                  {event.length == "month" && <Tag>Whole month</Tag>}
+                                </div>
                               </div>
 
-                              <Typography.Heading>{event.name}</Typography.Heading>
-                              <p className="mb-4">
+                              <p className="block !mb-2">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Accusantium, fugiat molestiae. Iure, ab nisi suscipit
                                 commodi optio, qui.
                               </p>
+
                               <ExternalLink href="">Learn more</ExternalLink>
                             </li>
                           );
