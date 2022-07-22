@@ -101,7 +101,6 @@ function Event({ event, page }: { event: Event; page: Page }) {
   const day = formatOrdinals(new Date(event.frontMatter.startDate).getDate());
 
   // Remove CTA text since there is a button below
-
   const description = () => {
     if (page) {
       let description = page.frontMatter.meta.description;

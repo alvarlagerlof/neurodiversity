@@ -44,13 +44,6 @@ async function getSectioned(): Promise<EventSectioned> {
   const mapped = await getMapppedWithPage();
 
   return mapped.reduce((accumulator: EventSectioned, current: EventAndPage) => {
-    // console.log(
-    //   current.event.frontMatter.startDate,
-    //   new Date(current.event.frontMatter.startDate),
-    //   new Date(current.event.frontMatter.startDate).getMonth(),
-    //   current.event.slug
-    // );
-
     // JS month starts at index 0
     const month = new Date(current.event.frontMatter.startDate).getMonth() + 1;
 
