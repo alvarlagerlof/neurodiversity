@@ -2,7 +2,7 @@ import Header from "components/Header";
 import Typography from "components/Typography";
 import Meta from "components/Meta";
 import Section from "components/Section";
-import PreviewBanner from "components/PreviewBanner";
+import DocLinkBanner from "components/DocLinkBanner";
 import Wrapper from "components/Wrapper";
 import ContentInset from "components/ContentInset";
 import VerticalSpacer from "components/VerticalSpacer";
@@ -41,8 +41,6 @@ export default function Index({ publishedPages, previewPages, isPreview }: Index
 
       <ContentInset size="normal">
         <VerticalSpacer>
-          <PreviewBanner googleDocUrl="https://docs.google.com/document/d/16nOmXROsCu_IMmtXyzLHy5sMqDLuFdkbkCxQ08WzFxQ/edit?usp=sharing" />
-
           <Header>
             <Typography.Title>Hello there!</Typography.Title>
             <Typography.Subtitle>
@@ -124,6 +122,8 @@ export default function Index({ publishedPages, previewPages, isPreview }: Index
                 to help more people understand us.
               </Typography.Body>
             </Section>
+
+            <DocLinkBanner url="https://docs.google.com/document/d/16nOmXROsCu_IMmtXyzLHy5sMqDLuFdkbkCxQ08WzFxQ/edit?usp=sharing" />
           </Main>
         </VerticalSpacer>
       </ContentInset>

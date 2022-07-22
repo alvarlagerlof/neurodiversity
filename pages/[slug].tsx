@@ -13,7 +13,7 @@ import Definition from "components/Definition";
 import DefinitionItem from "components/DefinitionItem";
 import Image from "components/Image";
 import ExternalLink from "components/ExternalLink";
-import PreviewBanner from "components/PreviewBanner";
+import DocLinkBanner from "components/DocLinkBanner";
 import Wrapper from "components/Wrapper";
 import ContentInset from "components/ContentInset";
 import VerticalSpacer from "components/VerticalSpacer";
@@ -41,7 +41,7 @@ const components = {
   WrongRight,
   Definition,
   DefinitionItem,
-  PreviewBanner,
+  DocLinkBanner,
 };
 
 export default function Doc({ frontMatter: { meta }, source }) {
