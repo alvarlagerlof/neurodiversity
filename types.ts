@@ -8,17 +8,25 @@ export interface Page {
       title: string;
       description: string;
     };
-    event?: Event;
     published: boolean;
   };
 }
 
 export interface Event {
-  name: string;
-  length: "day" | "week" | "month";
-  startDate: number;
+  slug: string;
+  frontMatter: {
+    name: string;
+    length: "day" | "week" | "month";
+    startDate: string;
+    linkedPage?: string;
+  };
+}
+
+export interface EventAndPage {
+  event: Event;
+  page: Page;
 }
 
 export interface EventSectioned {
-  [month: number]: Event[];
+  [month: number]: EventAndPage[];
 }

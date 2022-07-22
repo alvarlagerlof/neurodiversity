@@ -1,4 +1,4 @@
-import ExternalLink from "./ExternalLink";
+import InternalLink from "./InternalLink";
 
 export default function PreviewBanner({ googleDocUrl }: { googleDocUrl: string }) {
   if (process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF !== "main") {
@@ -8,7 +8,7 @@ export default function PreviewBanner({ googleDocUrl }: { googleDocUrl: string }
         <p className="mb-2">
           The contents of this page is not complete. Do not share the url widely.
         </p>
-        <ExternalLink href={googleDocUrl}>Share feedback here</ExternalLink>
+        <InternalLink href={googleDocUrl}>Share feedback here</InternalLink>
       </div>
     );
   }

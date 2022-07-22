@@ -9,7 +9,7 @@ import VerticalSpacer from "components/VerticalSpacer";
 import LinkGrid from "components/LinkGrid";
 import Main from "components/Main";
 
-import { getPreviewPages, getPublishedPages } from "lib/content";
+import { getPreviewPages, getPublishedPages } from "lib/pages";
 import isPreview from "lib/env";
 import { Page } from "../types";
 

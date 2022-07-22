@@ -1,23 +1,16 @@
-import { DateTime } from "luxon";
-
 import Header from "components/Header";
 import Typography from "components/Typography";
 import Meta from "components/Meta";
-import Section from "components/Section";
 import PreviewBanner from "components/PreviewBanner";
 import Wrapper from "components/Wrapper";
 import ContentInset from "components/ContentInset";
 import VerticalSpacer from "components/VerticalSpacer";
 import Main from "components/Main";
 
-import ExternalLink from "components/ExternalLink";
-import { Event, EventSectioned } from "types";
-import { getPublishedPages } from "lib/content";
+import Link from "components/InternalLink";
+import { Event, EventSectioned, Page } from "types";
 import Tag from "components/Tag";
-
-// import isPreview from "lib/env";
-
-// This page cannot be .mdx because then there is no way to run getServerSideProps which are needed for redirecting from notocd.com and notautism.com
+import { getSectioned } from "lib/events";
 
 interface CalendarProps {
   events: EventSectioned;
@@ -41,7 +34,7 @@ export default function Calendar({ events }: CalendarProps) {
 
       <ContentInset size="normal">
         <VerticalSpacer>
-          {/* <PreviewBanner googleDocUrl="https://docs.google.com/document/d/1hKr_t99hzFR3Foj1SLzUSLy6NbOYDJ2Es18DwZdUm0Q/edit?usp=sharing" /> */}
+          <PreviewBanner googleDocUrl="https://docs.google.com/document/d/1hKr_t99hzFR3Foj1SLzUSLy6NbOYDJ2Es18DwZdUm0Q/edit?usp=sharing" />
 
           <Header>
             <Typography.Title>Neurological Awareness Calendar</Typography.Title>
@@ -53,76 +46,13 @@ export default function Calendar({ events }: CalendarProps) {
           </Header>
 
           <Main>
-            {/* <Section
-              className={`
-              h-full space-x-2 rounded-xl p-4 bg-white ring-primary transition
-              -mx-4
-              shadow`}
-            > */}
             <ul className="space-y-8">
               {Object.entries(events)
                 .sort((a: any, b: any) => a[0] - b[0])
                 .map(([month, events]) => {
-                  const date = new Date(2000, parseInt(month), 0); // 2009-11-10
-                  const monthName = date.toLocaleString("default", { month: "long" });
-
-                  return (
-                    <li key={month}>
-                      <Typography.Title as="h2">{monthName}</Typography.Title>
-                      <ul className="space-y-4">
-                        {events.map((event) => {
-                          const pr = new Intl.PluralRules("en-US", { type: "ordinal" });
-
-                          const suffixes = new Map([
-                            ["one", "st"],
-                            ["two", "nd"],
-                            ["few", "rd"],
-                            ["other", "th"],
-                          ]);
-                          const formatOrdinals = (n) => {
-                            const rule = pr.select(n);
-                            const suffix = suffixes.get(rule);
-                            return `${n}${suffix}`;
-                          };
-
-                          const day = formatOrdinals(new Date(event.startDate).getDay());
-
-                          return (
-                            <li
-                              key={event.name}
-                              className="
-                                h-full rounded-xl p-4 bg-white ring-primary transition
-                                space-y-2
-                                -mx-4
-                                shadow"
-                            >
-                              <div className="flex flex-row justify-between">
-                                <Typography.Heading>{event.name}</Typography.Heading>
-                                <div>
-                                  {event.length == "day" && <Tag>{day}</Tag>}
-                                  {event.length == "week" && (
-                                    <Tag>Week, starting {day}</Tag>
-                                  )}
-                                  {event.length == "month" && <Tag>Whole month</Tag>}
-                                </div>
-                              </div>
-
-                              <p className="block !mb-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusantium, fugiat molestiae. Iure, ab nisi suscipit
-                                commodi optio, qui.
-                              </p>
-
-                              <ExternalLink href="">Learn more</ExternalLink>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </li>
-                  );
+                  return <Month key={month} month={month} events={events} />;
                 })}
             </ul>
-            {/* </Section> */}
           </Main>
         </VerticalSpacer>
       </ContentInset>
@@ -130,21 +60,92 @@ export default function Calendar({ events }: CalendarProps) {
   );
 }
 
-export async function getStaticProps({ params }) {
-  const publishedPages = await getPublishedPages();
-  const events = publishedPages
-    .filter((page) => page.frontMatter.event)
-    .map((page) => page.frontMatter.event);
+function Month({ month, events }) {
+  const date = new Date(2000, parseInt(month), 0); // 2009-11-10
+  const monthName = date.toLocaleString("default", { month: "long" });
 
-  const sectioned = events.reduce((acc: EventSectioned, curr: Event) => {
-    const date = new Date(curr.startDate);
-    const month = date.getMonth();
+  return (
+    <li>
+      <Typography.Title as="h2">{monthName}</Typography.Title>
+      <ul className="space-y-4">
+        {events.map((data) => {
+          return (
+            <Event
+              key={data.event.frontMatter.name}
+              event={data.event}
+              page={data.page}
+            />
+          );
+        })}
+      </ul>
+    </li>
+  );
+}
 
-    return {
-      ...acc,
-      [month]: acc[month] ? [...acc[month], curr] : [curr],
-    };
-  }, {});
+function Event({ event, page }: { event: Event; page: Page }) {
+  // Format date day
+  const pr = new Intl.PluralRules("en-US", { type: "ordinal" });
+
+  const suffixes = new Map([
+    ["one", "st"],
+    ["two", "nd"],
+    ["few", "rd"],
+    ["other", "th"],
+  ]);
+  const formatOrdinals = (n) => {
+    const rule = pr.select(n);
+    const suffix = suffixes.get(rule);
+    return `${n}${suffix}`;
+  };
+
+  const day = formatOrdinals(new Date(event.frontMatter.startDate).getDate());
+
+  // Remove CTA text since there is a button below
+
+  const description = () => {
+    if (page) {
+      let description = page.frontMatter.meta.description;
+      const lastSentence = description.split(". ").at(-1);
+      const firstWord = lastSentence.split(" ").at(0);
+
+      if (firstWord == "Learn") {
+        const sentences = description.split(". ");
+        description = sentences.slice(0, -1).join() + ".";
+      }
+      return description;
+    }
+
+    return "There's no description or page about this event yet.";
+  };
+
+  return (
+    <li
+      className="
+        h-full rounded-xl p-4 bg-white ring-primary transition
+        space-y-2
+        -mx-4
+        shadow"
+    >
+      <div className="flex flex-row justify-between">
+        <Typography.Heading>{event.frontMatter.name}</Typography.Heading>
+        <div>
+          {event.frontMatter.length == "week" && <Tag>Week, starting {day}</Tag>}
+          {event.frontMatter.length == "day" && <Tag>{day}</Tag>}
+          {event.frontMatter.length == "month" && <Tag>Whole month</Tag>}
+        </div>
+      </div>
+
+      <p className="block !mb-2">{description()}</p>
+
+      {event.frontMatter.linkedPage && (
+        <Link href={event.frontMatter.linkedPage}>Learn more</Link>
+      )}
+    </li>
+  );
+}
+
+export async function getStaticProps() {
+  const sectioned = await getSectioned();
 
   return {
     props: {

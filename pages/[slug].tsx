@@ -20,7 +20,7 @@ import VerticalSpacer from "components/VerticalSpacer";
 import Main from "components/Main";
 import Typography from "components/Typography";
 
-import { getPageBySlug, getAllPages, getPublishedPages } from "lib/content";
+import { getPageBySlug, getAllPages, getPublishedPages } from "lib/pages";
 import isPreview from "lib/env";
 
 const components = {

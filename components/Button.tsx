@@ -40,4 +40,6 @@ const Button = forwardRef<HTMLDivElement, ButtonProps>(
   }
 );
 
+Button.displayName = "Button";
+
 export default Button;
