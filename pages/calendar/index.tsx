@@ -135,10 +135,12 @@ function Event({ event, page }: { event: Event; page: Page }) {
         </div>
       </div>
 
-      <p className="block !mb-2">{description()}</p>
+      <p>{description()}</p>
 
       {event.frontMatter.linkedPage && (
-        <Link href={event.frontMatter.linkedPage}>Learn more</Link>
+        <div className="mt-2">
+          <Link href={event.frontMatter.linkedPage}>Learn more</Link>
+        </div>
       )}
     </li>
   );
