@@ -16,20 +16,17 @@ import Button from "components/Button";
 import Link from "next/link";
 
 export default function CalendarEvent({ event, page }: EventAndPage) {
-  const title = `When is ${event.frontMatter.name}?`;
-
   return (
     <Wrapper>
       <Meta
         appendTitle={true}
         image={{
-          title: title,
-          description: "TODO",
+          title: `${event.frontMatter.name}`,
+          description: `Event starting on ${event.frontMatter.startDate}`,
         }}
-        imageLayout="start"
         tags={{
-          title: title,
-          description: "TODO",
+          title: `When is ${event.frontMatter.name}?`,
+          description: `${event.frontMatter.name} is an event starting on ${event.frontMatter.startDate}`,
         }}
       />
 

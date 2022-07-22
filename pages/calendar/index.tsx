@@ -25,13 +25,12 @@ export default function Calendar({ events }: CalendarProps) {
       <Meta
         appendTitle={true}
         image={{
-          title: "Awareness Calendar",
-          description: "TODO",
+          title: "Neurological Awareness Calendar",
+          description: "By Neurodiversity Wiki",
         }}
-        imageLayout="start"
         tags={{
-          title: "Awareness Calendar",
-          description: "TODO",
+          title: "The Neurological Awareness Calendar",
+          description: "By Neurodiversity Wiki",
         }}
       />
 
@@ -122,7 +121,11 @@ function Event({ event, page }: { event: Event; page: Page }) {
       return removeLearnMore(page.frontMatter.meta.description);
     }
 
-    return "There's no description or page about this event yet.";
+    if (event.frontMatter.condition && event.frontMatter.condition.name) {
+      return `There's no description of ${event.frontMatter.condition.name} yet.`;
+    }
+
+    return `There's no description yet.`;
   };
 
   return (

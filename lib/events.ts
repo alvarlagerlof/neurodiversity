@@ -38,7 +38,7 @@ async function getMapppedWithPage(): Promise<EventAndPage[]> {
       try {
         return {
           event,
-          page: await getPageBySlug(event.frontMatter.linkedPage),
+          page: await getPageBySlug(event.frontMatter.condition.linkedPage),
         } as EventAndPage;
       } catch {
         return {
