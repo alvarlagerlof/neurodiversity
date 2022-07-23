@@ -75,6 +75,7 @@ function Organization({ event }: { event: Event }) {
             className="object-contain bg-white mb-4 sm:mb-0 sm:ml-8"
             src={event.frontMatter.organization.logo}
             width={200}
+            alt={`Logo of ${event.frontMatter.organization.logo}`}
           />
         )}
         <div>
