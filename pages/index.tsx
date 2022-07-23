@@ -105,6 +105,12 @@ export default function Index({ pages }: IndexProps) {
   );
 }
 
+export async function getStaticProps() {
+  const pages = await getAllPages();
+
+  return { props: { pages } };
+}
+
 // export async function getServerSideProps({ res, req }) {
 //   const pages = await getAllPages();
 
