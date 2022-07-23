@@ -105,14 +105,14 @@ export default function Index({ pages }: IndexProps) {
   );
 }
 
-export async function getServerSideProps({ res, req }) {
-  const pages = await getAllPages();
+// export async function getServerSideProps({ res, req }) {
+//   const pages = await getAllPages();
 
-  switch (req.headers.host) {
-    case "notocd.com":
-      res.setHeader("Location", `https://neurodiversity.wiki/ocd?utm_source=notocd.com`);
-      res.statusCode = 301;
-  }
+//   switch (req.headers.host) {
+//     case "notocd.com":
+//       res.setHeader("Location", `https://neurodiversity.wiki/ocd?utm_source=notocd.com`);
+//       res.statusCode = 301;
+//   }
 
-  return { props: { pages } };
-}
+//   return { props: { pages } };
+// }
