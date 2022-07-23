@@ -151,7 +151,7 @@ function Event({ event, page }: { event: Event; page: Page }) {
             </Link>
           </Typography.Heading>
           <div>
-            {event.frontMatter.length == "week" && <Tag>Week, starting {day}</Tag>}
+            {event.frontMatter.length == "week" && <Tag>Week starting {day}</Tag>}
             {event.frontMatter.length == "day" && <Tag>{day}</Tag>}
             {event.frontMatter.length == "month" && <Tag>Whole month</Tag>}
           </div>
