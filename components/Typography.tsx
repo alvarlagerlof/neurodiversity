@@ -22,7 +22,7 @@ function Title({ children, className = "", margin = 4, as = "h1", ...props }: Ba
   return (
     <Base
       as={as}
-      className={`font-display font-extrabold text-3xl sm:text-4xl md:text-5xl ${className}`}
+      className={`font-display font-extrabold text-3xl sm:text-4xl md:text-5xl !leading-tight ${className}`}
       margin={margin}
       {...props}
     >

@@ -20,7 +20,7 @@ import VerticalSpacer from "components/VerticalSpacer";
 import Main from "components/Main";
 import Typography from "components/Typography";
 
-import { getPageBySlug, getAllPages } from "lib/content";
+import { getPageBySlug, getAllPages } from "lib/pages";
 
 const components = {
   h1: Typography.Title,
@@ -49,11 +49,11 @@ export default function Doc({ frontMatter: { meta }, source }) {
       <Meta
         image={{
           title: meta.title,
-          description: meta.description,
+          description: `${meta.description} Learn more here.`,
         }}
         tags={{
-          title: `${meta.title}`,
-          description: meta.description,
+          title: meta.title,
+          description: `${meta.description} Learn more here.`,
         }}
       />
       <ContentInset size="normal">

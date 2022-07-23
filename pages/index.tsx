@@ -9,7 +9,7 @@ import VerticalSpacer from "components/VerticalSpacer";
 import LinkGrid from "components/LinkGrid";
 import Main from "components/Main";
 
-import { getAllPages } from "lib/content";
+import { getAllPages } from "lib/pages";
 import { Page } from "../types";
 
 // This page cannot be .mdx because then there is no way to run getServerSideProps which are needed for redirecting from notocd.com and notautism.com
@@ -105,14 +105,20 @@ export default function Index({ pages }: IndexProps) {
   );
 }
 
-export async function getServerSideProps({ res, req }) {
+export async function getStaticProps() {
   const pages = await getAllPages();
-
-  switch (req.headers.host) {
-    case "notocd.com":
-      res.setHeader("Location", `https://neurodiversity.wiki/ocd?utm_source=notocd.com`);
-      res.statusCode = 301;
-  }
 
   return { props: { pages } };
 }
+
+// export async function getServerSideProps({ res, req }) {
+//   const pages = await getAllPages();
+
+//   switch (req.headers.host) {
+//     case "notocd.com":
+//       res.setHeader("Location", `https://neurodiversity.wiki/ocd?utm_source=notocd.com`);
+//       res.statusCode = 301;
+//   }
+
+//   return { props: { pages } };
+// }

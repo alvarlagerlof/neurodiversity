@@ -3,10 +3,11 @@ import { useSpring, animated } from "react-spring";
 
 interface BounceProps {
   amount: number;
+  className?: string;
   children: React.ReactNode;
 }
 
-export default function Bounce({ amount, children }: BounceProps) {
+export default function Bounce({ amount, className, children }: BounceProps) {
   const [isHovering, setIsHovering] = useState(false);
 
   const styles = useSpring({
@@ -20,6 +21,7 @@ export default function Bounce({ amount, children }: BounceProps) {
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       style={styles}
+      className={className}
     >
       {children}
     </animated.div>

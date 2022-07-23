@@ -4,6 +4,8 @@ import ContentInset from "components/ContentInset";
 import DonateDropdown from "components/DonateDropdown";
 import Button from "./Button";
 import { useRouter } from "next/router";
+import InternalLink from "./InternalLink";
+import IconButton from "./IconButton";
 
 export default function Navbar() {
   const { asPath } = useRouter();
@@ -15,13 +17,27 @@ export default function Navbar() {
 
         {/* <DonateDropdown /> */}
 
-        {asPath !== "/join" && (
-          <Link href="/join" passHref>
-            <Button as="a" variant="primary">
-              Contribute
-            </Button>
-          </Link>
-        )}
+        <div className="flex flex-row space-x-3 items-center">
+          {asPath !== "/calendar" && (
+            <Link href="/calendar" passHref>
+              <IconButton
+                as="a"
+                variant="secondary"
+                src="/icons/calendar.svg"
+                alt="Calendar"
+                badge="true"
+              />
+            </Link>
+          )}
+
+          {asPath !== "/join" && (
+            <Link href="/join" passHref>
+              <Button as="a" variant="primary">
+                Contribute
+              </Button>
+            </Link>
+          )}
+        </div>
       </nav>
     </ContentInset>
   );

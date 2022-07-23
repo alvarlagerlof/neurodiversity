@@ -3,7 +3,7 @@ import matter from "gray-matter";
 
 import { Page } from "../types";
 
-const baseDir = process.cwd() + "/content/";
+const baseDir = process.cwd() + "/content/pages/";
 
 async function getPageBySlug(slug): Promise<Page> {
   const fileContent = await fs.readFile(baseDir + slug + ".mdx");
