@@ -6,7 +6,7 @@ export function middleware(request: NextRequest) {
     return new NextResponse(null, {
       status: 301,
       headers: {
-        Location: `https://neurodiversity.wiki/ocd?utm_source=notocd.com`,
+        Location: "https://neurodiversity.wiki/ocd?utm_source=notocd.com",
       },
     });
   }
