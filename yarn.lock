@@ -2605,10 +2605,10 @@ next-plausible@^3.1.9:
   resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-3.2.0.tgz#d801346253e0c1cf64a02b9fc3a42050455cbc47"
   integrity sha512-OlYcLXBG3kKd/fKMpm8SZ5IkUKSFm1/8t7cv6e5bewIqlpdZpdWuSrjbdJpbmutb2KPLXHzilKp09zmDGjy9KQ==
 
-next-sitemap@3.1.11:
-  version "3.1.11"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.11.tgz#02d9cecc84e087906966a9cc800a3f0ac95772b7"
-  integrity sha512-qHq/nVzqEL3Sd5N+1ZnqoY2xN4BSmgEkIlvCjFOtMMIyl8Tr/xmVZgVau/8aZsDtxoXPKG/NzdonZssvpK4Jdw==
+next-sitemap@3.1.12:
+  version "3.1.12"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.12.tgz#a700c201a6905a463118fcb0202abdd01ca50ec3"
+  integrity sha512-YCMFE8+zHyg2w/8tYTCcG6lrnaJ/cRLoT8peVGqF3zw4MLX+QBtesPEcuVJOSnga100rAIJSNGOHuO8oBrCWfQ==
   dependencies:
     "@corex/deepmerge" "^4.0.29"
     minimist "^1.2.6"
