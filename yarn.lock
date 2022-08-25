@@ -1926,7 +1926,7 @@ is-weakref@^1.0.2:
   dependencies:
     call-bind "^1.0.2"
 
-is-what@^4.1.6:
+is-what@^4.1.7:
   version "4.1.7"
   resolved "https://registry.yarnpkg.com/is-what/-/is-what-4.1.7.tgz#c41dc1d2d2d6a9285c624c2505f61849c8b1f9cc"
   integrity sha512-DBVOQNiPKnGMxRMLIYSwERAS5MVY1B7xYiGnpgctsOFvVDz9f9PFXXxMcTOHuoqYp4NK9qFYQaIC1NRRxLMpBQ==
@@ -2218,12 +2218,12 @@ mdurl@^1.0.0:
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
   integrity sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==
 
-merge-anything@5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/merge-anything/-/merge-anything-5.0.2.tgz#b023af9b8f48e2fc71eb859d4ad834ba667f4150"
-  integrity sha512-POPQBWkBC0vxdgzRJ2Mkj4+2NTKbvkHo93ih+jGDhNMLzIw+rYKjO7949hOQM2X7DxMHH1uoUkwWFLIzImw7gA==
+merge-anything@5.0.4:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/merge-anything/-/merge-anything-5.0.4.tgz#cabddb1e8e04ac2be67eba0662822fb6c2da6333"
+  integrity sha512-YFsDeY5A9SLXhL21Qn15wCWewRUW6wMTxQF4SuPe9bNdr1wsjiE44Rp8FQUTCtwO0WLdlKiFzhAVE5tlf857Tg==
   dependencies:
-    is-what "^4.1.6"
+    is-what "^4.1.7"
     ts-toolbelt "^9.6.0"
 
 merge2@^1.3.0, merge2@^1.4.1:
@@ -2579,14 +2579,14 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-next-banner@1.2.122:
-  version "1.2.122"
-  resolved "https://registry.yarnpkg.com/next-banner/-/next-banner-1.2.122.tgz#d5ba909787341352094bc425715d79a3d2258718"
-  integrity sha512-pgC+SgVfVwnGz5Oo+IdzB+td77azEWrSloUoS6b1dJfTIUyuUpGC6iv8tmiI1XEV940e/R/aIu/hFlvIqljOGQ==
+next-banner@1.2.123:
+  version "1.2.123"
+  resolved "https://registry.yarnpkg.com/next-banner/-/next-banner-1.2.123.tgz#8ea0822f1fb5b3bed43c33f93d2e967e8368f448"
+  integrity sha512-mNevxihV3IY5+0NWgwfdQxQYBwxAjjqOuCZLPe5v/z5u8TdHSgPy3eJO1a8qS8/zO6UwMi0ghGHq+7jCUshMJA==
   dependencies:
     cross-spawn "7.0.3"
     get-port "6.1.2"
-    merge-anything "5.0.2"
+    merge-anything "5.0.4"
     puppeteer "16.2.0"
     tasuku "2.0.0"
 
