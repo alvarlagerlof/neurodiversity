@@ -31,7 +31,7 @@
     "eslint-config-next": "12.3.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-mdx": "2.0.4",
+    "eslint-plugin-mdx": "2.0.5",
     "fs": "0.0.1-security",
     "fs-extra": "10.1.0",
     "git-repo-info": "2.1.1",
