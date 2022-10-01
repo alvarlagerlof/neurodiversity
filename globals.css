@@ -7,5 +7,13 @@
 }
 
 *::selection {
-  background: theme("colors.highlight");
+  background: theme("colors.highlight-light");
 }
+
+
+@media (prefers-color-scheme: dark) {
+  *::selection {
+    background: theme("colors.highlight-dark");
+  }
+}
+

@@ -73,7 +73,7 @@ function Body({ children, className = "", margin = 4, as = "p", ...props }: Base
   return (
     <Base
       as={as}
-      className={`text-body dark:text-body-dark ${className}`}
+      className={`text-text-body dark:text-text-body-dark ${className}`}
       margin={margin}
       {...props}
     >

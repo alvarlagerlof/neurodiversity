@@ -19,7 +19,7 @@ export default function Wrapper({ children }) {
   return (
     <>
       <TopBar />
-      <div className="flex flex-col min-h-screen bg-secondary dark:bg-secondary-dark space-y-20 sm:space-y-24">
+      <div className="flex flex-col min-h-screen space-y-20 sm:space-y-24">
         <div className="flex-1 flex flex-col space-y-12 sm:space-y-24">
           <Navbar />
 

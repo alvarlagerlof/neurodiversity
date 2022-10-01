@@ -85,9 +85,9 @@ function Bottom() {
           </Typography.Heading>
         </section>
 
-        <hr className="border-gray mt-16 mb-2 border-dashed" />
+        <hr className="border-divider-light dark:border-divider-dark mt-16 mb-2 border-dashed" />
 
-        <section className="flex flex-col mb-4 space-y-4 sm:space-y-0 sm:flex-row justify-between text-gray">
+        <section className="flex flex-col mb-4 space-y-4 sm:space-y-0 sm:flex-row justify-between text-neutral-400">
           <div className="space-y-4">
             <p>
               Made by{" "}

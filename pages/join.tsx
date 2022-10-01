@@ -56,7 +56,7 @@ export default function Join() {
               </Typography.Body>
             </Section>
             <Section>
-              <div className="bg-primary p-8 lg:-mx-4 mb-8 rounded-xl md:bg-discord bg-right bg-no-repeat bg-contain	">
+              <div className="bg-primary-light dark:bg-primary-dark p-8 lg:-mx-4 mb-8 rounded-xl md:bg-discord bg-right bg-no-repeat bg-contain	">
                 <img
                   className="h-10 mb-2"
                   src="/icons/discord-logotype.svg"

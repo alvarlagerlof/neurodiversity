@@ -5,7 +5,10 @@ import Typography from "./Typography";
 export default function DocLinkBanner({ url }: { url: string }) {
   return (
     <>
-      <hr aria-hidden className="border-highlight border-dashed" />
+      <hr
+        aria-hidden
+        className="border-divider-light dark:border-divider-dark border-dashed"
+      />
       <Section>
         <Typography.Body>
           The contents of this page is based on a Google doc. Feel free to{" "}
