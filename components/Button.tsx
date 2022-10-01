@@ -25,7 +25,7 @@ const Button = forwardRef<HTMLDivElement, ButtonProps>(
     const baseStyle = `py-2 px-5 rounded-full font-medium ${className} `;
     const variants = {
       primary: `${baseStyle} bg-primary text-white`,
-      secondary: `${baseStyle} bg-secondary`,
+      secondary: `${baseStyle} bg-secondary dark:bg-secondary-dark`,
     };
 
     return (

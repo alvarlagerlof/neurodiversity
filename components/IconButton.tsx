@@ -29,7 +29,7 @@ const IconButton = forwardRef<HTMLDivElement, IconButtonProps>(
     const baseStyle = `rounded-full block p-[7px] ${className}`;
     const variants = {
       primary: `${baseStyle} bg-primary`,
-      secondary: `${baseStyle} bg-button-secondary`,
+      secondary: `${baseStyle} bg-button-secondary dark:bg-button-secondary-dark`,
     };
 
     return (
