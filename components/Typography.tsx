@@ -71,7 +71,12 @@ function Heading({
 
 function Body({ children, className = "", margin = 4, as = "p", ...props }: BaseProps) {
   return (
-    <Base as={as} className={`text-body ${className}`} margin={margin} {...props}>
+    <Base
+      as={as}
+      className={`text-text-body dark:text-text-body-dark ${className}`}
+      margin={margin}
+      {...props}
+    >
       {children}
     </Base>
   );

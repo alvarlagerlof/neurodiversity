@@ -20,13 +20,22 @@ export default function Navbar() {
         <div className="flex flex-row space-x-3 items-center">
           {asPath !== "/calendar" && (
             <Link href="/calendar" passHref>
-              <IconButton
-                as="a"
-                variant="secondary"
-                src="/icons/calendar.svg"
-                alt="Calendar"
-                badge="true"
-              />
+              <a>
+                <IconButton
+                  variant="secondary"
+                  src="/icons/calendar-light.svg"
+                  alt="Calendar"
+                  badge="true"
+                  className="dark:hidden"
+                />
+                <IconButton
+                  variant="secondary"
+                  src="/icons/calendar-light.svg"
+                  alt="Calendar"
+                  badge="true"
+                  className="hidden dark:block"
+                />
+              </a>
             </Link>
           )}
 
@@ -53,13 +62,26 @@ function ClickableLogo() {
             alt="Neurodiversity Wiki logo"
             width="40px"
             height="40px"
+            className="dark:hidden"
+          />
+          <img
+            src="/logos/logo-secondary.svg"
+            alt="Neurodiversity Wiki logo"
+            width="40px"
+            height="40px"
+            className="hidden dark:block"
           />
         </div>
         <div className="hidden sm:block">
           <img
-            className="h-6"
             src="/logos/logomark-primary.svg"
             alt="Neurodiversity Wiki logo"
+            className="h-6 dark:hidden"
+          />
+          <img
+            src="/logos/logomark-secondary.svg"
+            alt="Neurodiversity Wiki logo"
+            className="h-6 hidden dark:block"
           />
         </div>
       </a>

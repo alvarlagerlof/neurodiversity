@@ -29,12 +29,24 @@ function Item({ href, title, description }: ItemProps) {
           }
         }}
         className={`
-              h-full flex flex-row items-start space-x-2 rounded-xl p-4 bg-white ring-primary transition
+              h-full flex flex-row items-start space-x-2 rounded-xl p-4 bg-white dark:bg-card-dark ring-primary transition
               shadow
               hover:shadow-md
               outline-none focus-visible:ring cursor-pointer`}
       >
-        <img src="/icons/arrow.svg" className="w-6 md:w-7" alt="" aria-hidden />
+        <img
+          src="/icons/arrow-light.svg"
+          className="w-6 md:w-7 dark:hidden"
+          alt=""
+          aria-hidden
+        />
+        <img
+          src="/icons/arrow-dark.svg"
+          className="w-6 md:w-7 hidden dark:block"
+          alt=""
+          aria-hidden
+        />
+
         <div>
           <Typography.Heading margin={1}>
             <Link href={href} passHref>

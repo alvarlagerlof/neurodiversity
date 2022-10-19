@@ -17,7 +17,9 @@ export default function MyApp({ Component, pageProps }) {
           <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         </Head>
 
-        <Component {...pageProps} />
+        <div className="text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark">
+          <Component {...pageProps} />
+        </div>
       </PlausibleProvider>
     </NextBannerMeta>
   );

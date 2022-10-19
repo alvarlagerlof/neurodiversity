@@ -137,7 +137,7 @@ function Event({ event, page }: { event: Event; page: Page }) {
           }
         }}
         className={`
-              rounded-xl p-4 bg-white ring-primary transition
+              rounded-xl p-4 bg-white dark:bg-card-dark ring-primary transition
               shadow
               space-y-2
               hover:shadow-md

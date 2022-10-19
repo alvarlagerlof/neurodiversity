@@ -98,7 +98,7 @@ function Organization({ event }: { event: Event }) {
             <>
               <Typography.Heading>Organization behind the event</Typography.Heading>
               <Typography.Body>
-                There's currently no infromation about the organization behind this event.
+                There's currently no information about the organization behind this event.
                 If you're interested in contributing, please check out the banner below.
               </Typography.Body>
             </>

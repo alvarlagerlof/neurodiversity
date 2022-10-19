@@ -49,14 +49,26 @@ function Icon({ isOpen: isOpen }: { isOpen: boolean }) {
   });
 
   return (
-    <animated.img
-      aria-hidden
-      alt=""
-      src="/icons/plus-outline.svg"
-      width="24px"
-      height="24px"
-      style={styles}
-    />
+    <>
+      <animated.img
+        aria-hidden
+        alt=""
+        src="/icons/plus-outline-light.svg"
+        width="24px"
+        height="24px"
+        style={styles}
+        className="dark:hidden"
+      />
+      <animated.img
+        aria-hidden
+        alt=""
+        src="/icons/plus-outline-dark.svg"
+        width="24px"
+        height="24px"
+        style={styles}
+        className="hidden dark:block"
+      />
+    </>
   );
 }
 
