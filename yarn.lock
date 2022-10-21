@@ -2576,15 +2576,15 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-next-banner@1.2.153:
-  version "1.2.153"
-  resolved "https://registry.yarnpkg.com/next-banner/-/next-banner-1.2.153.tgz#302f53a29ee285dd0f13a408ddc3432ebda4ed54"
-  integrity sha512-TCQbb4fEMFF14uawOUAPCBFW5iS/WIJN+jPzoEo3Of9ozvuvinQ0UeOQtAesk+oqYt/G9FG2K2vq9+MjIsc2ag==
+next-banner@1.2.156:
+  version "1.2.156"
+  resolved "https://registry.yarnpkg.com/next-banner/-/next-banner-1.2.156.tgz#7b309267c4c1408137d3e8741fe38c764e42bd49"
+  integrity sha512-HYA481KIsA9xHja1NdOEAaXKxFlJIxNO4x0arAIID0wLfCxvFSYT7oRL45bg+GgkKxHBZZY3J1lZFqnZhZuJng==
   dependencies:
     cross-spawn "7.0.3"
     get-port "6.1.2"
     merge-anything "5.0.4"
-    puppeteer "18.2.1"
+    puppeteer "19.0.0"
     tasuku "2.0.0"
 
 next-mdx-remote@4.1.0:
@@ -2970,10 +2970,10 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-puppeteer-core@18.2.1:
-  version "18.2.1"
-  resolved "https://registry.yarnpkg.com/puppeteer-core/-/puppeteer-core-18.2.1.tgz#9b7827bb2bf478bb615e2c21425e4659555dc1fe"
-  integrity sha512-MRtTAZfQTluz3U2oU/X2VqVWPcR1+94nbA2V6ZrSZRVEwLqZ8eclZ551qGFQD/vD2PYqHJwWOW/fpC721uznVw==
+puppeteer-core@19.0.0:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/puppeteer-core/-/puppeteer-core-19.0.0.tgz#8d0198550e04c7d5e0847200ba257b2a777dbd3b"
+  integrity sha512-OljQ9W5M4cBX68vnOAGbcRkVENDHn6lfj6QYoGsnLQsxPAh6ExTQAhHauwdFdQkhYdDExZFWlKArnBONzeHY+g==
   dependencies:
     cross-fetch "3.1.5"
     debug "4.3.4"
@@ -2986,15 +2986,15 @@ puppeteer-core@18.2.1:
     unbzip2-stream "1.4.3"
     ws "8.9.0"
 
-puppeteer@18.2.1:
-  version "18.2.1"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-18.2.1.tgz#08967cd423efe511ee4c6e3a5c882ffaf2e6bbf3"
-  integrity sha512-7+UhmYa7wxPh2oMRwA++k8UGVDxh3YdWFB52r9C3tM81T6BU7cuusUSxImz0GEYSOYUKk/YzIhkQ6+vc0gHbxQ==
+puppeteer@19.0.0:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-19.0.0.tgz#848986e6ecec37b19cd5a7327ad2fcf1f1cb83fd"
+  integrity sha512-3Ga5IVerQQ2hKU9q7T28RmcUsd8F2kL6cYuPcPCzeclSjmHhGydPBZL/KJKC02sG6J6Wfry85uiWpbkjQ5qBiw==
   dependencies:
     https-proxy-agent "5.0.1"
     progress "2.0.3"
     proxy-from-env "1.1.0"
-    puppeteer-core "18.2.1"
+    puppeteer-core "19.0.0"
 
 queue-microtask@^1.2.2:
   version "1.2.3"
