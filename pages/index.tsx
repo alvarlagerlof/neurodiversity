@@ -39,7 +39,7 @@ export default function Index({ pages }: IndexProps) {
       <ContentInset size="normal">
         <VerticalSpacer>
           <Header>
-            <Typography.Title>Hello there!</Typography.Title>
+            <Typography.Title>Hello there! !!!!!</Typography.Title>
             <Typography.Subtitle>
               Neurodiversity is a word that refers to the ways brains differ. These
               differences are grouped into conditions. This website helps you understand
