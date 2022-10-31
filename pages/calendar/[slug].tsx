@@ -88,11 +88,14 @@ function Organization({ event }: { event: Event }) {
                 {event.frontMatter.name} was started by{" "}
                 {event.frontMatter.organization.name}.
               </Typography.Body>
-              <Link href={event.frontMatter.organization.website} passHref>
-                <Button as="a" target="_blank" rel="noreferrer">
-                  Visit official website
-                </Button>
-              </Link>
+              <Button
+                as={Link}
+                href={event.frontMatter.organization.website}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit official website
+              </Button>
             </>
           ) : (
             <>
@@ -117,9 +120,9 @@ function About({ event, page }: EventAndPage) {
         {page ? (
           <>
             <Typography.Body>{page.frontMatter.meta.description}</Typography.Body>
-            <Link href={`/${event.frontMatter.condition.linkedPage}`} passHref>
-              <Button as="a">Learn more</Button>
-            </Link>
+            <Button as={Link} href={`/${event.frontMatter.condition.linkedPage}`}>
+              Learn more
+            </Button>
           </>
         ) : (
           <>

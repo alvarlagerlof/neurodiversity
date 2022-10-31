@@ -31,8 +31,8 @@ export default function WrongRight({ title, wrong, right }: WrongRightProps) {
 function IconHeading({ url, alt, children }) {
   return (
     <div className="flex flex-row space-x-2 mb-0">
-      <Image src={url} alt={alt} width="24px" height="24px" />
-      <Typography.Heading margin={0}>{children}</Typography.Heading>
+      <Image src={url} alt={alt} width={24} height={24} />
+      <Typography.Heading className="!mb-0">{children}</Typography.Heading>
     </div>
   );
 }

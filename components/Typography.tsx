@@ -3,27 +3,24 @@ import { ElementType } from "react";
 interface BaseProps {
   children: React.ReactNode;
   className?: string;
-  margin?: number;
   as?: ElementType;
 }
 
-function Base({ children, className, margin, as, ...props }: BaseProps) {
+function Base({ children, className, as, ...props }: BaseProps) {
   const Tag = as as keyof JSX.IntrinsicElements;
-  const classNameWithMargin = `${className} mb-${margin}`;
 
   return (
-    <Tag className={classNameWithMargin} {...props}>
+    <Tag className={className} {...props}>
       {children}
     </Tag>
   );
 }
 
-function Title({ children, className = "", margin = 4, as = "h1", ...props }: BaseProps) {
+function Title({ children, className = "", as = "h1", ...props }: BaseProps) {
   return (
     <Base
       as={as}
-      className={`font-display font-extrabold text-3xl sm:text-4xl md:text-5xl !leading-tight ${className}`}
-      margin={margin}
+      className={`font-display font-extrabold text-3xl sm:text-4xl md:text-5xl !leading-tight mb-4 ${className}`}
       {...props}
     >
       {children}
@@ -31,18 +28,11 @@ function Title({ children, className = "", margin = 4, as = "h1", ...props }: Ba
   );
 }
 
-function Subtitle({
-  children,
-  className = "",
-  margin = 0,
-  as = "h2",
-  ...props
-}: BaseProps) {
+function Subtitle({ children, className = "", as = "h2", ...props }: BaseProps) {
   return (
     <Base
       as={as}
       className={`font-display font-medium text-xl md:text-2xl ${className}`}
-      margin={margin}
       {...props}
     >
       {children}
@@ -50,18 +40,11 @@ function Subtitle({
   );
 }
 
-function Heading({
-  children,
-  className = "",
-  margin = 2,
-  as = "h3",
-  ...props
-}: BaseProps) {
+function Heading({ children, className = "", as = "h3", ...props }: BaseProps) {
   return (
     <Base
       as={as}
-      className={`font-display font-semibold text-xl md:text-2xl ${className}`}
-      margin={margin}
+      className={`font-display font-semibold text-xl md:text-2xl mb-2 ${className}`}
       {...props}
     >
       {children}
@@ -69,12 +52,11 @@ function Heading({
   );
 }
 
-function Body({ children, className = "", margin = 4, as = "p", ...props }: BaseProps) {
+function Body({ children, className = "", as = "p", ...props }: BaseProps) {
   return (
     <Base
       as={as}
-      className={`text-text-body dark:text-text-body-dark ${className}`}
-      margin={margin}
+      className={`text-text-body dark:text-text-body-dark mb-4 ${className}`}
       {...props}
     >
       {children}
