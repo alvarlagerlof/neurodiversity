@@ -2,6 +2,9 @@ import Image from "next/image";
 
 import Typography from "components/Typography";
 
+import cross from "../public/icons/cross.svg";
+import check from "../public/icons/check.svg";
+
 interface WrongRightProps {
   title: string;
   wrong: React.ReactNode;
@@ -12,14 +15,14 @@ export default function WrongRight({ title, wrong, right }: WrongRightProps) {
   return (
     <section className="space-y-8 sm:rounded-xl bg-white dark:bg-card-dark shadow px-4 py-8 sm:py-4 -mx-4">
       <div>
-        <IconHeading url="/icons/cross.svg" alt="Cross icon">
+        <IconHeading variant="cross" alt="Cross icon">
           {title} is not:
         </IconHeading>
         {wrong}
       </div>
 
       <div>
-        <IconHeading url="/icons/check.svg" alt="Check icon">
+        <IconHeading variant="check" alt="Check icon">
           {title} is:
         </IconHeading>
         {right}
@@ -28,10 +31,16 @@ export default function WrongRight({ title, wrong, right }: WrongRightProps) {
   );
 }
 
-function IconHeading({ url, alt, children }) {
+interface IconHeadingProps {
+  variant: "cross" | "check";
+  alt: string;
+  children: React.ReactNode;
+}
+
+function IconHeading({ variant, alt, children }: IconHeadingProps) {
   return (
     <div className="flex flex-row space-x-2 mb-0">
-      <Image src={url} alt={alt} width={24} height={24} />
+      <Image src={variant == "cross" ? cross : check} alt={alt} width={24} height={24} />
       <Typography.Heading className="!mb-0">{children}</Typography.Heading>
     </div>
   );
