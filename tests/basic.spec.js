@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+const { expect, test } = require("@playwright/test");
 
 const targetUrl = process.env.ENVIRONMENT_URL;
 
