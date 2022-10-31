@@ -12,14 +12,13 @@ export default function InternalLink({
   children,
 }: InternalLinkProps) {
   return (
-    <Link href={href} passHref>
-      <a
-        className="text-primary font-medium hover:underline focus:underline cursor-pointer"
-        target={external ? "_blank" : ""}
-        rel={external ? "noopener noreferrer" : ""}
-      >
-        {children}
-      </a>
+    <Link
+      href={href}
+      className="text-primary font-medium hover:underline focus:underline cursor-pointer"
+      target={external ? "_blank" : ""}
+      rel={external ? "noopener noreferrer" : ""}
+    >
+      {children}
     </Link>
   );
 }

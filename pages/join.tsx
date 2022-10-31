@@ -67,16 +67,15 @@ export default function Join() {
                   Discord is free to use for anyone, and provides an easy to use app for
                   computers and phones.
                 </Typography.Body>
-                <Link href="https://discord.gg/48kqk6KcZ8" passHref>
-                  <Button
-                    as="a"
-                    variant="secondary"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Join Discord server
-                  </Button>
-                </Link>
+                <Button
+                  as={Link}
+                  href="https://discord.gg/48kqk6KcZ8"
+                  variant="secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Join Discord server
+                </Button>
               </div>
 
               <Typography.Body>

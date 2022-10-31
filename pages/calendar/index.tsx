@@ -146,8 +146,8 @@ function Event({ event, page }: { event: Event; page: Page }) {
         <div className="flex flex-row justify-between">
           {/* <Typography.Heading>{event.frontMatter.name}</Typography.Heading> */}
           <Typography.Heading>
-            <Link href={`/calendar/${event.slug}`} passHref>
-              <a ref={link}>{event.frontMatter.name}</a>
+            <Link href={`/calendar/${event.slug}`} ref={link}>
+              {event.frontMatter.name}
             </Link>
           </Typography.Heading>
           <div>

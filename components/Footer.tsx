@@ -24,30 +24,23 @@ function JoinBanner() {
           <Typography.Title as="h2" className="text-center text-white">
             Want to help out?
           </Typography.Title>
-          <Typography.Body
-            as="h2"
-            className="text-center max-w-xl !text-white"
-            margin={8}
-          >
+          <Typography.Body as="h2" className="text-center max-w-xl !text-white mb-8">
             We’re a community looking for awesome people to join us. Neurodiverse people,
             writers, developers, designers and more are all welcome.
           </Typography.Body>
           <div className="flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:space-x-4">
-            <Link href="https://discord.gg/48kqk6KcZ8" passHref>
-              <Button
-                as="a"
-                variant="secondary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Join Discord server
-              </Button>
-            </Link>
-            <Link href="/join" passHref>
-              <Button as="a" variant="secondary">
-                Find out more
-              </Button>
-            </Link>
+            <Button
+              as={Link}
+              href="https://discord.gg/48kqk6KcZ8"
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join Discord server
+            </Button>
+            <Button as={Link} href="/join" variant="secondary">
+              Find out more
+            </Button>
           </div>
         </div>
       </ContentInset>
@@ -57,11 +50,9 @@ function JoinBanner() {
 
 function SocialIcon({ name, link, icon }) {
   return (
-    <Link href={link} passHref>
-      <a target="_blank" rel="noopener noreferrer">
-        <img aria-hidden tabIndex={-1} src={icon} alt="" />
-        <span className="sr-only">{name}</span>
-      </a>
+    <Link href={link} target="_blank" rel="noopener noreferrer">
+      <img aria-hidden tabIndex={-1} src={icon} alt="" />
+      <span className="sr-only">{name}</span>
     </Link>
   );
 }
@@ -71,14 +62,12 @@ function Bottom() {
     <section className="w-full bg-black text-white flex flex-col items-center py-16">
       <ContentInset size="wide">
         <section className="space-y-4">
-          <Link href="/" passHref>
-            <a>
-              <img
-                className="h-6 sm:h-8 max-w-[80%]"
-                src="/logos/logomark-secondary.svg"
-                alt="Neurodiversity Wiki Logo"
-              />
-            </a>
+          <Link href="/">
+            <img
+              className="h-6 sm:h-8 max-w-[80%]"
+              src="/logos/logomark-secondary.svg"
+              alt="Neurodiversity Wiki Logo"
+            />
           </Link>
           <Typography.Heading as="h2" className="max-w-[10ch]">
             For better understanding

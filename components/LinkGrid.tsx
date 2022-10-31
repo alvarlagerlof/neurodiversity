@@ -48,12 +48,12 @@ function Item({ href, title, description }: ItemProps) {
         />
 
         <div>
-          <Typography.Heading margin={1}>
-            <Link href={href} passHref>
-              <a ref={link}>{title}</a>
+          <Typography.Heading className="mb-1">
+            <Link href={href} ref={link}>
+              {title}
             </Link>
           </Typography.Heading>
-          <Typography.Body margin={0}>{description}</Typography.Body>
+          <Typography.Body className="mb-0">{description}</Typography.Body>
         </div>
       </li>
     </Bounce>
