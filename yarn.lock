@@ -2587,10 +2587,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-next-banner@1.2.183:
-  version "1.2.183"
-  resolved "https://registry.yarnpkg.com/next-banner/-/next-banner-1.2.183.tgz#1e1453bb9a892d292b822441f763884a263026d1"
-  integrity sha512-coWMz0bvp3T9+nstdVpRvsLK7shQQvjUAwTqHZh2O0D+uvxusK+0+bS8YkeFMERs6ewNa51tAfeSoNaaexevjw==
+next-banner@1.2.184:
+  version "1.2.184"
+  resolved "https://registry.yarnpkg.com/next-banner/-/next-banner-1.2.184.tgz#94f0ceccf50e5042209b1d8331eb08d1b23792cd"
+  integrity sha512-oCd60TqO4hVPiyjRveZoZmntKzBscwnXvWDywKS9/2pL7zAD6qzUjPxgbr8oqsMSHwyQP/hL4H/iM30tI2rMjw==
   dependencies:
     cross-spawn "7.0.3"
     get-port "6.1.2"
