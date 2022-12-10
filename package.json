@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@playwright/test": "1.28.1",
-    "@types/marked": "4.0.7",
+    "@types/marked": "4.0.8",
     "@types/react": "18.0.17",
     "autoprefixer": "10.4.13",
     "eslint": "8.29.0",
@@ -37,7 +37,7 @@
     "git-repo-info": "2.1.1",
     "gray-matter": "4.0.3",
     "luxon": "3.1.1",
-    "marked": "4.2.3",
+    "marked": "4.2.4",
     "postcss": "8.4.19",
     "tailwindcss": "3.2.4",
     "typescript": "4.9.4"
