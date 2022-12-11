@@ -21,7 +21,7 @@ We’re a group of neurodiverse people who are collaborating on content aiming t
 
 We’re a community looking for awesome people to join us. Neurodiverse people, writers, developers, designers and more are all welcome.
 
-[Joining the Discord server](https://discord.gg/48kqk6KcZ8) is the simplest way to help out. More options are liset on the [join page](https://neurodiversity.wiki/join)
+[Joining the Discord server](https://discord.gg/48kqk6KcZ8) is the simplest way to help out. More options are listed on the [join page](https://neurodiversity.wiki/join)
 
 ## Contributing
 
