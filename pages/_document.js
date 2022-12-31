@@ -39,8 +39,6 @@ class MyDocument extends Document {
           ></link>
           <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico"></link>
 
-          <meta name="monetization" content="$ilp.uphold.com/yGGixMZQUePn"></meta>
-
           <link href="https://rsms.me/inter/inter.css" rel="stylesheet"></link>
 
           <link
