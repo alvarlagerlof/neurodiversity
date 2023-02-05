@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
 
-import Typography from "components/Typography";
+import Typography from "./Typography";
 
 import cross from "../public/icons/cross.svg";
 import check from "../public/icons/check.svg";

@@ -1,14 +1,16 @@
+"use client";
+
 import Link from "next/link";
 
-import ContentInset from "components/ContentInset";
-import DonateDropdown from "components/DonateDropdown";
+import ContentInset from "./ContentInset";
+import DonateDropdown from "./DonateDropdown";
 import Button from "./Button";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import InternalLink from "./InternalLink";
 import IconButton from "./IconButton";
 
 export default function Navbar() {
-  const { asPath } = useRouter();
+  const pathname = usePathname();
 
   return (
     <ContentInset size="wide">
@@ -18,7 +20,7 @@ export default function Navbar() {
         {/* <DonateDropdown /> */}
 
         <div className="flex flex-row space-x-3 items-center">
-          {asPath !== "/calendar" && (
+          {pathname !== "/calendar" && (
             <Link href="/calendar">
               <IconButton
                 variant="secondary"
@@ -37,7 +39,7 @@ export default function Navbar() {
             </Link>
           )}
 
-          {asPath !== "/join" && (
+          {pathname !== "/join" && (
             <Button as={Link} href="/join" variant="primary">
               Contribute
             </Button>
@@ -50,34 +52,36 @@ export default function Navbar() {
 
 function ClickableLogo() {
   return (
-    <Link href="/" className="cursor-pointer">
-      <div className="sm:hidden">
-        <img
-          src="/logos/logo-primary.svg"
-          alt="Neurodiversity Wiki logo"
-          width="40px"
-          height="40px"
-          className="dark:hidden"
-        />
-        <img
-          src="/logos/logo-secondary.svg"
-          alt="Neurodiversity Wiki logo"
-          width="40px"
-          height="40px"
-          className="hidden dark:block"
-        />
-      </div>
-      <div className="hidden sm:block">
-        <img
-          src="/logos/logomark-primary.svg"
-          alt="Neurodiversity Wiki logo"
-          className="h-6 dark:hidden"
-        />
-        <img
-          src="/logos/logomark-secondary.svg"
-          alt="Neurodiversity Wiki logo"
-          className="h-6 hidden dark:block"
-        />
+    <Link href="/">
+      <div className="cursor-pointer">
+        <div className="sm:hidden">
+          <img
+            src="/logos/logo-primary.svg"
+            alt="Neurodiversity Wiki logo"
+            width="40px"
+            height="40px"
+            className="dark:hidden"
+          />
+          <img
+            src="/logos/logo-secondary.svg"
+            alt="Neurodiversity Wiki logo"
+            width="40px"
+            height="40px"
+            className="hidden dark:block"
+          />
+        </div>
+        <div className="hidden sm:block">
+          <img
+            src="/logos/logomark-primary.svg"
+            alt="Neurodiversity Wiki logo"
+            className="h-6 dark:hidden"
+          />
+          <img
+            src="/logos/logomark-secondary.svg"
+            alt="Neurodiversity Wiki logo"
+            className="h-6 hidden dark:block"
+          />
+        </div>
       </div>
     </Link>
   );

@@ -1,9 +1,11 @@
+"use client";
+
 import { useEffect } from "react";
 import { Globals } from "react-spring";
 
-import Navbar from "components/Navbar";
-import Footer from "components/Footer";
-import TopBar from "components/TopBar";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import TopBar from "./TopBar";
 
 import usePrefersReducedMotion from "lib/useReducedMotion";
 

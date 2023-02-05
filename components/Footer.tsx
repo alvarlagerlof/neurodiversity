@@ -1,12 +1,14 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
+"use client";
 
-import ContentInset from "components/ContentInset";
-import Typography from "components/Typography";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+import ContentInset from "./ContentInset";
+import Typography from "./Typography";
 import Button from "./Button";
 
 export default function Footer() {
-  const { pathname } = useRouter();
+  const pathname = usePathname();
 
   return (
     <footer className="w-full">

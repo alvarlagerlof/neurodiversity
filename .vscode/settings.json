@@ -1,0 +1,8 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "files.exclude": {
+    ".contentlayer/.cache/**": true,
+    ".contentlayer/generated/**": true
+  }
+}

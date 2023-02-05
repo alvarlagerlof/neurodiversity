@@ -1,4 +1,4 @@
-import Bounce from "components/Bounce";
+import Bounce from "./Bounce";
 import { ElementType, forwardRef } from "react";
 
 interface IconButtonProps {

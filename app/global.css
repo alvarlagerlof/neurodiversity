@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*::selection {
+  background: theme("colors.highlight-light");
+}
+
+
+@media (prefers-color-scheme: dark) {
+  *::selection {
+    background: theme("colors.highlight-dark");
+  }
+}
+

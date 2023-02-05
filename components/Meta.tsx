@@ -1,6 +1,3 @@
-import { setBannerData } from "next-banner";
-import Head from "next/head";
-
 interface MetaProps {
   image: {
     title: string;
@@ -20,13 +17,8 @@ export default function Meta({
   tags,
   appendTitle = true,
 }: MetaProps) {
-  setBannerData({
-    custom: image,
-    layout: imageLayout,
-  });
-
   return (
-    <Head>
+    <>
       <title>{`${tags.title}${appendTitle ? " - Neurodiveristy Wiki" : ""}`}</title>
       <meta name="description" content={tags.description} />
       <meta
@@ -39,6 +31,16 @@ export default function Meta({
       <meta name="twitter:card" content="summary_large_image"></meta>
       <meta name="twitter:site" content="@alvarlagerlof"></meta>
       <meta name="twitter:creator" content="@alvarlagerlof"></meta>
-    </Head>
+      <meta
+        name="og:image"
+        content={`https://${
+          process.env.NEXT_PUBLIC_VERCEL_URL
+        }/api/og/${imageLayout}?title=${encodeURIComponent(
+          image.title
+        )}&description=${encodeURIComponent(image.description)}`}
+      ></meta>
+    </>
   );
+
+  return null;
 }

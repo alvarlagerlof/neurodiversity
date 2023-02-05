@@ -2,12 +2,10 @@ import { useRef, useState } from "react";
 import { useSpring, animated } from "react-spring";
 import useKeypress from "react-use-keypress";
 
-import Button from "components/Button";
+import Button from "./Button";
 import useOnClickOutside from "lib/useOnClickOutside";
-import { usePlausible } from "next-plausible";
 
 export default function DonateDropdown() {
-  const plausible = usePlausible();
   const ref = useRef();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,7 +20,6 @@ export default function DonateDropdown() {
   useKeypress("Escape", () => setIsOpen(false));
 
   const toggle = () => {
-    plausible("Donate button: Click");
     setIsOpen((prev) => !prev);
   };
 

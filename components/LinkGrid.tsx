@@ -1,5 +1,7 @@
-import Typography from "components/Typography";
-import Bounce from "components/Bounce";
+"use client";
+
+import Typography from "./Typography";
+import Bounce from "./Bounce";
 import { useRef } from "react";
 import Link from "next/link";
 
@@ -17,14 +19,14 @@ interface ItemProps {
   description: string;
 }
 
-function Item({ href, title, description }: ItemProps) {
+function LinkGridItem({ href, title, description }: ItemProps) {
   const link = useRef(null);
 
   return (
     <Bounce amount={1.04}>
       <li
         onClick={(e) => {
-          if (link.current !== e.target) {
+          if (link.current && link.current !== e.target) {
             link.current.click();
           }
         }}
@@ -60,6 +62,6 @@ function Item({ href, title, description }: ItemProps) {
   );
 }
 
-LinkGrid.Item = Item;
+export { LinkGridItem };
 
 export default LinkGrid;

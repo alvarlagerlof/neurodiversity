@@ -1,4 +1,5 @@
-import Bounce from "components/Bounce";
+import Bounce from "./Bounce";
+import Link from "next/link";
 import { ElementType, forwardRef } from "react";
 
 interface ButtonProps {
@@ -31,7 +32,7 @@ const Button = forwardRef<HTMLDivElement, ButtonProps>(
     return (
       <div ref={ref}>
         <Bounce amount={1.1}>
-          <Tag className={variants[variant]} {...props}>
+          <Tag {...props} className={variants[variant]}>
             {children}
           </Tag>
         </Bounce>

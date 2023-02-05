@@ -1,0 +1,83 @@
+import Link from "next/link";
+
+import Main from "../../components/Main";
+import DocLinkBanner from "../../components/DocLinkBanner";
+import Header from "../../components/Header";
+import Section from "../../components/Section";
+import LinkGrid, { LinkGridItem } from "../../components/LinkGrid";
+import Typography from "../../components/Typography";
+import Button from "../../components/Button";
+
+export default function JoinPage() {
+  return (
+    <>
+      <Header>
+        <Typography.Title>Join us</Typography.Title>
+        <Typography.Subtitle>
+          First of all, thank you for considering us! We're a small community looking for
+          more awesome people to join us.
+        </Typography.Subtitle>
+      </Header>
+
+      <Main>
+        <Section>
+          <Typography.Body>
+            This website is created by people wanting to spread awareness about
+            neurodiversity. We're everything from developers, parents, designers to
+            journalists. To cover as many conditions as possible in a representative way,
+            we need the perspective of many. Together, we can make a wiki that explains
+            these conditions in a simple way for the general public.
+          </Typography.Body>
+          <Typography.Body>
+            So with that said, any help is appreciated. While people who can write, code,
+            design and organize are in need, that is not a requirement. Feedback and
+            personal perspective is also very appreciated! If this is something that
+            interests you, consider joining us.
+          </Typography.Body>
+        </Section>
+        <Section>
+          <div className="bg-primary-light dark:bg-primary-dark p-8 lg:-mx-4 mb-8 rounded-xl md:bg-discord bg-right bg-no-repeat bg-contain	">
+            <img
+              className="h-10 mb-2"
+              src="/icons/discord-logotype.svg"
+              alt="Discord logo"
+            />
+            <Typography.Body className="!text-white !mb-8 md:max-w-[35ch] lg:max-w-[52ch]">
+              Our Discord server is the place where we organize and collaborate. Discord
+              is free to use for anyone, and provides an easy to use app for computers and
+              phones.
+            </Typography.Body>
+            <Button
+              as={Link}
+              href="https://discord.gg/48kqk6KcZ8"
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join Discord server
+            </Button>
+          </div>
+
+          <Typography.Body>
+            If you do not want to do that yet or have questions you want answered before
+            joining, you can reach out on these channels.
+          </Typography.Body>
+          <LinkGrid>
+            <LinkGridItem
+              href="mailto:contact@neurodiversity.wiki"
+              title="Email"
+              description="Send an email"
+            />
+            <LinkGridItem
+              href="https://twitter.com/neurodiversityw"
+              title="Twitter"
+              description="Send a direct message"
+            />
+          </LinkGrid>
+        </Section>
+
+        <DocLinkBanner url="https://docs.google.com/document/d/1dWmoI7X5U6vZdHJHNMUBSG1D3W72KuA5FaOepXmiEOQ/edit?usp=sharing" />
+      </Main>
+    </>
+  );
+}

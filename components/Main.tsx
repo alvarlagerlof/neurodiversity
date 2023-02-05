@@ -1,4 +1,4 @@
-import VerticalSpacer from "components/VerticalSpacer";
+import VerticalSpacer from "./VerticalSpacer";
 
 export default function Main({ children }: { children: React.ReactNode }) {
   return (

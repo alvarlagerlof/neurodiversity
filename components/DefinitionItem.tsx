@@ -1,8 +1,9 @@
+"use client";
+
 import { useState, useRef } from "react";
 import { useSpring, animated } from "react-spring";
 
 import useHeight from "lib/useHeight";
-import { usePlausible } from "next-plausible";
 
 interface DefinitionItem {
   summary: string;
@@ -11,15 +12,8 @@ interface DefinitionItem {
 
 export default function DefinitionItem({ summary, children }: DefinitionItem) {
   const [isOpen, setIsOpen] = useState(false);
-  const plausible = usePlausible();
 
   const toggle = () => {
-    plausible("Definition item: Click", {
-      props: {
-        summary,
-      },
-    });
-
     setIsOpen((prev) => !prev);
   };
 

@@ -5,17 +5,25 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap && next-banner",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "test": "playwright test --reporter=list",
     "test:hd": "playwright test --headed"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "dependencies": {
-    "next": "13.1.6",
-    "next-banner": "1.2.188",
+    "@next/font": "^13.1.6",
+    "@vercel/og": "^0.1.0",
+    "contentlayer": "^0.3.0",
+    "markdown-wasm": "^1.2.0",
+    "next": "13.1.7-canary.5",
+    "next-contentlayer": "^0.3.0",
     "next-mdx-remote": "4.3.0",
-    "next-plausible": "3.7.1",
     "next-sitemap": "3.1.49",
     "react": "18.1.0",
     "react-dom": "18.1.0",
