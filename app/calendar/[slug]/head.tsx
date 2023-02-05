@@ -1,5 +1,5 @@
 import { allEvents } from ".contentlayer/generated";
-import Meta from "components/Meta";
+import { Meta } from "../../components/Meta";
 
 export default function CalendarHead({ params }: { params: { slug: string } }) {
   const event = allEvents.find((event) => event.slug == params.slug);

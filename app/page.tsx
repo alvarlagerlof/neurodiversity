@@ -1,10 +1,11 @@
-import Typography from "../components/Typography";
-import Section from "../components/Section";
-import DocLinkBanner from "../components/DocLinkBanner";
-import LinkGrid, { LinkGridItem } from "../components/LinkGrid";
-import Main from "../components/Main";
+import { Typography } from "./components/Typography";
+
+import { DocLinkBanner } from "./components/DocLinkBanner";
+import { LinkGrid } from "./components/LinkGrid";
+import { Main } from "./components/Main";
 import { allPages } from ".contentlayer/generated";
-import Header from "../components/Header";
+import { Header } from "./components/Header";
+import { LinkGridItem } from "./components/LinkGridItem";
 
 export default async function IndexPage() {
   return (
@@ -19,7 +20,7 @@ export default async function IndexPage() {
       </Header>
 
       <Main>
-        <Section>
+        <section>
           <LinkGrid>
             {allPages.map(({ slug, name, explaination }) => {
               return (
@@ -32,9 +33,9 @@ export default async function IndexPage() {
               );
             })}
           </LinkGrid>
-        </Section>
+        </section>
 
-        <Section>
+        <section>
           <Typography.Heading>Why?</Typography.Heading>
           <Typography.Body>
             Neurodiversity Wiki is a crowdsourced website that aims to spread awareness
@@ -57,8 +58,8 @@ export default async function IndexPage() {
             behind marketing. We couldn’t find a website that fulfilled these goals, so we
             made one.
           </Typography.Body>
-        </Section>
-        <Section>
+        </section>
+        <section>
           <Typography.Heading>Who are we?</Typography.Heading>
           <Typography.Body>
             We’re a group of neurodiverse people who are collaborating on content aiming
@@ -66,7 +67,7 @@ export default async function IndexPage() {
             neurological conditions. We’re writing from our life experiences to help more
             people understand us.
           </Typography.Body>
-        </Section>
+        </section>
 
         <DocLinkBanner url="https://docs.google.com/document/d/16nOmXROsCu_IMmtXyzLHy5sMqDLuFdkbkCxQ08WzFxQ/edit?usp=sharing" />
       </Main>

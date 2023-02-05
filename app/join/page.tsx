@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-import Main from "../../components/Main";
-import DocLinkBanner from "../../components/DocLinkBanner";
-import Header from "../../components/Header";
-import Section from "../../components/Section";
-import LinkGrid, { LinkGridItem } from "../../components/LinkGrid";
-import Typography from "../../components/Typography";
-import Button from "../../components/Button";
+import { Main } from "../components/Main";
+import { DocLinkBanner } from "../components/DocLinkBanner";
+import { Header } from "../components/Header";
+import { LinkGrid } from "../components/LinkGrid";
+import { Typography } from "../components/Typography";
+import { Button } from "../components/Button";
+import { LinkGridItem } from "app/components/LinkGridItem";
 
 export default function JoinPage() {
   return (
@@ -20,7 +20,7 @@ export default function JoinPage() {
       </Header>
 
       <Main>
-        <Section>
+        <section>
           <Typography.Body>
             This website is created by people wanting to spread awareness about
             neurodiversity. We're everything from developers, parents, designers to
@@ -34,8 +34,8 @@ export default function JoinPage() {
             personal perspective is also very appreciated! If this is something that
             interests you, consider joining us.
           </Typography.Body>
-        </Section>
-        <Section>
+        </section>
+        <section>
           <div className="bg-primary-light dark:bg-primary-dark p-8 lg:-mx-4 mb-8 rounded-xl md:bg-discord bg-right bg-no-repeat bg-contain	">
             <img
               className="h-10 mb-2"
@@ -74,7 +74,7 @@ export default function JoinPage() {
               description="Send a direct message"
             />
           </LinkGrid>
-        </Section>
+        </section>
 
         <DocLinkBanner url="https://docs.google.com/document/d/1dWmoI7X5U6vZdHJHNMUBSG1D3W72KuA5FaOepXmiEOQ/edit?usp=sharing" />
       </Main>

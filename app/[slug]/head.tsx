@@ -1,5 +1,5 @@
 import { allPages } from ".contentlayer/generated";
-import Meta from "components/Meta";
+import { Meta } from "../components/Meta";
 
 export default function PageHead({ params }: { params: { slug: string } }) {
   const page = allPages.find((page) => page.slug == params.slug);

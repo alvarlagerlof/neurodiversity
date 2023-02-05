@@ -3,11 +3,10 @@ import { notFound } from "next/navigation";
 
 import { allEvents, allPages, Event } from ".contentlayer/generated";
 
-import Header from "../../../components/Header";
-import Typography from "../../../components/Typography";
-import Main from "../../../components/Main";
-import Section from "../../../components/Section";
-import Button from "../../../components/Button";
+import { Header } from "../../components/Header";
+import { Typography } from "../../components/Typography";
+import { Main } from "../../components/Main";
+import { Button } from "../../components/Button";
 
 export default function CalendarEvent({ params }) {
   const event = allEvents.find((event) => event.slug === params.slug);
@@ -51,7 +50,7 @@ function Subtitle({ event }: { event: Event }) {
 
 function Organization({ event }: { event: Event }) {
   return (
-    <Section>
+    <section>
       <div className="flex flex-col sm:flex-row-reverse justify-between">
         {event.organization && event.organization.logo && (
           <img
@@ -88,7 +87,7 @@ function Organization({ event }: { event: Event }) {
           )}
         </div>
       </div>
-    </Section>
+    </section>
   );
 }
 
@@ -97,7 +96,7 @@ function About({ event }: { event: Event }) {
 
   if (event.condition) {
     return (
-      <Section>
+      <section>
         <Typography.Heading>About {event.condition.name}</Typography.Heading>
         {page ? (
           <>
@@ -115,7 +114,7 @@ function About({ event }: { event: Event }) {
             </Typography.Body>
           </>
         )}
-      </Section>
+      </section>
     );
   }
 }

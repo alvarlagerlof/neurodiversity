@@ -1,4 +1,4 @@
-import Meta from "components/Meta";
+import { Meta } from "../components/Meta";
 
 export default function CalendarHead() {
   return (

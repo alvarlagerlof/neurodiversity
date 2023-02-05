@@ -1,12 +1,18 @@
+"use client";
+
 import { Inter } from "@next/font/google";
-import ContentInset from "../components/ContentInset";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import TopBar from "../components/TopBar";
-import VerticalSpacer from "../components/VerticalSpacer";
 import Script from "next/script";
+import { Globals } from "react-spring";
+
+import { ContentInset } from "./components/ContentInset";
+import { Footer } from "./components/Footer";
+import { Navbar } from "./components/Navbar";
+import { TopBar } from "./components/TopBar";
+
+import { useReducedMotion } from "./useReducedMotion";
 
 import "./global.css";
+import { useEffect } from "react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,6 +21,14 @@ const inter = Inter({
 export const revalidate = 120;
 
 export default function RootLayout({ children }: React.PropsWithChildren) {
+  const prefersReducedMotion = useReducedMotion();
+
+  useEffect(() => {
+    Globals.assign({
+      skipAnimation: prefersReducedMotion,
+    });
+  }, [prefersReducedMotion]);
+
   return (
     <html lang="en" className={inter.className}>
       <head>
@@ -58,7 +72,7 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
 
             <div className="space-y-12 w-full">
               <ContentInset size="normal">
-                <VerticalSpacer>{children}</VerticalSpacer>
+                <div className="space-y-12">{children}</div>
               </ContentInset>
             </div>
           </div>

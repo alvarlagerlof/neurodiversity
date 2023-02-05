@@ -1,5 +1,5 @@
-import Text from "../../components/Text";
-import Typography from "../../components/Typography";
+import { Text } from "../components/Text";
+import { Typography } from "../components/Typography";
 
 export default function PageNotFound() {
   return (

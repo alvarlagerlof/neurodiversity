@@ -2,7 +2,7 @@ import { allPages } from "contentlayer/generated";
 
 import { serialize } from "next-mdx-remote/serialize";
 import { notFound } from "next/navigation";
-import { MDX } from "./Mdx";
+import { MDX } from "./components/Mdx";
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const page = allPages.find((page) => page.slug === params.slug);

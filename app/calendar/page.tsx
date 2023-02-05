@@ -1,16 +1,10 @@
-"use client";
+import { DocLinkBanner } from "../components/DocLinkBanner";
+import { Header } from "../components/Header";
+import { Typography } from "../components/Typography";
 
-import DocLinkBanner from "../../components/DocLinkBanner";
-import Header from "../../components/Header";
-import Typography from "../../components/Typography";
-
-import Main from "../../components/Main";
-import { useRef } from "react";
-import { allEvents, allPages, Event } from ".contentlayer/generated";
-
-import Tag from "../../components/Tag";
-import Bounce from "../../components/Bounce";
-import Link from "next/link";
+import { Main } from "../components/Main";
+import { allEvents, Event } from ".contentlayer/generated";
+import { EventItem } from "./components/EventItem";
 
 export const metadata = {
   title: "The Neurological Awareness Calendar",
@@ -86,79 +80,9 @@ function Month({ month, events }: { month: string; events: Event[] }) {
       <Typography.Title as="h2">{monthName}</Typography.Title>
       <ul className="space-y-4 md:-mx-4">
         {events.map((event) => {
-          return <Event key={event._id} event={event} />;
+          return <EventItem key={event._id} event={event} />;
         })}
       </ul>
     </li>
-  );
-}
-
-function Event({ event }: { event: Event }) {
-  const page = allPages.find((page) => page.slug === event.condition?.linkedPage);
-
-  const link = useRef(null);
-
-  // Format date day
-  const pr = new Intl.PluralRules("en-US", { type: "ordinal" });
-
-  const suffixes = new Map([
-    ["one", "st"],
-    ["two", "nd"],
-    ["few", "rd"],
-    ["other", "th"],
-  ]);
-  const formatOrdinals = (n) => {
-    const rule = pr.select(n);
-    const suffix = suffixes.get(rule);
-    return `${n}${suffix}`;
-  };
-
-  const day = formatOrdinals(new Date(event.startDate).getDate());
-
-  // Remove CTA text since there is a button below
-  const description = () => {
-    if (page) {
-      return page.meta.description;
-    }
-
-    if (event.condition && event.condition.name) {
-      return `There's no description of ${event.condition.name} yet.`;
-    }
-
-    return `There's no description yet.`;
-  };
-
-  return (
-    <Bounce amount={1.04} className="w-full">
-      <li
-        onClick={(e) => {
-          if (link.current !== e.target) {
-            link.current.click();
-          }
-        }}
-        className={`
-              rounded-xl p-4 bg-white dark:bg-card-dark ring-primary transition
-              shadow
-              space-y-2
-              hover:shadow-md
-              outline-none focus-visible:ring cursor-pointer`}
-      >
-        <div className="flex flex-row justify-between">
-          {/* <Typography.Heading>{event.frontMatter.name}</Typography.Heading> */}
-          <Typography.Heading>
-            <Link href={`/calendar/${event.slug}`} ref={link}>
-              {event.name}
-            </Link>
-          </Typography.Heading>
-          <div>
-            {event.length == "week" && <Tag>Week starting {day}</Tag>}
-            {event.length == "day" && <Tag>{day}</Tag>}
-            {event.length == "month" && <Tag>Whole month</Tag>}
-          </div>
-        </div>
-
-        <p>{description()}</p>
-      </li>
-    </Bounce>
   );
 }
