@@ -1,8 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 
+import arrowDark from "../../public/icons/arrow-dark.svg";
+import arrowLight from "../../public/icons/arrow-light.svg";
 import { Bounce } from "./Bounce";
 import { Typography } from "./Typography";
 
@@ -30,14 +33,14 @@ export function LinkGridItem({ href, title, description }: Props) {
                 hover:shadow-md
                 outline-none focus-visible:ring cursor-pointer`}
         >
-          <img
-            src="/icons/arrow-light.svg"
+          <Image
+            src={arrowLight}
             className="w-6 md:w-7 dark:hidden"
             alt=""
             aria-hidden
           />
-          <img
-            src="/icons/arrow-dark.svg"
+          <Image
+            src={arrowDark}
             className="w-6 md:w-7 hidden dark:block"
             alt=""
             aria-hidden

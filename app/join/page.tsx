@@ -1,6 +1,8 @@
 import { LinkGridItem } from "app/components/LinkGridItem";
+import Image from "next/image";
 import Link from "next/link";
 
+import discordLogotype from "../../public/icons/discord-logotype.svg";
 import { Button } from "../components/Button";
 import { DocLinkBanner } from "../components/DocLinkBanner";
 import { Header } from "../components/Header";
@@ -39,9 +41,9 @@ export default function JoinPage() {
         </section>
         <section>
           <div className="bg-primary-light dark:bg-primary-dark p-8 lg:-mx-4 mb-8 rounded-xl md:bg-discord bg-right bg-no-repeat bg-contain	">
-            <img
-              className="h-10 mb-2"
-              src="/icons/discord-logotype.svg"
+            <Image
+              className="h-10 mb-2 w-auto"
+              src={discordLogotype}
               alt="Discord logo"
             />
             <Typography.Body className="!text-white !mb-8 md:max-w-[35ch] lg:max-w-[52ch]">

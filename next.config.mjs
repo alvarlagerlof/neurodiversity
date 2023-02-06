@@ -5,7 +5,6 @@ const config = withContentlayer({
   experimental: {
     appDir: true,
   },
-
   pageExtensions: ["js", "jsx", "mdx", "tsx", "ts"],
   async redirects() {
     return [

@@ -1,5 +1,7 @@
-import { Bounce } from "./Bounce";
+import Image from "next/image";
 import { ElementType, forwardRef } from "react";
+
+import { Bounce } from "./Bounce";
 
 interface IconButtonProps {
   as?: ElementType;
@@ -36,7 +38,7 @@ const IconButton = forwardRef<HTMLDivElement, IconButtonProps>(
       <div ref={ref} className="relative inline-flex flex-row items-center">
         <Bounce amount={1.1}>
           <Tag className={variants[variant]} {...props}>
-            <img src={src} alt={alt} width={24} />
+            <Image src={src} alt={alt} width={24} height={24} />
             {badge && (
               <div
                 className="absolute top-0 right-0 inline-flex items-center justify-center

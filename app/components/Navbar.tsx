@@ -1,6 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import logoPrimary from "../../public/logos/logo-primary.svg";
+import logoSecondary from "../../public/logos/logo-secondary.svg";
+import logoMarkPrimary from "../../public/logos/logomark-primary.svg";
+import logoMarkSecondary from "../../public/logos/logomark-secondary.svg";
 import { Button } from "./Button";
 import { ContentInset } from "./ContentInset";
 import { IconButton } from "./IconButton";
@@ -51,31 +56,31 @@ function ClickableLogo() {
     <Link href="/">
       <div className="cursor-pointer">
         <div className="sm:hidden">
-          <img
-            src="/logos/logo-primary.svg"
+          <Image
+            src={logoPrimary}
             alt="Neurodiversity Wiki logo"
-            width="40px"
-            height="40px"
-            className="dark:hidden"
+            width={24}
+            height={24}
+            className="dark:hidden w-auto"
           />
-          <img
-            src="/logos/logo-secondary.svg"
+          <Image
+            src={logoSecondary}
             alt="Neurodiversity Wiki logo"
-            width="40px"
-            height="40px"
-            className="hidden dark:block"
+            width={24}
+            height={24}
+            className="hidden dark:block w-auto"
           />
         </div>
         <div className="hidden sm:block">
-          <img
-            src="/logos/logomark-primary.svg"
+          <Image
+            src={logoMarkPrimary}
             alt="Neurodiversity Wiki logo"
-            className="h-6 dark:hidden"
+            className="h-6 dark:hidden w-auto"
           />
-          <img
-            src="/logos/logomark-secondary.svg"
+          <Image
+            src={logoMarkSecondary}
             alt="Neurodiversity Wiki logo"
-            className="h-6 hidden dark:block"
+            className="h-6 hidden dark:block w-auto"
           />
         </div>
       </div>

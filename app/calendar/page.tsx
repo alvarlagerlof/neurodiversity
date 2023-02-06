@@ -1,8 +1,11 @@
+import Image from "next/image";
+
 import { DocLinkBanner } from "../components/DocLinkBanner";
 import { Header } from "../components/Header";
 import { Main } from "../components/Main";
 import { Typography } from "../components/Typography";
 import { EventItem } from "./components/EventItem";
+import newIcon from "./icons/new.svg";
 import { allEvents, Event } from ".contentlayer/generated";
 
 export const metadata = {
@@ -39,8 +42,8 @@ export default function CalendarPage() {
     <>
       <Header>
         <div className="w-full flex flex-row justify-end h-14 sm:h-0 sm:relative">
-          <img
-            src="/icons/new.svg"
+          <Image
+            src={newIcon}
             alt="star shaped banner saying new"
             className="absolute sm:-top-6 sm:right-0 rotate-[15deg]"
           />

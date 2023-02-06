@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import logomarkSecondary from "../../public/logos/logomark-secondary.svg";
 import { Button } from "./Button";
 import { ContentInset } from "./ContentInset";
 import { Typography } from "./Typography";
@@ -56,7 +58,14 @@ function SocialIcon({ name, link, icon }) {
   return (
     <li>
       <Link href={link} target="_blank" rel="noopener noreferrer">
-        <img aria-hidden tabIndex={-1} src={icon} alt="" />
+        <Image
+          aria-hidden
+          tabIndex={-1}
+          src={icon}
+          alt=""
+          width={24}
+          height={24}
+        />
         <span className="sr-only">{name}</span>
       </Link>
     </li>
@@ -69,9 +78,9 @@ function Bottom() {
       <ContentInset size="wide">
         <section className="space-y-4">
           <Link href="/">
-            <img
-              className="h-6 sm:h-8 max-w-[80%]"
-              src="/logos/logomark-secondary.svg"
+            <Image
+              className="h-6 sm:h-8 max-w-[80%] w-auto"
+              src={logomarkSecondary}
               alt="Neurodiversity Wiki Logo"
             />
           </Link>

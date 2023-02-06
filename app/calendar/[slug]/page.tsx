@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -56,11 +57,13 @@ function Organization({ event }: { event: Event }) {
     <section>
       <div className="flex flex-col sm:flex-row-reverse justify-between">
         {event.organization && event.organization.logo && (
-          <img
+          <Image
             className="object-contain bg-white mb-4 sm:mb-0 sm:ml-8"
             src={event.organization.logo}
             width={200}
+            height={200}
             alt={`Logo of ${event.organization.logo}`}
+            unoptimized
           />
         )}
         <div>
@@ -116,7 +119,7 @@ function About({ event }: { event: Event }) {
         ) : (
           <>
             <Typography.Body>
-              Neurodiversity Wiki does not yet have a page about{" "}
+              Neurodiversity pWiki does not yet have a page about{" "}
               {event.condition.name}. If you're interested in helping create
               one, consider joining us. More information is in the banner below.
             </Typography.Body>

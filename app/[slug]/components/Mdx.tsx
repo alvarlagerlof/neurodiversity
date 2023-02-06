@@ -2,10 +2,10 @@
 
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 
+import { ContentImage } from "../../components/ContentImage";
 import { DocLinkBanner } from "../../components/DocLinkBanner";
 import { ExternalLink } from "../../components/ExternalLink";
 import { Header } from "../../components/Header";
-import { Image } from "../../components/Image";
 import { List } from "../../components/List";
 import { Main } from "../../components/Main";
 import { Meta } from "../../components/Meta";
@@ -25,7 +25,7 @@ const components = {
   a: ExternalLink,
   p: Text,
   blockquote: Quote,
-  img: Image,
+  img: ContentImage,
   Quote,
   Header,
   Main,
@@ -35,6 +35,7 @@ const components = {
   Definition,
   DefinitionItem,
   DocLinkBanner,
+  ContentImage,
 };
 
 export function MDX({ source }: { source: MDXRemoteSerializeResult }) {
