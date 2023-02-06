@@ -9,13 +9,12 @@ const Condition = defineNestedType(() => ({
   fields: {
     name: {
       type: "string",
-      description: "The title of the post",
       required: true,
     },
     linkedPage: {
       type: "string",
-      description: "The title of the post",
       required: false,
+      description: "Another page slug such as 'ocd' or 'autism'",
     },
   },
 }));
@@ -25,18 +24,17 @@ const Organization = defineNestedType(() => ({
   fields: {
     name: {
       type: "string",
-      description: "The title of the post",
       required: true,
     },
     website: {
       type: "string",
-      description: "The title of the post",
       required: true,
+      description: "URL to the website",
     },
     logo: {
       type: "string",
-      description: "The title of the post",
       required: true,
+      description: "Logo URL",
     },
   },
 }));
@@ -48,26 +46,25 @@ export const Event = defineDocumentType(() => ({
   fields: {
     name: {
       type: "string",
-      description: "The title of the post",
       required: true,
     },
     startDate: {
       type: "date",
-      description: "The date of the post",
       required: true,
     },
     length: {
       type: "string",
-      description: "The title of the post",
       required: true,
+      description: "day | month | week",
     },
     condition: {
       type: "nested",
-      of: Condition,
       required: false,
+      of: Condition,
     },
     organization: {
       type: "nested",
+      required: false,
       of: Organization,
     },
   },
@@ -84,12 +81,10 @@ const Meta = defineNestedType(() => ({
   fields: {
     title: {
       type: "string",
-      description: "The title of the post",
       required: true,
     },
     description: {
       type: "string",
-      description: "The title of the post",
       required: true,
     },
   },
@@ -102,12 +97,10 @@ export const Page = defineDocumentType(() => ({
   fields: {
     name: {
       type: "string",
-      description: "The title of the post",
       required: true,
     },
     explaination: {
       type: "string",
-      description: "The title of the post",
       required: true,
     },
     meta: {
