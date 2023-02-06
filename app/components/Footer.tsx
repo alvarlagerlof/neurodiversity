@@ -54,10 +54,12 @@ function JoinBanner() {
 
 function SocialIcon({ name, link, icon }) {
   return (
-    <Link href={link} target="_blank" rel="noopener noreferrer">
-      <img aria-hidden tabIndex={-1} src={icon} alt="" />
-      <span className="sr-only">{name}</span>
-    </Link>
+    <li>
+      <Link href={link} target="_blank" rel="noopener noreferrer">
+        <img aria-hidden tabIndex={-1} src={icon} alt="" />
+        <span className="sr-only">{name}</span>
+      </Link>
+    </li>
   );
 }
 
