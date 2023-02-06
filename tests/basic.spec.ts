@@ -10,7 +10,9 @@ test.describe("basic flow", () => {
     await expect(page.locator("h1")).toContainText("What is Autism?");
   });
 
-  test("it should open and close the definition when clicking", async ({ page }) => {
+  test("it should open and close the definition when clicking", async ({
+    page,
+  }) => {
     await page.goto(`${process.env.ENVIRONMENT_URL}/asd`);
 
     const dt = await page.locator("dt >> nth=0");
@@ -25,11 +27,15 @@ test.describe("basic flow", () => {
     await expect(button).toHaveAttribute("aria-expanded", "false");
   });
 
-  test("it should go to the join page and click the discord link", async ({ page }) => {
+  test("it should go to the join page and click the discord link", async ({
+    page,
+  }) => {
     await page.goto(`${process.env.ENVIRONMENT_URL}`);
 
     const button = await page.locator("text=Join Discord server");
-    await button.evaluate(async (element) => await element.removeAttribute("target"));
+    await button.evaluate(
+      async (element) => await element.removeAttribute("target")
+    );
     await button.click();
 
     await page.waitForLoadState("networkidle");

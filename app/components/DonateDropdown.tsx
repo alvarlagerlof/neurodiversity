@@ -1,9 +1,9 @@
+import { useOnClickOutside } from "app/useOnClickOutside";
 import { useRef, useState } from "react";
 import { useSpring, animated } from "react-spring";
 import useKeypress from "react-use-keypress";
 
 import { Button } from "./Button";
-import { useOnClickOutside } from "app/useOnClickOutside";
 
 export function DonateDropdown() {
   const ref = useRef();
@@ -45,7 +45,10 @@ export function DonateDropdown() {
         style={styles}
       >
         <ul role="none">
-          <Item href="https://github.com/sponsors/alvarlagerlof" isOpen={isOpen}>
+          <Item
+            href="https://github.com/sponsors/alvarlagerlof"
+            isOpen={isOpen}
+          >
             GitHub
           </Item>
           <Item href="https://www.buymeacoffee.com/alvar" isOpen={isOpen}>

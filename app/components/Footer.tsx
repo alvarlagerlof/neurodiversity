@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { Button } from "./Button";
 import { ContentInset } from "./ContentInset";
 import { Typography } from "./Typography";
-import { Button } from "./Button";
 
 export function Footer() {
   const pathname = usePathname();
@@ -24,9 +24,13 @@ function JoinBanner() {
           <Typography.Title as="h2" className="text-center text-white">
             Want to help out?
           </Typography.Title>
-          <Typography.Body as="h2" className="text-center max-w-xl !text-white mb-8">
-            We’re a community looking for awesome people to join us. Neurodiverse people,
-            writers, developers, designers and more are all welcome.
+          <Typography.Body
+            as="h2"
+            className="text-center max-w-xl !text-white mb-8"
+          >
+            We're a community looking for awesome people to join us.
+            Neurodiverse people, writers, developers, designers and more are all
+            welcome.
           </Typography.Body>
           <div className="flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:space-x-4">
             <Button

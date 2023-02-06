@@ -1,10 +1,9 @@
 import { DocLinkBanner } from "../components/DocLinkBanner";
 import { Header } from "../components/Header";
-import { Typography } from "../components/Typography";
-
 import { Main } from "../components/Main";
-import { allEvents, Event } from ".contentlayer/generated";
+import { Typography } from "../components/Typography";
 import { EventItem } from "./components/EventItem";
+import { allEvents, Event } from ".contentlayer/generated";
 
 export const metadata = {
   title: "The Neurological Awareness Calendar",
@@ -30,7 +29,9 @@ export default function CalendarPage() {
 
     return {
       ...accumulator,
-      [month]: accumulator[month] ? [...accumulator[month], current] : [current],
+      [month]: accumulator[month]
+        ? [...accumulator[month], current]
+        : [current],
     };
   }, {}) as Record<string, Event[]>;
 
@@ -45,14 +46,16 @@ export default function CalendarPage() {
           />
         </div>
         <Typography.Title>
-          <span className="italic font-medium text-xl">The Neurodiversity Wiki</span>
+          <span className="italic font-medium text-xl">
+            The Neurodiversity Wiki
+          </span>
           <br />
           Neurological Awareness Calendar
         </Typography.Title>
         <Typography.Subtitle>
-          Throughout the year, there are months, weeks and days where various neurological
-          conditions are highlighted to spread awareness. Here’s a calendar of the ones
-          covered on this site.
+          Throughout the year, there are months, weeks and days where various
+          neurological conditions are highlighted to spread awareness. Here’s a
+          calendar of the ones covered on this site.
         </Typography.Subtitle>
       </Header>
 

@@ -19,7 +19,9 @@ export function Meta({
 }: MetaProps) {
   return (
     <>
-      <title>{`${tags.title}${appendTitle ? " - Neurodiveristy Wiki" : ""}`}</title>
+      <title>{`${tags.title}${
+        appendTitle ? " - Neurodiveristy Wiki" : ""
+      }`}</title>
       <meta name="description" content={tags.description} />
       <meta
         property="og:title"

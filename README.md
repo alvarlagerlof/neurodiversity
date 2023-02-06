@@ -3,6 +3,7 @@
 # Neurodiversity Wiki
 
 This website is a simple wiki about neurological conditions. As the site states:
+
 > Neurodiversity is a word that refers to the ways brains differ. These differences are grouped into conditions. This website helps you understand some common ones.
 
 ## Why?
@@ -14,8 +15,8 @@ There are millions of neurodiverse people in the world. Yet knowledge about most
 This website tackles the information problem by providing short and easy-to-read information. We believe that content should be short, and to the point. To maximize potential reach, it shouldn’t be a blog post, be written in medical language, be too long, be local to one country, or be buried deep behind marketing. We couldn’t find a website that fulfilled these goals, so we made one.
 
 ## Who are we?
-We’re a group of neurodiverse people who are collaborating on content aiming to spread knowledge and understanding about neurodiversity and various neurological conditions. We’re writing from our life experiences to help more people understand us.
 
+We’re a group of neurodiverse people who are collaborating on content aiming to spread knowledge and understanding about neurodiversity and various neurological conditions. We’re writing from our life experiences to help more people understand us.
 
 ## Want to join us?
 

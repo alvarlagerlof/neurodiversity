@@ -1,12 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { allEvents, allPages, Event } from ".contentlayer/generated";
-
-import { Header } from "../../components/Header";
-import { Typography } from "../../components/Typography";
-import { Main } from "../../components/Main";
 import { Button } from "../../components/Button";
+import { Header } from "../../components/Header";
+import { Main } from "../../components/Main";
+import { Typography } from "../../components/Typography";
+import { allEvents, allPages, Event } from ".contentlayer/generated";
 
 export default function CalendarEvent({ params }) {
   const event = allEvents.find((event) => event.slug === params.slug);
@@ -32,7 +31,9 @@ export default function CalendarEvent({ params }) {
 
 function Subtitle({ event }: { event: Event }) {
   const date = new Date(event.startDate);
-  const monthName = new Intl.DateTimeFormat("en-us", { month: "long" }).format(date);
+  const monthName = new Intl.DateTimeFormat("en-us", { month: "long" }).format(
+    date
+  );
   const monthAndDay = new Intl.DateTimeFormat("en-us", {
     month: "long",
     day: "numeric",
@@ -42,7 +43,9 @@ function Subtitle({ event }: { event: Event }) {
     case "day":
       return <Typography.Subtitle>On {monthAndDay}</Typography.Subtitle>;
     case "week":
-      return <Typography.Subtitle>Week starting {monthAndDay}</Typography.Subtitle>;
+      return (
+        <Typography.Subtitle>Week starting {monthAndDay}</Typography.Subtitle>
+      );
     case "month":
       return <Typography.Subtitle>Month of {monthName}</Typography.Subtitle>;
   }
@@ -78,10 +81,13 @@ function Organization({ event }: { event: Event }) {
             </>
           ) : (
             <>
-              <Typography.Heading>Organization behind the event</Typography.Heading>
+              <Typography.Heading>
+                Organization behind the event
+              </Typography.Heading>
               <Typography.Body>
-                There's currently no information about the organization behind this event.
-                If you're interested in contributing, please check out the banner below.
+                There's currently no information about the organization behind
+                this event. If you're interested in contributing, please check
+                out the banner below.
               </Typography.Body>
             </>
           )}
@@ -92,7 +98,9 @@ function Organization({ event }: { event: Event }) {
 }
 
 function About({ event }: { event: Event }) {
-  const page = allPages.find((page) => page.slug === event.condition?.linkedPage);
+  const page = allPages.find(
+    (page) => page.slug === event.condition?.linkedPage
+  );
 
   if (event.condition) {
     return (
@@ -108,9 +116,9 @@ function About({ event }: { event: Event }) {
         ) : (
           <>
             <Typography.Body>
-              Neurodiversity Wiki does not yet have a page about {event.condition.name}.
-              If you're interested in helping create one, consider joining us. More
-              information is in the banner below.
+              Neurodiversity Wiki does not yet have a page about{" "}
+              {event.condition.name}. If you're interested in helping create
+              one, consider joining us. More information is in the banner below.
             </Typography.Body>
           </>
         )}

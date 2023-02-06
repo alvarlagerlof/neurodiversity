@@ -1,8 +1,8 @@
 import Link from "next/link";
-
-import { ContentInset } from "./ContentInset";
-import { Button } from "./Button";
 import { usePathname } from "next/navigation";
+
+import { Button } from "./Button";
+import { ContentInset } from "./ContentInset";
 import { IconButton } from "./IconButton";
 
 export function Navbar() {

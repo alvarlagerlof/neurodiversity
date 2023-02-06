@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { useSpring, animated } from "react-spring";
+
 import { useHeight } from "../useHeight";
 
 interface DefinitionItem {

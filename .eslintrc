@@ -1,5 +1,10 @@
 {
-  "extends": ["next", "next/core-web-vitals", "prettier", "plugin:import/recommended"],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:import/recommended",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
     "react/no-unescaped-entities": 0,
     "@next/next/no-img-element": 0,

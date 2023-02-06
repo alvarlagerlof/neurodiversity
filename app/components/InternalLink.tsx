@@ -6,7 +6,11 @@ interface InternalLinkProps {
   children: React.ReactNode;
 }
 
-export function InternalLink({ href, external = false, children }: InternalLinkProps) {
+export function InternalLink({
+  href,
+  external = false,
+  children,
+}: InternalLinkProps) {
   return (
     <Link
       href={href}

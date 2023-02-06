@@ -46,7 +46,9 @@ export default async function handler(req: NextRequest) {
             >
               {title}
             </h1>
-            <h2 tw="font-medium text-xl leading-snug text-[40px]">{description}</h2>
+            <h2 tw="font-medium text-xl leading-snug text-[40px]">
+              {description}
+            </h2>
           </div>
         </div>
       ),

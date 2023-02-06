@@ -1,12 +1,12 @@
+import { LinkGridItem } from "app/components/LinkGridItem";
 import Link from "next/link";
 
-import { Main } from "../components/Main";
+import { Button } from "../components/Button";
 import { DocLinkBanner } from "../components/DocLinkBanner";
 import { Header } from "../components/Header";
 import { LinkGrid } from "../components/LinkGrid";
+import { Main } from "../components/Main";
 import { Typography } from "../components/Typography";
-import { Button } from "../components/Button";
-import { LinkGridItem } from "app/components/LinkGridItem";
 
 export default function JoinPage() {
   return (
@@ -14,8 +14,8 @@ export default function JoinPage() {
       <Header>
         <Typography.Title>Join us</Typography.Title>
         <Typography.Subtitle>
-          First of all, thank you for considering us! We're a small community looking for
-          more awesome people to join us.
+          First of all, thank you for considering us! We're a small community
+          looking for more awesome people to join us.
         </Typography.Subtitle>
       </Header>
 
@@ -23,16 +23,18 @@ export default function JoinPage() {
         <section>
           <Typography.Body>
             This website is created by people wanting to spread awareness about
-            neurodiversity. We're everything from developers, parents, designers to
-            journalists. To cover as many conditions as possible in a representative way,
-            we need the perspective of many. Together, we can make a wiki that explains
-            these conditions in a simple way for the general public.
+            neurodiversity. We're everything from developers, parents, designers
+            to journalists. To cover as many conditions as possible in a
+            representative way, we need the perspective of many. Together, we
+            can make a wiki that explains these conditions in a simple way for
+            the general public.
           </Typography.Body>
           <Typography.Body>
-            So with that said, any help is appreciated. While people who can write, code,
-            design and organize are in need, that is not a requirement. Feedback and
-            personal perspective is also very appreciated! If this is something that
-            interests you, consider joining us.
+            So with that said, any help is appreciated. While people who can
+            write, code, design and organize are in need, that is not a
+            requirement. Feedback and personal perspective is also very
+            appreciated! If this is something that interests you, consider
+            joining us.
           </Typography.Body>
         </section>
         <section>
@@ -43,9 +45,9 @@ export default function JoinPage() {
               alt="Discord logo"
             />
             <Typography.Body className="!text-white !mb-8 md:max-w-[35ch] lg:max-w-[52ch]">
-              Our Discord server is the place where we organize and collaborate. Discord
-              is free to use for anyone, and provides an easy to use app for computers and
-              phones.
+              Our Discord server is the place where we organize and collaborate.
+              Discord is free to use for anyone, and provides an easy to use app
+              for computers and phones.
             </Typography.Body>
             <Button
               as={Link}
@@ -59,8 +61,8 @@ export default function JoinPage() {
           </div>
 
           <Typography.Body>
-            If you do not want to do that yet or have questions you want answered before
-            joining, you can reach out on these channels.
+            If you do not want to do that yet or have questions you want
+            answered before joining, you can reach out on these channels.
           </Typography.Body>
           <LinkGrid>
             <LinkGridItem

@@ -1,15 +1,17 @@
 "use client";
 
-import { useRef } from "react";
-import Link from "next/link";
-
-import { allPages, Event } from "contentlayer/generated";
 import { Bounce } from "app/components/Bounce";
 import { Typography } from "app/components/Typography";
+import { allPages, Event } from "contentlayer/generated";
+import Link from "next/link";
+import { useRef } from "react";
+
 import { Tag } from "../Tag";
 
 export function EventItem({ event }: { event: Event }) {
-  const page = allPages.find((page) => page.slug === event.condition?.linkedPage);
+  const page = allPages.find(
+    (page) => page.slug === event.condition?.linkedPage
+  );
 
   const link = useRef(null);
 

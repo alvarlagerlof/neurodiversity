@@ -28,7 +28,12 @@ function Title({ children, className = "", as = "h1", ...props }: BaseProps) {
   );
 }
 
-function Subtitle({ children, className = "", as = "h2", ...props }: BaseProps) {
+function Subtitle({
+  children,
+  className = "",
+  as = "h2",
+  ...props
+}: BaseProps) {
   return (
     <Base
       as={as}

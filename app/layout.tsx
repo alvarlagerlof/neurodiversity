@@ -2,17 +2,15 @@
 
 import { Inter } from "@next/font/google";
 import Script from "next/script";
+import { useEffect } from "react";
 import { Globals } from "react-spring";
 
 import { ContentInset } from "./components/ContentInset";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import { TopBar } from "./components/TopBar";
-
-import { useReducedMotion } from "./useReducedMotion";
-
 import "./global.css";
-import { useEffect } from "react";
+import { useReducedMotion } from "./useReducedMotion";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,7 +30,10 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en" className={inter.className}>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
         <meta name="theme-color" content="#860091"></meta>
 
         <link rel="icon" href="/favicons/favicon.ico"></link>
@@ -61,7 +62,12 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
           src="/js/script.outbound-links.js"
         ></Script>
 
-        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+        <link
+          rel="sitemap"
+          type="application/xml"
+          title="Sitemap"
+          href="/sitemap.xml"
+        />
       </head>
 
       <body className="text-text-light dark:text-text-dark bg-background-light dark:bg-background-dark">

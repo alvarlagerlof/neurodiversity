@@ -2,21 +2,20 @@
 
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 
-import { Header } from "../../components/Header";
-import { Text } from "../../components/Text";
-import { List } from "../../components/List";
-import { Meta } from "../../components/Meta";
-import { Image } from "../../components/Image";
-import { ExternalLink } from "../../components/ExternalLink";
 import { DocLinkBanner } from "../../components/DocLinkBanner";
+import { ExternalLink } from "../../components/ExternalLink";
+import { Header } from "../../components/Header";
+import { Image } from "../../components/Image";
+import { List } from "../../components/List";
 import { Main } from "../../components/Main";
+import { Meta } from "../../components/Meta";
+import { Text } from "../../components/Text";
 import { Typography } from "../../components/Typography";
-
+import { Definition } from "./Definition";
+import { DefinitionItem } from "./DefinitionItem";
 import { Quote } from "./Quote";
 import { QuoteGroup } from "./QuoteGroup";
 import { WrongRight } from "./WrongRight";
-import { Definition } from "./Definition";
-import { DefinitionItem } from "./DefinitionItem";
 
 const components = {
   h1: Typography.Title,

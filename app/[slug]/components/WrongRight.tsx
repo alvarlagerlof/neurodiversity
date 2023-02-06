@@ -1,9 +1,8 @@
 import Image from "next/image";
 
 import { Typography } from "../../components/Typography";
-
-import cross from "./icons/cross.svg";
 import check from "./icons/check.svg";
+import cross from "./icons/cross.svg";
 
 interface WrongRightProps {
   title: string;
@@ -40,7 +39,12 @@ interface IconHeadingProps {
 function IconHeading({ variant, alt, children }: IconHeadingProps) {
   return (
     <div className="flex flex-row space-x-2 mb-0">
-      <Image src={variant == "cross" ? cross : check} alt={alt} width={24} height={24} />
+      <Image
+        src={variant == "cross" ? cross : check}
+        alt={alt}
+        width={24}
+        height={24}
+      />
       <Typography.Heading className="!mb-0">{children}</Typography.Heading>
     </div>
   );

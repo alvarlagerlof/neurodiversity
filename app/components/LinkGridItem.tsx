@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRef } from "react";
+
 import { Bounce } from "./Bounce";
 import { Typography } from "./Typography";
 
