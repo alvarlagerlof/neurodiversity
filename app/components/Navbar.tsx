@@ -75,14 +75,14 @@ function ClickableLogo() {
           <Image
             src={logoMarkPrimary}
             alt="Neurodiversity Wiki logo"
-            width={24}
+            width={200}
             height={24}
             className="h-6 dark:hidden w-auto"
           />
           <Image
             src={logoMarkSecondary}
             alt="Neurodiversity Wiki logo"
-            width={24}
+            width={200}
             height={24}
             className="h-6 hidden dark:block w-auto"
           />
