@@ -235,10 +235,10 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@checkly/cli@0.3.14":
-  version "0.3.14"
-  resolved "https://registry.yarnpkg.com/@checkly/cli/-/cli-0.3.14.tgz#7b929e3f904dd8b44a4d6f75eb7a5c3130415c63"
-  integrity sha512-BBDA413rUQU/noCtHWKu0A8iwEY7OltoI2W0zGGgLO5NX+CdasKWTW5OONWWEM9fJ53H4LIS+qFMiI/mfcUcOQ==
+"@checkly/cli@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@checkly/cli/-/cli-0.4.0.tgz#07d4523c109823192c153d2c54e588db3ba3ddfa"
+  integrity sha512-fugC5JDe1BhyVGR+p/2kYEe1yDDC5M1jKt4Nhgm/fI3VXCto63ns6k5fjOk+yc93oVDK3r92D8YVI0/jSn6Amg==
   dependencies:
     "@oclif/core" "2.0.7"
     "@oclif/plugin-help" "5.1.20"
@@ -258,7 +258,7 @@
     inquirer "8.2.3"
     jwt-decode "3.1.2"
     log-symbols "4.1.0"
-    luxon "3.2.0"
+    luxon "3.2.1"
     open "8.4.0"
     uuid "9.0.0"
 
@@ -3988,11 +3988,6 @@ lru-cache@^6.0.0:
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
-
-luxon@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.2.0.tgz#7962c5dafcd3623e70e222882be49b381e7a8718"
-  integrity sha512-Namj3XqoJjFekq/JHQEaaAv4zyE/fyyDBrMEBnIL2s/X54SC8W5Ea0uej1TRXUArWec8OojsAVsGBYhNRjpMVw==
 
 luxon@3.2.1:
   version "3.2.1"
