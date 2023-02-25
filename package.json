@@ -17,7 +17,7 @@
     "os": false
   },
   "dependencies": {
-    "@next/font": "13.1.6",
+    "@next/font": "13.2.1",
     "@vercel/og": "0.1.0",
     "contentlayer": "0.3.0",
     "markdown-wasm": "1.2.0",
