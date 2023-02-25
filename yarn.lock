@@ -132,10 +132,10 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@checkly/cli@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@checkly/cli/-/cli-0.4.0.tgz#07d4523c109823192c153d2c54e588db3ba3ddfa"
-  integrity sha512-fugC5JDe1BhyVGR+p/2kYEe1yDDC5M1jKt4Nhgm/fI3VXCto63ns6k5fjOk+yc93oVDK3r92D8YVI0/jSn6Amg==
+"@checkly/cli@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@checkly/cli/-/cli-0.4.4.tgz#e5079b87181d99ca9abb57c552ca8d5028c0d156"
+  integrity sha512-RTL9JPfSJP/SIG2Wrzdsxi+x48lWCRXYutXmAbSnNP6YPPJFCZ06IoDYehbCKrJyaR4x8aKUUYgRJPztWUTIAw==
   dependencies:
     "@oclif/core" "2.0.7"
     "@oclif/plugin-help" "5.1.20"
