@@ -34,7 +34,7 @@ export function generateMetadata({
       }/api/og/default?title=${encodeURIComponent(
         `When is ${event.name}?`
       )}&description=${encodeURIComponent(
-        `Starting on ${event.startDate}. Learn more here.`
+        `Starting on ${monthAndDay}. Learn more here.`
       )}`,
     },
   };
