@@ -1,4 +1,5 @@
 import { LinkGridItem } from "app/components/LinkGridItem";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,6 +10,18 @@ import { Header } from "../components/Header";
 import { LinkGrid } from "../components/LinkGrid";
 import { Main } from "../components/Main";
 import { Typography } from "../components/Typography";
+
+export const metadata: Metadata = {
+  title: "Join us - Neurodiversity Wiki",
+  description:
+    "We're a small team working to educate the public through our crowd-sourced wiki. Join us to help contribute.",
+  openGraph: {
+    title: "Join us - Neurodiversity Wiki",
+    description:
+      "We're a small team working to educate the public through our crowd-sourced wiki. Join us to help contribute.",
+    images: `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/og/join`,
+  },
+};
 
 export default function JoinPage() {
   return (

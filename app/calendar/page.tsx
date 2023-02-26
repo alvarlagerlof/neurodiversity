@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 
 import { DocLinkBanner } from "../components/DocLinkBanner";
@@ -8,20 +9,18 @@ import { EventItem } from "./components/EventItem";
 import newIcon from "./icons/new.svg";
 import { allEvents, Event } from ".contentlayer/generated";
 
-export const metadata = {
-  title: "The Neurological Awareness Calendar",
+export const metadata: Metadata = {
+  title: "Neurological Awareness Calendar - Neurodiversity Wiki",
   description:
     "Throughout the year, there are months, weeks and days where various neurological conditions are highlighted to spread awareness. This is a calendar of some of them.",
   openGraph: {
-    // title: "The Neurological Awareness Calendar",
-    // description: "Throughout the year, there are months, weeks and days where various neurological conditions are highlighted to spread awareness. This is a calendar of some of them."
-    url: `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`,
-    siteName: "Neurodiversity Wiki",
-    images: [
-      {
-        url: `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/og/default`,
-      },
-    ],
+    title: "Neurological Awareness Calendar",
+    description: "By Neurodiversity Wiki",
+    images: `https://${
+      process.env.NEXT_PUBLIC_VERCEL_URL
+    }/api/og/default?title=${encodeURIComponent(
+      "Neurological Awareness Calendar"
+    )}&description=${encodeURIComponent("By Neurodiversity Wiki")}`,
   },
 };
 

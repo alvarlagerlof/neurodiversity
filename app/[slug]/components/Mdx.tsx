@@ -1,6 +1,4 @@
-"use client";
-
-import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { MDXRemote } from "next-mdx-remote/rsc";
 
 import { ContentImage } from "../../components/ContentImage";
 import { DocLinkBanner } from "../../components/DocLinkBanner";
@@ -8,7 +6,6 @@ import { ExternalLink } from "../../components/ExternalLink";
 import { Header } from "../../components/Header";
 import { List } from "../../components/List";
 import { Main } from "../../components/Main";
-import { Meta } from "../../components/Meta";
 import { Text } from "../../components/Text";
 import { Typography } from "../../components/Typography";
 import { Definition } from "./Definition";
@@ -29,7 +26,6 @@ const components = {
   Quote,
   Header,
   Main,
-  Meta,
   QuoteGroup,
   WrongRight,
   Definition,
@@ -38,6 +34,9 @@ const components = {
   ContentImage,
 };
 
-export function MDX({ source }: { source: MDXRemoteSerializeResult }) {
-  return <MDXRemote components={components} {...source} />;
+export async function MDX({ source }: { source: string }) {
+  return (
+    // @ts-expect-error Async component
+    <MDXRemote components={components} source={source} />
+  );
 }

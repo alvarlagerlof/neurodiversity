@@ -39,7 +39,7 @@ export default async function handler(req: NextRequest) {
           <div tw="flex flex-col">
             <h1
               tw={
-                title.length > 30
+                title && title.length > 30
                   ? "text-[100px] font-display font-extrabold leading-[6rem]"
                   : "text-[80px] font-display font-extrabold leading-[5.2rem]"
               }
@@ -72,7 +72,6 @@ export default async function handler(req: NextRequest) {
       }
     );
   } catch (e: any) {
-    console.log(`${e.message}`);
     return new Response(`Failed to generate the image`, {
       status: 500,
     });

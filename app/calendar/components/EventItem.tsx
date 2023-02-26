@@ -13,7 +13,7 @@ export function EventItem({ event }: { event: Event }) {
     (page) => page.slug === event.condition?.linkedPage
   );
 
-  const link = useRef(null);
+  const link = useRef<HTMLAnchorElement | null>(null);
 
   // Format date day
   const pr = new Intl.PluralRules("en-US", { type: "ordinal" });
@@ -34,7 +34,7 @@ export function EventItem({ event }: { event: Event }) {
 
   // Remove CTA text since there is a button below
   const description = () => {
-    if (page) {
+    if (page && page.meta) {
       return page.meta.description;
     }
 
@@ -49,7 +49,7 @@ export function EventItem({ event }: { event: Event }) {
     <Bounce amount={1.04} className="w-full">
       <li
         onClick={(e) => {
-          if (link.current !== e.target) {
+          if (link.current && link.current !== e.target) {
             link.current.click();
           }
         }}

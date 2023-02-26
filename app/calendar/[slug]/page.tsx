@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -7,6 +8,37 @@ import { Header } from "../../components/Header";
 import { Main } from "../../components/Main";
 import { Typography } from "../../components/Typography";
 import { allEvents, allPages, Event } from ".contentlayer/generated";
+
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Metadata {
+  const event = allEvents.find((event) => event.slug == params.slug);
+
+  if (!event) return notFound();
+
+  const monthAndDay = new Intl.DateTimeFormat("en-us", {
+    month: "long",
+    day: "numeric",
+  }).format(new Date(event.startDate));
+
+  return {
+    title: `When is ${event.name}? - Neurodiversity.wiki`,
+    description: `${event.name} is an event starting on ${monthAndDay}. Learn more here.`,
+    openGraph: {
+      title: `When is ${event.name}?`,
+      description: `Starting on ${monthAndDay}. Learn more here.`,
+      images: `https://${
+        process.env.NEXT_PUBLIC_VERCEL_URL
+      }/api/og/default?title=${encodeURIComponent(
+        `${event.name}?`
+      )}&description=${encodeURIComponent(
+        `Starting on ${monthAndDay}. Learn more here.`
+      )}`,
+    },
+  };
+}
 
 export default function CalendarEvent({ params }) {
   const event = allEvents.find((event) => event.slug === params.slug);
@@ -50,6 +82,8 @@ function Subtitle({ event }: { event: Event }) {
     case "month":
       return <Typography.Subtitle>Month of {monthName}</Typography.Subtitle>;
   }
+
+  return null;
 }
 
 function Organization({ event }: { event: Event }) {
@@ -109,7 +143,7 @@ function About({ event }: { event: Event }) {
     return (
       <section>
         <Typography.Heading>About {event.condition.name}</Typography.Heading>
-        {page ? (
+        {page && page.meta ? (
           <>
             <Typography.Body>{page.meta.description}</Typography.Body>
             <Button as={Link} href={`/${event.condition.linkedPage}`}>
@@ -119,7 +153,7 @@ function About({ event }: { event: Event }) {
         ) : (
           <>
             <Typography.Body>
-              Neurodiversity pWiki does not yet have a page about{" "}
+              Neurodiversity Wiki does not yet have a page about{" "}
               {event.condition.name}. If you're interested in helping create
               one, consider joining us. More information is in the banner below.
             </Typography.Body>
@@ -128,6 +162,8 @@ function About({ event }: { event: Event }) {
       </section>
     );
   }
+
+  return null;
 }
 
 export function generateStaticParams() {

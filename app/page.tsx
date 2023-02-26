@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 import { DocLinkBanner } from "./components/DocLinkBanner";
 import { Header } from "./components/Header";
 import { LinkGrid } from "./components/LinkGrid";
@@ -5,6 +7,24 @@ import { LinkGridItem } from "./components/LinkGridItem";
 import { Main } from "./components/Main";
 import { Typography } from "./components/Typography";
 import { allPages } from ".contentlayer/generated";
+
+export const metadata: Metadata = {
+  title: "Neurodiversity Wiki: Learn about neurological conditions",
+  description:
+    "Learn about conditions like Autism, OCD, Bipolar, ADHD and more on this crowdsourced guide.",
+  openGraph: {
+    title: "Neurodiversity Wiki",
+    description:
+      "Learn about Autism, OCD, Bipolar, ADHD, Dyslexia and more on this crowdsourced guide.",
+    images: `https://${
+      process.env.NEXT_PUBLIC_VERCEL_URL
+    }/api/og/start?title=${encodeURIComponent(
+      "Neurodiversity Wiki"
+    )}&description=${encodeURIComponent(
+      "Learn about Autism, OCD, Bipolar, ADHD, Dyslexia and more on this crowdsourced guide."
+    )}`,
+  },
+};
 
 export default async function IndexPage() {
   return (

@@ -2,7 +2,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -21,8 +25,11 @@
       }
     ],
     "paths": {
-      "contentlayer/generated": ["./.contentlayer/generated"]
-    }
+      "contentlayer/generated": [
+        "./.contentlayer/generated"
+      ]
+    },
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",
@@ -32,5 +39,7 @@
     ".contentlayer/generated",
     "next.config.mjs"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

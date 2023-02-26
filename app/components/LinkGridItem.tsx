@@ -16,7 +16,7 @@ interface Props {
 }
 
 export function LinkGridItem({ href, title, description }: Props) {
-  const link = useRef(null);
+  const link = useRef<HTMLAnchorElement | null>(null);
 
   return (
     <li>
