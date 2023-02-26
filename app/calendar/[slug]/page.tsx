@@ -18,12 +18,17 @@ export function generateMetadata({
 
   if (!event) return notFound();
 
+  const monthAndDay = new Intl.DateTimeFormat("en-us", {
+    month: "long",
+    day: "numeric",
+  }).format(new Date(event.startDate));
+
   return {
     title: `When is ${event.name}? - Neurodiversity.wiki`,
-    description: `${event.name} is an event starting on ${event.startDate}. Learn more here.`,
+    description: `${event.name} is an event starting on ${monthAndDay}. Learn more here.`,
     openGraph: {
       title: `When is ${event.name}?`,
-      description: `Starting on ${event.startDate}. Learn more here.`,
+      description: `Starting on ${monthAndDay}. Learn more here.`,
       images: `https://${
         process.env.NEXT_PUBLIC_VERCEL_URL
       }/api/og/default?title=${encodeURIComponent(
