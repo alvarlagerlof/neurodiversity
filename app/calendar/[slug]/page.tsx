@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -7,6 +8,32 @@ import { Header } from "../../components/Header";
 import { Main } from "../../components/Main";
 import { Typography } from "../../components/Typography";
 import { allEvents, allPages, Event } from ".contentlayer/generated";
+
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Metadata {
+  const event = allEvents.find((event) => event.slug == params.slug);
+
+  if (!event) return null;
+
+  return {
+    title: `When is ${event.name}? - Neurodiversity.wiki`,
+    description: `${event.name} is an event starting on ${event.startDate}. Learn more here.`,
+    openGraph: {
+      title: `When is ${event.name}? - Neurodiversity.wiki`,
+      description: `Starting on ${event.startDate}. Learn more here.`,
+      images: `https://${
+        process.env.NEXT_PUBLIC_VERCEL_URL
+      }/api/og/default?title=${encodeURIComponent(
+        `When is ${event.name}? - Neurodiversity.wiki`
+      )}&description=${encodeURIComponent(
+        `Starting on ${event.startDate}. Learn more here.`
+      )}`,
+    },
+  };
+}
 
 export default function CalendarEvent({ params }) {
   const event = allEvents.find((event) => event.slug === params.slug);
