@@ -32,7 +32,7 @@ export function generateMetadata({
       images: `https://${
         process.env.NEXT_PUBLIC_VERCEL_URL
       }/api/og/default?title=${encodeURIComponent(
-        `When is ${event.name}?`
+        `${event.name}?`
       )}&description=${encodeURIComponent(
         `Starting on ${monthAndDay}. Learn more here.`
       )}`,
