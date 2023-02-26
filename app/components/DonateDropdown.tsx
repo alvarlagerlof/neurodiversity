@@ -6,7 +6,7 @@ import useKeypress from "react-use-keypress";
 import { Button } from "./Button";
 
 export function DonateDropdown() {
-  const ref = useRef();
+  const ref = useRef<HTMLDivElement | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 
   const styles = useSpring({

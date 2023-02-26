@@ -1,6 +1,5 @@
 import { allPages } from "contentlayer/generated";
 import { Metadata } from "next";
-import { serialize } from "next-mdx-remote/serialize";
 import { notFound } from "next/navigation";
 
 import { MDX } from "./components/Mdx";
@@ -12,7 +11,7 @@ export function generateMetadata({
 }): Metadata {
   const page = allPages.find((page) => page.slug === params.slug);
 
-  if (!page) notFound();
+  if (!page || !page.meta) notFound();
 
   return {
     title: `${page.meta.title} - Neurodiversity.wiki`,
@@ -36,12 +35,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   if (!page) notFound();
 
-  const mdxSource = await serialize(page.body.raw);
-
   return (
-    <div>
-      <MDX source={mdxSource} />
-    </div>
+    // @ts-expect-error Async component
+    <MDX source={page.body.raw} />
   );
 }
 

@@ -16,7 +16,7 @@ export function generateMetadata({
 }): Metadata {
   const event = allEvents.find((event) => event.slug == params.slug);
 
-  if (!event) return null;
+  if (!event) return notFound();
 
   return {
     title: `When is ${event.name}? - Neurodiversity.wiki`,
@@ -77,6 +77,8 @@ function Subtitle({ event }: { event: Event }) {
     case "month":
       return <Typography.Subtitle>Month of {monthName}</Typography.Subtitle>;
   }
+
+  return null;
 }
 
 function Organization({ event }: { event: Event }) {
@@ -136,7 +138,7 @@ function About({ event }: { event: Event }) {
     return (
       <section>
         <Typography.Heading>About {event.condition.name}</Typography.Heading>
-        {page ? (
+        {page && page.meta ? (
           <>
             <Typography.Body>{page.meta.description}</Typography.Body>
             <Button as={Link} href={`/${event.condition.linkedPage}`}>
@@ -146,7 +148,7 @@ function About({ event }: { event: Event }) {
         ) : (
           <>
             <Typography.Body>
-              Neurodiversity pWiki does not yet have a page about{" "}
+              Neurodiversity Wiki does not yet have a page about{" "}
               {event.condition.name}. If you're interested in helping create
               one, consider joining us. More information is in the banner below.
             </Typography.Body>
@@ -155,6 +157,8 @@ function About({ event }: { event: Event }) {
       </section>
     );
   }
+
+  return null;
 }
 
 export function generateStaticParams() {

@@ -1,6 +1,4 @@
-"use client";
-
-import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { MDXRemote } from "next-mdx-remote/rsc";
 
 import { ContentImage } from "../../components/ContentImage";
 import { DocLinkBanner } from "../../components/DocLinkBanner";
@@ -36,6 +34,9 @@ const components = {
   ContentImage,
 };
 
-export function MDX({ source }: { source: MDXRemoteSerializeResult }) {
-  return <MDXRemote components={components} {...source} />;
+export async function MDX({ source }: { source: string }) {
+  return (
+    // @ts-expect-error Async component
+    <MDXRemote components={components} source={source} />
+  );
 }

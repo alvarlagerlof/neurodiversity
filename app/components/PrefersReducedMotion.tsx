@@ -13,5 +13,5 @@ export function PrefersReducedMotion() {
     });
   }, [prefersReducedMotion]);
 
-  return undefined;
+  return null;
 }
