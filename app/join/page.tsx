@@ -19,13 +19,7 @@ export const metadata: Metadata = {
     title: "Join us - Neurodiversity Wiki",
     description:
       "We're a small team working to educate the public through our crowd-sourced wiki. Join us to help contribute.",
-    images: `https://${
-      process.env.NEXT_PUBLIC_VERCEL_URL
-    }/api/og/join?title=${encodeURIComponent(
-      "Join us - Neurodiversity Wiki"
-    )}&description=${encodeURIComponent(
-      "We're a small team working to educate the public through our crowd-sourced wiki. Join us to help contribute."
-    )}`,
+    images: `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/og/join`,
   },
 };
 
