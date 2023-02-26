@@ -14,12 +14,12 @@ export const metadata: Metadata = {
   description:
     "Throughout the year, there are months, weeks and days where various neurological conditions are highlighted to spread awareness. This is a calendar of some of them.",
   openGraph: {
-    title: "Neurological Awareness Calendar - Neurodiversity Wiki",
+    title: "Neurological Awareness Calendar",
     description: "By Neurodiversity Wiki",
     images: `https://${
       process.env.NEXT_PUBLIC_VERCEL_URL
     }/api/og/default?title=${encodeURIComponent(
-      "Neurological Awareness Calendar - Neurodiversity Wiki"
+      "Neurological Awareness Calendar"
     )}&description=${encodeURIComponent("By Neurodiversity Wiki")}`,
   },
 };

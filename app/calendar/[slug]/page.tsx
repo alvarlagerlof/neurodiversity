@@ -22,12 +22,12 @@ export function generateMetadata({
     title: `When is ${event.name}? - Neurodiversity.wiki`,
     description: `${event.name} is an event starting on ${event.startDate}. Learn more here.`,
     openGraph: {
-      title: `When is ${event.name}? - Neurodiversity.wiki`,
+      title: `When is ${event.name}?`,
       description: `Starting on ${event.startDate}. Learn more here.`,
       images: `https://${
         process.env.NEXT_PUBLIC_VERCEL_URL
       }/api/og/default?title=${encodeURIComponent(
-        `When is ${event.name}? - Neurodiversity.wiki`
+        `When is ${event.name}?`
       )}&description=${encodeURIComponent(
         `Starting on ${event.startDate}. Learn more here.`
       )}`,
