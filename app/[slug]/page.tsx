@@ -22,7 +22,7 @@ export function generateMetadata({
       images: `https://${
         process.env.NEXT_PUBLIC_VERCEL_URL
       }/api/og/default?title=${encodeURIComponent(
-        `${page.meta.title} - Neurodiversity.wiki`
+        `${page.meta.title}`
       )}&description=${encodeURIComponent(
         `${page.meta.description} Learn more here.`
       )}`,
