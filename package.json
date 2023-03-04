@@ -47,7 +47,7 @@
     "fs-extra": "11.1.0",
     "git-repo-info": "2.1.1",
     "gray-matter": "4.0.3",
-    "luxon": "3.2.1",
+    "luxon": "3.3.0",
     "marked": "4.2.12",
     "postcss": "8.4.21",
     "prettier": "2.8.4",
