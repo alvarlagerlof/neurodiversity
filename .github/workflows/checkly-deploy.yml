@@ -7,7 +7,7 @@
 # - If the dry run passes, deploy the checks.
 #
 #  You can of course trigger the Checkly CLI in other workflows or steps inside your GH Action configuration.
-name: Checkly
+name: Checkly Deploy
 on:
   push:
       branches:
