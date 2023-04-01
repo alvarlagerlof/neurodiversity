@@ -10,7 +10,7 @@ test.describe("basic flow", () => {
 
     await page.locator("text=ASD").click();
 
-    await expect(page).toHaveURL(`${baseUrl}/autism`);
+    await expect(page).toHaveURL(`${baseUrl}autism`);
     await expect(page.locator("h1")).toContainText("What is Autism?");
   });
 
