@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "next lint",
     "test": "playwright test --reporter=list",
-    "test:hd": "playwright test --headed"
+    "test:hd": "playwright test --headed",
+    "checkly:deploy": "npx checkly deploy --force",
+    "checkly:test": "npx checkly test"
   },
   "browser": {
     "fs": false,
