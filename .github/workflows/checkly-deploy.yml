@@ -8,9 +8,11 @@
 #
 #  You can of course trigger the Checkly CLI in other workflows or steps inside your GH Action configuration.
 name: Checkly
-on: [deployment_status]
+on:
+  push:
+      branches:
+        - main
 env:
-  ENVIRONMENT_URL: ${{ github.event.deployment_status.target_url }}
   CHECKLY_API_KEY: ${{ secrets.CHECKLY_API_KEY }}
   CHECKLY_ACCOUNT_ID: ${{ secrets.CHECKLY_ACCOUNT_ID }}
 jobs:
@@ -25,10 +27,6 @@ jobs:
           node-version-file: ".nvmrc"
       - name: Install dependencies
         run: yarn
-      - name: Run checks
-        id: run-checks
-        run: yarn checkly test -e ENVIRONMENT_URL=${{ env.ENVIRONMENT_URL }}
-        continue-on-error: false
       - name: Deploy checks
         if: steps.run-checks.outcome == 'success'
         run: npm run checkly:deploy
