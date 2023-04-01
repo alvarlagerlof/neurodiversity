@@ -17,7 +17,6 @@ env:
   CHECKLY_ACCOUNT_ID: ${{ secrets.CHECKLY_ACCOUNT_ID }}
 jobs:
   test-e2e:
-    if: github.event.deployment_status.state == 'success'
     name: Test E2E on Checkly
     runs-on: ubuntu-latest
     steps:
