@@ -16,8 +16,8 @@ env:
   CHECKLY_API_KEY: ${{ secrets.CHECKLY_API_KEY }}
   CHECKLY_ACCOUNT_ID: ${{ secrets.CHECKLY_ACCOUNT_ID }}
 jobs:
-  test-e2e:
-    name: Test E2E on Checkly
+  deploy-e2e:
+    name: Deploy E2E on Checkly
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
