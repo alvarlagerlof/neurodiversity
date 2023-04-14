@@ -128,13 +128,15 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@checkly/cli@0.4.11":
-  version "0.4.11"
-  resolved "https://registry.yarnpkg.com/@checkly/cli/-/cli-0.4.11.tgz#64bdd7fb8767a26f7e3d5170372dee2fb0e575fa"
-  integrity sha512-9CqEosgXuSWK3UTNS0mKIxQLYPg2U1FukLVaZJDVywWFe+icOUfcaCxpryJgQvQyFw6toEkR4+D9B3vlqWt4Qg==
+"@checkly/cli@0.4.12":
+  version "0.4.12"
+  resolved "https://registry.yarnpkg.com/@checkly/cli/-/cli-0.4.12.tgz#c9ed2637ad58c66449f4336b2cf5b8d390e62ad9"
+  integrity sha512-IIL5elMVuMMhAcFtLFrK2W1vUYtZojYgqiIymJ96Lj4xjX0/zfYAOMqiCUboLszl0ewRed1xinJCMMbm/iKFWQ==
   dependencies:
     "@oclif/core" "2.0.7"
+    "@oclif/plugin-autocomplete" "2.1.8"
     "@oclif/plugin-help" "5.1.20"
+    "@oclif/plugin-not-found" "2.3.23"
     "@oclif/plugin-plugins" "2.3.0"
     "@oclif/plugin-warn-if-update-available" "2.0.24"
     "@typescript-eslint/typescript-estree" "5.46.1"
@@ -674,7 +676,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@oclif/color@^1.0.3":
+"@oclif/color@^1.0.3", "@oclif/color@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@oclif/color/-/color-1.0.4.tgz#07e54e3bd76a29e77d6ad71aef33222fe4f728e7"
   integrity sha512-HEcVnSzpQkjskqWJyVN3tGgR0H0F8GrBmDjgQ1N0ZwwktYa4y9kfV07P/5vt5BjPXNyslXHc4KAO8Bt7gmErCA==
@@ -788,10 +790,55 @@
     wordwrap "^1.0.0"
     wrap-ansi "^7.0.0"
 
+"@oclif/core@^2.8.0":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.8.2.tgz#86fc31f20419dbb3cd25f89f4f1d83760c60f7c0"
+  integrity sha512-g50NrCdEcFlBfuwZb9RxLmxPNQ9wIaBPOiwbxlGYRkHMnsC6LNHcvVtyDnmndU8qoXrmCOZ6ocSZenOMlG+G1w==
+  dependencies:
+    "@types/cli-progress" "^3.11.0"
+    ansi-escapes "^4.3.2"
+    ansi-styles "^4.3.0"
+    cardinal "^2.1.1"
+    chalk "^4.1.2"
+    clean-stack "^3.0.1"
+    cli-progress "^3.12.0"
+    debug "^4.3.4"
+    ejs "^3.1.8"
+    fs-extra "^9.1.0"
+    get-package-type "^0.1.0"
+    globby "^11.1.0"
+    hyperlinker "^1.0.0"
+    indent-string "^4.0.0"
+    is-wsl "^2.2.0"
+    js-yaml "^3.14.1"
+    natural-orderby "^2.0.3"
+    object-treeify "^1.1.33"
+    password-prompt "^1.1.2"
+    semver "^7.3.7"
+    string-width "^4.2.3"
+    strip-ansi "^6.0.1"
+    supports-color "^8.1.1"
+    supports-hyperlinks "^2.2.0"
+    ts-node "^10.9.1"
+    tslib "^2.5.0"
+    widest-line "^3.1.0"
+    wordwrap "^1.0.0"
+    wrap-ansi "^7.0.0"
+
 "@oclif/linewrap@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@oclif/linewrap/-/linewrap-1.0.0.tgz#aedcb64b479d4db7be24196384897b5000901d91"
   integrity sha512-Ups2dShK52xXa8w6iBWLgcjPJWjais6KPJQq3gQ/88AY6BXoTX+MIGFPrWQO1KLMiQfoTpcLnUwloN4brrVUHw==
+
+"@oclif/plugin-autocomplete@2.1.8":
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-autocomplete/-/plugin-autocomplete-2.1.8.tgz#6bf69c4e3acb2adbac91d327badeb91fea40da9a"
+  integrity sha512-7eUfez+AV5ukiBCuX4iP7L1UW1gY9Ju0+NIi1155klNWPuIjzQGifBQt0Fd8piTaPTkWg/sJUAPvYSxoYBJSOA==
+  dependencies:
+    "@oclif/core" "^2.8.0"
+    chalk "^4.1.0"
+    debug "^4.3.4"
+    fs-extra "^9.0.1"
 
 "@oclif/plugin-help@5.1.20":
   version "5.1.20"
@@ -799,6 +846,16 @@
   integrity sha512-N8xRxE/isFcdBDI8cobixEZA5toxIK5jbxpwALNTr4s8KNAtBA3ORQrSiY0fWGkcv0sCGMwZw7rJ0Izh18JPsw==
   dependencies:
     "@oclif/core" "^1.21.0"
+
+"@oclif/plugin-not-found@2.3.23":
+  version "2.3.23"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-2.3.23.tgz#d40a469c35d64db0e6b074a76bc9ab56231b86ef"
+  integrity sha512-UZM8aolxXvqwH8WcmJxRNASDWgMoSQm/pgCdkc1AGCRevYc8+LBSO+U6nLWq+Dx8H/dn9RyIv5oiUIOGkKDlZA==
+  dependencies:
+    "@oclif/color" "^1.0.4"
+    "@oclif/core" "^2.8.0"
+    fast-levenshtein "^3.0.0"
+    lodash "^4.17.21"
 
 "@oclif/plugin-plugins@2.3.0":
   version "2.3.0"
@@ -2765,6 +2822,18 @@ fast-levenshtein@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==
+
+fast-levenshtein@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-3.0.0.tgz#37b899ae47e1090e40e3fd2318e4d5f0142ca912"
+  integrity sha512-hKKNajm46uNmTlhHSyZkmToAc56uZJwYq7yrciZjqOxnlfQwERDQJmHPUp7m1m9wx8vgOe8IaCKZ5Kv2k1DdCQ==
+  dependencies:
+    fastest-levenshtein "^1.0.7"
+
+fastest-levenshtein@^1.0.7:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/fastest-levenshtein/-/fastest-levenshtein-1.0.16.tgz#210e61b6ff181de91ea9b3d1b84fdedd47e034e5"
+  integrity sha512-eRnCtTTtGZFpQCwhJiUOuxPQWRXVKYDn0b2PeHfXL6/Zi53SLAzAHfVhVWK2AryC/WH05kGfxhFIPvTF0SXQzg==
 
 fastq@^1.6.0:
   version "1.15.0"
