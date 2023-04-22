@@ -605,10 +605,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/font@13.3.0":
-  version "13.3.0"
-  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.3.0.tgz#790c5444348fad7aabbfc35a45bfc50505219725"
-  integrity sha512-xUv7VRUA2Zr6n/KJDILyv7/zGy9xKUsyQURaQqYr7lVxn0REScazwyZQzhSm+DnJoUyo+9DcFs2J3WsZXHUvQw==
+"@next/font@13.3.1":
+  version "13.3.1"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.3.1.tgz#0eebafea1fbb565abf45fb3b9fbc61df6d7ed391"
+  integrity sha512-S8Shizt4xlHDItXTAowEoyktiaLIEzTxJeXPaRu+VDeb21yXu7kMX2DUQE5Un+kb/ViCaAdWlyltCuS2sywEjA==
 
 "@next/swc-darwin-arm64@13.3.0":
   version "13.3.0"
