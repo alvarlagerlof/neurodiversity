@@ -21,10 +21,10 @@
   "dependencies": {
     "@next/font": "13.3.1",
     "@vercel/og": "0.5.3",
-    "contentlayer": "0.3.1",
+    "contentlayer": "0.3.2",
     "markdown-wasm": "1.2.0",
     "next": "13.3.1",
-    "next-contentlayer": "0.3.1",
+    "next-contentlayer": "0.3.2",
     "next-mdx-remote": "4.4.1",
     "next-sitemap": "4.0.7",
     "react": "18.1.0",
