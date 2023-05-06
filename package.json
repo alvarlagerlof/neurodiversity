@@ -36,7 +36,7 @@
     "@checkly/cli": "0.4.13",
     "@playwright/test": "1.33.0",
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
-    "@types/marked": "4.0.8",
+    "@types/marked": "4.3.0",
     "@types/react": "18.0.17",
     "autoprefixer": "10.4.14",
     "eslint": "8.39.0",
