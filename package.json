@@ -26,7 +26,7 @@
     "next": "13.3.2",
     "next-contentlayer": "0.3.2",
     "next-mdx-remote": "4.4.1",
-    "next-sitemap": "4.0.8",
+    "next-sitemap": "4.0.9",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-spring": "npm:@react-spring/web@9.7.2",
