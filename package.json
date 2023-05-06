@@ -50,7 +50,7 @@
     "git-repo-info": "2.1.1",
     "gray-matter": "4.0.3",
     "luxon": "3.3.0",
-    "marked": "4.3.0",
+    "marked": "5.0.0",
     "postcss": "8.4.23",
     "prettier": "2.8.8",
     "tailwindcss": "3.3.2",
