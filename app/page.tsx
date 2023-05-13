@@ -30,8 +30,7 @@ export default async function IndexPage() {
   return (
     <>
       <Header>
-        <Typography.Title>Hello there!</Typography.Title>
-        <Typography.Subtitle>
+        <Typography.Subtitle as="h1">
           Neurodiversity is a word that refers to the ways brains differ. These
           differences are grouped into conditions. This website helps you
           understand some common ones.
