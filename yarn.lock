@@ -1444,13 +1444,13 @@
     "@typescript-eslint/types" "5.59.6"
     eslint-visitor-keys "^3.3.0"
 
-"@vercel/og@0.5.4":
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/@vercel/og/-/og-0.5.4.tgz#71de6335b94d0032b325936337c0259d85b9de19"
-  integrity sha512-o4Zjgw66HPtfGFYG4CFcKfnCcK6qCY+3FC6g22Z1SdAN5jN8XjbHCh3hRVHH5IGBQp8mxH941EcH53KimAm+wg==
+"@vercel/og@0.5.6":
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/@vercel/og/-/og-0.5.6.tgz#6fe9e01c18d92c98ba8f78a50f22d87289a2cc88"
+  integrity sha512-C7loD/Ryt+cXgZ93KVNOIa/r/WcPVPk1JflUODGUdngFwxOJab0eCdugMrwGR2Oq85g4TXXHMBZIC2Z0C9P1NQ==
   dependencies:
     "@resvg/resvg-wasm" "2.4.1"
-    satori "0.7.2"
+    satori "0.9.1"
     yoga-wasm-web "0.3.3"
 
 abbrev@^2.0.0:
@@ -5873,10 +5873,10 @@ safe-regex-test@^1.0.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-satori@0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/satori/-/satori-0.7.2.tgz#1d935f3520ad22009b7b19e4c2e73c55660d6534"
-  integrity sha512-Eltg0/i3OEbBLaveCnYi2j+p0J9Bb5rmDMXddq4Zy0/NYHbpTkPIlPYGgb+DKamhmvXhiGvWGiFdqHVjJCaCpA==
+satori@0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/satori/-/satori-0.9.1.tgz#59380f59be44ff825e58b5e2c8d0598240e15365"
+  integrity sha512-2ggMOiY8O8rIxQ6vywiw3LlBheWHbsOzu5hZdMXTDFKzE9sDHUOtJegGmGE+e9aRSO1ttttgXrcHVsHPKYU2GQ==
   dependencies:
     "@shuding/opentype.js" "1.4.0-beta.0"
     css-background-parser "^0.1.0"
