@@ -1870,7 +1870,7 @@ character-reference-invalid@^2.0.0:
   resolved "https://registry.yarnpkg.com/character-reference-invalid/-/character-reference-invalid-2.0.1.tgz#85c66b041e43b47210faf401278abf808ac45cb9"
   integrity sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw==
 
-checkly@^4.0.8:
+checkly@4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/checkly/-/checkly-4.0.8.tgz#7a9d8b7838c77284e054addf1d57e8c6e7f4e32d"
   integrity sha512-vSXHl/P/ybflgRahfkaiSked6fGYvRctPGYMKdgaRjd/R0XAVww+BJS9DUPdsnudaxUBaDqLS8QlD3oCX5Qe3w==
