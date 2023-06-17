@@ -28,7 +28,7 @@
     "next-mdx-remote": "4.4.1",
     "next-sitemap": "4.1.3",
     "react": "18.1.0",
-    "react-dom": "18.1.0",
+    "react-dom": "18.2.0",
     "react-spring": "npm:@react-spring/web@9.7.2",
     "react-use-keypress": "1.3.1"
   },
