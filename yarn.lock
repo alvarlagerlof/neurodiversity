@@ -1409,10 +1409,10 @@
     "@typescript-eslint/types" "5.59.11"
     eslint-visitor-keys "^3.3.0"
 
-"@vercel/og@0.5.7":
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/@vercel/og/-/og-0.5.7.tgz#cf0406a58f1e6a7cd1a853fc5b26fb142430f900"
-  integrity sha512-KdhPHiLodj2n0Z0yg9feF/onMPlrimhBvCRJOwTpOjvNxefBqM1VIJW5+Ou9mFSIa37Gg0DGBDAoSOJLH2FqxA==
+"@vercel/og@0.5.8":
+  version "0.5.8"
+  resolved "https://registry.yarnpkg.com/@vercel/og/-/og-0.5.8.tgz#9b780c0ca0c6b1ce7f2a802fdbe3a7ef84641249"
+  integrity sha512-WlY5q96e2OmQEUsgqKZrCljNHiD05aErsa7u2z2+pkxyoVSWPHXLYFwHPtp7+IubU4gt4JYfgSbzGQg7n6xeAQ==
   dependencies:
     "@resvg/resvg-wasm" "2.4.1"
     satori "0.10.1"
