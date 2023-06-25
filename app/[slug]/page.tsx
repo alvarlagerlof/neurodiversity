@@ -36,7 +36,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
   if (!page) notFound();
 
   return (
-    // @ts-expect-error Async component
+    // @ts-ignore Async component
     <MDX source={page.body.raw} />
   );
 }

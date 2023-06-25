@@ -35,8 +35,6 @@ const components = {
 };
 
 export async function MDX({ source }: { source: string }) {
-  return (
-    // @ts-expect-error Async component
-    <MDXRemote components={components} source={source} />
-  );
+  /// @ts-ignore Async component
+  return <MDXRemote components={components} source={source} />;
 }
