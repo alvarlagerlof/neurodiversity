@@ -19,7 +19,6 @@
     "os": false
   },
   "dependencies": {
-    "@next/font": "13.4.7",
     "@vercel/og": "0.5.8",
     "contentlayer": "0.3.3",
     "markdown-wasm": "1.2.0",
@@ -38,8 +37,8 @@
     "@types/marked": "5.0.0",
     "@types/react": "18.2.14",
     "autoprefixer": "10.4.14",
-    "eslint": "8.43.0",
     "checkly": "4.0.9",
+    "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-import": "2.27.5",

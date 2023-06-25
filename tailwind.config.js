@@ -9,10 +9,6 @@ module.exports = {
   ],
   darkMode: "media",
   theme: {
-    fontFamily: {
-      display: ["Inter var", ...defaultTheme.fontFamily.sans],
-      sans: ["Inter var", ...defaultTheme.fontFamily.sans],
-    },
     backgroundImage: {
       join: "url('/backgrounds/join.svg')",
       "join-mobile": "url('/backgrounds/join-mobile.svg')",

@@ -20,7 +20,7 @@ function Title({ children, className = "", as = "h1", ...props }: BaseProps) {
   return (
     <Base
       as={as}
-      className={`font-display font-extrabold text-3xl sm:text-4xl md:text-5xl !leading-tight mb-4 ${className}`}
+      className={` font-extrabold text-3xl sm:text-4xl md:text-5xl !leading-tight mb-4 ${className}`}
       {...props}
     >
       {children}
@@ -37,7 +37,7 @@ function Subtitle({
   return (
     <Base
       as={as}
-      className={`font-display font-medium text-xl md:text-2xl ${className}`}
+      className={` font-medium text-xl md:text-2xl ${className}`}
       {...props}
     >
       {children}
@@ -49,7 +49,7 @@ function Heading({ children, className = "", as = "h3", ...props }: BaseProps) {
   return (
     <Base
       as={as}
-      className={`font-display font-semibold text-xl md:text-2xl mb-2 ${className}`}
+      className={` font-semibold text-xl md:text-2xl mb-2 ${className}`}
       {...props}
     >
       {children}
