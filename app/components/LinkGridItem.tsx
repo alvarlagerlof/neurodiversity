@@ -52,7 +52,7 @@ export function LinkGridItem({ href, title, description }: Props) {
                 {title}
               </Link>
             </Typography.Heading>
-            <Typography.Body className="mb-0">{description}</Typography.Body>
+            <Typography.Body className="!mb-0">{description}</Typography.Body>
           </div>
         </div>
       </Bounce>
