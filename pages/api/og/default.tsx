@@ -40,8 +40,8 @@ export default async function handler(req: NextRequest) {
             <h1
               tw={
                 title && title.length > 30
-                  ? "text-[100px] font-display font-extrabold leading-[6rem]"
-                  : "text-[80px] font-display font-extrabold leading-[5.2rem]"
+                  ? "text-[100px]  font-extrabold leading-[6rem]"
+                  : "text-[80px]  font-extrabold leading-[5.2rem]"
               }
             >
               {title}

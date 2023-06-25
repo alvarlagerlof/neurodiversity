@@ -21,7 +21,7 @@ export function DefinitionItem({ summary, children }: DefinitionItem) {
     <div className="py-2">
       <dt>
         <button
-          className="w-full flex flex-row justify-between items-center space-x-4 text-lg font-display font-medium rounded-md outline-none focus-visible:ring focus-visible:ring-primary"
+          className="w-full flex flex-row justify-between items-center space-x-4 text-lg  font-medium rounded-md outline-none focus-visible:ring focus-visible:ring-primary"
           aria-expanded={isOpen}
           onClick={() => toggle()}
         >
