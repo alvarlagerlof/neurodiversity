@@ -1845,10 +1845,10 @@ character-reference-invalid@^2.0.0:
   resolved "https://registry.yarnpkg.com/character-reference-invalid/-/character-reference-invalid-2.0.1.tgz#85c66b041e43b47210faf401278abf808ac45cb9"
   integrity sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw==
 
-checkly@4.0.11:
-  version "4.0.11"
-  resolved "https://registry.yarnpkg.com/checkly/-/checkly-4.0.11.tgz#d65aaf8d85f432a7d42823ad287aef6589827346"
-  integrity sha512-VOExLYTKDmiRKxz5fzFxsEjvrAyqqMwA4OxkCClP/EGTkri8P5YIeYHRGVmAXrLMoYau5tHK4NT1lE3UfySwXQ==
+checkly@4.0.12:
+  version "4.0.12"
+  resolved "https://registry.yarnpkg.com/checkly/-/checkly-4.0.12.tgz#e0a63420f8cd18596fcd6d363cafe643b6ca8233"
+  integrity sha512-m4gkVJZq3UMUmV+fGnfJZ2otyu9+fyqheGYsglAaE4br+Wcz+Jxzobtdthm+QmqutjKVz/D7KvAIapBgnY472w==
   dependencies:
     "@oclif/core" "2.8.11"
     "@oclif/plugin-help" "5.1.20"
@@ -1866,7 +1866,6 @@ checkly@4.0.11:
     dotenv "16.0.3"
     git-repo-info "2.1.1"
     glob "10.3.1"
-    hpagent "1.2.0"
     indent-string "4.0.0"
     jwt-decode "3.1.2"
     log-symbols "4.1.0"
@@ -1875,6 +1874,7 @@ checkly@4.0.11:
     p-queue "6.6.2"
     prompts "2.4.2"
     proxy-from-env "1.1.0"
+    tunnel "0.0.6"
     uuid "9.0.0"
 
 chokidar@^3.5.3:
@@ -3386,11 +3386,6 @@ hex-rgb@^4.1.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/hex-rgb/-/hex-rgb-4.3.0.tgz#af5e974e83bb2fefe44d55182b004ec818c07776"
   integrity sha512-Ox1pJVrDCyGHMG9CFg1tmrRUMRPRsAWYc/PinY0XzJU4K7y7vjNoLKIQ7BR5UJMCxNN8EM1MNDmHWA/B3aZUuw==
-
-hpagent@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/hpagent/-/hpagent-1.2.0.tgz#0ae417895430eb3770c03443456b8d90ca464903"
-  integrity sha512-A91dYTeIB6NoXG+PxTQpCCDDnfHsW9kc06Lvpu1TEe9gnd6ZFeiBoRO9JvzEv6xK7EX97/dUE8g/vBMTqTS3CA==
 
 html-void-elements@^2.0.0:
   version "2.0.1"
@@ -6134,6 +6129,11 @@ tunnel-agent@^0.6.0:
   integrity sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==
   dependencies:
     safe-buffer "^5.0.1"
+
+tunnel@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/tunnel/-/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
+  integrity sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==
 
 typanion@^3.12.1, typanion@^3.8.0:
   version "3.13.0"
