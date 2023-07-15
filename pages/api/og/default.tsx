@@ -6,11 +6,11 @@ export const config = {
 };
 
 const interMediumFont = fetch(
-  new URL("../../../assets/Inter-Medium.ttf", import.meta.url)
+  new URL("../../../assets/Inter-Medium.ttf", import.meta.url),
 ).then((res) => res.arrayBuffer());
 
 const interExtraBoldFont = fetch(
-  new URL("../../../assets/Inter-ExtraBold.ttf", import.meta.url)
+  new URL("../../../assets/Inter-ExtraBold.ttf", import.meta.url),
 ).then((res) => res.arrayBuffer());
 
 export default async function handler(req: NextRequest) {
@@ -69,7 +69,7 @@ export default async function handler(req: NextRequest) {
             weight: 800,
           },
         ],
-      }
+      },
     );
   } catch (e: any) {
     return new Response(`Failed to generate the image`, {

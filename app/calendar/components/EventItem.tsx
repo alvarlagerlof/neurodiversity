@@ -10,7 +10,7 @@ import { Tag } from "../Tag";
 
 export function EventItem({ event }: { event: Event }) {
   const page = allPages.find(
-    (page) => page.slug === event.condition?.linkedPage
+    (page) => page.slug === event.condition?.linkedPage,
   );
 
   const link = useRef<HTMLAnchorElement | null>(null);

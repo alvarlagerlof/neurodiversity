@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: `https://${
       process.env.NEXT_PUBLIC_VERCEL_URL
     }/api/og/default?title=${encodeURIComponent(
-      "Neurological Awareness Calendar"
+      "Neurological Awareness Calendar",
     )}&description=${encodeURIComponent("By Neurodiversity Wiki")}`,
   },
 };

@@ -32,9 +32,9 @@ export function generateMetadata({
       images: `https://${
         process.env.NEXT_PUBLIC_VERCEL_URL
       }/api/og/default?title=${encodeURIComponent(
-        `${event.name}?`
+        `${event.name}?`,
       )}&description=${encodeURIComponent(
-        `Starting on ${monthAndDay}. Learn more here.`
+        `Starting on ${monthAndDay}. Learn more here.`,
       )}`,
     },
   };
@@ -65,7 +65,7 @@ export default function CalendarEvent({ params }) {
 function Subtitle({ event }: { event: Event }) {
   const date = new Date(event.startDate);
   const monthName = new Intl.DateTimeFormat("en-us", { month: "long" }).format(
-    date
+    date,
   );
   const monthAndDay = new Intl.DateTimeFormat("en-us", {
     month: "long",
@@ -136,7 +136,7 @@ function Organization({ event }: { event: Event }) {
 
 function About({ event }: { event: Event }) {
   const page = allPages.find(
-    (page) => page.slug === event.condition?.linkedPage
+    (page) => page.slug === event.condition?.linkedPage,
   );
 
   if (event.condition) {

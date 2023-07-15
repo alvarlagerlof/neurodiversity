@@ -24,7 +24,7 @@ const IconButton = forwardRef<HTMLDivElement, IconButtonProps>(
       alt,
       ...props
     }: IconButtonProps,
-    ref
+    ref,
   ) => {
     const Tag = as as keyof JSX.IntrinsicElements;
 
@@ -50,7 +50,7 @@ const IconButton = forwardRef<HTMLDivElement, IconButtonProps>(
         </Bounce>
       </div>
     );
-  }
+  },
 );
 
 IconButton.displayName = "IconButton";
