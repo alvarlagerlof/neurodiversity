@@ -19,7 +19,7 @@ const Button = forwardRef<HTMLDivElement, ButtonProps>(
       children,
       ...props
     }: ButtonProps,
-    ref
+    ref,
   ) => {
     const Tag = as as keyof JSX.IntrinsicElements;
 
@@ -38,7 +38,7 @@ const Button = forwardRef<HTMLDivElement, ButtonProps>(
         </Bounce>
       </div>
     );
-  }
+  },
 );
 
 Button.displayName = "Button";

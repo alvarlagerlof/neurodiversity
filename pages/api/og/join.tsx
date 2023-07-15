@@ -5,7 +5,7 @@ export const config = {
 };
 
 const interMediumFont = fetch(
-  new URL("../../../assets/Inter-Medium.ttf", import.meta.url)
+  new URL("../../../assets/Inter-Medium.ttf", import.meta.url),
 ).then((res) => res.arrayBuffer());
 
 export default async function handler() {
@@ -45,7 +45,7 @@ export default async function handler() {
             weight: 500,
           },
         ],
-      }
+      },
     );
   } catch (e: any) {
     return new Response(`Failed to generate the image`, {

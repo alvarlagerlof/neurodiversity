@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     images: `https://${
       process.env.NEXT_PUBLIC_VERCEL_URL
     }/api/og/start?title=${encodeURIComponent(
-      "Neurodiversity Wiki"
+      "Neurodiversity Wiki",
     )}&description=${encodeURIComponent(
-      "Learn about Autism, OCD, Bipolar, ADHD, Dyslexia and more on this crowdsourced guide."
+      "Learn about Autism, OCD, Bipolar, ADHD, Dyslexia and more on this crowdsourced guide.",
     )}`,
   },
 };
