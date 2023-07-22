@@ -22,7 +22,7 @@
     "@vercel/og": "0.5.9",
     "contentlayer": "0.3.4",
     "markdown-wasm": "1.2.0",
-    "next": "13.4.10",
+    "next": "13.4.12",
     "next-contentlayer": "0.3.4",
     "next-mdx-remote": "4.4.1",
     "next-sitemap": "4.1.8",
