@@ -51,7 +51,7 @@
     "luxon": "3.3.0",
     "marked": "5.1.2",
     "postcss": "8.4.27",
-    "prettier": "3.0.0",
+    "prettier": "3.0.1",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
   }
