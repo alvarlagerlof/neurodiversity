@@ -19,7 +19,7 @@
     "os": false
   },
   "dependencies": {
-    "@vercel/og": "0.5.10",
+    "@vercel/og": "0.5.11",
     "contentlayer": "0.3.4",
     "markdown-wasm": "1.2.0",
     "next": "13.4.12",
