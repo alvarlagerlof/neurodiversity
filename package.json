@@ -42,7 +42,7 @@
     "eslint-config-next": "13.4.13",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-import": "2.28.0",
-    "eslint-plugin-mdx": "2.1.0",
+    "eslint-plugin-mdx": "2.2.0",
     "eslint-plugin-prettier": "5.0.0",
     "fs": "0.0.1-security",
     "fs-extra": "11.1.1",
