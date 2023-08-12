@@ -39,7 +39,7 @@
     "autoprefixer": "10.4.14",
     "checkly": "4.0.14",
     "eslint": "8.46.0",
-    "eslint-config-next": "13.4.12",
+    "eslint-config-next": "13.4.13",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-import": "2.28.0",
     "eslint-plugin-mdx": "2.1.0",
