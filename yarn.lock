@@ -1372,10 +1372,10 @@
     "@typescript-eslint/types" "6.4.1"
     eslint-visitor-keys "^3.4.1"
 
-"@vercel/og@0.5.11":
-  version "0.5.11"
-  resolved "https://registry.yarnpkg.com/@vercel/og/-/og-0.5.11.tgz#d64b87cddf46804e31c459c7eba4ff9dae6d6f42"
-  integrity sha512-07SDyClsPXod1dReV9wuwk5uEHvJH42V12Ovy005Zp+Hwq3CZEyWa2gRi12HlXCqoIupOG0//LAFBp1Tt2EwjQ==
+"@vercel/og@0.5.12":
+  version "0.5.12"
+  resolved "https://registry.yarnpkg.com/@vercel/og/-/og-0.5.12.tgz#c3328c41e90f56c56d252e18900e92379e72e720"
+  integrity sha512-NDtxHeX1ka0uSh6tSuIuOh2rz6+++BC7RSoqQd/NmKHK9kJ9mdhgRiMv8uBSgcdgBucRfyKHUzora+qaXhyB5Q==
   dependencies:
     "@resvg/resvg-wasm" "2.4.1"
     satori "0.10.3"
