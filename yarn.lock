@@ -1892,10 +1892,10 @@ character-reference-invalid@^2.0.0:
   resolved "https://registry.yarnpkg.com/character-reference-invalid/-/character-reference-invalid-2.0.1.tgz#85c66b041e43b47210faf401278abf808ac45cb9"
   integrity sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw==
 
-checkly@4.0.14:
-  version "4.0.14"
-  resolved "https://registry.yarnpkg.com/checkly/-/checkly-4.0.14.tgz#c6437044311ba78077a8b314205a6bd20d472791"
-  integrity sha512-8ibfqa+BjaJgxMY9sl+2Vu8ZIRFoLVPHZfrDpeK6XTCXbO37Jhxr8mVq0ld/uiTMvCxuVtwBn4TfTEL+SNgXDg==
+checkly@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/checkly/-/checkly-4.1.0.tgz#755188b7dd71da02a3578b7bd3867cc546fc67e8"
+  integrity sha512-5hcYaEMokj0CX4ue/HMCSfsL6lvOzBPabSj+lRPDLL1sLnGNb2bqJhiDVe3TNsqvR06bEFuuuuZMeX+gyQHhyg==
   dependencies:
     "@oclif/core" "2.8.11"
     "@oclif/plugin-help" "5.1.20"
@@ -1908,7 +1908,7 @@ checkly@4.0.14:
     async-mqtt "2.6.3"
     axios "1.4.0"
     chalk "4.1.2"
-    ci-info "3.7.1"
+    ci-info "3.8.0"
     conf "10.2.0"
     dotenv "16.3.1"
     git-repo-info "2.1.1"
@@ -1939,12 +1939,7 @@ chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
-ci-info@3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.7.1.tgz#708a6cdae38915d597afdf3b145f2f8e1ff55f3f"
-  integrity sha512-4jYS4MOAaCIStSRwiuxc4B8MYhIe676yO1sYGzARnjXkWpmzZMMYxY6zu8WYWDhSuth5zhrQ1rhNSibyyvv4/w==
-
-ci-info@^3.8.0:
+ci-info@3.8.0, ci-info@^3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.8.0.tgz#81408265a5380c929f0bc665d62256628ce9ef91"
   integrity sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==
