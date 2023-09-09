@@ -7,11 +7,7 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint",
-    "test": "playwright test --reporter=list",
-    "test:hd": "playwright test --headed",
-    "checkly:deploy": "npx checkly deploy --force",
-    "checkly:test": "npx checkly test"
+    "lint": "next lint"
   },
   "browser": {
     "fs": false,
@@ -21,6 +17,7 @@
   "dependencies": {
     "@vercel/og": "0.5.13",
     "contentlayer": "0.3.4",
+    "lexical": "^0.11.3",
     "markdown-wasm": "1.2.0",
     "next": "13.4.19",
     "next-contentlayer": "0.3.4",
@@ -32,12 +29,10 @@
     "react-use-keypress": "1.3.1"
   },
   "devDependencies": {
-    "@playwright/test": "1.37.1",
     "@trivago/prettier-plugin-sort-imports": "4.2.0",
     "@types/marked": "5.0.1",
     "@types/react": "18.2.21",
     "autoprefixer": "10.4.15",
-    "checkly": "4.1.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "eslint-config-prettier": "9.0.0",
