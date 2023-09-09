@@ -3380,11 +3380,6 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
-lexical@0.11.3:
-  version "0.11.3"
-  resolved "https://registry.yarnpkg.com/lexical/-/lexical-0.11.3.tgz#1ad1a56a657eb55d1b9644733f271bf75a65cbe9"
-  integrity sha512-xsMKgx/Fa+QHg/nweemU04lCy7TnEr8LyeDtsKUC7fIDN9wH3GqbnQ0+e3Hbg4FmxlhDCiPPt0GcZAROq3R8uw==
-
 lilconfig@^2.0.5, lilconfig@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.1.0.tgz#78e23ac89ebb7e1bfbf25b18043de756548e7f52"
@@ -3483,11 +3478,6 @@ markdown-extensions@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/markdown-extensions/-/markdown-extensions-1.1.1.tgz#fea03b539faeaee9b4ef02a3769b455b189f7fc3"
   integrity sha512-WWC0ZuMzCyDHYCasEGs4IPvLyTGftYwh6wIEOULOF0HXcqZlhwRzrK0w2VUlxWA98xnvb/jszw4ZSkJ6ADpM6Q==
-
-markdown-wasm@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/markdown-wasm/-/markdown-wasm-1.2.0.tgz#403204100fda293b58075d38b498e73bc109357a"
-  integrity sha512-S12OTkyXCkOgI1n1rZY9cg4bK/PGu80Emjpvwp8BEjwCxhPV3yddF0U6+QhCitdBsI1tzWcoeahmW7k0Pq81OA==
 
 marked@8.0.1:
   version "8.0.1"

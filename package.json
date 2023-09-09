@@ -17,8 +17,6 @@
   "dependencies": {
     "@vercel/og": "0.5.13",
     "contentlayer": "0.3.4",
-    "lexical": "0.11.3",
-    "markdown-wasm": "1.2.0",
     "next": "13.4.19",
     "next-contentlayer": "0.3.4",
     "next-mdx-remote": "4.4.1",
