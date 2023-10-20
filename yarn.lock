@@ -913,10 +913,10 @@
   resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.7.3.tgz#ea78fd447cbc2612c1f5d55852e3c331e8172a0b"
   integrity sha512-Kpx/fQ/ZFX31OtlqVEFfgaD1ACzul4NksrvIgYfIFq9JpDHFwQkMVZ10tbo0FU/grje4rcL4EIrjekl3kYwgWw==
 
-"@resvg/resvg-wasm@2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@resvg/resvg-wasm/-/resvg-wasm-2.4.1.tgz#88f7a08107bf5ea691b016e55e6db955c85d845c"
-  integrity sha512-yi6R0HyHtsoWTRA06Col4WoDs7SvlXU3DLMNP2bdAgs7HK18dTEVl1weXgxRzi8gwLteGUbIg29zulxIB3GSdg==
+"@resvg/resvg-wasm@2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@resvg/resvg-wasm/-/resvg-wasm-2.6.0.tgz#fa4db659b8c2519715f7f7dacfbb327aad193935"
+  integrity sha512-iDkBM6Ivex8nULtBu8cX670/lfsGxq8U1cuqE+qS9xFpPQP1enPdVm/33Kq3+B+bAldA+AHNZnCgpmlHo/fZrQ==
 
 "@rushstack/eslint-patch@^1.3.3":
   version "1.5.1"
@@ -1132,12 +1132,12 @@
     "@typescript-eslint/types" "6.7.5"
     eslint-visitor-keys "^3.4.1"
 
-"@vercel/og@0.5.18":
-  version "0.5.18"
-  resolved "https://registry.yarnpkg.com/@vercel/og/-/og-0.5.18.tgz#a2ba7970357cf8473c2e39627b989644f2b91f85"
-  integrity sha512-l519y6hscj14VkORBKshExoWaXWB4MqGUCIhY3gcXYir4aJ3J+9BU1E/CQ9yKsNmkgY+1VXOgjnq9zUT4B49KQ==
+"@vercel/og@0.5.20":
+  version "0.5.20"
+  resolved "https://registry.yarnpkg.com/@vercel/og/-/og-0.5.20.tgz#dedd4b433bc3c1fec67d70a577b5ce8569a67838"
+  integrity sha512-zi+ZXSx/peXA+1lq7s/5Vzmm/TTfTSf/5P1qNYnh42+7X+pZmahWoXt0i7SWiq3WagfsNUNA4hUDapDiHRoXqA==
   dependencies:
-    "@resvg/resvg-wasm" "2.4.1"
+    "@resvg/resvg-wasm" "2.6.0"
     satori "0.10.9"
     yoga-wasm-web "0.3.3"
 
