@@ -30,7 +30,7 @@
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "4.2.1",
     "@types/marked": "5.0.2",
-    "@types/react": "18.2.31",
+    "@types/react": "18.2.33",
     "autoprefixer": "10.4.16",
     "eslint": "8.52.0",
     "eslint-config-next": "13.5.6",
