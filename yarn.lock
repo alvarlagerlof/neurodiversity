@@ -1156,10 +1156,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@vercel/og@0.5.20":
-  version "0.5.20"
-  resolved "https://registry.yarnpkg.com/@vercel/og/-/og-0.5.20.tgz#dedd4b433bc3c1fec67d70a577b5ce8569a67838"
-  integrity sha512-zi+ZXSx/peXA+1lq7s/5Vzmm/TTfTSf/5P1qNYnh42+7X+pZmahWoXt0i7SWiq3WagfsNUNA4hUDapDiHRoXqA==
+"@vercel/og@0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@vercel/og/-/og-0.6.1.tgz#1a08f9b154f7c1a7900d68689740a0f24e0dc878"
+  integrity sha512-o0ItpTQrn7TdBRiYLoBmATfunenfI87AZ5S/SvS9puxN4rjuNdDHSV6ND24WBt0FK2SljfM9LYowK/99ql2bEA==
   dependencies:
     "@resvg/resvg-wasm" "2.6.0"
     satori "0.10.9"
