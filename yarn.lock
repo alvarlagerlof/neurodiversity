@@ -3705,10 +3705,15 @@ markdown-wasm@1.2.0:
   resolved "https://registry.yarnpkg.com/markdown-wasm/-/markdown-wasm-1.2.0.tgz#403204100fda293b58075d38b498e73bc109357a"
   integrity sha512-S12OTkyXCkOgI1n1rZY9cg4bK/PGu80Emjpvwp8BEjwCxhPV3yddF0U6+QhCitdBsI1tzWcoeahmW7k0Pq81OA==
 
-marked@*, marked@14.0.0:
+marked@*:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/marked/-/marked-14.0.0.tgz#79a1477358a59e0660276f8fec76de2c33f35d83"
   integrity sha512-uIj4+faQ+MgHgwUW1l2PsPglZLOLOT1uErt06dAPtx2kjteLAkbsd/0FiYg/MGS+i7ZKLb7w2WClxHkzOOuryQ==
+
+marked@14.1.0:
+  version "14.1.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-14.1.0.tgz#736ae774ff06ddf03e55a071f9322fe240cb89cb"
+  integrity sha512-P93GikH/Pde0hM5TAXEd8I4JAYi8IB03n8qzW8Bh1BIEFpEyBoYxi/XWZA53LSpTeLBiMQOoSMj0u5E/tiVYTA==
 
 mdast-util-definitions@^5.0.0:
   version "5.1.2"
