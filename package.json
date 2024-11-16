@@ -46,7 +46,7 @@
     "marked": "14.1.4",
     "postcss": "8.4.49",
     "prettier": "3.3.3",
-    "tailwindcss": "3.4.14",
+    "tailwindcss": "3.4.15",
     "typescript": "5.6.3"
   }
 }
