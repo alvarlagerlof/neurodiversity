@@ -1,4 +1,5 @@
 import { ElementType } from "react";
+import type { JSX } from "react";
 
 interface BaseProps {
   children: React.ReactNode;

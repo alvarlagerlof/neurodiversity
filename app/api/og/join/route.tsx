@@ -1,15 +1,13 @@
 import { ImageResponse } from "@vercel/og";
 
-export const config = {
-  runtime: "edge",
-};
+export const runtime = "edge";
 
-const interMediumFont = fetch(
-  new URL("../../../assets/Inter-Medium.ttf", import.meta.url),
-).then((res) => res.arrayBuffer());
-
-export default async function handler() {
+export async function GET() {
   try {
+    const interMediumFont = fetch(
+      new URL("../../../../assets/Inter-Medium.ttf", import.meta.url),
+    ).then((res) => res.arrayBuffer());
+
     const description =
       "We're a small team working to educate the public through our crowd-sourced wiki. Join us to help contribute.";
 

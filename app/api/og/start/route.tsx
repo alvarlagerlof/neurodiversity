@@ -1,15 +1,13 @@
 import { ImageResponse } from "@vercel/og";
 
-export const config = {
-  runtime: "edge",
-};
+export const runtime = "edge";
 
-const interMediumFont = fetch(
-  new URL("../../../assets/Inter-Medium.ttf", import.meta.url),
-).then((res) => res.arrayBuffer());
-
-export default async function handler() {
+export async function GET() {
   try {
+    const interMediumFont = fetch(
+      new URL("../../../../assets/Inter-Medium.ttf", import.meta.url),
+    ).then((res) => res.arrayBuffer());
+
     const description =
       "Learn about Autism, OCD, Bipolar, ADHD, Dyslexia and more on this crowdsourced guide.";
 
@@ -32,6 +30,8 @@ export default async function handler() {
               src={`http://${process.env.NEXT_PUBLIC_VERCEL_URL}/backgrounds/neuron.png`}
               className="w-full h-full object-contain"
               alt=""
+              width="370px"
+              height="500px"
             />
           </div>
         </div>

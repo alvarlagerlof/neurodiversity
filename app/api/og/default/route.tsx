@@ -1,20 +1,18 @@
 import { ImageResponse } from "@vercel/og";
 import { NextRequest } from "next/server";
 
-export const config = {
-  runtime: "edge",
-};
+export const runtime = "edge";
 
-const interMediumFont = fetch(
-  new URL("../../../assets/Inter-Medium.ttf", import.meta.url),
-).then((res) => res.arrayBuffer());
-
-const interExtraBoldFont = fetch(
-  new URL("../../../assets/Inter-ExtraBold.ttf", import.meta.url),
-).then((res) => res.arrayBuffer());
-
-export default async function handler(req: NextRequest) {
+export async function GET(req: NextRequest) {
   try {
+    const interMediumFont = fetch(
+      new URL("../../../../assets/Inter-Medium.ttf", import.meta.url),
+    ).then((res) => res.arrayBuffer());
+
+    const interExtraBoldFont = fetch(
+      new URL("../../../../assets/Inter-ExtraBold.ttf", import.meta.url),
+    ).then((res) => res.arrayBuffer());
+
     const { searchParams } = new URL(req.url);
 
     const title = searchParams.has("title")

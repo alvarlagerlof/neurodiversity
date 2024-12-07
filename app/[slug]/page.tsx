@@ -4,11 +4,10 @@ import { notFound } from "next/navigation";
 
 import { MDX } from "./components/Mdx";
 
-export function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Metadata {
+export async function generateMetadata(props: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const params = await props.params;
   const page = allPages.find((page) => page.slug === params.slug);
 
   if (!page || !page.meta) notFound();
@@ -30,7 +29,10 @@ export function generateMetadata({
   };
 }
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function Page(props: {
+  params: Promise<{ slug: string }>;
+}) {
+  const params = await props.params;
   const page = allPages.find((page) => page.slug === params.slug);
 
   if (!page) notFound();
