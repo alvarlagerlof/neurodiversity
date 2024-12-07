@@ -9,11 +9,10 @@ import { Main } from "../../components/Main";
 import { Typography } from "../../components/Typography";
 import { allEvents, allPages, Event } from ".contentlayer/generated";
 
-export function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Metadata {
+export async function generateMetadata(props: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const params = await props.params;
   const event = allEvents.find((event) => event.slug == params.slug);
 
   if (!event) return notFound();
@@ -40,7 +39,8 @@ export function generateMetadata({
   };
 }
 
-export default function CalendarEvent({ params }) {
+export default async function CalendarEvent(props) {
+  const params = await props.params;
   const event = allEvents.find((event) => event.slug === params.slug);
 
   if (!event) notFound();

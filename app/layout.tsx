@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 
@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     { url: "/favicons/favicon-32x32.png", sizes: "32x32" },
     { url: "/favicons/favicon-192x192.png", sizes: "192x192" },
   ],
+};
+
+export const viewport: Viewport = {
   themeColor: "#860091",
 };
 

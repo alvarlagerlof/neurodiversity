@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ElementType, forwardRef } from "react";
+import type { JSX } from "react";
 
 import { Bounce } from "./Bounce";
 

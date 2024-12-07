@@ -19,6 +19,7 @@ export function Bounce({ amount, className, children }: BounceProps) {
   });
 
   return (
+    // @ts-expect-error Types?
     <animated.div
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
