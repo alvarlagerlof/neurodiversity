@@ -1687,12 +1687,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:19.0.5":
-  version: 19.0.5
-  resolution: "@types/react@npm:19.0.5"
+"@types/react@npm:19.0.7":
+  version: 19.0.7
+  resolution: "@types/react@npm:19.0.7"
   dependencies:
     csstype: "npm:^3.0.2"
-  checksum: 10c0/6f3a25c826e8b274cf26b25ef7bd4a97aaa4d7b30a0ea529bf252c6f0387d74f44940dea55cfcac75829bee53cd4c82fdb41653b978954a08036d2812a0ae6d6
+  checksum: 10c0/818e546fa03a2a65ac2652fc472891ac96684211e8967bc25e1da6a8a09e2301ad972b1b038d128f8b4cbbd7691f6f57fee274db568169e9b6b01556abbb5bee
   languageName: node
   linkType: hard
 
@@ -6527,7 +6527,7 @@ __metadata:
   dependencies:
     "@trivago/prettier-plugin-sort-imports": "npm:5.2.1"
     "@types/marked": "npm:6.0.0"
-    "@types/react": "npm:19.0.5"
+    "@types/react": "npm:19.0.7"
     "@vercel/og": "npm:0.6.4"
     autoprefixer: "npm:10.4.20"
     contentlayer: "npm:0.3.4"
