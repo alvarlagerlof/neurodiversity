@@ -1843,14 +1843,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/og@npm:0.6.4":
-  version: 0.6.4
-  resolution: "@vercel/og@npm:0.6.4"
+"@vercel/og@npm:0.6.5":
+  version: 0.6.5
+  resolution: "@vercel/og@npm:0.6.5"
   dependencies:
     "@resvg/resvg-wasm": "npm:2.4.0"
-    satori: "npm:0.12.0"
+    satori: "npm:0.12.1"
     yoga-wasm-web: "npm:0.3.3"
-  checksum: 10c0/b99fe8f17157c538ca53f7f4f0a8ad219a5960216cfeb8ea54a3a47c3aa49caaa9b16a432c7d4cbf5a54eeb1592f6c20da951971928b8d913ccaf6a85d20cdd6
+  checksum: 10c0/5ac52f89efa785968543ef98d4a85f60bfb1aa3fb605f790f25b811cc253b769ec1b21f8a2299529e6ea0b91bdf497ca953df8b5c5d5df07110d31ba915dccd8
   languageName: node
   linkType: hard
 
@@ -6528,7 +6528,7 @@ __metadata:
     "@trivago/prettier-plugin-sort-imports": "npm:5.2.1"
     "@types/marked": "npm:6.0.0"
     "@types/react": "npm:19.0.8"
-    "@vercel/og": "npm:0.6.4"
+    "@vercel/og": "npm:0.6.5"
     autoprefixer: "npm:10.4.20"
     contentlayer: "npm:0.3.4"
     eslint: "npm:8.57.1"
@@ -7822,9 +7822,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"satori@npm:0.12.0":
-  version: 0.12.0
-  resolution: "satori@npm:0.12.0"
+"satori@npm:0.12.1":
+  version: 0.12.1
+  resolution: "satori@npm:0.12.1"
   dependencies:
     "@shuding/opentype.js": "npm:1.4.0-beta.0"
     css-background-parser: "npm:^0.1.0"
@@ -7837,7 +7837,7 @@ __metadata:
     parse-css-color: "npm:^0.2.1"
     postcss-value-parser: "npm:^4.2.0"
     yoga-wasm-web: "npm:^0.3.3"
-  checksum: 10c0/8ec7f76ac6ef5d01c357f31abf0f67a00ea682f4da329040b63c5cf1e3790da41c7e492ebf4a947f8ded6f329232459b6b945b4a54296b87bded21d76eb75439
+  checksum: 10c0/2cf067bc39308eb2c8be00997adcb57c1a541c6b76e839a8cdde084cf47aebc22bcae55785fba24b0d3136f0a9f32070d48401196be2f82d2ab19c5e6635b68f
   languageName: node
   linkType: hard
 
