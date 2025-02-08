@@ -8,7 +8,7 @@ interface ButtonProps {
   className?: string;
   variant?: "primary" | "secondary";
   children: React.ReactNode;
-  [x: string]: any;
+  [x: string]: unknown;
 }
 
 const Button = forwardRef<HTMLDivElement, ButtonProps>(

@@ -37,10 +37,7 @@ export default async function Page(props: {
 
   if (!page) notFound();
 
-  return (
-    // @ts-ignore Async component
-    <MDX source={page.body.raw} />
-  );
+  return <MDX source={page.body.raw} />;
 }
 
 export async function generateStaticParams() {

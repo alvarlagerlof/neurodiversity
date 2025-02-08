@@ -11,7 +11,7 @@ interface IconButtonProps {
   src: string;
   alt: string;
   badge: boolean;
-  [x: string]: any;
+  [x: string]: unknown;
 }
 
 const IconButton = forwardRef<HTMLDivElement, IconButtonProps>(
