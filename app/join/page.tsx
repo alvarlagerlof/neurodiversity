@@ -59,7 +59,7 @@ export default function JoinPage() {
               src={discordLogotype}
               alt="Discord logo"
             />
-            <Typography.Body className="!text-white !mb-8 md:max-w-[35ch] lg:max-w-[52ch]">
+            <Typography.Body className="text-white! mb-8! md:max-w-[35ch] lg:max-w-[52ch]">
               Our Discord server is the place where we organize and collaborate.
               Discord is free to use for anyone, and provides an easy to use app
               for computers and phones.

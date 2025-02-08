@@ -38,7 +38,7 @@ export function DonateDropdown() {
       </Button>
       {/* @ts-expect-error Types? */}
       <animated.div
-        className="origin-top-right absolute right-0 mt-2 w-48 p-2 rounded-xl shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+        className="origin-top-right absolute right-0 mt-2 w-48 p-2 rounded-xl shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-hidden"
         role="menu"
         aria-orientation="vertical"
         aria-labelledby="menu-button"
@@ -97,7 +97,7 @@ function Icon({ isOpen }: { isOpen: boolean }) {
       src="/icons/plus.svg"
       width="20px"
       height="20px"
-      className="!mr-[-6px]"
+      className="mr-[-6px]!"
       style={styles}
     />
   );

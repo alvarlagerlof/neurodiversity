@@ -30,7 +30,7 @@ function JoinBanner() {
           </Typography.Title>
           <Typography.Body
             as="h2"
-            className="text-center max-w-xl !text-white mb-8"
+            className="text-center max-w-xl text-white! mb-8"
           >
             We're a community looking for awesome people to join us.
             Neurodiverse people, writers, developers, designers and more are all

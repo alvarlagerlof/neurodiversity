@@ -31,7 +31,7 @@ export function LinkGridItem({ href, title, description }: Props) {
                 h-full w-full flex flex-row items-start space-x-2 rounded-xl p-4 bg-white dark:bg-card-dark ring-primary transition
                 shadow
                 hover:shadow-md
-                outline-none focus-visible:ring cursor-pointer`}
+                outline-hidden focus-visible:ring-3 cursor-pointer`}
         >
           <Image
             src={arrowLight}
@@ -52,7 +52,7 @@ export function LinkGridItem({ href, title, description }: Props) {
                 {title}
               </Link>
             </Typography.Heading>
-            <Typography.Body className="!mb-0">{description}</Typography.Body>
+            <Typography.Body className="mb-0!">{description}</Typography.Body>
           </div>
         </div>
       </Bounce>
