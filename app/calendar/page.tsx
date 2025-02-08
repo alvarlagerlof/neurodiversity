@@ -64,7 +64,8 @@ export default function CalendarPage() {
       <Main>
         <ul className="space-y-8">
           {Object.entries(sectionedEvents)
-            .sort((a: any, b: any) => a[0] - b[0])
+            // @ts-expect-error TODO
+            .sort((a: unknown, b: unknown) => a[0] - b[0])
             .map(([month, events]) => {
               return <Month key={month} month={month} events={events} />;
             })}
