@@ -12,7 +12,7 @@ interface WrongRightProps {
 
 export function WrongRight({ title, wrong, right }: WrongRightProps) {
   return (
-    <section className="space-y-8 sm:rounded-xl bg-white dark:bg-card-dark shadow px-4 py-8 sm:py-4 -mx-4">
+    <section className="space-y-8 sm:rounded-xl bg-white dark:bg-card-dark shadow-sm px-4 py-8 sm:py-4 -mx-4">
       <div>
         <IconHeading variant="cross" alt="Cross icon">
           {title} is not:
@@ -45,7 +45,7 @@ function IconHeading({ variant, alt, children }: IconHeadingProps) {
         width={24}
         height={24}
       />
-      <Typography.Heading className="!mb-0">{children}</Typography.Heading>
+      <Typography.Heading className="mb-0!">{children}</Typography.Heading>
     </div>
   );
 }

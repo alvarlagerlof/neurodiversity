@@ -21,7 +21,7 @@ function Title({ children, className = "", as = "h1", ...props }: BaseProps) {
   return (
     <Base
       as={as}
-      className={` font-extrabold text-3xl sm:text-4xl md:text-5xl !leading-tight mb-4 ${className}`}
+      className={` font-extrabold text-3xl sm:text-4xl md:text-5xl leading-tight! mb-4 ${className}`}
       {...props}
     >
       {children}

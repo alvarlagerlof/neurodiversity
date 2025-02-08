@@ -58,7 +58,7 @@ export function EventItem({ event }: { event: Event }) {
                 shadow
                 space-y-2
                 hover:shadow-md
-                outline-none focus-visible:ring cursor-pointer`}
+                outline-hidden focus-visible:ring-3 cursor-pointer`}
       >
         <div className="flex flex-row justify-between">
           {/* <Typography.Heading>{event.frontMatter.name}</Typography.Heading> */}
