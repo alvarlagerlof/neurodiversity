@@ -34,7 +34,7 @@
     "@types/marked": "6.0.0",
     "@types/react": "19.0.10",
     "eslint": "9.21.0",
-    "eslint-config-next": "15.2.0",
+    "eslint-config-next": "15.2.1",
     "eslint-config-prettier": "10.0.2",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-mdx": "3.1.5",
