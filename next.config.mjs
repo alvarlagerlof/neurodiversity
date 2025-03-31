@@ -30,6 +30,11 @@ const config = withContentlayer({
         destination: "/anxiety",
         permanent: false,
       },
+      {
+        source: "/sleeplessness",
+        destination: "/insomnia",
+        permanent: false,
+      },
     ];
   },
   async rewrites() {
