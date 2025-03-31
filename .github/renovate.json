@@ -23,7 +23,10 @@
     {
       "matchPackagePatterns": ["contentlayer"],
       "groupName": "contentlayer packages"
-
+    },
+    {
+      "matchPackagePatterns": ["react", "react-dom"],
+      "groupName": "react"
     }
   ]
 }
