@@ -3467,9 +3467,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-mdx@npm:^3.3.1":
-  version: 3.3.1
-  resolution: "eslint-mdx@npm:3.3.1"
+"eslint-mdx@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "eslint-mdx@npm:3.3.2"
   dependencies:
     acorn: "npm:^8.14.1"
     acorn-jsx: "npm:^5.3.2"
@@ -3478,7 +3478,7 @@ __metadata:
     remark-mdx: "npm:^3.1.0"
     remark-parse: "npm:^11.0.0"
     remark-stringify: "npm:^11.0.0"
-    synckit: "npm:^0.10.3"
+    synckit: "npm:^0.11.2"
     tslib: "npm:^2.8.1"
     unified: "npm:^11.0.5"
     unified-engine: "npm:^11.2.2"
@@ -3491,7 +3491,7 @@ __metadata:
   peerDependenciesMeta:
     remark-lint-file-extension:
       optional: true
-  checksum: 10c0/84c5bceba94f8ab033914bab55d28b9d4670deef97e50dde915cc90afc11b7c958334790f9360c2037a9346a3ca7fac82044de963f0c9b044962fe63b3783ca3
+  checksum: 10c0/9f6a1eb9699bbb2fdf0d5c2608ddedd851fcc981bf279f35894c1ab67a163c682b2acd8b0d5a4dee9211abd48b652b8a593946ff1fa138d4a6620ac4a53e61b6
   languageName: node
   linkType: hard
 
@@ -3561,22 +3561,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-mdx@npm:3.3.1":
-  version: 3.3.1
-  resolution: "eslint-plugin-mdx@npm:3.3.1"
+"eslint-plugin-mdx@npm:3.3.2":
+  version: 3.3.2
+  resolution: "eslint-plugin-mdx@npm:3.3.2"
   dependencies:
-    eslint-mdx: "npm:^3.3.1"
+    eslint-mdx: "npm:^3.3.2"
     mdast-util-from-markdown: "npm:^2.0.2"
     remark-mdx: "npm:^3.1.0"
     remark-parse: "npm:^11.0.0"
     remark-stringify: "npm:^11.0.0"
-    synckit: "npm:^0.10.3"
+    synckit: "npm:^0.11.2"
     tslib: "npm:^2.8.1"
     unified: "npm:^11.0.5"
     vfile: "npm:^6.0.3"
   peerDependencies:
     eslint: ">=8.0.0"
-  checksum: 10c0/48dc8ae4254a0ad7bc1819301176e850fb573f72fb304a81f768a14e4ac73f5209c45a8fc2e43c3c92d2c6947887d5a230ce27b72d75bdfa77ae337e79cbbacb
+  checksum: 10c0/ec57a07e08022417fcf2dd331bfe123a4608fb2555f682a331a8a4e78b3aa9ac16b7a9d18a437a9bc03fe7cc1cba1953b503c2506485f835a69541f16d665ce9
   languageName: node
   linkType: hard
 
@@ -6774,7 +6774,7 @@ __metadata:
     eslint-config-next: "npm:15.2.4"
     eslint-config-prettier: "npm:10.1.1"
     eslint-plugin-import: "npm:2.31.0"
-    eslint-plugin-mdx: "npm:3.3.1"
+    eslint-plugin-mdx: "npm:3.3.2"
     eslint-plugin-prettier: "npm:5.2.5"
     fs: "npm:0.0.1-security"
     fs-extra: "npm:11.3.0"
@@ -8549,13 +8549,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"synckit@npm:^0.10.2, synckit@npm:^0.10.3":
+"synckit@npm:^0.10.2":
   version: 0.10.3
   resolution: "synckit@npm:0.10.3"
   dependencies:
     "@pkgr/core": "npm:^0.2.0"
     tslib: "npm:^2.8.1"
   checksum: 10c0/9855d10231ae9b69c3aa08d46c96bd4befdcac33da44e29fb80e5c1430e453b5a33b8c073cdd25cfe9578f1d625c7d60c394ece1e202237116c1484def614041
+  languageName: node
+  linkType: hard
+
+"synckit@npm:^0.11.2":
+  version: 0.11.2
+  resolution: "synckit@npm:0.11.2"
+  dependencies:
+    "@pkgr/core": "npm:^0.2.0"
+    tslib: "npm:^2.8.1"
+  checksum: 10c0/e7744abce8041233d6be40c05dcbff6177aec88f2625a586a01855aa97757d3b6c640714e0c73eed917a382bd76eb815d4af66ca80ca8f94f880fd4dfb9429c6
   languageName: node
   linkType: hard
 
