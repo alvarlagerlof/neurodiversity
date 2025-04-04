@@ -15,7 +15,7 @@
     "path": false
   },
   "dependencies": {
-    "@vercel/og": "0.6.5",
+    "@vercel/og": "0.6.8",
     "contentlayer": "0.3.4",
     "markdown-wasm": "1.2.0",
     "next": "15.2.4",
