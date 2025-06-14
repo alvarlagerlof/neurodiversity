@@ -2318,7 +2318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.0.0, acorn@npm:^8.14.0, acorn@npm:^8.14.1":
+"acorn@npm:^8.0.0, acorn@npm:^8.14.0":
   version: 8.14.1
   resolution: "acorn@npm:8.14.1"
   bin:
@@ -3559,19 +3559,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-mdx@npm:^3.4.2":
-  version: 3.4.2
-  resolution: "eslint-mdx@npm:3.4.2"
+"eslint-mdx@npm:^3.5.0":
+  version: 3.5.0
+  resolution: "eslint-mdx@npm:3.5.0"
   dependencies:
-    acorn: "npm:^8.14.1"
+    acorn: "npm:^8.15.0"
     acorn-jsx: "npm:^5.3.2"
-    espree: "npm:^9.6.1 || ^10.3.0"
+    espree: "npm:^9.6.1 || ^10.4.0"
     estree-util-visit: "npm:^2.0.0"
     remark-mdx: "npm:^3.1.0"
     remark-parse: "npm:^11.0.0"
     remark-stringify: "npm:^11.0.0"
-    synckit: "npm:^0.11.4"
-    tslib: "npm:^2.8.1"
+    synckit: "npm:^0.11.8"
     unified: "npm:^11.0.5"
     unified-engine: "npm:^11.2.2"
     unist-util-visit: "npm:^5.0.0"
@@ -3583,7 +3582,7 @@ __metadata:
   peerDependenciesMeta:
     remark-lint-file-extension:
       optional: true
-  checksum: 10c0/1eb156c79fa7d4c9367af6a4c8aea33d347e91a95826b035cfb3b84b95cb6a8247266ee2b882dc37b15eb9a9ead0b852bfd53f8de774353942fce92ffa2a2aef
+  checksum: 10c0/e036724453fac4defaead842c1bf0ebc753510472f9427677711ec7809663dbcbe593b3a730a83aec9547b3bd2593abd115ff74597da6042cadd77f4c4f9b1ca
   languageName: node
   linkType: hard
 
@@ -3653,24 +3652,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-mdx@npm:3.4.2":
-  version: 3.4.2
-  resolution: "eslint-plugin-mdx@npm:3.4.2"
+"eslint-plugin-mdx@npm:3.5.0":
+  version: 3.5.0
+  resolution: "eslint-plugin-mdx@npm:3.5.0"
   dependencies:
-    eslint-mdx: "npm:^3.4.2"
+    eslint-mdx: "npm:^3.5.0"
     mdast-util-from-markdown: "npm:^2.0.2"
     mdast-util-mdx: "npm:^3.0.0"
     micromark-extension-mdxjs: "npm:^3.0.0"
     remark-mdx: "npm:^3.1.0"
     remark-parse: "npm:^11.0.0"
     remark-stringify: "npm:^11.0.0"
-    synckit: "npm:^0.11.4"
-    tslib: "npm:^2.8.1"
+    synckit: "npm:^0.11.8"
     unified: "npm:^11.0.5"
     vfile: "npm:^6.0.3"
   peerDependencies:
     eslint: ">=8.0.0"
-  checksum: 10c0/50f3ff2340677cc867327241878a1a7e6105dbcef31e28b1fe0a567a1d02c6aebea0053019b28a46014803f00b86f195655ffb12917a7bb43be0933b1986fd5c
+  checksum: 10c0/9ebc9a78e545a86469494aac14b6f7f91fe40d424e08137dfe6e12061ee2af19eb5153f8b158438e90b393dbe452413caa2bdfc2f3f5b5f355429668106fdd27
   languageName: node
   linkType: hard
 
@@ -3812,7 +3810,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"espree@npm:^10.0.1, espree@npm:^9.6.1 || ^10.3.0":
+"espree@npm:^10.0.1":
   version: 10.3.0
   resolution: "espree@npm:10.3.0"
   dependencies:
@@ -3823,7 +3821,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"espree@npm:^10.4.0":
+"espree@npm:^10.4.0, espree@npm:^9.6.1 || ^10.4.0":
   version: 10.4.0
   resolution: "espree@npm:10.4.0"
   dependencies:
@@ -6917,7 +6915,7 @@ __metadata:
     eslint-config-next: "npm:15.3.3"
     eslint-config-prettier: "npm:10.1.5"
     eslint-plugin-import: "npm:2.31.0"
-    eslint-plugin-mdx: "npm:3.4.2"
+    eslint-plugin-mdx: "npm:3.5.0"
     eslint-plugin-prettier: "npm:5.4.1"
     fs: "npm:0.0.1-security"
     fs-extra: "npm:11.3.0"
@@ -8701,7 +8699,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"synckit@npm:^0.11.4, synckit@npm:^0.11.7":
+"synckit@npm:^0.11.7, synckit@npm:^0.11.8":
   version: 0.11.8
   resolution: "synckit@npm:0.11.8"
   dependencies:
@@ -8820,7 +8818,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.3, tslib@npm:^2.4.0, tslib@npm:^2.4.1, tslib@npm:^2.8.0, tslib@npm:^2.8.1":
+"tslib@npm:^2.0.3, tslib@npm:^2.4.0, tslib@npm:^2.4.1, tslib@npm:^2.8.0":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
