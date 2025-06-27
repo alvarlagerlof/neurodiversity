@@ -38,7 +38,7 @@
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-mdx": "3.5.0",
-    "eslint-plugin-prettier": "5.5.0",
+    "eslint-plugin-prettier": "5.5.1",
     "fs": "0.0.1-security",
     "fs-extra": "11.3.0",
     "git-repo-info": "2.1.1",
