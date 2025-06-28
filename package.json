@@ -33,7 +33,7 @@
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "@types/marked": "6.0.0",
     "@types/react": "19.1.8",
-    "eslint": "9.29.0",
+    "eslint": "9.30.0",
     "eslint-config-next": "15.3.4",
     "eslint-config-prettier": "10.1.5",
     "eslint-plugin-import": "2.32.0",
