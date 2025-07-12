@@ -3585,9 +3585,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-mdx@npm:^3.6.0":
-  version: 3.6.0
-  resolution: "eslint-mdx@npm:3.6.0"
+"eslint-mdx@npm:^3.6.2":
+  version: 3.6.2
+  resolution: "eslint-mdx@npm:3.6.2"
   dependencies:
     acorn: "npm:^8.15.0"
     acorn-jsx: "npm:^5.3.2"
@@ -3608,7 +3608,7 @@ __metadata:
   peerDependenciesMeta:
     remark-lint-file-extension:
       optional: true
-  checksum: 10c0/f06fb7bc9966a1e1f7d1485854ba981afa135da387fc71c36764711847a990111c7547acbdbe6cb62723c30e6ffc18a9801ad25aa39b43e0edb6b97116d16297
+  checksum: 10c0/07238395e932f5caf47a0301fc61f350a24c57e4bf923601f3e767f02d5f7ac18d708dd59819bcc1af54f16e5e6cc6aabb37a08614faade2a5e3fc317e802424
   languageName: node
   linkType: hard
 
@@ -3678,11 +3678,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-mdx@npm:3.6.0":
-  version: 3.6.0
-  resolution: "eslint-plugin-mdx@npm:3.6.0"
+"eslint-plugin-mdx@npm:3.6.2":
+  version: 3.6.2
+  resolution: "eslint-plugin-mdx@npm:3.6.2"
   dependencies:
-    eslint-mdx: "npm:^3.6.0"
+    eslint-mdx: "npm:^3.6.2"
     mdast-util-from-markdown: "npm:^2.0.2"
     mdast-util-mdx: "npm:^3.0.0"
     micromark-extension-mdxjs: "npm:^3.0.0"
@@ -3694,7 +3694,7 @@ __metadata:
     vfile: "npm:^6.0.3"
   peerDependencies:
     eslint: ">=8.0.0"
-  checksum: 10c0/34fa48a8b428d9d9330d561a75d449ed9a5e81524d81e96b0f7d1313c56ad64be81ab17505c024fbe87faa5c06a5d7c70b9a5c15fbeb69fcd28d79b1ab3f13de
+  checksum: 10c0/16be144348fc6fe66d8a2d7d0f739084991aea5f79c3c4b4b20232ead0e826a5e26806b0fcdbfcda4cef325369a6ad1630bdb1d66a3b3dce9d5c0f765e110ee5
   languageName: node
   linkType: hard
 
@@ -6916,7 +6916,7 @@ __metadata:
     eslint-config-next: "npm:15.3.5"
     eslint-config-prettier: "npm:10.1.5"
     eslint-plugin-import: "npm:2.32.0"
-    eslint-plugin-mdx: "npm:3.6.0"
+    eslint-plugin-mdx: "npm:3.6.2"
     eslint-plugin-prettier: "npm:5.5.1"
     fs: "npm:0.0.1-security"
     fs-extra: "npm:11.3.0"
