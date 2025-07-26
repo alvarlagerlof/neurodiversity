@@ -2323,14 +2323,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/og@npm:0.7.2":
-  version: 0.7.2
-  resolution: "@vercel/og@npm:0.7.2"
+"@vercel/og@npm:0.8.5":
+  version: 0.8.5
+  resolution: "@vercel/og@npm:0.8.5"
   dependencies:
     "@resvg/resvg-wasm": "npm:2.4.0"
-    satori: "npm:0.15.2"
-    yoga-wasm-web: "npm:0.3.3"
-  checksum: 10c0/7a8aa297d3794fc6704d5004a23c2809ee7f5458d8e76e7339e9db5d54b79fa4cafcc62ee55db781e51589cac31ac5119331c540674063bdd06e2e5333563f33
+    satori: "npm:0.16.0"
+  checksum: 10c0/2b811a26e00fe371cc93710bbce804708cfd160a316acf7ad94e34694c50a27ac24874a3ca493edc9bf00f420ccc2a3d7876fad464cb826db1eee1e5e83af1d5
   languageName: node
   linkType: hard
 
@@ -6914,7 +6913,7 @@ __metadata:
     "@trivago/prettier-plugin-sort-imports": "npm:5.2.2"
     "@types/marked": "npm:6.0.0"
     "@types/react": "npm:19.1.8"
-    "@vercel/og": "npm:0.7.2"
+    "@vercel/og": "npm:0.8.5"
     contentlayer: "npm:0.3.4"
     eslint: "npm:9.31.0"
     eslint-config-next: "npm:15.4.4"
@@ -8054,9 +8053,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"satori@npm:0.15.2":
-  version: 0.15.2
-  resolution: "satori@npm:0.15.2"
+"satori@npm:0.16.0":
+  version: 0.16.0
+  resolution: "satori@npm:0.16.0"
   dependencies:
     "@shuding/opentype.js": "npm:1.4.0-beta.0"
     css-background-parser: "npm:^0.1.0"
@@ -8068,8 +8067,8 @@ __metadata:
     linebreak: "npm:^1.1.0"
     parse-css-color: "npm:^0.2.1"
     postcss-value-parser: "npm:^4.2.0"
-    yoga-wasm-web: "npm:^0.3.3"
-  checksum: 10c0/9fc2c120837858c95e23f89d40b6f322c2b4fa0166eb8ca021f147a9b5e1917e45e0758863c888599586f818b82b0b3501cc418592f8c0b48283c9976664bab3
+    yoga-layout: "npm:^3.2.1"
+  checksum: 10c0/b6d7c28c53179aa723ebb357bbc9aab3c11709e8e8a8a811eb12df2ff88957a593a140e8b3e2726d6b8608c837dfe52ced2cd56d880a5d33b7387f60aeb5a85e
   languageName: node
   linkType: hard
 
@@ -9611,10 +9610,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yoga-wasm-web@npm:0.3.3, yoga-wasm-web@npm:^0.3.3":
-  version: 0.3.3
-  resolution: "yoga-wasm-web@npm:0.3.3"
-  checksum: 10c0/d46ae3a436409e89eb0ea3b8c7624dafaf2c846d9038fdf8aa0cc839f73a2577b679bdc22997596177de74c580a6cdc3206c98fd2acd91b66f85462d9d9d260a
+"yoga-layout@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "yoga-layout@npm:3.2.1"
+  checksum: 10c0/9001e51be993c85e03757e5a04a2b61b8b30c9e5a7865d0156ca87a6431a3b717d51eb4990bfe588189fcfeac688dd9c3de707bbd50d1c344a84e63974cc54a8
   languageName: node
   linkType: hard
 
