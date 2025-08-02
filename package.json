@@ -48,7 +48,7 @@
     "postcss": "8.5.6",
     "prettier": "3.6.2",
     "tailwindcss": "4.1.11",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   },
   "resolutions": {
     "@types/react": "19.1.9"
