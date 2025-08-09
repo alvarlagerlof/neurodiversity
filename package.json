@@ -44,7 +44,7 @@
     "git-repo-info": "2.1.1",
     "gray-matter": "4.0.3",
     "luxon": "3.7.1",
-    "marked": "16.1.1",
+    "marked": "16.1.2",
     "postcss": "8.5.6",
     "prettier": "3.6.2",
     "tailwindcss": "4.1.11",
