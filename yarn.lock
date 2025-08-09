@@ -4221,14 +4221,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:11.3.0":
-  version: 11.3.0
-  resolution: "fs-extra@npm:11.3.0"
+"fs-extra@npm:11.3.1":
+  version: 11.3.1
+  resolution: "fs-extra@npm:11.3.1"
   dependencies:
     graceful-fs: "npm:^4.2.0"
     jsonfile: "npm:^6.0.1"
     universalify: "npm:^2.0.0"
-  checksum: 10c0/5f95e996186ff45463059feb115a22fb048bdaf7e487ecee8a8646c78ed8fdca63630e3077d4c16ce677051f5e60d3355a06f3cd61f3ca43f48cc58822a44d0a
+  checksum: 10c0/61e5b7285b1ca72c68dfe1058b2514294a922683afac2a80aa90540f9bd85370763d675e3b408ef500077d355956fece3bd24b546790e261c3d3015967e2b2d9
   languageName: node
   linkType: hard
 
@@ -6922,7 +6922,7 @@ __metadata:
     eslint-plugin-mdx: "npm:3.6.2"
     eslint-plugin-prettier: "npm:5.5.4"
     fs: "npm:0.0.1-security"
-    fs-extra: "npm:11.3.0"
+    fs-extra: "npm:11.3.1"
     git-repo-info: "npm:2.1.1"
     gray-matter: "npm:4.0.3"
     luxon: "npm:3.7.1"
