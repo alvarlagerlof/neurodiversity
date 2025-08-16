@@ -32,7 +32,7 @@
     "@tailwindcss/postcss": "4.1.11",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "@types/marked": "6.0.0",
-    "@types/react": "19.1.9",
+    "@types/react": "19.1.10",
     "eslint": "9.33.0",
     "eslint-config-next": "15.4.6",
     "eslint-config-prettier": "10.1.8",
@@ -51,7 +51,7 @@
     "typescript": "5.9.2"
   },
   "resolutions": {
-    "@types/react": "19.1.9"
+    "@types/react": "19.1.10"
   },
   "packageManager": "yarn@4.9.2"
 }
