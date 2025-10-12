@@ -46,7 +46,6 @@ function Icon({ isOpen: isOpen }: { isOpen: boolean }) {
     <>
       <animated.img
         aria-hidden
-        // @ts-expect-error Types?
         alt=""
         src="/icons/plus-outline-light.svg"
         width="24px"
@@ -56,7 +55,6 @@ function Icon({ isOpen: isOpen }: { isOpen: boolean }) {
       />
       <animated.img
         aria-hidden
-        // @ts-expect-error Types?
         alt=""
         src="/icons/plus-outline-dark.svg"
         width="24px"
@@ -84,7 +82,6 @@ function Content({ isOpen, children }: ContentProps) {
   });
 
   return (
-    // @ts-expect-error Types?
     <animated.div
       style={{
         overflow: "clip",
