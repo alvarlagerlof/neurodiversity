@@ -28,6 +28,10 @@
     {
       "matchPackagePatterns": ["react", "react-dom"],
       "groupName": "react"
+    },
+    {
+      "matchPackagePatterns": ["next"],
+      "groupName": "next"
     }
   ]
 }
