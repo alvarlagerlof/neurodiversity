@@ -40,7 +40,7 @@
     "eslint-plugin-mdx": "3.6.2",
     "eslint-plugin-prettier": "5.5.4",
     "fs": "0.0.1-security",
-    "fs-extra": "11.3.2",
+    "fs-extra": "11.3.3",
     "git-repo-info": "2.1.1",
     "gray-matter": "4.0.3",
     "luxon": "3.7.2",
