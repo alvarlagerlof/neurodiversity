@@ -2441,13 +2441,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/og@npm:0.8.5":
-  version: 0.8.5
-  resolution: "@vercel/og@npm:0.8.5"
+"@vercel/og@npm:0.8.6":
+  version: 0.8.6
+  resolution: "@vercel/og@npm:0.8.6"
   dependencies:
     "@resvg/resvg-wasm": "npm:2.4.0"
     satori: "npm:0.16.0"
-  checksum: 10c0/2b811a26e00fe371cc93710bbce804708cfd160a316acf7ad94e34694c50a27ac24874a3ca493edc9bf00f420ccc2a3d7876fad464cb826db1eee1e5e83af1d5
+  checksum: 10c0/07d51c96fb7837327b79e2ebe9aeeaf9a8fe49416ad467d6951985bd91269c259d7ff608ff5fa3f50a16fdd5eb234cfc398e211df6f5c3d10c1319e7d50702fb
   languageName: node
   linkType: hard
 
@@ -7120,7 +7120,7 @@ __metadata:
     "@trivago/prettier-plugin-sort-imports": "npm:6.0.0"
     "@types/marked": "npm:6.0.0"
     "@types/react": "npm:19.2.7"
-    "@vercel/og": "npm:0.8.5"
+    "@vercel/og": "npm:0.8.6"
     contentlayer: "npm:0.3.4"
     eslint: "npm:9.39.1"
     eslint-config-next: "npm:16.0.7"
