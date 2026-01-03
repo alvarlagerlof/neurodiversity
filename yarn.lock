@@ -1938,9 +1938,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trivago/prettier-plugin-sort-imports@npm:6.0.0":
-  version: 6.0.0
-  resolution: "@trivago/prettier-plugin-sort-imports@npm:6.0.0"
+"@trivago/prettier-plugin-sort-imports@npm:6.0.1":
+  version: 6.0.1
+  resolution: "@trivago/prettier-plugin-sort-imports@npm:6.0.1"
   dependencies:
     "@babel/generator": "npm:^7.28.0"
     "@babel/parser": "npm:^7.28.0"
@@ -1965,7 +1965,7 @@ __metadata:
       optional: true
     svelte:
       optional: true
-  checksum: 10c0/f964257dd0678085087b38c4f53bfa2ea4210c579163f471bf27e85aac544a05d9c51fbde2ac6c1cb6d0994fb2f6714c88d425a826eded622795a63db60d119a
+  checksum: 10c0/52e807e899a92e992b8e51ee08ec8da29512862d37840afff377a95e599398e6936992066a3f8c50897630301a4b75c6a58ef384b7d1da946b4a631a2ea7e211
   languageName: node
   linkType: hard
 
@@ -7109,7 +7109,7 @@ __metadata:
   dependencies:
     "@eslint/eslintrc": "npm:3.3.3"
     "@tailwindcss/postcss": "npm:4.1.18"
-    "@trivago/prettier-plugin-sort-imports": "npm:6.0.0"
+    "@trivago/prettier-plugin-sort-imports": "npm:6.0.1"
     "@types/marked": "npm:6.0.0"
     "@types/react": "npm:19.2.7"
     "@vercel/og": "npm:0.8.6"
