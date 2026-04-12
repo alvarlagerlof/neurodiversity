@@ -7184,7 +7184,7 @@ __metadata:
     react-dom: "npm:19.2.4"
     react-spring: "npm:@react-spring/web@10.0.3"
     react-use-keypress: "npm:1.4.0"
-    tailwindcss: "npm:4.1.18"
+    tailwindcss: "npm:4.2.2"
     typescript: "npm:5.9.3"
   languageName: unknown
   linkType: soft
@@ -8963,6 +8963,13 @@ __metadata:
   version: 4.1.18
   resolution: "tailwindcss@npm:4.1.18"
   checksum: 10c0/c79263cea0b2c577859b02f28284caa4eb3844e4d0f563686726ca97817c045c5c395a55bc776daaa351ba9e4aefa9a75bfbb43c22d86f3c573eecc2b87d6bf1
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:4.2.2":
+  version: 4.2.2
+  resolution: "tailwindcss@npm:4.2.2"
+  checksum: 10c0/6eae8a125c35d504ba6c518d26ec64fba694ff4a9ab9b9cd9883050128e0b7afdf491388c472d9bed2624664c1c7d4a133d19b653151a6b52e6ce6953168a857
   languageName: node
   linkType: hard
 
