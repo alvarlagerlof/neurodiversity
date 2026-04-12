@@ -35,5 +35,13 @@ const components = {
 };
 
 export async function MDX({ source }: { source: string }) {
-  return <MDXRemote components={components} source={source} />;
+  return (
+    <MDXRemote
+      components={components}
+      source={source}
+      options={{
+        blockJS: false,
+      }}
+    />
+  );
 }
