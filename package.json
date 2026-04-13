@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",
-    "build": "next build --webpack && yarn run lint -v",
+    "build": "next build --webpack && yarn run lint",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "eslint"
