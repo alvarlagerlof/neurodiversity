@@ -40,7 +40,7 @@ export default async function IndexPage() {
       <Main>
         <section>
           <LinkGrid>
-            {allPages.map(({ slug, name, explaination }) => {
+            {allPages.map(({ slug, name, explainationaaa }) => {
               return (
                 <LinkGridItem
                   key={slug}
