@@ -1,30 +1,31 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import { defineConfig, globalIgnores } from "eslint/config";
 
+import eslint from "@eslint/js";
+import tseslint from "typescript-eslint";
+import eslintNextPlugin from "@next/eslint-plugin-next";
 import * as mdx from "eslint-plugin-mdx";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+const eslintConfig = defineConfig([
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
   {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    plugins: {
+      next: eslintNextPlugin,
+    },
     rules: {
       "react/no-unescaped-entities": "off",
+    },
+    settings: {
+      next: {
+        rootDir: ".",
+      },
     },
   },
   {
     ...mdx.flat,
-    // optional, if you want to lint code blocks at the same
     processor: mdx.createRemarkProcessor({
       lintCodeBlocks: true,
-      // optional, if you want to disable language mapper, set it to `false`
-      // if you want to override the default language mapper inside, you can provide your own
       languageMapper: {},
     }),
   },
@@ -37,6 +38,7 @@ const eslintConfig = [
       "prefer-const": "error",
     },
   },
-];
+  globalIgnores(["*.config.js", ".next/**", "out/**", "build/**", "next-env.d.ts", ".contentlayer/**", "node_modules/**", "dist/**"]),
+]);
 
 export default eslintConfig;
