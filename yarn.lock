@@ -2465,13 +2465,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/og@npm:0.8.6":
-  version: 0.8.6
-  resolution: "@vercel/og@npm:0.8.6"
+"@vercel/og@npm:0.11.1":
+  version: 0.11.1
+  resolution: "@vercel/og@npm:0.11.1"
   dependencies:
     "@resvg/resvg-wasm": "npm:2.4.0"
-    satori: "npm:0.16.0"
-  checksum: 10c0/07d51c96fb7837327b79e2ebe9aeeaf9a8fe49416ad467d6951985bd91269c259d7ff608ff5fa3f50a16fdd5eb234cfc398e211df6f5c3d10c1319e7d50702fb
+    satori: "npm:0.25.0"
+    sharp: "npm:^0.34.5"
+  dependenciesMeta:
+    sharp:
+      optional: true
+  checksum: 10c0/c14c20ea0044d5de322ec82b674e25e56ffa11a83e1033fc2cc4489c5ddef4996e9847eded32ecc7019468317f840ed8fdfa8039e8aa74eb8c150ea73904529c
   languageName: node
   linkType: hard
 
@@ -3151,10 +3155,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-gradient-parser@npm:^0.0.16":
-  version: 0.0.16
-  resolution: "css-gradient-parser@npm:0.0.16"
-  checksum: 10c0/7f05794ad99927ed4dcb9b96571117eea5d4426366f6dc38932035f0e73729ed0edc2a4144576851b2987cdfe8acf9e8d9f2f08c9daf69d085ae2679779bbc5a
+"css-gradient-parser@npm:^0.0.17":
+  version: 0.0.17
+  resolution: "css-gradient-parser@npm:0.0.17"
+  checksum: 10c0/24e2694562aa54bee238391d3bd2fdfe3b865bb2c4e7f71f68a4a78733387ccfc6bc11fd8017f67e2813b67c051b5ab322dab95754a92c333ba8308771538bc8
   languageName: node
   linkType: hard
 
@@ -7152,7 +7156,7 @@ __metadata:
     "@trivago/prettier-plugin-sort-imports": "npm:6.0.2"
     "@types/marked": "npm:6.0.0"
     "@types/react": "npm:19.2.14"
-    "@vercel/og": "npm:0.8.6"
+    "@vercel/og": "npm:0.11.1"
     contentlayer: "npm:0.3.4"
     eslint: "npm:10.2.1"
     eslint-config-next: "npm:16.1.6"
@@ -8352,14 +8356,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"satori@npm:0.16.0":
-  version: 0.16.0
-  resolution: "satori@npm:0.16.0"
+"satori@npm:0.25.0":
+  version: 0.25.0
+  resolution: "satori@npm:0.25.0"
   dependencies:
     "@shuding/opentype.js": "npm:1.4.0-beta.0"
     css-background-parser: "npm:^0.1.0"
     css-box-shadow: "npm:1.0.0-3"
-    css-gradient-parser: "npm:^0.0.16"
+    css-gradient-parser: "npm:^0.0.17"
     css-to-react-native: "npm:^3.0.0"
     emoji-regex-xs: "npm:^2.0.1"
     escape-html: "npm:^1.0.3"
@@ -8367,7 +8371,7 @@ __metadata:
     parse-css-color: "npm:^0.2.1"
     postcss-value-parser: "npm:^4.2.0"
     yoga-layout: "npm:^3.2.1"
-  checksum: 10c0/b6d7c28c53179aa723ebb357bbc9aab3c11709e8e8a8a811eb12df2ff88957a593a140e8b3e2726d6b8608c837dfe52ced2cd56d880a5d33b7387f60aeb5a85e
+  checksum: 10c0/f6930f0f1219d7ac04fe2eb4b7a64216a9c984b6a8e6cbde64265da0547615bbb1723624e1fd041943938b4feb6340cdf42990cc2bd58a41427f100f091a25ac
   languageName: node
   linkType: hard
 
@@ -8443,7 +8447,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sharp@npm:^0.34.4":
+"sharp@npm:^0.34.4, sharp@npm:^0.34.5":
   version: 0.34.5
   resolution: "sharp@npm:0.34.5"
   dependencies:
