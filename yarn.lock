@@ -5951,12 +5951,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:17.0.6":
-  version: 17.0.6
-  resolution: "marked@npm:17.0.6"
+"marked@npm:18.0.2":
+  version: 18.0.2
+  resolution: "marked@npm:18.0.2"
   bin:
     marked: bin/marked.js
-  checksum: 10c0/77961fbb360511d6638491e097cb15b1ef5e643f27c25b9cd52aa3cd92e216fc3cda7dbfc6a10adb7922d1b38df132510df65de4afe6c53c7280772c9d4221bd
+  checksum: 10c0/d04f58c0dee158a8069dad88de549b0039f2af7e1f0fd078aa783f360655e39296662f6c722dc6dd94c1c9ce9ba7ca9355ee1d8d77dd7b9a2f8162ebac6d9bbd
   languageName: node
   linkType: hard
 
@@ -7180,7 +7180,7 @@ __metadata:
     gray-matter: "npm:4.0.3"
     luxon: "npm:3.7.2"
     markdown-wasm: "npm:1.2.0"
-    marked: "npm:17.0.6"
+    marked: "npm:18.0.2"
     next: "npm:16.2.4"
     next-contentlayer: "npm:0.3.4"
     next-mdx-remote: "npm:6.0.0"
