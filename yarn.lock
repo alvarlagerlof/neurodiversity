@@ -7177,7 +7177,7 @@ __metadata:
     next-contentlayer: "npm:0.3.4"
     next-mdx-remote: "npm:6.0.0"
     next-sitemap: "npm:4.2.3"
-    postcss: "npm:8.5.10"
+    postcss: "npm:8.5.11"
     prettier: "npm:3.8.3"
     react: "npm:19.2.5"
     react-dom: "npm:19.2.5"
@@ -7775,7 +7775,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.5.10, postcss@npm:^8.5.6":
+"postcss@npm:8.5.11":
+  version: 8.5.11
+  resolution: "postcss@npm:8.5.11"
+  dependencies:
+    nanoid: "npm:^3.3.11"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10c0/ade51634ff804a143b5bbdb55b0b2cc762a30261d352cf1d7468cca7db7921a4a64f4857d2aa9af76cc24493d67fe1e3cb76cae6c6310a4e844b0f783973e7ed
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.5.6":
   version: 8.5.10
   resolution: "postcss@npm:8.5.10"
   dependencies:
@@ -8966,13 +8977,6 @@ __metadata:
   dependencies:
     "@pkgr/core": "npm:^0.2.9"
   checksum: 10c0/cc4d446806688ae0d728ae7bb3f53176d065cf9536647fb85bdd721dcefbd7bf94874df6799ff61580f2b03a392659219b778a9254ad499f9a1f56c34787c235
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.2.2":
-  version: 4.2.2
-  resolution: "tailwindcss@npm:4.2.2"
-  checksum: 10c0/6eae8a125c35d504ba6c518d26ec64fba694ff4a9ab9b9cd9883050128e0b7afdf491388c472d9bed2624664c1c7d4a133d19b653151a6b52e6ce6953168a857
   languageName: node
   linkType: hard
 
