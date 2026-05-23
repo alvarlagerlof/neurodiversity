@@ -24,7 +24,7 @@
     "next-sitemap": "4.2.3",
     "react": "19.2.6",
     "react-dom": "19.2.6",
-    "react-spring": "npm:@react-spring/web@10.0.3",
+    "react-spring": "npm:@react-spring/web@10.1.0",
     "react-use-keypress": "1.4.0"
   },
   "devDependencies": {
@@ -34,7 +34,7 @@
     "@tailwindcss/postcss": "4.3.0",
     "@trivago/prettier-plugin-sort-imports": "6.0.2",
     "@types/marked": "6.0.0",
-    "@types/react": "19.2.14",
+    "@types/react": "19.2.15",
     "eslint": "10.4.0",
     "eslint-config-next": "16.2.6",
     "eslint-config-prettier": "10.1.8",
@@ -54,7 +54,7 @@
     "typescript": "6.0.3"
   },
   "resolutions": {
-    "@types/react": "19.2.14"
+    "@types/react": "19.2.15"
   },
   "packageManager": "yarn@4.14.1"
 }
