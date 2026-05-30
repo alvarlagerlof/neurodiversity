@@ -3703,7 +3703,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-mdx@npm:3.7.1":
+"eslint-mdx@npm:3.7.1, eslint-mdx@npm:^3.7.1":
   version: 3.7.1
   resolution: "eslint-mdx@npm:3.7.1"
   dependencies:
@@ -3726,32 +3726,6 @@ __metadata:
     remark-lint-file-extension:
       optional: true
   checksum: 10c0/93ce08507e05935395e30346698861489c000b11c19e96a4f488015d2d697d4fb425fa61dbd262113210c304525c1759b555bdf349d8dfe5d02cb00202e0a74d
-  languageName: node
-  linkType: hard
-
-"eslint-mdx@npm:^3.7.0":
-  version: 3.7.0
-  resolution: "eslint-mdx@npm:3.7.0"
-  dependencies:
-    acorn: "npm:^8.15.0"
-    acorn-jsx: "npm:^5.3.2"
-    espree: "npm:^9.6.1 || ^10.4.0"
-    estree-util-visit: "npm:^2.0.0"
-    remark-mdx: "npm:^3.1.0"
-    remark-parse: "npm:^11.0.0"
-    remark-stringify: "npm:^11.0.0"
-    synckit: "npm:^0.11.8"
-    unified: "npm:^11.0.5"
-    unified-engine: "npm:^11.2.2"
-    unist-util-visit: "npm:^5.0.0"
-    vfile: "npm:^6.0.3"
-  peerDependencies:
-    eslint: ">=8.0.0"
-    remark-lint-file-extension: "*"
-  peerDependenciesMeta:
-    remark-lint-file-extension:
-      optional: true
-  checksum: 10c0/e8c4a4616f58ee73d59eb6bf30cbc334530548795855d770abe5377751a44c0cd86cbf534197c36c9f0b5e10cd62f9641e1ad9b9f38cbf8b43ac75fc3057e0bb
   languageName: node
   linkType: hard
 
@@ -3821,11 +3795,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-mdx@npm:3.7.0":
-  version: 3.7.0
-  resolution: "eslint-plugin-mdx@npm:3.7.0"
+"eslint-plugin-mdx@npm:3.7.1":
+  version: 3.7.1
+  resolution: "eslint-plugin-mdx@npm:3.7.1"
   dependencies:
-    eslint-mdx: "npm:^3.7.0"
+    eslint-mdx: "npm:^3.7.1"
     mdast-util-from-markdown: "npm:^2.0.2"
     mdast-util-mdx: "npm:^3.0.0"
     micromark-extension-mdxjs: "npm:^3.0.0"
@@ -3837,7 +3811,7 @@ __metadata:
     vfile: "npm:^6.0.3"
   peerDependencies:
     eslint: ">=8.0.0"
-  checksum: 10c0/a79a7900725e022fce2366c52359689e43b0ce4a94a172717068d50f3f51e2e4b53020c8de6582759370fb32934fd163f3768afe4c1f9e630621f27ca0b4bd6c
+  checksum: 10c0/bbe6944e0556a43995646a1d60a0153395be648c761c2c1ececc612072f0bac6395ebdc051e3c323ddbb114d589bf5da2e8c5a5ef226fc5e53b89d4f56225ead
   languageName: node
   linkType: hard
 
@@ -6983,7 +6957,7 @@ __metadata:
     eslint-config-prettier: "npm:10.1.8"
     eslint-mdx: "npm:3.7.1"
     eslint-plugin-import: "npm:2.32.0"
-    eslint-plugin-mdx: "npm:3.7.0"
+    eslint-plugin-mdx: "npm:3.7.1"
     eslint-plugin-prettier: "npm:5.5.5"
     fs: "npm:0.0.1-security"
     fs-extra: "npm:11.3.5"
