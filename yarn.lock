@@ -3710,7 +3710,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-mdx@npm:3.7.1, eslint-mdx@npm:^3.7.1":
+"eslint-mdx@npm:3.8.1":
+  version: 3.8.1
+  resolution: "eslint-mdx@npm:3.8.1"
+  dependencies:
+    acorn: "npm:^8.15.0"
+    acorn-jsx: "npm:^5.3.2"
+    espree: "npm:^9.6.1 || ^10.4.0 || ^11.2.0"
+    estree-util-visit: "npm:^2.0.0"
+    remark-mdx: "npm:^3.1.0"
+    remark-parse: "npm:^11.0.0"
+    remark-stringify: "npm:^11.0.0"
+    synckit: "npm:^0.11.8"
+    unified: "npm:^11.0.5"
+    unified-engine: "npm:^11.2.2"
+    unist-util-visit: "npm:^5.0.0"
+    vfile: "npm:^6.0.3"
+  peerDependencies:
+    eslint: ">=8.0.0"
+    remark-lint-file-extension: "*"
+  peerDependenciesMeta:
+    remark-lint-file-extension:
+      optional: true
+  checksum: 10c0/0ce68b91fb2159a740ca337ad0e5b79cde60cece08500496d67b6137c2b5f631d9867fe1f66384940ed9e21711925e6e4a6eeec85a3e459419bf93a61bb595c8
+  languageName: node
+  linkType: hard
+
+"eslint-mdx@npm:^3.7.1":
   version: 3.7.1
   resolution: "eslint-mdx@npm:3.7.1"
   dependencies:
@@ -3974,7 +4000,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"espree@npm:^11.2.0":
+"espree@npm:^11.2.0, espree@npm:^9.6.1 || ^10.4.0 || ^11.2.0":
   version: 11.2.0
   resolution: "espree@npm:11.2.0"
   dependencies:
@@ -6962,7 +6988,7 @@ __metadata:
     eslint: "npm:10.4.0"
     eslint-config-next: "npm:16.2.6"
     eslint-config-prettier: "npm:10.1.8"
-    eslint-mdx: "npm:3.7.1"
+    eslint-mdx: "npm:3.8.1"
     eslint-plugin-import: "npm:2.32.0"
     eslint-plugin-mdx: "npm:3.7.1"
     eslint-plugin-prettier: "npm:5.5.6"
