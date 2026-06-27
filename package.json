@@ -24,7 +24,7 @@
     "next-sitemap": "4.2.3",
     "react": "19.2.7",
     "react-dom": "19.2.7",
-    "react-spring": "npm:@react-spring/web@10.1.1",
+    "react-spring": "npm:@react-spring/web@10.1.2",
     "react-use-keypress": "1.4.0"
   },
   "devDependencies": {
