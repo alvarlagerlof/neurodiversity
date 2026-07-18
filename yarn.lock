@@ -7066,7 +7066,7 @@ __metadata:
     react-dom: "npm:19.2.7"
     react-spring: "npm:@react-spring/web@10.1.2"
     react-use-keypress: "npm:1.4.0"
-    tailwindcss: "npm:4.3.0"
+    tailwindcss: "npm:4.3.3"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
