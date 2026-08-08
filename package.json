@@ -48,7 +48,7 @@
     "gray-matter": "4.0.3",
     "luxon": "3.7.2",
     "marked": "18.0.9",
-    "postcss": "8.5.25",
+    "postcss": "8.5.26",
     "prettier": "3.9.6",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3"
