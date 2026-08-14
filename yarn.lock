@@ -3739,7 +3739,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-mdx@npm:3.8.1, eslint-mdx@npm:^3.7.1":
+"eslint-mdx@npm:3.8.1, eslint-mdx@npm:^3.8.1":
   version: 3.8.1
   resolution: "eslint-mdx@npm:3.8.1"
   dependencies:
@@ -3831,11 +3831,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-mdx@npm:3.7.1":
-  version: 3.7.1
-  resolution: "eslint-plugin-mdx@npm:3.7.1"
+"eslint-plugin-mdx@npm:3.8.1":
+  version: 3.8.1
+  resolution: "eslint-plugin-mdx@npm:3.8.1"
   dependencies:
-    eslint-mdx: "npm:^3.7.1"
+    eslint-mdx: "npm:^3.8.1"
     mdast-util-from-markdown: "npm:^2.0.2"
     mdast-util-mdx: "npm:^3.0.0"
     micromark-extension-mdxjs: "npm:^3.0.0"
@@ -3847,7 +3847,7 @@ __metadata:
     vfile: "npm:^6.0.3"
   peerDependencies:
     eslint: ">=8.0.0"
-  checksum: 10c0/bbe6944e0556a43995646a1d60a0153395be648c761c2c1ececc612072f0bac6395ebdc051e3c323ddbb114d589bf5da2e8c5a5ef226fc5e53b89d4f56225ead
+  checksum: 10c0/d24af2896e584c65d1404e5a39cfc3793a0fc2ed920f8df7c891d3da9b1abe69ccc527d2d290be4dfcca3666951b9ba8a168b4412f1416581859856af475e1a4
   languageName: node
   linkType: hard
 
@@ -7005,7 +7005,7 @@ __metadata:
     eslint-config-prettier: "npm:10.1.8"
     eslint-mdx: "npm:3.8.1"
     eslint-plugin-import: "npm:2.32.0"
-    eslint-plugin-mdx: "npm:3.7.1"
+    eslint-plugin-mdx: "npm:3.8.1"
     eslint-plugin-prettier: "npm:5.5.6"
     fs: "npm:0.0.1-security"
     fs-extra: "npm:11.4.0"
