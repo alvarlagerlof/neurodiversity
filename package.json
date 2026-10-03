@@ -28,7 +28,7 @@
     "react-use-keypress": "1.4.0"
   },
   "devDependencies": {
-    "@eslint/compat": "2.1.0",
+    "@eslint/compat": "2.1.1",
     "@eslint/eslintrc": "3.3.6",
     "@eslint/js": "10.0.1",
     "@tailwindcss/postcss": "4.3.3",
